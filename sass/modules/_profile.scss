@@ -1,6 +1,161 @@
 @charset "utf-8";
 
 
+
+#profile-novo {
+  section.profile-face {
+    background: $he_red;
+    padding: 120px 0 60px;
+    overflow: hidden;
+
+    article {
+      text-align: center;
+      color: #fff;
+      figure {
+
+        display: block;
+        img {
+          width: 200px;
+          height: 200px;
+          margin: auto;
+          display: block;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+
+  section.bio-bio {
+    padding: 100px 0;
+    overflow: hidden;
+    background: url("/images/bg-time.png") no-repeat scroll center top #EFEFEF;
+  }
+
+  section.profile-cote {
+    background: #fff;
+    border-bottom: 10px solid #eaeaea;
+    border-top: 10px solid #eaeaea;
+    text-align: center;
+    padding: 45px 0 50px 0;
+    color: #000;
+
+
+    .cote p {
+      font: 900 3.4em 'lato', sans-serif;
+      margin: 0 0 5px 0;
+    }
+
+    .signature {
+      font-size: 2.4em;
+      font-weight: normal;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  section.projects-worked {
+    background: $grey1;
+    overflow: hidden;
+
+    h2 {
+      font-size: $font-large;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+
+    li {
+      width: 20%;
+      height: 200px;
+      margin: 0 20px 50px 0;
+      float: left;
+    }
+
+    img {
+      width: 98%;
+      border: 1px solid $light-grey2;
+      padding: 1%
+    }
+
+    h3 {
+      text-transform: none;
+      margin: 15px 0 0 0;
+      font-size: $font-medium2;
+      color: #000;
+    }
+
+    p {
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+  }
+
+  .blog-posts {
+    padding: 200px 0;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+
+    h2 {
+      font-size: $font-large;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    li {
+      border-top: 1px solid $light-grey2;
+      margin: 0;
+      padding: 10px 0 15px 0;
+    }
+
+    li:first-child { border-top: none; }
+
+    h3 a {
+      margin: 0 0 10px 0;
+      font-size: $font-medium;
+
+      &:hover { opacity: .8; }
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 16px;
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ====================
 User Profile
 ==================== */
@@ -135,76 +290,8 @@ User Profile
 
 /* User Posts */
 
-.blog-posts {
-  width: 30%;
-  margin-bottom: 60px;
-  float: right;
 
-  h2 {
-    font-size: $font-large;
-    font-weight: 900;
-    margin-bottom: 15px;
-  }
-
-  li {
-    border-top: 1px solid $light-grey2;
-    margin: 0;
-    padding: 10px 0 15px 0;
-  }
-
-  li:first-child { border-top: none; }
-
-  h3 a {
-    margin: 0 0 10px 0;
-    font-size: $font-medium;
-
-    &:hover { opacity: .8; }
-  }
-
-  p {
-    line-height: 25px;
-    font-size: 16px;
-    margin: 0 0 0 0;
-  }
-}
 
 
 /* User Projects */
 
-.projects-worked {
-  width: 60%;
-  float: left;
-
-  h2 {
-    font-size: $font-large;
-    font-weight: 900;
-    margin-bottom: 25px;
-  }
-
-  li {
-    width: 46%;
-    height: 270px;
-    margin: 0 20px 50px 0;
-    float: left;
-  }
-
-  img {
-    width: 98%;
-    border: 1px solid $light-grey2;
-    padding: 1%
-  }
-
-  h3 {
-    text-transform: none;
-    margin: 15px 0 0 0;
-    font-size: $font-medium2;
-    color: #000;
-  }
-
-  p {
-    margin-top: 5px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 0;
-  }
-}
