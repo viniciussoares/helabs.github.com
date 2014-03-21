@@ -12,6 +12,7 @@ Home
   background-color: $grey4;
   padding: 160px 0 60px 0;
   text-align: center;
+  border-bottom: 4px solid $grey1;
 
   h2 {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
@@ -29,6 +30,25 @@ Home
     font-size: $font-big;
   }
 }
+
+
+// #home:before {
+//     content: "";
+//     display: block;
+//     width: 0;
+//     height: 0;
+//     border-left: 12px solid transparent;
+//     border-right: 12px solid transparent;
+//     border-top: 12px solid $grey1;
+//     position: absolute;
+//     bottom: 10px;
+//     left: 50%;
+// }
+
+
+
+
+
 
 #home h3,
 .logo-tip-trigger {
@@ -175,12 +195,12 @@ Home
 
 section.what-we-do {
   background: #fff;
-  padding: 30px 0;
+  padding: 10px 0 30px;
   @include clearfix;
 
   article {
     width: 65%;
-    margin: 40px auto 80px;
+    margin: 40px auto;
 
 
 
@@ -198,7 +218,7 @@ section.what-we-do {
       font-size: $font-medium2;
       text-align: center;
       color: rgba( $grey3, 0.9 );
-      margin-top: 20px;
+      margin-top: 25px;
       line-height: 34px;
 
       em {
@@ -207,8 +227,22 @@ section.what-we-do {
       }
 
     }
+
+    &:after {
+      content: '';
+      display: block;
+      background: url('/images/home/sprite-home-icons.png');
+      width: 57px;
+      height: 9px;
+      margin: 40px auto 0;
+    }
+
+    &:last-child:after { display: none; }
   }
 }
+
+
+
 
 
 
