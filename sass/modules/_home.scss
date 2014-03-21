@@ -168,40 +168,48 @@ Home
 
 
 
+
+
+
 /* Services Home */
 
-.services-home {
-  margin-top: 50px;
-  margin-bottom: 35px;
-  text-align: center;
+section.what-we-do {
+  background: #fff;
+  padding: 30px 0;
   @include clearfix;
 
-  li {
-    width: 26%;
-    background-color: #fff;
-    display: inline-block;
-    line-height: 20px;
-    padding: 30px 3% 0 3%;
-    min-height: 225px;
-  }
+  article {
+    width: 65%;
+    margin: 40px auto 80px;
 
-  h4 {
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 22px;
-    font-weight: 300;
-    color: $he_red;
-    margin: 0 0 5px 0;
-    padding-top: 0;
-  }
 
-  p {
-    font-family: 'lato';
-    font-size: $font-medium2;
-    line-height: 24px;
-    margin: 0 !important;
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 24px;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+      color: $he_red;
+      text-align: center;
+    }
+
+    p {
+
+      font-size: $font-medium2;
+      text-align: center;
+      color: rgba( $grey3, 0.9 );
+      margin-top: 20px;
+      line-height: 34px;
+
+      em {
+        color: rgba( $he_red, 0.6 );
+        color: #000;
+      }
+
+    }
   }
 }
+
 
 
 
@@ -232,8 +240,8 @@ Home
 section.our-clients {
   padding: 40px 0;
   background-color: $light-grey1;
-  border-top: 4px solid $light-grey2;
-  border-bottom: 4px solid $light-grey2;
+  border-top: 1px solid $light-grey2;
+  border-bottom: 1px solid $light-grey2;
 
   h2 {
     font-size: 42px;
