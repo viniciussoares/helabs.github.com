@@ -8,11 +8,17 @@ Home
 
 
 #home {
-  background: url("/images/bg-home.jpg") center no-repeat;
+  background: url("/images/bg-home-2.png");
   background-color: $grey4;
-  padding: 160px 0 60px 0;
+  padding: 180px 0 100px;
+
   text-align: center;
-  border-bottom: 4px solid $grey1;
+  border-bottom: 4px solid $grey2;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   h2 {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
@@ -26,24 +32,17 @@ Home
   }
 
   h3 {
-    margin: 25px 0 5px 0;
-    font-size: $font-big;
+    margin-top: 60px;
+    color: #e2e2e2;
+
+    word-spacing: 0.15em;
+
+
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 15px;
   }
 }
-
-
-// #home:before {
-//     content: "";
-//     display: block;
-//     width: 0;
-//     height: 0;
-//     border-left: 12px solid transparent;
-//     border-right: 12px solid transparent;
-//     border-top: 12px solid $grey1;
-//     position: absolute;
-//     bottom: 10px;
-//     left: 50%;
-// }
 
 
 
@@ -55,14 +54,21 @@ Home
   font-weight: 300;
   text-transform: uppercase;
   color: #6d7171;
+  color: #d2d2d2;
+  font-size: 20px;
+  word-spacing: 0.15em;
+      letter-spacing: 0.06em;
 }
 
 .logo-tip-trigger {
-  font-size: $font-large;
+  font-size: $font-medium2;
   text-decoration: none;
   border-bottom: 1px dotted #fff;
   position: relative;
+  font-size: 20px;
 
+  word-spacing: 0.15em;
+      letter-spacing: 0.06em;
   span {
     @include round_borders (4px);
     width: 160px;
@@ -195,7 +201,7 @@ Home
 
 section.what-we-do {
   background: #fff;
-  padding: 10px 0 30px;
+  padding: 0px 0 30px;
   @include clearfix;
 
   article {
@@ -239,6 +245,20 @@ section.what-we-do {
 
     &:last-child:after { display: none; }
   }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid $grey2;
+
+    position: relative;
+    top: 0px;
+    left: 50%;
+  }
 }
 
 
@@ -272,24 +292,41 @@ section.what-we-do {
 /* nossos clientes */
 
 section.our-clients {
-  padding: 40px 0;
+  padding: 60px 0 40px;
   background-color: $light-grey1;
   border-top: 1px solid $light-grey2;
-  border-bottom: 1px solid $light-grey2;
 
-  h2 {
+  h4 {
     font-size: 42px;
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
     color: $grey3;
+
+
+    text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+      color: $he_red;
+      // color: $grey4;
+      text-align: center;
+  }
+
+  p {
+
+
+      font-size: 16px;
+      text-align: center;
+      color: $grey3;
+      margin-top: 20px;
   }
 
   ul {
     width: 100%;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 60px;
 
     li{
       width: 23%;
@@ -298,12 +335,14 @@ section.our-clients {
       background-color: #fff;
       border-radius: 3px;
       margin: 0 25px 30px 0;
-      box-shadow: 0 4px 8px -3px #d8d8d8;
+      border-bottom: 2px solid $light-grey2;
 
       img {
         width: 100%;
         margin: 10px auto;
         display: block;
+
+
       }
 
       h3 {
@@ -313,22 +352,139 @@ section.our-clients {
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 0.03em;
-        border-top: 1px solid $light-grey2;
+        border-top: 1px solid $light-grey1;
         padding-top: 20px;
 
         span {
           display: block;
-          color: $grey3;
-          margin-top: 5px;
+          color: rgba( $grey3, 0.6 );
+          margin-top: 10px;
           font-weight: normal;
-          font-size: 0.9em;
+          font-size: 0.8em;
         }
       }
 
       &:nth-child(4n+4) { margin-right: 0; }
+
     }
   }
 }
+
+
+
+section.testmonial-home {
+  background-color: $grey4;
+  padding: 40px 0 80px;
+  @include clearfix;
+
+  em {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    color: $grey2;
+    font-style: italic;
+    font-size: $font-big;
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 300;
+    text-align: center;
+
+  }
+
+  i {
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+
+    &:before {
+      content: '';
+      display: block;
+      background: url('/images/home/sprite-home-icons.png');
+      width: 80px;
+      height: 80px;
+      background-position: 0 -9px;
+      margin: auto;
+    }
+
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid $light-grey1;
+    position: relative;
+    top: -40px;
+    left: 50%;
+  }
+
+}
+
+
+
+
+section.our-blog {
+  padding: 60px 0;
+  @include clearfix;
+
+  h4 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey3;
+
+
+    text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+      color: $he_red;
+      // color: $grey4;
+      text-align: center;
+  }
+  p {
+
+
+      font-size: 16px;
+      text-align: center;
+      color: $grey3;
+      margin-top: 20px;
+  }
+
+  article {
+    width: 46%;
+    margin-right: 8%;
+    float: left;
+    margin-top: 50px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: left;
+      color: $grey3;
+
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
 
 /* more about us */
 
