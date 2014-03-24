@@ -43,32 +43,75 @@ Media Queries for Tablets
   /* Home */
 
   #home {
-    background-position-y: 60px;
-    background-size: auto 1421px;
-    padding-top: 150px;
+    section.hero {
+      padding: 140px 0 60px;
+      border-bottom: none;
 
-    h2 {
-      font-size: 60px;
-      line-height: 80px;
+      h2 {
+        font-size: 60px;
+        line-height: 80px;
+      }
+
+      h3, .logo-tip-trigger {
+        margin: 60px 0 10px;
+        font-size: 18px;
+      }
+    }
+
+    section.what-we-do {
+      padding: 0 0 20px;
+
+      &:before { display: none; }
+
+      article {
+        width: 90%;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    section.our-clients ul li {
+      width: 31%;
+      margin: 0 20px 20px 0;
+
+      &:nth-child(4n+4) { margin-right: 20px; }
+      &:nth-child(3n+3) { margin-right: 0; }
+    }
+
+    section.testmonial {
+      padding: 20px 0;
+
+      &:before { display: none; }
+
+      em {
+        width: 90%;
+        font-size: $font-medium2;
+        line-height: 36px;
+      }
+
+      figure {
+        width: 60px;
+        margin: 10px auto;
+
+        img { width: 100%; }
+      }
+    }
+
+    section.our-blog {
+      padding: 60px 0;
+
+      article {
+        width: 80%;
+        float: none;
+        margin: 20px auto;
+
+        &:last-child { margin-right: auto;}
+      }
     }
   }
 
-  .services-home li {
-    width: 90%;
-    min-height: 100px !important;
-    padding: 25px 5% 30px 5% !important;
-    margin: 1px 0 0 0 !important;
-  }
-
-  .services-home li:first-child { margin-top: 0 !important; }
-
-  section.our-clients ul li {
-    width: 31%;
-    margin: 0 20px 20px 0;
-
-    &:nth-child(4n+4) { margin-right: 20px; }
-    &:nth-child(3n+3) { margin-right: 0; }
-  }
 
 
   /* Cover Banner */
@@ -211,7 +254,7 @@ Media Queries for Tablets
 
   .odd-work .work-info,
   .odd-client .client-info { margin-left: 300px; }
-  
+
   .even-work .work-info,
   .even-client .client-info { margin-right: 300px; }
 
@@ -393,9 +436,9 @@ Media Queries for Tablets
 
     article:nth-child(2),
     article:nth-child(3),
-    article:nth-child(4), 
+    article:nth-child(4),
     article:nth-child(5),
-    article:nth-child(6), 
+    article:nth-child(6),
     article:nth-child(7) {
 
       section {
@@ -472,7 +515,7 @@ Media Queries for Tablets
     }
 
     aside li { margin-bottom: 5px; }
-    
+
   }
 
 
@@ -571,43 +614,126 @@ Media Queries for Smartphones
   }
 
 
+
   /* Home */
 
   #home {
-    padding-top: 125px;
+    section.hero {
+      padding: 100px 20px 40px;
+      border-bottom: none;
 
-    h2 {
-      font-size: $font-big !important;
-      line-height: 40px !important;
+      h2 {
+        font-size: 48px;
+        line-height: 60px;
+      }
+
+      h3, .logo-tip-trigger {
+        margin: 40px 0 10px;
+        font-size: 16px;
+      }
     }
 
-    h3 { font-size: $font-large; }
+    section.what-we-do {
+      padding: 0 0 10px;
 
-    .home-button { display: none; }
-  }
+      &:before { display: none; }
 
-  .logo-tip-trigger { font-size: 19px; }
+      article {
+        width: 100%;
+        margin: 40px 0;
 
-  .icons {
-    li {
-      text-align:center;
-      display:inline-block;
-      margin: 0 2px 0 2px !important;
+        h4 {
+          font-size: 22px;
+          text-align: left;
+        }
+
+        p {
+          margin-top: 15px;
+          font-size: 16px;
+          line-height: 30px;
+          text-align: left;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
     }
 
-    a img { width: 40px; }
-  }
+    section.our-clients {
+      padding: 30px 0;
 
-  section.our-clients {
-    h2 { font-size: $font-big; }
+      h4 {
+        font-size: 26px;
+        text-align: left;
+      }
 
-    ul li {
-      height: 200px;
-      margin: 0 15px 10px 0;
+      p {
+        margin-top: 15px;
+        text-align: left;
+      }
 
-      &:nth-child(4n+4) { margin-right: 15px; }
+      ul {
+        margin-top: 30px;
+
+        li {
+          width: 31%;
+          margin: 0 10px 10px 0;
+
+          &:nth-child(4n+4) { margin-right: 10px; }
+          &:nth-child(3n+3) { margin-right: 0px; }
+        }
+      }
+    }
+
+    section.testmonial {
+      padding: 20px 0;
+
+      em, i {
+        width: 100%;
+        text-align: left;
+      }
+
+      em {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      i {
+        margin-top: 20px;
+      }
+
+      figure { display: none; }
+    }
+
+    section.our-blog {
+      padding: 30px 0;
+
+      h4 {
+        text-align: left;
+        font-size: 26px;
+      }
+
+      p {
+        text-align: left;
+        margin: 15px 0 30px;
+      }
+
+      article {
+        width: 100%;
+        margin: 10px auto;
+
+        a {
+          font-size: 16px;
+
+          &:hover { color: $grey4; }
+        }
+
+        p {margin-top: 0;}
+      }
     }
   }
+
 
 
   /* Breadcrumbs */
@@ -680,8 +806,8 @@ Media Queries for Smartphones
   }
 
   #time .red-button { margin-bottom: 40px; }
-  
-  
+
+
   /* Services  */
 
   #services,
@@ -689,7 +815,7 @@ Media Queries for Smartphones
 
 
   /* Video Gallery */
-  
+
   .videothumbs {
     width: 100% !important;
     text-align: center;
@@ -698,7 +824,7 @@ Media Queries for Smartphones
       width: 60% !important;
       background-size: 50%;
       background-position: center center;
-    }  
+    }
   }
 
 
@@ -918,7 +1044,7 @@ Media Queries for Smartphones
       margin: 0;
     }
   }
-  
+
   #work .work-thumb,
   #cliente-feliz .client-thumb,
   #work .work-thumb-mobile {
@@ -1385,16 +1511,22 @@ Media Queries with adjustments for Smartphones
   	margin-left: -145px;
   }
 
+  #home {
+    section.our-clients ul li {
+      width: 48%;
+      margin: 0 10px 20px 0;
+      height: 180px;
 
-  section.our-clients ul li {
-    width: 48%;
-    margin: 0 10px 20px 0;
+      &:nth-child(3n+3) { margin-right: 10px; }
+      &:nth-child(2n+2) { margin-right: 0; }
 
-    &:nth-child(3n+3) { margin-right: 10px; }
-    &:nth-child(2n+2) { margin-right: 0; }
+      img {
+        margin: 0 auto;
+      }
 
-    img {
-      margin: 0 auto;
+      h3 {
+        font-size: 14px;
+      }
     }
   }
 
