@@ -46,6 +46,11 @@ Media Queries for Tablets
     background-position-y: 60px;
     background-size: auto 1421px;
     padding-top: 150px;
+
+    h2 {
+      font-size: 60px;
+      line-height: 80px;
+    }
   }
 
   .services-home li {
@@ -57,6 +62,14 @@ Media Queries for Tablets
 
   .services-home li:first-child { margin-top: 0 !important; }
 
+  section.our-clients ul li {
+    width: 31%;
+    margin: 0 20px 20px 0;
+
+    &:nth-child(4n+4) { margin-right: 20px; }
+    &:nth-child(3n+3) { margin-right: 0; }
+  }
+
 
   /* Cover Banner */
 
@@ -66,8 +79,6 @@ Media Queries for Tablets
   }
 
   #cover-mailing { margin-top: 80px; }
-
-  /*cliente feliz */
 
 
   /* Sobre Nós */
@@ -109,7 +120,6 @@ Media Queries for Tablets
       }
     }
   }
-
 
 
   /* Profile */
@@ -196,10 +206,14 @@ Media Queries for Tablets
   .browser-nav { height: 15px; }
 
   #work .work-thumb,
+  #cliente-feliz .client-thumb,
   #work .work-thumb-mobile { width: 250px; }
 
-  .odd-work .work-info { margin-left: 300px; }
-  .even-work .work-info { margin-right: 300px; }
+  .odd-work .work-info,
+  .odd-client .client-info { margin-left: 300px; }
+  
+  .even-work .work-info,
+  .even-client .client-info { margin-right: 300px; }
 
 
   /* MVP */
@@ -266,6 +280,7 @@ Media Queries for Tablets
       }
     }
   }
+
   .mvp-projects li {
     width: 100%;
     margin-right: 0;
@@ -292,13 +307,8 @@ Media Queries for Tablets
     margin: 0 30px 40px 0;
   }
 
-  #work-more ul li:nth-child(2n+2) {
-    margin-right: 0;
-  }
-
-  #work-more ul li:nth-child(3n+3) {
-    margin: 0 30px 40px 0;
-  }
+  #work-more ul li:nth-child(2n+2) { margin-right: 0; }
+  #work-more ul li:nth-child(3n+3) { margin: 0 30px 40px 0; }
 
 
   /* Work MVP */
@@ -313,17 +323,16 @@ Media Queries for Tablets
 
   /* AtendeSimples */
 
-
   #hero-atendesimples {
     padding-bottom: 30px;
+
     h2 {
       font-size: $font-large;
       line-height: 38px;
     }
 
-    figure, blockquote {
-      float: none;
-    }
+    figure,
+    blockquote { float: none; }
 
     figure {
       margin: 30px auto 0;
@@ -331,9 +340,7 @@ Media Queries for Tablets
       display: block;
       height: 280px;
 
-      img {
-        width: 100%;
-      }
+      img { width: 100%; }
     }
 
     blockquote {
@@ -378,11 +385,18 @@ Media Queries for Tablets
 
     article { padding: 30px 0; }
 
-    article h2, h3 { text-align: center; }
+    article h2,
+    h3 { text-align: center; }
 
-    article:nth-child(even), article:nth-child(odd) .col { float: none; }
+    article:nth-child(even),
+    article:nth-child(odd) .col { float: none; }
 
-    article:nth-child(2), article:nth-child(3), article:nth-child(4), article:nth-child(5), article:nth-child(6), article:nth-child(7) {
+    article:nth-child(2),
+    article:nth-child(3),
+    article:nth-child(4), 
+    article:nth-child(5),
+    article:nth-child(6), 
+    article:nth-child(7) {
 
       section {
         .col { width: 100%; }
@@ -397,10 +411,7 @@ Media Queries for Tablets
     }
   }
 
-
-  section.testimonials blockquote {
-    width: 100%;
-  }
+  section.testimonials blockquote { width: 100%; }
 
 
   /* Project page - Cases */
@@ -422,9 +433,7 @@ Media Queries for Tablets
         text-align: center;
       }
 
-      a.btn-web {
-        display: none;
-      }
+      a.btn-web { display: none; }
 
       figure.browser-frame {
         margin: auto;
@@ -437,7 +446,8 @@ Media Queries for Tablets
   section.main-infos {
     padding: 40px 0 50px;
 
-    article, aside {
+    article,
+    aside {
       h3 {
         margin-bottom: 20px;
         font-size: 18px;
@@ -461,56 +471,15 @@ Media Queries for Tablets
       }
     }
 
-    aside {
-      ul {
-        li {
-          margin-bottom: 5px;
-        }
-      }
-    }
-  }
-
-  section.client {
-    padding: 40px 0 60px;
-
-    h3 {
-      font-size: 18px;
-    }
-
-    article.video {
-      width: 30%;
-    }
-
-    article.testimonial {
-      width: 70%;
-      margin-top: 20px;
-
-      i {
-        display: block;
-        margin: 20px 0 0 40px;
-        font-size: 14px;
-        line-height: 28px;
-        width: 85%;
-        text-align: justify;
-      }
-
-      em {
-        margin: 10px 0 0 40px;
-        text-align: left;
-        font-size: 13px;
-      }
-    }
+    aside li { margin-bottom: 5px; }
+    
   }
 
 
   /* Media Kit */
 
   .midiakit_wrap {
-
-    p{
-    max-width: 80%;
-    }
-
+    p { max-width: 80%; }
   }
 
   .responsive_option {
@@ -532,10 +501,8 @@ Media Queries for Tablets
   .bt_download,
   #font_show,
   .box_colors_show { display:none; }
-  ul.downloads li{
-    width: 350px;
-  }
 
+  ul.downloads li { width: 350px;}
 
 }
 
@@ -631,6 +598,17 @@ Media Queries for Smartphones
     a img { width: 40px; }
   }
 
+  section.our-clients {
+    h2 { font-size: $font-big; }
+
+    ul li {
+      height: 200px;
+      margin: 0 15px 10px 0;
+
+      &:nth-child(4n+4) { margin-right: 15px; }
+    }
+  }
+
 
   /* Breadcrumbs */
 
@@ -702,34 +680,27 @@ Media Queries for Smartphones
   }
 
   #time .red-button { margin-bottom: 40px; }
+  
+  
+  /* Services  */
+
+  #services,
+  .services-text { width: 100%; }
 
 
-  /* Cliente Feliz */
+  /* Video Gallery */
+  
+  .videothumbs {
+    width: 100% !important;
+    text-align: center;
 
-  .videothumbs li, .videothumbs2 li {
-    width: 80%;
-
-    &:hover {
-      background: url("/images/play.jpg") no-repeat white;
-      background-size: 100%;
-    }
+    li {
+      width: 60% !important;
+      background-size: 50%;
+      background-position: center center;
+    }  
   }
-  section#cliente-feliz{
-    .videothumbs li.quote{
-      width: 80%;
-      &:hover{
-        background: transparent;
-      }
-    }
-    .videothumbs li, .videothumbs2 li {
-      width: 80%;
 
-      &:hover {
-        background: url("/images/play.jpg") no-repeat white;
-        background-size: 100%;
-      }
-    }
-  }
 
   /* Sobre Nós */
 
@@ -789,7 +760,7 @@ Media Queries for Smartphones
           margin-top: 0px;
           border-top: 2px solid $he_red;
         }
-      }
+      } // artcile
     }
 
     section:last-child {
@@ -826,17 +797,6 @@ Media Queries for Smartphones
         }
       }
     }
-  }
-
-
-  /* Services Page */
-
-  .services-text { width: 100%; }
-
-  .services .videothumbs {
-    width: 80%;
-    padding: 0 10% 0 10%;
-    margin-top: 20px;
   }
 
 
@@ -927,24 +887,10 @@ Media Queries for Smartphones
 
   /* Time Profile */
 
-  #profile {
-    padding-top: 100px;
-
-    h2 {
-      font: 700 32px 'Lato', sans-serif;
-      color: #000;
-    }
-  }
-
   .mini-bio {
     width: 100%;
 
-    p {
-      font-size: $font-medium;
-      line-height: 23px;
-    }
-
-    .job-title { font-size: $font-medium; }
+    .job-title { font-size: $font-medium2; }
   }
 
   .profile-picture img { display: none; }
@@ -962,21 +908,24 @@ Media Queries for Smartphones
 
   .browser-nav { height: 20px; }
 
-  #work {
+  #work,
+  #cliente-feliz {
     text-align: center;
 
-    .work-thumb,
-    .work-thumb-mobile {
-      width: 60%;
-      margin-bottom: 25px;
-      display: inline-block;
-      float: none;
-    }
-
-    .work-info {
+    .work-info,
+    .client-info {
       text-align: left;
       margin: 0;
     }
+  }
+  
+  #work .work-thumb,
+  #cliente-feliz .client-thumb,
+  #work .work-thumb-mobile {
+    width: 60%;
+    margin-bottom: 25px;
+    display: inline-block;
+    float: none;
   }
 
 
@@ -1094,9 +1043,8 @@ Media Queries for Smartphones
 
   .mvp-projects li {
     width: 100%;
-    .about{
-      width:85%;
-    }
+
+    .about{ width: 85%; }
   }
 
   .value-column{
@@ -1173,22 +1121,29 @@ Media Queries for Smartphones
 
   section#atendesimples-steps  {
 
-    article h2, h3 { text-align: left; }
+    article h2,
+    h3 { text-align: left; }
 
     article h2 { font-size: 26px; }
 
-    article p { font-size: 16px; line-height: 26px; }
+    article p {
+      font-size: $font-medium2;
+      line-height: 26px;
+    }
 
-    article:nth-child(2), article:nth-child(3), article:nth-child(4), article:nth-child(5), article:nth-child(6), article:nth-child(7) {
-
-      section:after, section:before { display: none; }
+    article:nth-child(2),
+    article:nth-child(3),
+    article:nth-child(4),
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7) {
+      section:after,
+      section:before { display: none; }
     }
   }
 
   section.testimonials {
-    h2 {
-      margin: 30px 0;
-    }
+    h2 { margin: 30px 0; }
 
     blockquote {
       padding: 30px 0;
@@ -1198,9 +1153,8 @@ Media Queries for Smartphones
         line-height: 28px;
         text-align: left;
 
-        &:before, &:after {
-          display: none;
-        }
+        &:before,
+        &:after { display: none; }
       }
 
       em {
@@ -1242,6 +1196,7 @@ Media Queries for Smartphones
 
     article {
       width: 100%;
+
       a.btn-mobile {
         display: inline-block;
         padding: 10px 40px;
@@ -1305,7 +1260,7 @@ Media Queries for Smartphones
 
   /* Footer */
 
-  footer { padding: 20px 0 230px 0; }
+  footer { padding: 20px 0 255px 0; }
 
   .offices { padding: 0 0 30px; }
 
@@ -1372,14 +1327,10 @@ Media Queries for Smartphones
 
   .midiakit_wrap {
 
-    p{
-    max-width: 80%;
-    }
+    p{ max-width: 80%; }
 
     ul.downloads {
-      li{
-      width: 300px;
-      }
+      li{ width: 300px; }
     }
 
   }
@@ -1435,6 +1386,19 @@ Media Queries with adjustments for Smartphones
   }
 
 
+  section.our-clients ul li {
+    width: 48%;
+    margin: 0 10px 20px 0;
+
+    &:nth-child(3n+3) { margin-right: 10px; }
+    &:nth-child(2n+2) { margin-right: 0; }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+
   #about-us {
     section:first-child {
       article {
@@ -1465,6 +1429,7 @@ Media Queries with adjustments for Smartphones
   /* works */
 
   #work .work-thumb,
+  #cliente-feliz .client-thumb,
   #work .work-thumb-mobile { width: 96%; }
 
   .work-info h3 {
@@ -1554,8 +1519,9 @@ Media Queries with adjustments for Smartphones
   ul.downloads li{
     width: 300px;
   }
-
 }
+
+
 
 
 /*

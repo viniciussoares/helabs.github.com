@@ -45,6 +45,15 @@ span.red { color: #b20000; }
 
 
 /* ====================
+Progress Bar
+==================== */
+#instantclick-bar {
+  background: #fff;
+  height: 5px;
+}
+
+
+/* ====================
 Patterns
 ==================== */
 
@@ -56,7 +65,7 @@ Patterns
 .default {
   width: 100%;
   background-color: #fff;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $he_red;
   box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, 0.3);
   padding: 10px 0 10px 0;
   position: fixed;
@@ -180,6 +189,41 @@ Breadcrumbs
     &:hover {
       text-decoration: underline;
       color: #fff;
+    }
+  }
+}
+
+
+
+/* ====================
+Video Gallery
+==================== */
+
+.videothumbs {
+
+  li {
+    box-shadow: 0 4px 8px -3px #d8d8d8;
+    width: 42%;
+    background: #fff url("/images/play.jpg") no-repeat;
+    background-size: 100%;
+    margin: 0 3% 30px 3%;
+    padding: 10px;
+    display: inline-block;
+    font-size: $font-medium;
+    opacity: 1;
+
+    h5 {
+      margin: 10px 0 0 0;
+      font-size: $font-medium;
+      color: $he_red;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      opacity: .7;
+
+      &:hover { opacity: 1; }
     }
   }
 }
