@@ -73,14 +73,6 @@ description: Description about the project.
 $ rake import:blogposts
 ```
 
-## Remove unused images
-
-```sh
-$ rake prune_images
-```
-
-**Use this carefully!!!**
-
 ## Creating your profile
 
 Run `rake new_profile` task to generate some basic structure for the "blog post"
