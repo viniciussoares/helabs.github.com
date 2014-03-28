@@ -111,19 +111,62 @@ Media Queries for Tablets
   }
 
 
-
   /* Profile */
 
-  #profile { padding-top: 120px; }
+  #profile {
 
-  .social-links {
-    margin: 0;
+    section.introduction {
+      padding: 90px 0 20px;
+      border-bottom: 4px solid $grey2;
+    }
 
-    li { display: block; }
+    section.bio {
+      padding: 20px 0 0;
 
-    a {
-      margin: 5px 0 0 0;
-      clear: both;
+      &:before {
+        display: none;
+      }
+
+      article {
+        width: 100%;
+        margin: auto;
+      }
+
+      .social-links {
+        margin: 0;
+
+        li { display: block; }
+
+        a {
+          margin: 5px 0 0 0;
+          clear: both;
+        }
+      }
+    }
+
+    section.quote {
+      padding: 40px 0;
+    }
+
+    section.projects-worked {
+      padding: 40px 0;
+
+      ul {
+        margin-top: 10px;
+
+        li {
+          width: 30%;
+          margin: 20px 10px;
+        }
+      }
+    }
+
+    section.blog-posts {
+      padding: 40px 0 100px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -160,19 +203,6 @@ Media Queries for Tablets
   .proc-desc-06 {
     left: 260px;
     top: 275px;
-  }
-
-
-  /* User Projects */
-
-  .projects-worked {
-
-    li {
-      width: 100%;
-      height: auto;
-      margin: 0 0 50px 0;
-    }
-
   }
 
 
@@ -925,36 +955,68 @@ Media Queries for Smartphones
   }
 
 
-  /* Time Profile */
+
+  /* Profile */
 
   #profile {
-    padding-top: 100px;
 
-    h2 {
-      font: 700 32px 'Lato', sans-serif;
-      color: #000;
-    }
-  }
-
-  .mini-bio {
-    width: 100%;
-
-    p {
-      font-size: $font-medium;
-      line-height: 23px;
+    section.introduction {
+      article {
+        h2 {
+          font-size: 30px;
+        }
+      }
     }
 
-    .job-title { font-size: $font-medium; }
-  }
+    section.bio {
+      padding: 10px 0 0;
 
-  .profile-picture img { display: none; }
-  .profile-cote { padding: 35px 0 40px 0; }
-  .cote p { font: 700 30px 'lato', sans-serif; }
-  .signature { font-size: $font-medium2; }
+      article {
+        p {
+          margin: 10px 0;
+          font-size: $font-medium2;
+          line-height: 32px;
+        }
+      }
 
-  .photo-bio {
-    width: 100%;
-    margin: 10px 0 0 0;
+      h3 {
+        margin: 20px 0 10px;
+      }
+    }
+
+    section.quote {
+      padding: 30px 0;
+
+      &:before { margin: 0 auto 30px; }
+      &:after { margin: 30px auto 0; }
+
+      .cote {
+        p {
+          font-size: 2.2em;
+        }
+      }
+
+      p.signature {
+        margin-top: 10px;
+        font-size: 1.6em;
+      }
+    }
+
+    section.projects-worked {
+      ul {
+        li {
+          width: 44%;
+        }
+      }
+    }
+
+    section.blog-posts {
+      article {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+    }
   }
 
 
