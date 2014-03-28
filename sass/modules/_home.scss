@@ -8,8 +8,7 @@ Home
 /* Hero Cover */
 
 #home section.hero {
-  background: url("/images/home/hero-image.jpg");
-  background-color: $grey3;
+  background: $grey3 url("/images/home/hero-image.jpg");
   padding: 160px 0 80px;
   text-align: center;
   border-bottom: 4px solid $grey2;
@@ -231,7 +230,7 @@ Home
 /* Testimonial */
 
 #home section.testmonial {
-  padding: 30px 0 20px;
+  padding: 20px 0 25px;
   @include clearfix;
   background-color: $grey4;
 
@@ -244,7 +243,7 @@ Home
     border-right: 12px solid transparent;
     border-top: 12px solid $light-grey1;
     position: relative;
-    top: -33px;
+    top: -23px;
     left: 50%;
   }
 
@@ -254,7 +253,7 @@ Home
     display: block;
     color: $grey2;
     font-size: 22px;
-    line-height: 44px;
+    line-height: 40px;
     font-weight: 300;
     text-align: center;
     font-style: italic;
@@ -262,13 +261,14 @@ Home
 
   figure {
     width: 80px;
-    margin: 30px auto 10px;
+    margin: 10px auto 0;
   }
 
   i {
     text-align: center;
-    color: $light-grey2;
+    color: rgba( $light-grey2, 0.6 );
     display: block;
+    margin-top: 10px;
   }
 }
 
