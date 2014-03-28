@@ -4,7 +4,7 @@ layout: default
 
 <div id="profile">
 
-  <section class="profile-intro">
+  <section class="introduction">
     <article>
       <figure>
         <img src="{{ page.image }}" alt="{{ page.full_name }}">
@@ -18,17 +18,16 @@ layout: default
         {% endif %}
       </h3>
     </article>
-  </section>
+  </section> <!-- /introduction -->
 
-  <section class="profile-bio">
+  <section class="bio">
     <div class="containner">
       <article>
         {% for line in page.bio %}
           <p>{{ line }}</p>
         {% endfor %}
 
-
-<!--         {% if page.skills %}
+        {% if page.skills %}
         <h3>Skills</h3>
         <div class="skill-list">{% for skill in page.skills %}<span class="skill-tag">{{ skill }}</span>{% endfor %}</div>
         {% endif %}
@@ -39,20 +38,20 @@ layout: default
         {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
         {% if page.github %}<li><a href="https://github.com/{{ page.github }}" class="profile-github">{{ page.github }}</a></li>{% endif %}
         {% if page.facebook %}<li><a href="https://www.facebook.com/{{ page.facebook }}" class="profile-facebook">{{ page.full_name }}</a></li>{% endif %}
-        </ul> -->
+        </ul>
       </article>
     </div>
-  </section>
+  </section> <!-- /bio -->
 
   {% if page.quote %}
-    <section class="profile-cote">
+    <section class="quote">
       <div class="containner">
         <div class="cote">
           <p>"{{ page.quote.content }}"</p>
           <p class="signature">&mdash; {{ page.quote.author }}</p>
         </div>
       </div>
-    </section>
+    </section> <!-- /quote -->
   {% endif %}
 
   {% if page.projects %}
@@ -80,14 +79,12 @@ layout: default
     <section class="blog-posts">
       <div class="containner">
         <h2>Posts no Blog</h2>
-        <ul>
-          {% for blogpost in page.blogposts %}
-            <li>
-              <h3><a href="{{ blogpost.url }}" data-no-instant>{{ blogpost.title }}</a></h3>
-            </li>
-          {% endfor %}
-        </ul>
+        {% for blogpost in page.blogposts %}
+          <article>
+            <h3><a href="{{ blogpost.url }}" data-no-instant>{{ blogpost.title }}</a></h3>
+          </article>
+        {% endfor %}
       </div>
-    </section>
+    </section> <!-- /blog-posts -->
   {% endif %}
 </div>
