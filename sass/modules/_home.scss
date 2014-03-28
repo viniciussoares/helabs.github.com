@@ -276,7 +276,7 @@ Home
 /* Our Blog */
 
 #home section.our-blog {
-  padding: 80px 0 100px;
+  padding: 60px 0 100px;
   @include clearfix;
 
   h4 {
@@ -303,14 +303,19 @@ Home
 
     &:last-child { margin-right: 0; }
 
-    a {
-      font-size: $font-medium2;
-      line-height: 34px;
-      font-weight: 600;
-      color: $grey4;
-      text-decoration: underline;
+    h5 {
+      margin: 0;
 
-      &:hover { color: $he_red; }
+      a {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 600;
+        display: block;
+        color: $grey4;
+        text-decoration: underline;
+
+        &:hover { color: $he_red; }
+      }
     }
 
     p {
