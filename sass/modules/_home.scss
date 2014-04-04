@@ -230,9 +230,9 @@ Home
 /* Testimonial */
 
 #home section.testmonial {
-  padding: 20px 0 25px;
-  @include clearfix;
+  padding: 20px 0 25px 0;
   background-color: $grey4;
+  @include clearfix;
 
   &:before {
     content: "";
@@ -242,6 +242,7 @@ Home
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: 12px solid $light-grey1;
+
     position: relative;
     top: -23px;
     left: 50%;
@@ -264,11 +265,15 @@ Home
     margin: 10px auto 0;
   }
 
-  i {
+  p {
     text-align: center;
     color: rgba( $light-grey2, 0.6 );
     display: block;
     margin-top: 10px;
+    
+    a {
+      color: $grey2;
+    }
   }
 }
 
