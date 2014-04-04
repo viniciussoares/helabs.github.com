@@ -283,7 +283,7 @@ Home
 /* Our Blog */
 
 #home section.our-blog {
-  padding: 60px 0 100px;
+  padding: 60px 0 70px 0;
   @include clearfix;
 
   h4 {
@@ -335,9 +335,8 @@ Home
 
       span { color: $grey3; }
     }
-  }
+  } // article
 }
-
 
 
 /* Red Button */
