@@ -776,7 +776,6 @@ Media Queries for Smartphones
   }
 
 
-
   /* Breadcrumbs */
 
   #breadcrumbs {
@@ -789,8 +788,10 @@ Media Queries for Smartphones
 
   #cover-banner {
     margin-top: 60px;
+    padding-bottom: 30px;
 
     h2 {
+      margin-top: 10px;
       font-size: 32px;
       line-height: 35px;
     }
