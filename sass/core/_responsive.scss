@@ -894,7 +894,7 @@ Media Queries for Smartphones
         font-size: $font-medium;
         line-height: 30px;
       }
-    }
+    } // section
 
     section:first-child {
       article {
@@ -926,8 +926,8 @@ Media Queries for Smartphones
           margin-top: 0px;
           border-top: 2px solid $he_red;
         }
-      } // artcile
-    }
+      } // article
+    } // section:first-child
 
     section:last-child {
 
@@ -943,27 +943,23 @@ Media Queries for Smartphones
             margin-top: 40px;
           }
         }
-      }
+      } // artcile
+      
+      #sobre-nos-values {
+        padding-bottom: 40px;
 
-      aside {
-        padding: 40px 0;
-
-        h3 {
-          margin-left: 5%;
-          text-align: left;
-        }
-
-        .videothumbs2 {
-          margin-top: 0px;
+        .videothumbs {
 
           li {
-            width: 30%;
-            margin: 30px 30px 0 0;
+            width: 40%;
+            margin: 0 1% 20px 1%;
           }
         }
-      }
-    }
-  }
+      } // #sobre-nos-values
+      
+      
+    } // section:last-child
+  } // about-us
 
 
   /* Valores */
