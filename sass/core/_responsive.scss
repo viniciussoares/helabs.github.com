@@ -72,14 +72,6 @@ Media Queries for Tablets
       }
     }
 
-    section.our-clients ul li {
-      width: 31%;
-      margin: 0 20px 20px 0;
-
-      &:nth-child(4n+4) { margin-right: 20px; }
-      &:nth-child(3n+3) { margin-right: 0; }
-    }
-
     section.testmonial {
       padding: 20px 0;
 
@@ -111,7 +103,6 @@ Media Queries for Tablets
       }
     }
   }
-
 
 
   /* Cover Banner */
@@ -548,6 +539,16 @@ Media Queries for Tablets
     aside li { margin-bottom: 5px; }
 
   }
+  
+  
+  /* Home: Our Clients */
+  
+  .our-clients {
+
+    li {
+      height: 185px !important;
+    }
+  }
 
 
   /* Media Kit */
@@ -655,7 +656,6 @@ Media Queries for Smartphones
   }
 
 
-
   /* Home */
 
   #home {
@@ -697,32 +697,6 @@ Media Queries for Smartphones
 
         &:after {
           display: none;
-        }
-      }
-    }
-
-    section.our-clients {
-      padding: 30px 0;
-
-      h4 {
-        font-size: 26px;
-        text-align: left;
-      }
-
-      p {
-        margin-top: 15px;
-        text-align: left;
-      }
-
-      ul {
-        margin-top: 30px;
-
-        li {
-          width: 31%;
-          margin: 0 10px 10px 0;
-
-          &:nth-child(4n+4) { margin-right: 10px; }
-          &:nth-child(3n+3) { margin-right: 0px; }
         }
       }
     }
@@ -1048,9 +1022,7 @@ Media Queries for Smartphones
   }
 
 
-
   /* Profile */
-
 
   #profile {
 
@@ -1273,6 +1245,7 @@ Media Queries for Smartphones
     }
   }
 
+
   /* Mailing page*/
 
   .cover-mailing-page {
@@ -1473,6 +1446,17 @@ Media Queries for Smartphones
       }
     }
   }
+  
+  
+  /* Home: Our Clients */
+  
+  .our-clients {
+
+    li {
+      width: 45% !important;
+      height: 235px !important;
+    }
+  }
 
 
   /* Footer */
@@ -1602,26 +1586,6 @@ Media Queries with adjustments for Smartphones
   	margin-left: -145px;
   }
 
-  #home {
-    section.our-clients ul li {
-      width: 48%;
-      margin: 0 10px 20px 0;
-      height: 180px;
-
-      &:nth-child(3n+3) { margin-right: 10px; }
-      &:nth-child(2n+2) { margin-right: 0; }
-
-      img {
-        margin: 0 auto;
-      }
-
-      h3 {
-        font-size: 14px;
-      }
-    }
-  }
-
-
   #about-us {
     section:first-child {
       article {
@@ -1661,7 +1625,6 @@ Media Queries with adjustments for Smartphones
 
 
   /* Work Second Level */
-
 
   #work-more {
 
@@ -1713,18 +1676,16 @@ Media Queries with adjustments for Smartphones
     }
   }
 
-  /* Media Kit */
 
+  /* Media Kit */
 
   .midiakit_wrap {
 
-    p{
-    max-width: 100%;
-    }
+    p { max-width: 100%; }
 
     ul.downloads {
-      li{
-      width: 70%;
+      li {
+        width: 70%;
       }
     }
 
@@ -1751,12 +1712,25 @@ Media Queries with adjustments for Smartphones
   #font_show,
   .box_colors_show,
   .bt_download { display: none; }
-  ul.downloads li{
+  
+  ul.downloads li {
     width: 300px;
   }
+  
+  
+  /* Home: Our Clients */
+  
+  .our-clients {
+    padding-bottom: 30px !important;
+
+    li {
+      width: 70% !important;
+      height: auto !important;
+      margin: 0 0 20px 0;
+    }
+  }  
+  
 }
-
-
 
 
 /*
