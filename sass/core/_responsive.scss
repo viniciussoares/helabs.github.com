@@ -853,18 +853,17 @@ Media Queries for Smartphones
 
   #services,
   .services-text { width: 100%; }
+  
+  .services {
+    .videothumbs {
+      width: 100%;
+      margin-top: 30px;
+      float: left;
 
-
-  /* Video Gallery */
-
-  .videothumbs {
-    width: 100% !important;
-    text-align: center;
-
-    li {
-      width: 60% !important;
-      background-size: 50%;
-      background-position: center center;
+      li {
+        width: 52%;
+        padding: 3%;
+      }
     }
   }
 

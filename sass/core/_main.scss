@@ -200,10 +200,11 @@ Video Gallery
 ==================== */
 
 .videothumbs {
+  text-align: center;
 
   li {
-    box-shadow: 0 4px 8px -3px #d8d8d8;
-    width: 42%;
+    width: 41%;
+    border: 1px solid $grey1;
     background: #fff url("/images/play.jpg") no-repeat;
     background-size: 100%;
     margin: 0 3% 30px 3%;
@@ -215,7 +216,7 @@ Video Gallery
     h5 {
       margin: 10px 0 0 0;
       font-size: $font-medium;
-      color: $he_red;
+      color: #000;
     }
 
     img {

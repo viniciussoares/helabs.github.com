@@ -6,7 +6,7 @@ Services
 ==================== */
 
 .services {
-  background: #fafafa;
+  background: #fff !important;
   padding-bottom: 40px;
   @include clearfix;
 
@@ -28,7 +28,7 @@ Services
 
   .videothumbs {
     width: 30%;
-    margin-top: 50px;
+    margin-top: 55px;
     float: right;
 
     li {
