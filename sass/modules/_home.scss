@@ -187,38 +187,35 @@ Home
     width: 100%;
     overflow: hidden;
     margin-top: 60px;
+    text-align: center;
 
     li {
-      width: 23%;
-      height: 220px;
-      float: left;
+      width: 22%;
+      height: 210px;
       background-color: #fff;
       border-radius: 3px;
       margin: 0 25px 30px 0;
-      border-bottom: 2px solid rgba( $grey2, 0.5 );
+      border: 1px solid $grey1;
+      display: inline-block;
 
       img {
         width: 100%;
-        margin: 10px auto;
+        margin: auto;
         display: block;
       }
 
-      h3 {
+      h5 {
         width: 100%;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 0.03em;
-        border-top: 1px solid $light-grey1;
-        padding-top: 20px;
+        border-top: 1px solid $light-grey2;
+        font-size: $font-medium2;
+        padding-top: 14px;
 
         span {
+          font-weight: normal;
           display: block;
           color: rgba( $grey3, 0.6 );
-          margin-top: 10px;
-          font-weight: normal;
-          font-size: 0.8em;
+          margin-top: 5px;
+          font-size: $font-medium;
         }
       }
 
