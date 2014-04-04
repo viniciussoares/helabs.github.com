@@ -7,19 +7,19 @@
 // Modules: Global nav
 @import "modules/home";
 @import "modules/magica";
-@import "modules/clientefeliz";
+@import "modules/love";
 @import "modules/sobrenos";
 @import "modules/time";
 @import "modules/profile";
-@import "modules/work";
-@import "modules/atendesimples";
+@import "modules/clientes";
 @import "modules/contato";
+
+// Modules: Cases
+@import "modules/atendesimples";
 
 // Services
 @import "modules/servicos";
 @import "modules/mvp";
-@import "modules/slider";
-
 
 // Modules: Secondary Pages
 @import "modules/valores";
@@ -37,3 +37,4 @@
 // Plugins
 @import "plugins/prettyPhoto";
 @import "plugins/tiptip";
+@import "modules/slider";
