@@ -17,6 +17,16 @@ Running foreman will start the jekyll server, will compile your sass files and c
 $ foreman start
 ```
 
+## Push to staging
+
+If you want to test and browse website before you push it to public, use staging.
+
+```sh
+$ rake staging
+```
+
+Staging version of the website is available at staging.helabs.com.br.
+
 ## Compiling SASS
 
 When using Foreman to run the server it will also start a Guard process that will watch for changes on the files in the `sass` folder and compile them. No need to run `compass watch` or Grunt.
@@ -72,6 +82,14 @@ description: Description about the project.
 ```sh
 $ rake import:blogposts
 ```
+
+## Remove unused images
+
+```sh
+$ rake prune_images
+```
+
+**Use this carefully!!!**
 
 ## Creating your profile
 
