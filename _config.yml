@@ -1,5 +1,6 @@
 lsi: false
 pygments: true
+markdown: kramdown
 exclude:
 - 'CNAME'
 - 'config.rb'
