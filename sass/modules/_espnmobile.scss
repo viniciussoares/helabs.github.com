@@ -127,11 +127,12 @@ ESPN Mobile
 
   .lead {
     color: #333;
-    font-size: 24px;
+    font-size: $font-large;
     font-weight: lighter;
-    text-align: center;
-    float: none;
     margin-left: 0 !important;
+    text-align: center !important;
+    line-height: 33px;
+    float: none;
 
     span {
       font-weight: bold;
@@ -173,6 +174,10 @@ ESPN Mobile
 
 }
 
+.process-img {
+  margin-bottom: 30px;
+}
+
 .browser-nav {
   border: 1px solid $grey2;
   background: #fff;
@@ -185,15 +190,19 @@ ESPN Mobile
 
   .odd-work img { float: left; }
   .even-work img { float: right; }
-
+  
+  .odd-work p,
+  .even-work p {
+    font-size: $font-medium2;
+    line-height: 28px;
+  }
+  
   .odd-work p { 
-    font-size: 1.4em;
     margin-left: 350px;
     text-align: left;
   }
 
   .even-work p {
-    font-size: 1.4em;
     margin-right: 350px;
     text-align: right;
   }
