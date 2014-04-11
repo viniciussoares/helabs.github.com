@@ -9,17 +9,17 @@ ESPN Mobile
   margin-top: 80px;
   padding: 50px 0 50px 0;
   background: url('/images/cases/espn-mobile/espn_bg.jpg') center bottom;
-  background-size:cover;
+  background-size: cover;
   height: 630px;
-  color:#fff;
+  color: #fff;
   
-  .iphone{
+  .iphone {
     background: url('/images/cases/espn-mobile/iphone.png') no-repeat scroll top left;
     width: 367px;
     height: 671px;
     float:left;
     
-    iframe{
+    iframe { 
       background: none repeat scroll 0 0 #333333;
       border: 0 none;
       float: left;
@@ -28,7 +28,8 @@ ESPN Mobile
       margin-top: 143px;
       width: 231px;
     }
-  }
+  } // .iphone
+
   h2 {
     color: #FFFFFF;
     float: left;
@@ -40,20 +41,23 @@ ESPN Mobile
     text-transform: uppercase;
     width: 54%;
   }
-  .link{
+
+  .link {
     background: url('/images/cases/espn-mobile/link.png') no-repeat scroll right top;
     float: right;
     height: 36px;
     position: relative;
     top: 66px;
     width: 127px;
-    a{
-      color:white;
-      text-decoration:none;
+
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
+
   .testimonial{
-    color: #FFFFFF;
+    color: #fff;
     display: block;
     float: right;
     font-size: 18px;
@@ -62,16 +66,17 @@ ESPN Mobile
     text-align: right;
     width: 60%;
     
-    img{
+    img {
       float:right;
       margin-left: 20px;
     }
     
-    span{
+    span {
       font-weight:lighter;
       font-size: 14px;
     }
   }
+
   p {
     float: left;
     font-size: 20px;
@@ -81,21 +86,22 @@ ESPN Mobile
     width: 60%;
     line-height: 1.6;
     
-    &:before{
+    &:before {
       background: url('/images/cases/espn-mobile/aspa1.png') no-repeat scroll top left;
       width: 35px;
       height: 28px;
-      content:"";
+      content: "";
       float:left;
-      margin-right:5px;
+      margin-right: 5px;
     }
-    &:after{
+
+    &:after {
       background: url('/images/cases/espn-mobile/aspa2.png') no-repeat scroll top left;
       width: 35px;
       height: 28px;
-      content:"";
+      content: "";
       display: inline-block;
-      margin-left:5px;
+      margin-left: 5px;
     }
     
   }
@@ -108,28 +114,30 @@ ESPN Mobile
   }
 }
 
-//
-
 #espn-mobile {
   .step-number {
     left: 50%;
     margin: -80px auto 0 -30px;
     position: absolute;
   }
+
   .containner{
-    text-align:center;
+    text-align: center;
   }
-  .lead{
-    color: #333333;
+
+  .lead {
+    color: #333;
     font-size: 24px;
     font-weight: lighter;
     text-align: center;
-    float:none;
-    margin-left:0px !important;
-    span{
-      font-weight:bold;
+    float: none;
+    margin-left: 0 !important;
+
+    span {
+      font-weight: bold;
     }
   }
+
   li {
     width: 100%;
     padding: 50px 0 50px 0;
@@ -160,7 +168,7 @@ ESPN Mobile
   }
 
   #no-float{
-    float:none;
+    float: none;
   }
 
 }
@@ -173,9 +181,8 @@ ESPN Mobile
   height: 25px;
 }
 
-.odd-work img{ float: left; }
-
-.even-work img{ float: right; }
+.odd-work img { float: left; }
+.even-work img { float: right; }
 
 .odd-work p { 
   font-size: 1.4em;
