@@ -56,7 +56,7 @@ ESPN Mobile
     }
   }
 
-  .testimonial{
+  .testimonial {
     color: #fff;
     display: block;
     float: right;
@@ -67,12 +67,12 @@ ESPN Mobile
     width: 60%;
     
     img {
-      float:right;
+      float: right;
       margin-left: 20px;
     }
     
     span {
-      font-weight:lighter;
+      font-weight: lighter;
       font-size: 14px;
     }
   }
@@ -91,7 +91,7 @@ ESPN Mobile
       width: 35px;
       height: 28px;
       content: "";
-      float:left;
+      float: left;
       margin-right: 5px;
     }
 
@@ -167,7 +167,7 @@ ESPN Mobile
     }
   }
 
-  #no-float{
+  #no-float {
     float: none;
   }
 
@@ -181,47 +181,37 @@ ESPN Mobile
   height: 25px;
 }
 
-.odd-work img { float: left; }
-.even-work img { float: right; }
+#espn-mobile {
 
-.odd-work p { 
-  font-size: 1.4em;
-  margin-left: 350px;
-  text-align: left;
-}
-.even-work p {
-  font-size: 1.4em;
-  margin-right: 350px;
-  text-align: right;
-}
+  .odd-work img { float: left; }
+  .even-work img { float: right; }
 
-.work-info {
-  a {
-    border-bottom: 2px solid #880505;
-    @include round_borders (4px);
-    height: 40px;
-    line-height: 40px;
-    background: $he_red;
-    padding: 0 10px 0 10px;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0 0 0;
-    display: none;
-
-    &:hover { opacity: .8; }
+  .odd-work p { 
+    font-size: 1.4em;
+    margin-left: 350px;
+    text-align: left;
   }
 
-  h3 {
-    font-size: $font-big;
-    font-weight: 900;
-    color: #000;
-    margin: 0 0 15px 0;
+  .even-work p {
+    font-size: 1.4em;
+    margin-right: 350px;
+    text-align: right;
+  }
+  
+  .work-info {
+
+    h3 {
+      font-size: $font-big;
+      font-weight: 900;
+      color: #000;
+      margin: 0 0 15px 0;
+    }
+
+    p {
+      font: normal $font-medium $sans_serif;
+      line-height: 27px;
+      margin: 0 0 15px 0;
+    }
   }
 
-  p {
-    font: normal $font-medium2 $sans_serif;
-    line-height: 27px;
-    margin: 0 0 15px 0;
-  }
 }
