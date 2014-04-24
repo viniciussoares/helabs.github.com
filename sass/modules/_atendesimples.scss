@@ -65,24 +65,10 @@ Case: AtendeSimples
 
     em {
       display: block;
-      margin-top: 20px;
+      margin: 20px 0;
       font-size: 16px;
       font-weight: 400;
     }
-  }
-
-  a.btn {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 50px;
-    background: #fff;
-    border-radius: 4px;
-    color: $atende_simples;
-    font-size: $font-medium;
-    font-weight: 500;
-    text-decoration: none;
-
-    &:hover { opacity: 0.95; }
   }
 
   b {
