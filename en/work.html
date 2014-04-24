@@ -226,7 +226,7 @@ pt: /trabalho/
     <h3>Besides to the above projects, we have developed a total of more than {{ site.data.mvp.number_of_projects }} projects.</h3>
     <ul>
       {% for project in site.data.mvp.projects %}
-      <li><a href="{{ project.url }}" title="{{ project.name }}" rel="external">{{ project.name }}</a></li>
+      <li><p>{{ project.name }}</p></li>
       {% endfor %}
     </ul>
   </div>
