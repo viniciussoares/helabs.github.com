@@ -142,28 +142,24 @@ User Profile
   }
 }
 
-#profile section.projects-worked {
+.projects-worked {
   padding: 60px 0;
   overflow: hidden;
 
   h2 {
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
+    font-size: $font-big;
     color: $grey4;
     text-transform: uppercase;
     text-align: center;
   }
 
   ul {
-    margin-top: 20px;
 
     li {
       width: 22%;
       height: 140px;
-      margin: 30px 14px;
-      float: left;
-
+      margin: 40px 1% 0 1%;
+      display: inline-block;
 
       img {
         width: 98%;
@@ -173,14 +169,15 @@ User Profile
 
       h3 {
         margin: 10px 0 0;
-        font-size: 16px;
+        font-size: $font-medium;
         font-weight: 400;
         text-align: center;
         color: $grey3;
       }
-    }
-  }
-}
+    } // li
+  } // ul
+} // .projects-worked
+
 
 #profile section.blog-posts {
   padding: 60px 0 60px 0;
@@ -190,9 +187,7 @@ User Profile
 
   h2 {
     margin-bottom: 40px;
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
+    font-size: $font-big;
     color: $grey4;
     text-transform: uppercase;
     text-align: center;
