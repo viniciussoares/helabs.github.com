@@ -208,11 +208,46 @@ var App = {
       }
     });
     
-    
+
     /* Services */
 
     $(".services h3").click(function() {
       $(this).parent().find(".service-entry").toggle();
+    });
+
+    $(".service-01 a").click(function() {
+      $(".service-01").find(".service-entry").hide();
+      $(".service-02").find(".service-entry").show();
+    });
+
+    $(".service-02 a").click(function() {
+      $(".service-02").find(".service-entry").hide();
+      $(".service-03").find(".service-entry").show();
+    });
+    
+    $(".service-03 a").click(function() {
+      $(".service-03").find(".service-entry").hide();
+      $(".service-04").find(".service-entry").show();
+    });
+    
+    $(".service-04 a").click(function() {
+      $(".service-04").find(".service-entry").hide();
+      $(".service-05").find(".service-entry").show();
+    });
+    
+    $(".service-05 a").click(function() {
+      $(".service-05").find(".service-entry").hide();
+      $(".service-06").find(".service-entry").show();
+    });
+    
+    $(".service-06 a").click(function() {
+      $(".service-06").find(".service-entry").hide();
+      $(".service-07").find(".service-entry").show();
+    });
+
+    $(".service-07 a").click(function() {
+      $(".service-07").find(".service-entry").hide();
+      $(".service-08").find(".service-entry").show();
     });
 
 

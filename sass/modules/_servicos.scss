@@ -55,6 +55,32 @@ Services
 .services:nth-child(even) {background: $light-grey1; }
 .services:nth-child(odd) {background: $light-grey2; }
 
-.service-entry {
+.service-02 .service-entry,
+.service-03 .service-entry,
+.service-04 .service-entry,
+.service-05 .service-entry,
+.service-06 .service-entry,
+.service-07 .service-entry,
+.service-08 .service-entry, {
   display: none;
+}
+
+#to-service-02,
+#to-service-03,
+#to-service-04,
+#to-service-05,
+#to-service-06,
+#to-service-07,
+#to-service-08 {
+  width: 30px;
+  height: 30px;
+  background: url("/images/services-arrow.png") left no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  margin: 10px 0 25px 60px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
 }
