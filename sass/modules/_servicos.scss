@@ -31,3 +31,7 @@ Services
 
 .services:nth-child(even) {background: $light-grey1; }
 .services:nth-child(odd) {background: $light-grey2; }
+
+.service-entry {
+  display: none;
+}

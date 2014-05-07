@@ -207,6 +207,13 @@ var App = {
         }
       }
     });
+    
+    
+    /* Services */
+
+    $(".services h3").click(function() {
+      $(this).parent().find(".service-entry").toggle();
+    });
 
 
     /* External Links */
