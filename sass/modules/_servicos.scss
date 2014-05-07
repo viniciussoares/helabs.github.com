@@ -84,3 +84,20 @@ Services
     opacity: .8;
   }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 240dpi) {
+
+    #to-service-02,
+    #to-service-03,
+    #to-service-04,
+    #to-service-05,
+    #to-service-06,
+    #to-service-07,
+    #to-service-08 {
+      background: url("/images/services-arrow@2x.png") left no-repeat;
+      background-size: 30px 30px;
+    }
+
+}
