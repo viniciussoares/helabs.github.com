@@ -16,6 +16,7 @@ module.exports = function(grunt) {
         // as execution order matters for JS. script.js has to be last
         files: {
           'javascripts/application.min.js': [
+            'javascripts/source/handlebars-v1.3.0.js',
             'javascripts/source/instantclick.min.js',
             'javascripts/source/jquery.localScroll.js',
             'javascripts/source/jquery.maskedinput.js',
