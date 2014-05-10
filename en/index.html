@@ -85,22 +85,20 @@ pt: /
   </section><!-- /Testimonials -->
 
   <section class="our-blog">
-    <div class="containner">
-      <h4>Our Blog</h4>
-      <p>We write about bussines, design and development. Check out our latest posts.</p>
-      <article>
-        <h5><a href="http://helabs.com.br/blog/2014/04/14/pjax-and-instantclick/" data-no-instant>Speed up your website with InstantClick</a></h5>
-        <p>By <span>Dirceu Pauka</span> at <span>14/04/2014</span></p>
-      </article>
-      <article>
-        <h5><a href="http://helabs.com.br/blog/2014/04/11/rupy-brazil-2013/" data-no-instant>Rupy Brazil 2013</a></h5>
-        <p>By <span>Mauro George</span> at <span>11/04/2014</span></p>
-      </article>
-      <article>
-        <h5><a href="http://helabs.com.br/blog/2014/04/09/boas-praticas-em-uma-reuniao-remota/" data-no-instant>Boas práticas em uma reunião remota</a></h5>
-        <p>By <span>Anézio Marques</span> at <span>09/04/2014</span></p>
-      </article>
-    </div>
+    {% raw %}
+      <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
+        <div class="containner">
+          <h4>Our Blog</h4>
+          <p>We write about bussines, design and development. Check out our latest posts.</p>
+          {{#each posts}}
+            <article>
+              <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
+              <p>By <span>{{author}}</span> at <span>{{date}}</span></p>
+            </article>
+          {{/each}}
+        </div>
+      </script>
+    {% endraw %}
   </section><!-- /Our Blog -->
 </div>
 
