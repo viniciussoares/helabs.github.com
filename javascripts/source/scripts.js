@@ -339,9 +339,11 @@ var App = {
 BlogPosts = {};
 
 BlogPosts.init = function () {
-  this.container = '.our-blog';
-  this.template = Handlebars.compile($('#blog-posts').remove().html());
-  this.render();
+  if (location.pathname === "/" || location.pathname === "/en/") { 
+    this.container = '.our-blog';
+    this.template = Handlebars.compile($('#blog-posts').hide().html());
+    this.render();
+  };
 };
 
 BlogPosts.fetch = function() {
