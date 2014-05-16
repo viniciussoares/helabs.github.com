@@ -1763,7 +1763,10 @@ Media Queries with more adjustments for Smartphones
     display: inline-block;
   }
 
-  #time ul > li { width: 44%; }
+  #time ul > li {
+    width: 44%;
+    vertical-align: top;
+  }
 
   .high-light-projects div {
     width: 96%;
