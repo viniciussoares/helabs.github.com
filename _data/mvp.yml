@@ -2,6 +2,102 @@ number_of_projects: 65
 
 projects:
   -
+    name: MYGIFT.IO
+    url: '#'
+    slug: mygiftio
+    image: /images/projects/mygiftio.jpg
+    description: Rede social para compartilhar interesses e escolher melhores presentes.
+  -
+    name: Pro2You
+    url: '#'
+    slug: pro2you
+    image: /images/projects/pro2you.jpg
+    description: Coaching Online. Desenvolvimento Pessoal e Profissional acessível de qualquer lugar.
+  -
+    name: Qstão.com
+    url: '#'
+    slug: qstao
+    image: /images/projects/qstao.jpg
+    description: Site de treinamento para questões de prova de concurso público, com apoio de professores.
+  -
+    name: Watch ESPN
+    url: '#'
+    slug: espn-watch
+    image: /images/projects/espn-watch.jpg
+    description: Portal de vídeos com conteúdo exclusivo ESPN para afiliados
+  -
+    name: Cliqx
+    url: '#'
+    slug: cliqx
+    image: /images/projects/cliqx.jpg
+    description: Site de fotografia com foco em eventos e parceria entre prestadores de serviço da área.
+  -
+    name: PagNet
+    url: '#'
+    slug: pagnet
+    image: /images/projects/pagnet.jpg
+    description: Site de controle de gestao financeira de entretenimentos.
+  -
+    name: Seu Mecânico
+    url: '#'
+    slug: mecanicoapp
+    image: /images/projects/mecanicoapp.jpg
+    description: Site para donos de automóveis encontrarem serviços.
+  -
+    name: 747700 (Tattoo)
+    url: '#'
+    slug: tattoo
+    image: /images/projects/tattoo.jpg
+    description: Interessados por uma arte para uma tattoo podem lançar concursos e receber propostas dos artistas cadastrados.
+  -
+    name: Shag
+    url: '#'
+    slug: shag
+    image: /images/projects/shag.jpg
+    description: Aplicativo para iOS.
+  -
+    name: RSVP
+    url: '#'
+    slug: rsvp
+    image: /images/projects/rsvp.jpg
+    description: Sistema de rsvp para congressos na área de medicina.
+  -
+    name: RentJiffy
+    url: '#'
+    slug: rentjiffy
+    image: /images/projects/rentjiffy.jpg
+    description: Properties, tenants and payments management.
+  -
+    name: Rango Time
+    url: '#'
+    slug: rangotime
+    image: /images/projects/rangotime.jpg
+    description: Cadastro e busca de receitas para pessoas com restrições alimentares.
+  -
+    name: Mailing He:labs
+    url: 'http://helabs.com.br/mailing/'
+    slug: projetomailing
+    image: /images/projects/projetomailing.jpg
+    description: As notícias mais relevantes para o mundo da HE:labs semanalmente!
+  -
+    name: Project Builder
+    url: '#'
+    slug: projectbuilder
+    image: /images/projects/projectbuilder.jpg
+    description: Software de Gerenciamento de Projetos, Portfolios e Programas.
+  -
+    name: Project Management Canvas Mobile
+    url: '#'
+    slug: pmcanvas
+    image: /images/projects/pmcanvas.png
+    description: Software de Gerênciamento de Projeto baseado na metodologia do Project Management Canvas.
+  -
+    name: PetRoomie
+    url: 'http://www.petroomie.com.br/'
+    slug: petroomie
+    image: /images/projects/petroomie.jpg
+    description: Serviço que oferece hospedagem e serviços para pets.
+  -
     name: Moving Scripts
     url: '#'
     slug: movingscripts
@@ -111,7 +207,10 @@ projects:
     description: Uma rede social voltada para o universo dos animais de estimação.
   -
     name: The Open Compass
+    slug: theopencompass
     url: "http://www.theopencompass.com/"
+    image: /images/projects/theopencompass.jpg
+    description: Site para compartilhar dicas de turismo.
   -
     name: My Humble
     url: "http://www.myhumble.com.br"
@@ -133,7 +232,9 @@ projects:
   -
     name: Sala de Ideias
     url: "http://www.saladeideias.com.br/"
-    image: /images/projetos/mvp/saladeideias.jpg
+    slug: saladeideias
+    image: /images/projects/saladeideias.jpg
+    description: Serviço onde psicólogos ajudam as pessoas a terem uma vida com mais satisfação e equilíbrio.
   -
     name: Niili
     url: "http://www.niili.com.br/"
@@ -142,8 +243,10 @@ projects:
     description: Aplicativo exclusivo para mulheres controlarem seus ciclos menstruais, com a possibilidade de notificar seus amigos sobre eventos diários dessa fase.
   -
     name: Samba Ads
+    slug: samba-ads
     url: "#"
-    image: /images/projetos/mvp/sambaads.jpg
+    image: /images/projects/samba-ads.jpg
+    description: Serviço de monetização de videos para produtores de conteúdo e publishers.
   -
     name: Sou do Esporte
     url: http://www.soudoesporte.com.br
@@ -192,8 +295,10 @@ projects:
     image: /images/projetos/mvp/clickemovimento.jpg
   -
     name: MIIDAH
+    slug: miidah
     url: http://app.miidah.com
-    image: /images/projetos/mvp/miidah.jpg
+    image: /images/projects/miidah.jpg
+    description: Site de receitas aonde os usuários podem divulgar suas habilidades culinárias em redes sociais.
   -
     name: GiftBar
     url: http://app.giftbar.com.br/
@@ -217,17 +322,23 @@ projects:
     url: http://app.orcamentorapido.com.br/
     image: /images/projetos/mvp/orcamento-rapido.jpg
   -
-    name: Incrível MEMO
-    url: http://incrivelmemo.com.br/
-    image: /images/projetos/mvp/memo.jpg
+    name: Meu Incrível Memo
+    url: '#'
+    slug: meu-incrivel-memo
+    image: /images/projects/meu-incrivel-memo.jpg
+    description: Serviço de impressão de fotos do Facebook ou Instagram em cartão ou imã.
   -
     name: Mo Recipes
     url: http://morecipes.com.br/
-    image: /images/projetos/mvp/morecipes.jpg
+    slug: mo-recipes
+    image: /images/projects/mo-recipes.jpg
+    description: Serviço que permite divulgar suas próprias receitas para amigos e familiares.
   -
     name: Horus
     url: "#"
-    image: /images/projetos/mvp/horus.jpg
+    slug: horus
+    image: /images/projects/horus.jpg
+    description: Serviço que reúne seus arquivos do Google Drive e o Dropbox.
   -
     name: Managerbook
     url: http://managerbook.com.br/
@@ -267,9 +378,11 @@ projects:
     url: http://www.mamaeeukero.com.br/
     image: /images/projetos/mvp/mamaeeukero.jpg
   -
-    name: WEBSIMULADO
+    name: Websimulado
     url: http://www.websimulado.com.br/
-    image: /images/projetos/mvp/websimulado.jpg
+    slug: websimulado
+    image: /images/projects/websimulado.jpg
+    description: Software que oferece simulados para concursos públicos.
   -
     name: Alik
     url: http://www.alik.com.br/
