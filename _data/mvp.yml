@@ -2,6 +2,90 @@ number_of_projects: 65
 
 projects:
   -
+    name: Moving Scripts
+    url: '#'
+    slug: movingscripts
+    image: /images/projects/movingscripts.jpg
+    description: Comunidade online onde pessoas podem exercer sua imaginação, criando ideias originais para historias de ficção.
+  -
+    name: Meu Doutor
+    url: '#'
+    slug: meudoutor
+    image: /images/projects/meudoutor.jpg
+    description: Serviço para cadastro de médicos voluntários e agendamento de consultas.
+  -
+    name: Like My Tip
+    url: '#'
+    slug: likemytip
+    image: /images/projects/likemytip.jpg
+    description: Aplicativo que permite aos usuários compartilharem dicas em suas fotos no Facebook.
+  -
+    name: HoraExtra
+    url: 'http://horaextra.org/'
+    slug: horaextra
+    image: /images/projects/horaextra.jpg
+    description: Encontro semanal de desenvolvedores para trocar idéias e beber um chopp.
+  -
+    name: 'Hack &amp; Design Conference'
+    url: '#'
+    slug: hdc
+    image: /images/projects/hdc.jpg
+    description: Evento sobre Design e Programação organizado pela HE:labs.
+  -
+    name: HBeauty (HE:mobile)
+    url: '#'
+    slug: hbeauty
+    image: /images/projects/hbeauty.jpg
+    description: Aplicativo para agendar horários com salões de beleza.
+  -
+    name: GrokPodcast
+    url: 'http://www.grokpodcast.com/'
+    slug: grokpodcast
+    image: /images/projects/grokpodcast.jpg
+    description: Podcast sobre desenvolvimento Web, empreendedorismo e tecnologia em geral.
+  -
+    name: ESPN Mobile
+    url: '#'
+    slug: espn-mobile
+    image: /images/projects/espn-mobile.jpg
+    description: Versão com a experiência otimizada para mobile no site da espn.com.br.
+  -
+    name: ESPN.com.br
+    url: '#'
+    slug: espn-br
+    image: /images/projects/espn-br.jpg
+    description: Nova home page da ESPN.com.br
+  -
+    name: ESPN API
+    url: '#'
+    slug: espn-api
+    image: /images/projects/espn-api.jpg
+    description: API (application programming interface) com o conteúdo do portal da espn.com.br.
+  -
+    name: EarlyShares
+    url: 'http://www.earlyshares.com/'
+    slug: earlyshares
+    image: /images/projects/earlyshares.jpg
+    description: Um site de crowdfunding onde pequenos investimentos podem promover grandes idéias.
+  -
+    name: Dona Cegonha
+    url: "#"
+    slug: donacegonha
+    image: /images/projects/donacegonha.png
+    description: Rede Social que permite organizar e compartilhar os momentos especiais de um bebê.
+  -
+    name: DesenvolvimentoAgil.com.br
+    url: 'http://desenvolvimentoagil.com.br/'
+    slug: desenvolvimentoagil
+    image: /images/projects/desenvolvimento-agil.jpg
+    description: Um guia Open Source sobre desenvolvimento ágil abordando XP e SCRUM.
+  -
+    name: Coobo
+    url: "#"
+    slug: coobo
+    image: /images/projects/coobo.jpg
+    description: Software para controle e gerenciamento de processos de compras.
+  -
     name: Atende Simples
     url: "http://www.atendesimples.com/"
     slug: atendesimples
@@ -22,17 +106,24 @@ projects:
   -
     name: Mea Pets
     url: "http://www.meapets.com.br/"
+    slug: meapets
+    image: /images/projects/meapets.jpg
+    description: Uma rede social voltada para o universo dos animais de estimação.
   -
     name: The Open Compass
     url: "http://www.theopencompass.com/"
   -
-    name: MyHumble
+    name: My Humble
     url: "http://www.myhumble.com.br"
-    image: /images/projetos/mvp/my-humble.jpg
+    slug: my-humble
+    image: /images/projects/my-humble.jpg
+    description: Serviço que permite pesquisar o nível de satisfação dos clientes.
   -
     name: Perfil Plug
     url: "http://www.perfilplug.com"
-    image: /images/projetos/mvp/perfilplug.jpg
+    slug: perfilplug
+    image: /images/projects/perfilplug.jpg
+    description: Serviço que permite montar um perfil de consumo, acumular pontos e depois trocá-los por prêmios.
   -
     name: Assed & Cavalcante
     url: "http://www.assedcavalcante.com.br/"
@@ -46,7 +137,9 @@ projects:
   -
     name: Niili
     url: "http://www.niili.com.br/"
-    image: /images/projetos/mvp/niili.jpg
+    slug: niili
+    image: /images/projects/niili.jpg
+    description: Aplicativo exclusivo para mulheres controlarem seus ciclos menstruais, com a possibilidade de notificar seus amigos sobre eventos diários dessa fase.
   -
     name: Samba Ads
     url: "#"
@@ -70,7 +163,9 @@ projects:
   -
     name: Dunno
     url: http://www.dunno.vc
-    image: /images/projetos/mvp/dunno.jpg
+    slug: dunno
+    image: /images/projects/dunno.jpg
+    description: Serviço que tem como objetivo engajar e motivar alunos durante aulas e palestras.
   -
     name: Vita Corporativa
     url: "http://www.vitacorporativa.com.br/"
@@ -110,7 +205,9 @@ projects:
   -
     name: Cuponizando
     url: http://ofertas.cuponizando.com.br/
-    image: /images/projetos/mvp/cuponizando.jpg
+    slug: cuponizando
+    image: /images/projects/cuponizando.jpg
+    description: Serviço para restaurantes criarem campanhas com cupons contendo descontos.
   -
     name: Innterpretti
     url: http://www.innterpretti.com.br/
@@ -132,9 +229,11 @@ projects:
     url: "#"
     image: /images/projetos/mvp/horus.jpg
   -
-    name: managerbook
+    name: Managerbook
     url: http://managerbook.com.br/
-    image: /images/projetos/mvp/managerbook.jpg
+    slug: managerbook
+    image: /images/projects/managerbook.jpg
+    description: Software para gerênciar os indicadores KPI de empresas.
   -
     name: Feedback Machine
     url: http://app.feedback-machine.com/
