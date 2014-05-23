@@ -2,8 +2,23 @@ number_of_projects: 65
 
 projects:
   -
+    name: Atende Simples
+    url: "http://www.atendesimples.com/"
+    slug: atendesimples
+    image: /images/projects/atendesimples.jpg
+    description: Permite que pequenas empresas ofereçam atendimento telefônico profissional e completo aos seus clientes.
+  -
+    name: Alavancar.me
+    url: "#"
+    slug: alavancarme
+    image: /images/projects/alavancarme.jpg
+    description: Um marketplace de cursos com mais de 20 instituições de ensino associadas.
+  -
     name: Social Fly
     url: "http://www.socialfly.com.br/"
+    slug: socialfly
+    image: /images/projects/socialfly.jpg
+    description: Um site de divulgação de vídeos de valor social.
   -
     name: Mea Pets
     url: "http://www.meapets.com.br/"
@@ -21,7 +36,9 @@ projects:
   -
     name: Assed & Cavalcante
     url: "http://www.assedcavalcante.com.br/"
-    image: /images/projetos/mvp/assed-cavalcante.jpg
+    slug: assedcavalcante
+    image: /images/projects/assedcavalcante.jpg
+    description: Atendimento exclusivo via site para compra e venda de imóveis no Rio de Janeiro, com opções exclusivas se adequando ao perfil de usuário.
   -
     name: Sala de Ideias
     url: "http://www.saladeideias.com.br/"
