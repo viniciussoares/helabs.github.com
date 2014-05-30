@@ -60,22 +60,21 @@ In the stylesheets folder we have just the generated files by Grunt/Compass.
 
 ## Adding A Project To Your Profile
 
-* Check if the project exists inside ```_posts/projects``` folder. If it's there jump to the last step.
+* Check if the project exists inside ```_data/mvp.yml```. If it's there jump to the last step.
 * Put a screenshot of the project with 800x465 size and .jpg extension into the ```images/projects/``` folder.
-* Create a file with the following name format ```_posts/projects/YYYY-MM-DD-project-name.md```.
-* Fill project file with the following information:
+* Create a new entry in ```_data/mvp.yml``` with the following format:
+
 ```yaml
----
-layout: projects
-category: projects
-slug: project-name
-name: Project Name
-image: /images/projects/project-name.jpg
-description: Description about the project.
----
+  -
+    name: project name
+    url: external url for the project
+    slug: an identifier for the project
+    image: /images/projects/my_project.jpg
+    description: Describe what the project does
+    highlighted: true # if it's highlighted in the http://helabs.com.br/en/work/ page
 ```
 
-* Open your profile page file. It's inside ```_posts/time```. Add project slug under ```projects``` property.
+* Open your profile page file. It's inside ```_posts/time```. Add the project slug under ```projects``` property.
 
 ## Import blogposts
 
