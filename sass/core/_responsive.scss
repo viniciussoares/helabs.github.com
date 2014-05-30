@@ -279,6 +279,52 @@ Media Queries for Tablets
 
   .even-work .work-info,
   .even-client .client-info { margin-right: 300px; }
+  
+
+  /* ESPN Mobile */
+  
+  #espn-mobile {
+
+    .work-thumb {
+      width: 300px;
+    }
+
+    .odd-work img { float: left; }
+    .even-work img { float: right; }
+  
+    .odd-work p,
+    .even-work p {
+      font-size: $font-medium2;
+      line-height: 28px;
+    }
+  
+    .odd-work p { 
+      margin-left: 250px;
+      text-align: left;
+    }
+
+    .even-work p {
+      margin-right: 250px;
+      text-align: right;
+    }
+  
+    .work-info {
+
+      h3 {
+        font-size: $font-big;
+        font-weight: 900;
+        color: #000;
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        font: normal $font-medium $sans_serif;
+        line-height: 27px;
+        margin: 0 0 15px 0;
+      }
+    }
+
+  }
 
 
   /* MVP */
