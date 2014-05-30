@@ -160,9 +160,9 @@ Home
 
 
 /* Our clients */
-
-#home section.our-clients {
-  padding: 60px 0 50px 0;
+#home section.our-clients,
+#home section.our-cases {
+  padding: 60px 0 50px;
   background-color: $light-grey1;
   border-top: 1px solid $light-grey2;
 
@@ -224,6 +224,16 @@ Home
   }
 }
 
+#home section.our-cases {
+  ul li {
+    width: 40%;
+    height: auto;
+
+    a { text-decoration: none }
+    h5 { margin-bottom: 15px }
+  }
+}
+
 
 /* Testimonial */
 
@@ -269,7 +279,7 @@ Home
     color: rgba( $light-grey2, 0.6 );
     display: block;
     margin-top: 10px;
-    
+
     a {
       color: $grey2;
     }
