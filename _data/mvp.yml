@@ -23,6 +23,7 @@ projects:
     slug: espn-watch
     image: /images/projects/espn-watch.jpg
     description: Portal de vídeos com conteúdo exclusivo ESPN para afiliados
+    highlighted: true
   -
     name: Cliqx
     url: '#'
@@ -47,18 +48,21 @@ projects:
     slug: tattoo
     image: /images/projects/tattoo.jpg
     description: Interessados por uma arte para uma tattoo podem lançar concursos e receber propostas dos artistas cadastrados.
+    highlighted: true
   -
     name: Shag
     url: '#'
     slug: shag
     image: /images/projects/shag.jpg
     description: Aplicativo para iOS.
+    highlighted: true
   -
     name: RSVP
     url: '#'
     slug: rsvp
     image: /images/projects/rsvp.jpg
     description: Sistema de rsvp para congressos na área de medicina.
+    highlighted: true
   -
     name: RentJiffy
     url: '#'
@@ -83,6 +87,7 @@ projects:
     slug: projectbuilder
     image: /images/projects/projectbuilder.jpg
     description: Software de Gerenciamento de Projetos, Portfolios e Programas.
+    highlighted: true
   -
     name: Project Management Canvas Mobile
     url: '#'
@@ -95,12 +100,14 @@ projects:
     slug: petroomie
     image: /images/projects/petroomie.jpg
     description: Serviço que oferece hospedagem e serviços para pets.
+    highlighted: true
   -
     name: Moving Scripts
     url: '#'
     slug: movingscripts
     image: /images/projects/movingscripts.jpg
     description: Comunidade online onde pessoas podem exercer sua imaginação, criando ideias originais para historias de ficção.
+    highlighted: true
   -
     name: Meu Doutor
     url: '#'
@@ -113,6 +120,7 @@ projects:
     slug: likemytip
     image: /images/projects/likemytip.jpg
     description: Aplicativo que permite aos usuários compartilharem dicas em suas fotos no Facebook.
+    highlighted: true
   -
     name: HoraExtra
     url: 'http://horaextra.org/'
@@ -143,6 +151,7 @@ projects:
     slug: espn-mobile
     image: /images/projects/espn-mobile.jpg
     description: Versão com a experiência otimizada para mobile no site da espn.com.br.
+    highlighted: true
   -
     name: ESPN.com.br
     url: '#'
@@ -155,12 +164,14 @@ projects:
     slug: espn-api
     image: /images/projects/espn-api.jpg
     description: API (application programming interface) com o conteúdo do portal da espn.com.br.
+    highlighted: true
   -
     name: EarlyShares
     url: 'http://www.earlyshares.com/'
     slug: earlyshares
     image: /images/projects/earlyshares.jpg
     description: Um site de crowdfunding onde pequenos investimentos podem promover grandes idéias.
+    highlighted: true
   -
     name: Dona Cegonha
     url: "#"
@@ -179,12 +190,21 @@ projects:
     slug: coobo
     image: /images/projects/coobo.jpg
     description: Software para controle e gerenciamento de processos de compras.
+    highlighted: true
   -
     name: Atende Simples
     url: "http://www.atendesimples.com/"
     slug: atendesimples
     image: /images/projects/atendesimples.jpg
     description: Permite que pequenas empresas ofereçam atendimento telefônico profissional e completo aos seus clientes.
+    highlighted: true
+  -
+    name: Estou Jogando
+    url: "http://estoujogando.com.br/"
+    slug: estoujogando
+    image: /images/projects/estoujogando.jpg
+    description: Rede Social para os gamers brasileiros.
+    highlighted: true
   -
     name: Alavancar.me
     url: "#"
@@ -221,6 +241,7 @@ projects:
     slug: perfilplug
     image: /images/projects/perfilplug.jpg
     description: Serviço que permite montar um perfil de consumo, acumular pontos e depois trocá-los por prêmios.
+    highlighted: true
   -
     name: Assed & Cavalcante
     url: "http://www.assedcavalcante.com.br/"
@@ -233,6 +254,7 @@ projects:
     slug: saladeideias
     image: /images/projects/saladeideias.jpg
     description: Serviço onde psicólogos ajudam as pessoas a terem uma vida com mais satisfação e equilíbrio.
+    highlighted: true
   -
     name: Niili
     url: "http://www.niili.com.br/"
@@ -343,6 +365,7 @@ projects:
     slug: managerbook
     image: /images/projects/managerbook.jpg
     description: Software para gerênciar os indicadores KPI de empresas.
+    highlighted: true
   -
     name: Feedback Machine
     url: http://app.feedback-machine.com/
@@ -381,6 +404,7 @@ projects:
     slug: websimulado
     image: /images/projects/websimulado.jpg
     description: Software que oferece simulados para concursos públicos.
+    highlighted: true
   -
     name: Alik
     url: http://www.alik.com.br/

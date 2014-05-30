@@ -38,6 +38,7 @@ var App = {
   },
   StartApp: function() {
     BlogPosts.init();
+    this.Work.init();
     this.CollapsePlugin();
     this.Modal();
     this.InterfaceActions();
@@ -138,6 +139,15 @@ var App = {
     },
     getPaths: function() {
       return JSON.parse(sessionStorage.getItem('user-navigation'));
+    }
+  },
+  Work: {
+    init: function() {
+      this.calculateProjectCount();
+    },
+    calculateProjectCount: function() {
+      var projectCount = $('#work-mvp ul li').size();
+      $('[data-project-count]').text(projectCount);
     }
   },
   InterfaceActions: function() {
