@@ -6,7 +6,7 @@ http://helabs.com.br
 
 ## Maintainers
 
-- [Aluisio Azevedo](https://github.com/aluisioazevedo)
+- [Thiago Gonzalez](https://github.com/thiagonzalez)
 
 
 ## Running Server

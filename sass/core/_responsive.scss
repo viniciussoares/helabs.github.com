@@ -279,6 +279,52 @@ Media Queries for Tablets
 
   .even-work .work-info,
   .even-client .client-info { margin-right: 300px; }
+  
+
+  /* ESPN Mobile */
+  
+  #espn-mobile {
+
+    .work-thumb {
+      width: 300px;
+    }
+
+    .odd-work img { float: left; }
+    .even-work img { float: right; }
+  
+    .odd-work p,
+    .even-work p {
+      font-size: $font-medium2;
+      line-height: 28px;
+    }
+  
+    .odd-work p { 
+      margin-left: 250px;
+      text-align: left;
+    }
+
+    .even-work p {
+      margin-right: 250px;
+      text-align: right;
+    }
+  
+    .work-info {
+
+      h3 {
+        font-size: $font-big;
+        font-weight: 900;
+        color: #000;
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        font: normal $font-medium $sans_serif;
+        line-height: 27px;
+        margin: 0 0 15px 0;
+      }
+    }
+
+  }
 
 
   /* MVP */
@@ -821,25 +867,6 @@ Media Queries for Smartphones
   }
 
   #time .red-button { margin-bottom: 40px; }
-
-
-  /* Services  */
-
-  #services,
-  .services-text { width: 100%; }
-
-  .services {
-    .videothumbs {
-      width: 100%;
-      margin-top: 30px;
-      float: left;
-
-      li {
-        width: 52%;
-        padding: 3%;
-      }
-    }
-  }
 
 
   /* Sobre Nós */
