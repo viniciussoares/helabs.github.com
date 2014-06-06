@@ -25,6 +25,12 @@ projects:
     description: Portal de vídeos com conteúdo exclusivo ESPN para afiliados
     highlighted: true
   -
+    name: ESPN Temporeal
+    url: '#'
+    slug: espn-realtime
+    image: /images/projects/espn-realtime.jpg
+    description: Plataforma para cobertura e transmissão de eventos em tempo real.
+  -
     name: Cliqx
     url: '#'
     slug: cliqx
