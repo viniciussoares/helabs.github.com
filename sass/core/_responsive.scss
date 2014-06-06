@@ -279,6 +279,52 @@ Media Queries for Tablets
 
   .even-work .work-info,
   .even-client .client-info { margin-right: 300px; }
+  
+
+  /* ESPN Mobile */
+  
+  #espn-mobile {
+
+    .work-thumb {
+      width: 300px;
+    }
+
+    .odd-work img { float: left; }
+    .even-work img { float: right; }
+  
+    .odd-work p,
+    .even-work p {
+      font-size: $font-medium2;
+      line-height: 28px;
+    }
+  
+    .odd-work p { 
+      margin-left: 250px;
+      text-align: left;
+    }
+
+    .even-work p {
+      margin-right: 250px;
+      text-align: right;
+    }
+  
+    .work-info {
+
+      h3 {
+        font-size: $font-big;
+        font-weight: 900;
+        color: #000;
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        font: normal $font-medium $sans_serif;
+        line-height: 27px;
+        margin: 0 0 15px 0;
+      }
+    }
+
+  }
 
 
   /* MVP */
@@ -539,10 +585,10 @@ Media Queries for Tablets
     aside li { margin-bottom: 5px; }
 
   }
-  
-  
+
+
   /* Home: Our Clients */
-  
+
   .our-clients {
 
     li {
@@ -596,7 +642,7 @@ Media Queries for Smartphones
 
   header.default .logo { width: 100px; }
   #menu-trigger { display: inline-block; }
-  
+
   #home section.testmonial {
     padding: 25px 0 10px 0 !important;
 
@@ -604,7 +650,6 @@ Media Queries for Smartphones
       font-size: $font-medium2;
       line-height: 24px;
     }
-    
   }
 
   #menu2 {
@@ -824,14 +869,6 @@ Media Queries for Smartphones
   #time .red-button { margin-bottom: 40px; }
 
 
-  /* Services  */
-  
-  .services .containner {
-    width: 90%;
-    padding: 0 5% 0 5%;
-  }
-
-
   /* Sobre Nós */
 
   #about-us {
@@ -908,7 +945,7 @@ Media Queries for Smartphones
           }
         }
       } // artcile
-      
+
       #sobre-nos-values {
         padding-bottom: 40px;
 
@@ -920,8 +957,8 @@ Media Queries for Smartphones
           }
         }
       } // #sobre-nos-values
-      
-      
+
+
     } // section:last-child
   } // about-us
 
@@ -1435,10 +1472,10 @@ Media Queries for Smartphones
       }
     }
   }
-  
-  
+
+
   /* Home: Our Clients */
-  
+
   .our-clients {
 
     li {
@@ -1701,14 +1738,14 @@ Media Queries with adjustments for Smartphones
   #font_show,
   .box_colors_show,
   .bt_download { display: none; }
-  
+
   ul.downloads li {
     width: 300px;
   }
-  
-  
+
+
   /* Home: Our Clients */
-  
+
   .our-clients {
     padding-bottom: 30px !important;
 
@@ -1717,8 +1754,8 @@ Media Queries with adjustments for Smartphones
       height: auto !important;
       margin: 0 0 20px 0;
     }
-  }  
-  
+  }
+
 }
 
 
@@ -1731,12 +1768,17 @@ Media Queries with more adjustments for Smartphones
 
 
   #home {
-    h2 {
-      font-size: 45px;
-      line-height: 52px;
-    }
+    section.hero {
 
-   h3 { font-size: 24px; }
+      h2 {
+        font-size: 22px;
+        line-height: 36px;
+      }
+
+      h3, .logo-tip-trigger {
+        font-size: 12px;
+      }
+    }
   }
 
   .icons a img { width: 50px; }
@@ -1748,7 +1790,10 @@ Media Queries with more adjustments for Smartphones
     display: inline-block;
   }
 
-  #time ul > li { width: 44%; }
+  #time ul > li {
+    width: 44%;
+    vertical-align: top;
+  }
 
   .high-light-projects div {
     width: 96%;

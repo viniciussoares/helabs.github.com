@@ -22,6 +22,7 @@ var App = {
       if (this._translations.hasOwnProperty(locale)) {
         return locale;
       } else {
+
         return this.defaultLocale;
       }
     },
@@ -36,6 +37,7 @@ var App = {
     }
   },
   StartApp: function() {
+    BlogPosts.init();
     this.CollapsePlugin();
     this.Modal();
     this.InterfaceActions();
@@ -376,6 +378,47 @@ var App = {
 
 
 } // Var Site
+
+BlogPosts = {};
+
+BlogPosts.init = function () {
+  if (location.pathname === "/" || location.pathname === "/en/") { 
+    this.container = '.our-blog';
+    this.template = Handlebars.compile($('#blog-posts').hide().html());
+    this.render();
+  };
+};
+
+BlogPosts.fetch = function() {
+  function twoPlaces(number) {
+    return ('0' + number).slice(-2);
+  }
+  function formatDate(date) {
+    return twoPlaces(date.getDate()) + '/' +
+      twoPlaces(date.getMonth() + 1) + '/' +
+      date.getFullYear();
+  }
+  function normalizeToJson(atom) {
+    return $(atom).find('entry').map(function() { 
+      var $entry = $(this);
+      return {
+        title: $entry.find('title').text(),
+        url: $entry.find('id').text(),
+        author: $entry.find('author name').text(),
+        date: formatDate(new Date($entry.find('updated').text()))
+      }
+    }).toArray();
+  }
+  return $.get('http://helabs.com.br/blog/atom.xml').then(normalizeToJson);
+};
+
+BlogPosts.render = function () {
+  var template = this.template;
+  var container = this.container;
+  this.fetch().then(function(posts) {
+    $(container).append(template({ posts: posts.slice(0, 3) }));
+  })
+}
 
 InstantClick.on('change', function() {
   if (typeof ga !== 'undefined') {

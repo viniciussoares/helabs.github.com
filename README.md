@@ -95,3 +95,9 @@ $ rake prune_images
 
 Run `rake new_profile` task to generate some basic structure for the "blog post"
 associated with your profile.
+
+## Made with love by HE:labs
+
+![HE:labs](http://helabs.com.br/images/logo.png)
+
+This app was created and is maintained by [HE:labs](https://github.com/Helabs).
