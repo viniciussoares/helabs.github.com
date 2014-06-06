@@ -1304,6 +1304,47 @@ Media Queries for Smartphones
   }
 
 
+  /* Services */
+  
+  .services {
+  
+    .containner {
+      width: 90%;
+      padding: 0 5% 0 5%;
+    }
+
+    h3 {
+      font-size: $font-large !important;
+      margin: 0 0 20px 0 !important;
+    
+      strong {
+        display: none;
+      }
+    
+      span {
+        margin-left: 0;
+      }
+    }
+
+    p {
+      font-size: $font-medium2;
+      line-height: 26px;
+      margin-left: 0
+    }
+
+  }
+  
+  #to-service-02,
+  #to-service-03,
+  #to-service-04,
+  #to-service-05,
+  #to-service-06,
+  #to-service-07,
+  #to-service-08 {
+    margin-left: 0;
+  }
+
+
   /* Mailing page*/
 
   .cover-mailing-page {
