@@ -7,7 +7,7 @@ http://helabs.com.br
 ## Maintainers
 
 - [Thiago Gonzalez](https://github.com/thiagonzalez)
-
+- [Mikael Carrara](https://github.com/mikaelcarrara)
 
 ## Running Server
 
