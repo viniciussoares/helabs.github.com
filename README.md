@@ -31,19 +31,6 @@ Staging version of the website is available at staging.helabs.com.br.
 
 When using Foreman to run the server it will also start a Guard process that will watch for changes on the files in the `sass` folder and compile them. No need to run `compass watch` or Grunt.
 
-## Using Grunt to minify the JS
-
-### Installation
-
-To use Grunt you'll need Node.js installed. You can get Node on the [website](http://nodejs.org) or installing via `brew install node`
-
-After installing Node you'll need to install ```grunt-cli``` npm package: ```npm install -g grunt-cli```.
-You can also follow along the [Getting Started guide](http://gruntjs.com/getting-started).
-
-Then after setting things up, run: ```npm install``` on the folder of the project. This will download the grunt dependencies.
-
-### DO NOT ALTER THESE COMPILED FILES AND COMMIT THEM, ALWAYS USE THE COMPILER FIRST! DO YOU HEAR ME?!**
-
 ## Problem with SASS+Git
 
 The Git have a problem with SASS. So when you have a conflict in the generated file by SASS+Compass (stylesheets/style.css), please do not fix this conflict, just delete this conflicted file and generate a new. So you can run this:
