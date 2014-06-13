@@ -30,6 +30,8 @@ Process (Mágica)
   a{
     color: #fff;
     text-decoration: none;
+    display: block;
+    height: 40px;
   }
   span {
     width: 30px;
@@ -45,6 +47,12 @@ Process (Mágica)
   p {
     font-size: $font-small;
     line-height: 15px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
   }
 }
 
@@ -52,48 +60,36 @@ Process (Mágica)
   width: 155px;
   left: 120px;
   top: 115px;
-
-  p { margin: 4px 0 0 0; }
 }
 
 .proc-desc-02 {
   width: 157px;
   left: 340px;
   top: 160px;
-
-  p { margin: 4px 0 0 0; }
 }
 
 .proc-desc-03 {
   width: 172px;
   left: 270px;
   top: 35px;
-
-  p { margin: 4px 0 0 0; }
 }
 
 .proc-desc-04 {
-  width: 145px;
+  width: 175px;
   left: 650px;
   top: 50px;
-
-  p { margin: 12px 0 0 0; }
 }
 
 .proc-desc-05 {
-  width: 100px;
+  width: 120px;
   left: 650px;
   top: 230px;
-
-  p { margin: 12px 0 0 0; }
 }
 
 .proc-desc-06 {
-  width: 100px;
+  width: 160px;
   left: 480px;
   bottom: 85px;
-
-  p { margin: 4px 0 0 0; }
 }
 
 /*-*/
