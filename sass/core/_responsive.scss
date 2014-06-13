@@ -286,6 +286,7 @@ Media Queries for Tablets
   #cover-banner-espn {
     width: 100%;
     padding: 30px 0 100px 0;
+    margin-bottom: 40px;
     color: #fff;
     float: left;
   
@@ -293,30 +294,20 @@ Media Queries for Tablets
       background: url('/images/cases/espn-mobile/iphone.png') no-repeat scroll top left;
       width: 367px;
       height: 671px;
-      margin-top: -15px;
+      margin-top: 0;
       float: left;
-    
-      iframe { 
-        background: none repeat scroll 0 0 #333;
-        border: 0 none;
-        float: left;
-        height: 410px;
-        margin-left: 70px;
-        margin-top: 143px;
-        width: 231px;
-      }
     } // .iphone
 
     h2 {
       width: 100%;
       float: none;
-      font-size: $font-large;
+      font-size: 28px;
     }
 
     .testimonial {
-      float: right;
-      margin-top: 0;
-      width: 400px;
+      float: none;
+      margin-top: 30px;
+      width: 100%;
     
       img {
         float: right;
@@ -346,10 +337,13 @@ Media Queries for Tablets
   
   #espn-mobile-infos {
     margin-left: 340px;
-    margin-top: 40px;
   }
   
   #espn-mobile {
+    
+    .lead {
+      margin-bottom: 0;
+    }
 
     .work-thumb {
       width: 300px;
