@@ -224,14 +224,55 @@ Home
   }
 }
 
-#home section.our-cases {
-  ul li {
-    width: 40%;
-    height: auto;
 
-    a { text-decoration: none }
-    h5 { margin-bottom: 15px }
+/* Cases */
+
+#home section.our-cases { clear:both;
+  
+  article {
+    @include round_borders (20px);
+    color: #fff;
+    clear: both;
+    overflow: hidden;
+    padding: 30px 20px 0 0;
+    margin-bottom: 20px;
+
+    &.espn {
+      background: #aa0505 url(/images/home/cases-espn-mobile-bg.png) no-repeat;
+    }
+    &.atende-simples {
+      background: $atende_simples url(/images/home/cases-atende-simples-bg.png) no-repeat;
+    }
+
+    h5 {
+      font-size: 24px; 
+      margin: 1em 0 .5em;
+    }
+    p {
+      color: #fff; text-align: left;
+    }
+
+   img { 
+      // width: 30%;
+      margin: 0px 10% 0 0;
+      float: left;
+    }
+
+    .btn-radius {
+      @include round_borders (25px);
+      padding: 10px 15px;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      transition: background 180ms linear;
+      display: inline-block;
+      
+      &:hover {
+        color: #fff;
+      }
+    }
   }
+
 }
 
 
