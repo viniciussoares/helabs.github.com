@@ -1,5 +1,11 @@
 projects:
   -
+    name: Barra UOL
+    url: '#'
+    slug: uol-barra
+    image: /images/projects/uol-barra.jpg
+    description: Barra responsiva do portal UOL.
+  -
     name: MYGIFT.IO
     url: '#'
     slug: mygiftio
