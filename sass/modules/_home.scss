@@ -268,7 +268,8 @@ Home
       display: inline-block;
       
       &:hover {
-        color: #fff;
+        background: rgba(0,0,0,0.2);
+        border: 2px solid transparent;
       }
     }
   }
