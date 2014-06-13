@@ -283,6 +283,86 @@ Media Queries for Tablets
 
   /* ESPN Mobile */
   
+  #cover-banner-espn {
+    padding: 10px 0 100px 0;
+    height: 400px;
+    color: #fff;
+  
+    .iphone {
+      background: url('/images/cases/espn-mobile/iphone.png') no-repeat scroll top left;
+      width: 367px;
+      height: 671px;
+      float:left;
+    
+      iframe { 
+        background: none repeat scroll 0 0 #333;
+        border: 0 none;
+        float: left;
+        height: 410px;
+        margin-left: 70px;
+        margin-top: 143px;
+        width: 231px;
+      }
+    } // .iphone
+
+    h2 {
+      width: 100%;
+      float: none;
+      font-size: $font-large;
+    }
+
+    .testimonial {
+      float: right;
+      margin-top: 0;
+      width: 400px;
+    
+      img {
+        float: right;
+        margin-left: 20px;
+      }
+    }
+
+    p {
+      float: none;
+      font-size: 19px;
+      font-style: italic;
+      font-weight: lighter;
+      margin: 10px 0 0;
+      width: 100%;
+      line-height: 27px;
+    
+      &:before {
+        background: url('/images/cases/espn-mobile/aspa1.png') no-repeat scroll top left;
+        width: 35px;
+        height: 28px;
+        content: "";
+        float: left;
+        margin-right: 5px;
+      }
+
+      &:after {
+        background: url('/images/cases/espn-mobile/aspa2.png') no-repeat scroll top left;
+        width: 35px;
+        height: 28px;
+        content: "";
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+    }
+
+    ul { margin: 30px 0 0 0; }
+
+    li {
+      margin: 0 10px 0 10px;
+      display: inline-block;
+    }
+  }
+  
+  #espn-mobile-infos {
+    margin-left: 340px;
+  }
+  
   #espn-mobile {
 
     .work-thumb {
