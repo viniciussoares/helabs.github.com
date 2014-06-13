@@ -294,7 +294,7 @@ Media Queries for Tablets
       background: url('/images/cases/espn-mobile/iphone.png') no-repeat scroll top left;
       width: 367px;
       height: 671px;
-      margin-top: 0;
+      margin-top: -50px;
       float: left;
     } // .iphone
 
@@ -302,6 +302,7 @@ Media Queries for Tablets
       width: 100%;
       float: none;
       font-size: 28px;
+      margin-top: 90px;
     }
 
     .testimonial {
