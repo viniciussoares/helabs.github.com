@@ -291,9 +291,6 @@ Media Queries for Tablets
     float: left;
   
     .iphone {
-      background: url('/images/cases/espn-mobile/iphone.png') no-repeat scroll top left;
-      width: 367px;
-      height: 671px;
       margin-top: -50px;
       float: left;
     } // .iphone
@@ -319,7 +316,6 @@ Media Queries for Tablets
     p {
       float: none;
       font-size: 19px;
-      margin: 10px 0 0 0;
       width: 100%;
       line-height: 27px;
     
@@ -338,6 +334,10 @@ Media Queries for Tablets
   
   #espn-mobile-infos {
     margin-left: 340px;
+  }
+  
+  .process-img {
+    width: 50%;
   }
   
   #espn-mobile {
