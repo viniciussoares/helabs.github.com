@@ -36,6 +36,8 @@ project_team:
   - github: yogodoshi
   - github: marcioj
   - github: FlaviaFortes
+  - github: mikaelcarrara
+
   - github: souzagomes1989
   - github: 3runoDesign
   - github: franciscomxs
