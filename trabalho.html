@@ -223,10 +223,12 @@ en: /en/work/
 
 <section id="work-mvp">
   <div class="containner">
-    <h3>Além dos projetos continuados acima, nós já desenvolvemos um total de mais de {{ site.data.mvp.number_of_projects }} projetos.</h3>
+    <h3>Além dos projetos continuados acima, nós já desenvolvemos um total de mais de <span data-project-count></span> projetos.</h3>
     <ul>
       {% for project in site.data.mvp.projects %}
-      <li><p>{{ project.name }}</p></li>
+        {% unless project.highlighted %}
+          <li><p>{{ project.name }}</p></li>
+        {% endunless %}
       {% endfor %}
     </ul>
   </div>

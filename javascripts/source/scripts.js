@@ -22,6 +22,7 @@ var App = {
       if (this._translations.hasOwnProperty(locale)) {
         return locale;
       } else {
+
         return this.defaultLocale;
       }
     },
@@ -37,6 +38,7 @@ var App = {
   },
   StartApp: function() {
     BlogPosts.init();
+    this.Work.init();
     this.CollapsePlugin();
     this.Modal();
     this.InterfaceActions();
@@ -139,6 +141,15 @@ var App = {
       return JSON.parse(sessionStorage.getItem('user-navigation'));
     }
   },
+  Work: {
+    init: function() {
+      this.calculateProjectCount();
+    },
+    calculateProjectCount: function() {
+      var projectCount = $('#work-mvp ul li').size();
+      $('[data-project-count]').text(projectCount);
+    }
+  },
   InterfaceActions: function() {
 
     // Eduardo's easter egg
@@ -207,6 +218,48 @@ var App = {
           $(".pp_pic_holder.pp_default").css("top", window.pageYOffset + "px");
         }
       }
+    });
+    
+
+    /* Services */
+
+    $(".services h3").click(function() {
+      $(this).parent().find(".service-entry").toggle();
+    });
+
+    $(".service-01 a").click(function() {
+      $(".service-01").find(".service-entry").hide();
+      $(".service-02").find(".service-entry").show();
+    });
+
+    $(".service-02 a").click(function() {
+      $(".service-02").find(".service-entry").hide();
+      $(".service-03").find(".service-entry").show();
+    });
+    
+    $(".service-03 a").click(function() {
+      $(".service-03").find(".service-entry").hide();
+      $(".service-04").find(".service-entry").show();
+    });
+    
+    $(".service-04 a").click(function() {
+      $(".service-04").find(".service-entry").hide();
+      $(".service-05").find(".service-entry").show();
+    });
+    
+    $(".service-05 a").click(function() {
+      $(".service-05").find(".service-entry").hide();
+      $(".service-06").find(".service-entry").show();
+    });
+    
+    $(".service-06 a").click(function() {
+      $(".service-06").find(".service-entry").hide();
+      $(".service-07").find(".service-entry").show();
+    });
+
+    $(".service-07 a").click(function() {
+      $(".service-07").find(".service-entry").hide();
+      $(".service-08").find(".service-entry").show();
     });
 
 

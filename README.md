@@ -6,8 +6,8 @@ http://helabs.com.br
 
 ## Maintainers
 
-- [Aluisio Azevedo](https://github.com/aluisioazevedo)
-
+- [Thiago Gonzalez](https://github.com/thiagonzalez)
+- [Mikael Carrara](https://github.com/mikaelcarrara)
 
 ## Running Server
 
@@ -31,19 +31,6 @@ Staging version of the website is available at staging.helabs.com.br.
 
 When using Foreman to run the server it will also start a Guard process that will watch for changes on the files in the `sass` folder and compile them. No need to run `compass watch` or Grunt.
 
-## Using Grunt to minify the JS
-
-### Installation
-
-To use Grunt you'll need Node.js installed. You can get Node on the [website](http://nodejs.org) or installing via `brew install node`
-
-After installing Node you'll need to install ```grunt-cli``` npm package: ```npm install -g grunt-cli```.
-You can also follow along the [Getting Started guide](http://gruntjs.com/getting-started).
-
-Then after setting things up, run: ```npm install``` on the folder of the project. This will download the grunt dependencies.
-
-### DO NOT ALTER THESE COMPILED FILES AND COMMIT THEM, ALWAYS USE THE COMPILER FIRST! DO YOU HEAR ME?!**
-
 ## Problem with SASS+Git
 
 The Git have a problem with SASS. So when you have a conflict in the generated file by SASS+Compass (stylesheets/style.css), please do not fix this conflict, just delete this conflicted file and generate a new. So you can run this:
@@ -60,22 +47,21 @@ In the stylesheets folder we have just the generated files by Grunt/Compass.
 
 ## Adding A Project To Your Profile
 
-* Check if the project exists inside ```_posts/projects``` folder. If it's there jump to the last step.
+* Check if the project exists inside ```_data/mvp.yml```. If it's there jump to the last step.
 * Put a screenshot of the project with 800x465 size and .jpg extension into the ```images/projects/``` folder.
-* Create a file with the following name format ```_posts/projects/YYYY-MM-DD-project-name.md```.
-* Fill project file with the following information:
+* Create a new entry in ```_data/mvp.yml``` with the following format:
+
 ```yaml
----
-layout: projects
-category: projects
-slug: project-name
-name: Project Name
-image: /images/projects/project-name.jpg
-description: Description about the project.
----
+  -
+    name: project name
+    url: external url for the project
+    slug: an identifier for the project
+    image: /images/projects/my_project.jpg
+    description: Describe what the project does
+    highlighted: true # if it's highlighted in the http://helabs.com.br/en/work/ page
 ```
 
-* Open your profile page file. It's inside ```_posts/time```. Add project slug under ```projects``` property.
+* Open your profile page file. It's inside ```_posts/time```. Add the project slug under ```projects``` property.
 
 ## Import blogposts
 
