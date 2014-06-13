@@ -293,7 +293,7 @@ Media Queries for Tablets
     .iphone {
       margin-top: -50px;
       float: left;
-    } // .iphone
+    }
 
     h2 {
       width: 100%;
@@ -1338,6 +1338,20 @@ Media Queries for Smartphones
   
   
   /* ESPN Mobile */
+  
+  #cover-banner-espn {
+    margin-top: 78px;
+    padding: 0 0 50px 0;
+    height: auto;
+    
+    .iphone {
+      display: none;
+    }
+  }
+  
+  #espn-mobile-infos {
+    margin-left: 0 !important;
+  }
   
   #espn-mobile {
 
