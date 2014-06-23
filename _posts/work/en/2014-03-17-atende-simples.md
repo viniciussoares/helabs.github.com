@@ -33,8 +33,6 @@ what_has_been_done: The AtendeSimples was a case of project that went to "Projet
 
 customer_experience: Atende Simples was officially launched and all goals are being met. New opportunities have been identified to help our customers improve their business, and adjustments are released weekly.
 
-customer_experience: Atende Simples was officially launched and all goals are being met. New opportunities have been identified to help our customers improve their business, and adjustments are released weekly.
-
 customer_name: Andre, Product Director, Atende Simples
 
 project_team:
