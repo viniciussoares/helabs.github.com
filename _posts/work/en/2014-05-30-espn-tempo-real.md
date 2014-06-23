@@ -6,7 +6,7 @@ permalink: '/en/works/espn-tempo-real/'
 pt: '/trabalhos/espn-tempo-real/'
 
 name: ESPN Tempo Real
-project_kind: Portal da ESPN.com.br
+project_kind: Live monitoring of sports events
 image: /images/works/espn-tempo-real.jpg
 
 project_url: http://espn.uol.com.br/temporeal
