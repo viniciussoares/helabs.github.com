@@ -12,8 +12,8 @@ image: /images/projects/projectbuilder.jpg
 project_url: http://www.projectbuilder.com.br
 display_url: projectbuilder.com.br
 
-video_id:
-video_image:
+video_id: I6n1NI2lu_A
+video_image: /images/customers/aluisio-azevedo-project-builder.png
 
 
 

@@ -12,8 +12,8 @@ image: /images/works/espn-mobile.jpg
 project_url: http://m.espn.com.br
 display_url: m.espn.com.br
 
-video_id:
-video_image:
+video_id: TabJNvOVVHk
+video_image: /images/customers/thiago-belem-espn-mobile.png
 
 
 

@@ -12,8 +12,8 @@ image: /images/projects/perfilplug.jpg
 project_url: http://perfilplug.com/
 display_url: perfilplug.com
 
-video_id:
-video_image:
+video_id: 8vtjKSe3zE0
+video_image: /images/customers/flavia-fortes-perfil-plug.png
 
 
 
