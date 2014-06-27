@@ -7,13 +7,17 @@ en: '/en/works/early-shares/'
 
 name: Early Shares
 project_kind: Plataforma de Crowdfunding.
-image: /images/projects/earlyshares.jpg
 
 project_url: http://www.earlyshares.com/
 display_url: earlyshares.com
 
 video_id: LiE2cPQSgtc
 video_image: /images/customers/maurice-lopes.jpg
+
+screenshots:
+  - url: /images/projects/earlyshares.jpg
+  - url: /images/projects/earlyshares.jpg
+  - url: /images/projects/earlyshares.jpg
 
 about: Early Shares é um serviço de financiamento coletivo pela internet que conecta empresários que procuram vender participações do seu negócio com pessoas que querem se transformar em investidor.
 

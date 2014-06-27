@@ -7,7 +7,6 @@ en: '/en/works/sala-de-ideias/'
 
 name: Sala de Ideias
 project_kind:
-image: /images/projects/saladeideias.jpg
 
 project_url: http://www.saladeideias.com.br
 display_url: saladeideias.com.br
@@ -15,7 +14,10 @@ display_url: saladeideias.com.br
 video_id: 3QKluUSthJc
 video_image: /images/customers/fabiane-gori-e-helena-cardoso.jpg
 
-
+screenshots:
+  - url: /images/projects/saladeideias.jpg
+  - url: /images/projects/saladeideias.jpg
+  - url: /images/projects/saladeideias.jpg
 
 about: Sala de Ideias é uma plataforma online criada por psicólogos para lhe inspirar a ter uma vida com mais satisfação e equilíbrio. Conhecimentos e experiências são compartilhadas semanalmente através de textos.
 

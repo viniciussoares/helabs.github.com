@@ -7,7 +7,6 @@ en: '/en/works/websimulado/'
 
 name: Web Simulado
 project_kind: Plataforma para auxiliar estudantes.
-image: /images/projects/websimulado.jpg
 
 project_url: http://www.websimulado.com.br/
 display_url: websimulado.com.br
@@ -15,7 +14,10 @@ display_url: websimulado.com.br
 video_id:
 video_image:
 
-
+screenshots:
+  - url: /images/projects/websimulado.jpg
+  - url: /images/projects/websimulado.jpg
+  - url: /images/projects/websimulado.jpg
 
 about: Web Simulado lhe dá acesso a diversos simulados através dos editoriais lançados sobre provas e concursos. E ainda, marca o seu tempo de prova, estipula seu ranking entre os concorrentes e indica quais matérias/pontos você deverá se dedicar mais para conseguir uma melhor nota.
 

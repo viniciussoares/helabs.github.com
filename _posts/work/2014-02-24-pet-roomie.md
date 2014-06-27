@@ -7,7 +7,6 @@ en: '/en/works/pet-roomie/'
 
 name: Pet Roomie
 project_kind: Serviços para Animais de Estimação.
-image: /images/projects/petroomie.jpg
 
 project_url: http://petroomie.com.br
 display_url: petroomie.com.br

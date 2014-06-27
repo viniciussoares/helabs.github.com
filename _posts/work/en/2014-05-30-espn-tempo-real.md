@@ -15,7 +15,10 @@ display_url: espn.uol.com.br/temporeal
 video_id: MYEjydImSxM
 video_image: /images/customers/thiago-belem-espn-mobile.png
 
-
+screenshots:
+  - url: /images/works/espn-tempo-real.jpg
+  - url: /images/works/espn-tempo-real.jpg
+  - url: /images/works/espn-tempo-real.jpg
 
 about: Tempo Real is a property of ESPN Brazil and shares the same domain of ESPN.com.br. It's used for live coverage of games and sports events and it's answering a demand that until not long ago only the TV and Radio did.
 

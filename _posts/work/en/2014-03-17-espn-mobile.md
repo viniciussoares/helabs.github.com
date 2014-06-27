@@ -7,7 +7,6 @@ pt: '/trabalhos/espn-mobile/'
 
 name: ESPN Mobile
 project_kind: Mobile version of ESPN.com.br
-image: /images/works/espn-mobile.jpg
 
 project_url: http://m.espn.com.br
 display_url: m.espn.com.br
@@ -15,7 +14,10 @@ display_url: m.espn.com.br
 video_id: TabJNvOVVHk
 video_image: /images/customers/thiago-belem-espn-mobile.png
 
-
+screenshots:
+  - url: /images/works/espn-mobile.jpg
+  - url: /images/works/espn-mobile.jpg
+  - url: /images/works/espn-mobile.jpg
 
 about: The mobile version of ESPN.com.br was created to facilitate access to the content via mobile devices. With it, the users (which are called sports fans) can follow the news from anywhere.
 

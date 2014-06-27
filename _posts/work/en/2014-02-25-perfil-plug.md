@@ -7,7 +7,6 @@ pt: '/trabalhos/perfil-plug/'
 
 name: Perfil Plug
 project_kind:
-image: /images/projects/perfilplug.jpg
 
 project_url: http://perfilplug.com/
 display_url: perfilplug.com
@@ -15,7 +14,10 @@ display_url: perfilplug.com
 video_id: 8vtjKSe3zE0
 video_image: /images/customers/flavia-fortes-perfil-plug.png
 
-
+screenshots:
+  - url: /images/projects/perfilplug.jpg
+  - url: /images/projects/perfilplug.jpg
+  - url: /images/projects/perfilplug.jpg
 
 about: Perfil Plug is a free points and rewards web destination. By registering, users win virtual currency that can be redeemed across popular local retailers.
 

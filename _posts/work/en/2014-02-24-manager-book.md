@@ -15,7 +15,10 @@ display_url: managerbook.com.br
 video_id: vZfu7rP5JRo
 video_image: /images/customers/marcelo-vieira.jpg
 
-
+screenshots:
+  - url: /images/works/manager-book.jpg
+  - url: /images/works/manager-book.jpg
+  - url: /images/works/manager-book.jpg
 
 about: ManagerBook is a online collaborative tool that allows businesses to share their KPIs internally so that everyone is on the same page and shares essencial business knowledge more effectively.
 

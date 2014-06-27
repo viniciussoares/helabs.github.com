@@ -7,7 +7,6 @@ en: '/en/works/movingscripts/'
 
 name: Moving Scripts
 project_kind: Comunidade criativa para publicação de roteiros.
-image: /images/projects/movingscripts.jpg
 
 project_url: http://www.movingscripts.com
 display_url: movingscripts.com
@@ -15,7 +14,10 @@ display_url: movingscripts.com
 video_id:
 video_image:
 
-
+screenshots:
+  - url: /images/projects/movingscripts.jpg
+  - url: /images/projects/movingscripts.jpg
+  - url: /images/projects/movingscripts.jpg
 
 about: Moving Script é uma comunidade aberta onde, com um sistema de votação e um tema por semana, roteristas criam, compartilham e passam feedback. Assim a comunidade pode ver se suas idéias tem condições de ser comercializadas.
 

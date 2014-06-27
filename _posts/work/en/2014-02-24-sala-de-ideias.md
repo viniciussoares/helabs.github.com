@@ -7,7 +7,6 @@ pt: '/trabalhos/sala-de-ideias/'
 
 name: Sala de Ideias
 project_kind:
-image: /images/projects/saladeideias.jpg
 
 project_url: http://www.saladeideias.com.br
 display_url: saladeideias.com.br
@@ -15,7 +14,10 @@ display_url: saladeideias.com.br
 video_id: 3QKluUSthJc
 video_image: /images/customers/fabiane-gori-e-helena-cardoso.jpg
 
-
+screenshots:
+  - url: /images/projects/saladeideias.jpg
+  - url: /images/projects/saladeideias.jpg
+  - url: /images/projects/saladeideias.jpg
 
 about: Sala de Ideias (Idea Room) is an online platform founded by three psychologists to inspire balance and satisfaction in our lives. Weekly discourses are shared with new learnings and experiences.
 
