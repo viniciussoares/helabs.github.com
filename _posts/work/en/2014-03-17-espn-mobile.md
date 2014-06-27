@@ -8,7 +8,6 @@ pt: '/trabalhos/espn-mobile/'
 name: ESPN Mobile
 project_kind: Mobile version of ESPN.com.br
 
-project_url: http://m.espn.com.br
 display_url: m.espn.com.br
 
 video_id: TabJNvOVVHk

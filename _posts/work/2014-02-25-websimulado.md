@@ -8,7 +8,6 @@ en: '/en/works/websimulado/'
 name: Web Simulado
 project_kind: Plataforma para auxiliar estudantes.
 
-project_url: http://www.websimulado.com.br/
 display_url: websimulado.com.br
 
 video_id:

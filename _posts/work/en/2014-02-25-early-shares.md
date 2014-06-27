@@ -8,7 +8,6 @@ pt: '/trabalhos/early-shares/'
 name: Early Shares
 project_kind: Crowdfunding Plataform.
 
-project_url: http://www.earlyshares.com
 display_url: earlyshares.com
 
 video_id: LiE2cPQSgtc

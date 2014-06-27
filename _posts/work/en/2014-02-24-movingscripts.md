@@ -8,7 +8,6 @@ pt: '/trabalhos/movingscripts/'
 name: Moving Scripts
 project_kind: Creative community for publishing screenplays.
 
-project_url: http://www.movingscripts.com
 display_url: movingscripts.com
 
 video_id:

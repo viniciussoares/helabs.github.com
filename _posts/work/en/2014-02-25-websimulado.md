@@ -9,7 +9,6 @@ name: Web Simulado
 project_kind: E-learning platform to assist students.
 image: /images/projects/websimulado.jpg
 
-project_url: http://www.websimulado.com.br/
 display_url: websimulado.com.br
 
 video_id:

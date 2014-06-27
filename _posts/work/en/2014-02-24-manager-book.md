@@ -9,7 +9,6 @@ name: ManagerBook
 project_kind: Performance Indicators for Businesses.
 image: /images/works/manager-book.jpg
 
-project_url: http://managerbook.com.br
 display_url: managerbook.com.br
 
 video_id: vZfu7rP5JRo

@@ -8,7 +8,6 @@ en: '/en/works/manager-book/'
 name: ManagerBook
 project_kind: Plataforma de Indicadores de Desempenho.
 
-project_url: http://managerbook.com.br
 display_url: managerbook.com.br
 
 video_id: vZfu7rP5JRo

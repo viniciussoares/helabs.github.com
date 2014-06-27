@@ -9,7 +9,6 @@ name: Pet Roomie
 project_kind: Services for Pets.
 image: /images/projects/petroomie.jpg
 
-project_url: http://petroomie.com.br
 display_url: petroomie.com.br
 
 screenshots:

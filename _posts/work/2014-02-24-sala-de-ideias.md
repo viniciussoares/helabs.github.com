@@ -8,7 +8,6 @@ en: '/en/works/sala-de-ideias/'
 name: Sala de Ideias
 project_kind:
 
-project_url: http://www.saladeideias.com.br
 display_url: saladeideias.com.br
 
 video_id: 3QKluUSthJc

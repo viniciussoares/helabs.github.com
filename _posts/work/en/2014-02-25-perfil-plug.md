@@ -8,7 +8,6 @@ pt: '/trabalhos/perfil-plug/'
 name: Perfil Plug
 project_kind:
 
-project_url: http://perfilplug.com/
 display_url: perfilplug.com
 
 video_id: 8vtjKSe3zE0

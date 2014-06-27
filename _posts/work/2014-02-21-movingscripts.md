@@ -8,7 +8,6 @@ en: '/en/works/movingscripts/'
 name: Moving Scripts
 project_kind: Comunidade criativa para publicação de roteiros.
 
-project_url: http://www.movingscripts.com
 display_url: movingscripts.com
 
 video_id:
