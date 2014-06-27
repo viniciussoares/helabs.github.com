@@ -9,9 +9,6 @@ name: ESPN Tempo Real
 project_kind: Live monitoring of sports events
 image: /images/works/espn-tempo-real.jpg
 
-project_url: http://espn.uol.com.br/temporeal
-display_url: espn.uol.com.br/temporeal
-
 video_id: MYEjydImSxM
 video_image: /images/customers/thiago-belem-espn-mobile.png
 

@@ -8,9 +8,6 @@ en: '/en/works/espn-tempo-real/'
 name: ESPN Tempo Real
 project_kind: Acompanhamento de eventos esportivos ao vivo
 
-project_url: http://espn.uol.com.br/temporeal
-display_url: espn.uol.com.br/temporeal
-
 video_id: MYEjydImSxM
 video_image: /images/customers/thiago-belem-espn-mobile.png
 
