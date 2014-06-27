@@ -272,7 +272,10 @@ Media Queries for Tablets
 
   #work .work-thumb,
   #cliente-feliz .client-thumb,
-  #work .work-thumb-mobile { width: 250px; }
+  #work .work-thumb-mobile {
+    width: 250px;
+    height: auto;
+  }
 
   .odd-work .work-info,
   .odd-client .client-info { margin-left: 300px; }
