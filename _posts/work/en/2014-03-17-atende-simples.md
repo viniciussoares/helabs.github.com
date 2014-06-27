@@ -23,6 +23,7 @@ screenshots:
   - url: /images/projects/atende-simples/slider-atende-simples-04.jpg
   - url: /images/projects/atende-simples/slider-atende-simples-05.jpg
 
+
 video_id: Rp4V3idA0DU
 video_image: /images/customers/andre-dos-santos.jpg
 
