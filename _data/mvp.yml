@@ -1,5 +1,11 @@
 projects:
   -
+    name: Brasil Pré-Pagos
+    url: '#'
+    slug: brasil-pre-pagos
+    image: /images/projects/brasil-pre-pagos.jpg
+    description: Especialista em meios de pagamentos e serviços de inteligência financeira.
+  -
     name: Barra UOL
     url: '#'
     slug: uol-barra
