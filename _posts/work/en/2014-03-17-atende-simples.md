@@ -13,6 +13,7 @@ project_url: http://www.atendesimples.com/
 project_case_url: /en/cases/atende-simples/
 display_url: atendesimples.com
 
+
 screenshots:
   - url: /images/projects/atende-simples/slider-atende-simples-01.jpg
     caption: Tela de cadastro do Atende Simples
