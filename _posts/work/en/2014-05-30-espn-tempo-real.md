@@ -17,11 +17,11 @@ screenshots:
   - url: /images/works/espn-tempo-real.jpg
   - url: /images/works/espn-tempo-real.jpg
 
-about: Tempo Real is a property of ESPN Brazil and shares the same domain of ESPN.com.br. It's used for live coverage of games and sports events and it's answering a demand that until not long ago only the TV and Radio did.
+about: Tempo Real is property of ESPN Brazil and shares the same domain of ESPN.com.br. It's used for live coverage of games and sports events and it's answering a demand that only TV and Radio fulfilled until not too long ago.
 
-status: The project is already live, being used by a variety of sports fans. Released a few weeks before the 2014 World Cup, the time wouldn't be more appropriate. Specially for those fans who haven't been lucky enough to have a flexible work schedule or wouldn't be capable of watching all games. It even has a mobile version, delivering an optimized experience for smartphone and tablet users.
+status: The project is already live, being used by a variety of sports fans. Released a few weeks before the 2014 World Cup, the time couldn't be more appropriate. Specially for those fans who haven't been lucky enough to have a flexible work schedule or wouldn't be capable of watching all games. It even has a mobile version, delivering an optimized experience for smartphone and tablet users.
 
-what_has_been_done: One of the biggest challenges on the development of Tempo Real was to develop a system that presented event updates as quickly as possible, maintaining the same efficiency even with a large number of simultaneous users. In addition, we worked to adapt the product design and user experience to mobile devices without compromising quality. We choose to use AngularJS to build the client side. We achieved great performance.
+what_has_been_done: One of the biggest challenges about developing Tempo Real was presenting event updates as quickly as possible, maintaining the same efficiency even with a large number of simultaneous users. In addition, we worked to adapt the product design and user experience to mobile devices without compromising quality. We chose to use AngularJS to build the client side and ended up achieving great performance.
 
 
 
