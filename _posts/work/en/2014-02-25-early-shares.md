@@ -14,9 +14,11 @@ video_id: LiE2cPQSgtc
 video_image: /images/customers/maurice-lopes.jpg
 
 screenshots:
-  - url: /images/projects/earlyshares.jpg
-  - url: /images/projects/earlyshares.jpg
-  - url: /images/projects/earlyshares.jpg
+  - url: /images/projects/early-shares/slider-early-shares-01.jpg
+  - url: /images/projects/early-shares/slider-early-shares-02.jpg
+  - url: /images/projects/early-shares/slider-early-shares-03.jpg
+  - url: /images/projects/early-shares/slider-early-shares-04.jpg
+  - url: /images/projects/early-shares/slider-early-shares-05.jpg
 
 about: Early Shares is an online equity crowd-funding service that turns anyone into an investor by connecting them with business owners looking to fund and sell a stake of their company.
 
