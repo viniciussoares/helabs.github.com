@@ -13,9 +13,11 @@ video_id: MYEjydImSxM
 video_image: /images/customers/thiago-belem-espn-mobile.png
 
 screenshots:
-  - url: /images/works/espn-tempo-real.jpg
-  - url: /images/works/espn-tempo-real.jpg
-  - url: /images/works/espn-tempo-real.jpg
+  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-01.jpg
+  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-02.jpg
+  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-03.jpg
+  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-04.jpg
+  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-05.jpg
 
 about: Tempo Real is property of ESPN Brazil and shares the same domain of ESPN.com.br. It's used for live coverage of games and sports events and it's answering a demand that only TV and Radio fulfilled until not too long ago.
 
