@@ -191,7 +191,7 @@ Home
 
     li {
       width: 22%;
-      height: 210px;
+      height: 185px;
       background-color: #fff;
       border-radius: 3px;
       margin: 0 1% 30px 1%;
@@ -209,6 +209,7 @@ Home
         border-top: 1px solid $light-grey2;
         font-size: $font-medium2;
         padding-top: 14px;
+        margin-top: 0;
 
         span {
           font-weight: normal;
@@ -269,7 +270,7 @@ Home
     color: rgba( $light-grey2, 0.6 );
     display: block;
     margin-top: 10px;
-    
+
     a {
       color: $grey2;
     }
