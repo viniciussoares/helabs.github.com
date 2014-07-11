@@ -14,9 +14,11 @@ video_id:
 video_image:
 
 screenshots:
-  - url: /images/projects/movingscripts.jpg
-  - url: /images/projects/movingscripts.jpg
-  - url: /images/projects/movingscripts.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-01.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-02.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-03.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-04.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-05.jpg
 
 about: Moving Scripts is an open community that inspires writers to create, share and get feedback for their screenplays. Write down your story based on the Theme of the Week and see how “marketable” your idea is.
 
