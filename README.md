@@ -109,6 +109,18 @@ $ rake prune_images
 
 **Use this carefully!!!**
 
+### Cross origin problems
+
+When you're developing you can receive the error "XMLHttpRequest cannot load http://helabs.com.br/blog/atom.xml. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:4000' is therefore not allowed access" in the console of your browser. To fix it, you need to disable the cross origin policy.
+
+This is how you disable in chrome:
+
+Mac `open -a Google\ Chrome --args --disable-web-security`
+
+Linux `google-chrome --disable-web-security`
+
+Just remember to restart your browser without this option, if you need to navigate in others pages, since this option make your browser vulnerable.
+
 ## Maintainers
 
 - [Thiago Gonzalez](https://github.com/thiagonzalez)
