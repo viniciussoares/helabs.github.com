@@ -1675,6 +1675,12 @@ Media Queries for Smartphones
   .offices li {
     width: 100%;
     margin-top: 20px;
+    &.phone-contact{
+      width: 100%;
+    }
+    &.social-he-links{
+      width: 100%
+    }
   }
 
   .footer-links {
