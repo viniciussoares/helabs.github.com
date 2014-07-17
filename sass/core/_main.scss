@@ -354,13 +354,18 @@ footer {
   overflow: hidden;
 
   li {
-  	width: 25%;
+  	width: 22%;
     line-height: 17px;
     font-size: $font-small;
     float: left;
   }
 
   address span { display: block; }
+
+  li.phone-contact{
+    color: #fff;
+    width: 16%;
+  }
 
   h3 {
     text-transform: uppercase;
@@ -369,6 +374,7 @@ footer {
   }
 
   li.social-he-links {
+    width: 18%;
 
     a {
       display: block;
