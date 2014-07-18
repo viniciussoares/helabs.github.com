@@ -596,15 +596,50 @@ Media Queries for Tablets
     article:nth-child(7) {
 
       section {
+        $image-height: 200px;
+        $gap: 40px;
+        position: relative;
+        padding-top: $image-height + $gap;
+
         .col { width: 100%; }
+
+        &:after, &:before {
+          margin: 20px auto;
+          display: block;
+          height: $image-height;
+          background-size: auto $image-height;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          background-position: center 0;
+          background-repeat: no-repeat;
+        }
       }
 
-      section:after, section:before {
-        margin: 20px auto;
-        display: block;
+
+      &:nth-child(2) section {
+        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-01.png') }
       }
 
-      section:after { display: none; }
+      &:nth-child(3) section {
+        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-02.png') }
+      }
+
+      &:nth-child(4) section {
+        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-03.png') }
+      }
+
+      &:nth-child(5) section {
+        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-04.png') }
+      }
+
+      &:nth-child(6) section {
+        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-05.png') }
+      }
+
+      &:nth-child(7) section {
+        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-06.png') }
+      }
     }
   }
 
@@ -1553,8 +1588,19 @@ Media Queries for Smartphones
     article:nth-child(5),
     article:nth-child(6),
     article:nth-child(7) {
-      section:after,
-      section:before { display: none; }
+
+      section {
+        $image-height: 150px;
+        $gap: 40px;
+        position: relative;
+        padding-top: $image-height + $gap;
+
+
+        &:after, &:before {
+          height: $image-height;
+          background-size: auto $image-height;
+        }
+      }
     }
   }
 
