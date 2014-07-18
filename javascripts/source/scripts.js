@@ -420,8 +420,9 @@ BlogPosts = {};
 
 BlogPosts.init = function () {
   if (location.pathname === "/" || location.pathname === "/en/") {
-    this.container = '.our-blog';
+    this.container = '.our-blog .containner';
     this.template = Handlebars.compile($('#blog-posts').hide().html());
+    $(this.container).addClass("loading");
     this.render();
   };
 };
@@ -454,6 +455,7 @@ BlogPosts.render = function () {
   var container = this.container;
   this.fetch().then(function(posts) {
     $(container).append(template({ posts: posts.slice(0, 3) }));
+    $(container).removeClass("loading");
   })
 }
 

@@ -300,6 +300,11 @@ Home
     color: $grey3;
   }
 
+  .loading {
+    background: image-url('/images/loading.gif') no-repeat center bottom;
+    min-height: 60px;
+  }
+
   article {
     width: 31%;
     float: left;
