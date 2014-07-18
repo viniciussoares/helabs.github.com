@@ -537,15 +537,22 @@ Media Queries for Tablets
       text-align: center;
 
       i {
-        font-size: $font-medium2;
+        font-size: 16px;
+
+        &:before,
+        &:after { top: -3px }
 
         &:before, &:after {
-          display: none;
+          background-size: 18px auto;
+          height: 14px;
+          margin: 0;
+          width: 18px;
+          position: relative;
         }
       }
 
       em {
-        margin-top: 15px;
+        margin: 10px 0;
         font-size: $font-medium;
       }
     }
@@ -558,7 +565,10 @@ Media Queries for Tablets
       display: block;
     }
 
-    b { text-align: center; }
+    b { 
+      text-align: center; 
+      margin-top: 0;
+    }
   }
 
   section#atendesimples-steps aside p {
@@ -598,7 +608,26 @@ Media Queries for Tablets
     }
   }
 
-  section.testimonials blockquote { width: 100%; }
+  section.testimonials blockquote { 
+    width: 100%; 
+
+    i {
+      font-size: 15px;
+      line-height: 25px;
+
+      &:before { margin-right: 2px }
+      &:after { margin-left: 5px }
+
+      &:before, 
+      &:after {
+        background-size: 18px auto;
+        height: 14px;
+        position: relative;
+        top: -3px;
+        width: 18px;
+      }
+    }
+  }
 
 
   /* Project page - Cases */
@@ -1539,9 +1568,6 @@ Media Queries for Smartphones
         font-size: 15px;
         line-height: 28px;
         text-align: left;
-
-        &:before,
-        &:after { display: none; }
       }
 
       em {
