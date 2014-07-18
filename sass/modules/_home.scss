@@ -306,12 +306,16 @@ Home
   }
 
   article {
-    width: 31%;
-    float: left;
-    margin-right: 25px;
+    //width: 31%;
+    //float: left;
+    //margin-right: 25px;
     text-align: left;
-
-    &:last-child { margin-right: 0; }
+    
+    //&:last-child { margin-right: 0; }
+    
+    &.slide {
+      margin: 0;  
+    }
 
     h5 {
       margin: 0;

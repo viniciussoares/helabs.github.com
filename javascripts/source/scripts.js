@@ -420,7 +420,7 @@ BlogPosts = {};
 
 BlogPosts.init = function () {
   if (location.pathname === "/" || location.pathname === "/en/") {
-    this.container = '.our-blog .containner';
+    this.container = '.our-blog .blog-containner';
     this.template = Handlebars.compile($('#blog-posts').hide().html());
     $(this.container).addClass("loading");
     this.render();
@@ -453,9 +453,18 @@ BlogPosts.fetch = function() {
 BlogPosts.render = function () {
   var template = this.template;
   var container = this.container;
+  var width = $(window).width();
   this.fetch().then(function(posts) {
-    $(container).append(template({ posts: posts.slice(0, 3) }));
+    $(container).append(template({ posts: posts.slice(0, 9) }));
     $(container).removeClass("loading");
+    $(container).bxSlider({ 
+      minSlides: 1, 
+      maxSlides: (width < 960) ? 1 : 3,
+      slideWidth: (width < 960) ? 0 : 298,
+      infiniteLoop: false,
+      controls: false,
+      slideMargin: 25
+    });
   })
 }
 
