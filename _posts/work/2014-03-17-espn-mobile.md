@@ -14,9 +14,11 @@ video_id: TabJNvOVVHk
 video_image: /images/customers/thiago-belem-espn-mobile.png
 
 screenshots:
-  - url: /images/works/espn-mobile.jpg
-  - url: /images/works/espn-mobile.jpg
-  - url: /images/works/espn-mobile.jpg
+  - url: /images/projects/espn-mobile/slider-espn-mobile-01.jpg
+  - url: /images/projects/espn-mobile/slider-espn-mobile-02.jpg
+  - url: /images/projects/espn-mobile/slider-espn-mobile-03.jpg
+  - url: /images/projects/espn-mobile/slider-espn-mobile-04.jpg
+  - url: /images/projects/espn-mobile/slider-espn-mobile-05.jpg
 
 about: A versão mobile do ESPN.com.br foi criada para facilitar o acesso ao conteúdo partindo de dispositivos mobile. Com ele os usuários (que são chamados de fãs do esporte) podem acompanhar as notícias de qualquer lugar.
 
