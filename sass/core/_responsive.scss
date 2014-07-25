@@ -105,6 +105,10 @@ Media Queries for Tablets
         width: 80%;
         float: none;
         margin: 20px auto;
+        text-align: center;
+        p {
+          text-align: center;
+        }
 
         &:last-child { margin-right: auto;}
       }
@@ -867,6 +871,7 @@ Media Queries for Smartphones
       article {
         width: 100%;
         margin: 10px auto;
+        text-align: left;
 
         a {
           font-size: 16px;
@@ -874,7 +879,10 @@ Media Queries for Smartphones
           &:hover { color: $grey4; }
         }
 
-        p {margin-top: 0;}
+        p {
+          margin-top: 0;
+          text-align: left;
+        }
       }
     }
   }
