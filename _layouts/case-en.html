@@ -30,7 +30,31 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
   </section>
 {% endif %}
 
+{% assign has_active_team_members = false %}
+{% if page.project_team %}
+    {% for person in site.categories.time %}
+      {% for team_member in page.project_team %}
+        {% for sa in person.social_accounts %}
+          {% if sa.provider == 'github' and sa.username == team_member.github  %}
+            {% assign has_active_team_members = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if has_active_team_members %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if has_active_team_members %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if has_active_team_members %}
+<section class="main-infos with-team">
+{% else %}
 <section class="main-infos">
+{% endif %}
   <div class="containner">
     <article>
       <h3>About the project</h3>
@@ -44,7 +68,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     </article>
 
     <aside>
-      {% if page.project_team %}
+      {% if has_active_team_members %}
         <h3>Team</h3>
         <ul>
           {% for person in site.categories.time %}

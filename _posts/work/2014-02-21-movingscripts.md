@@ -14,9 +14,11 @@ video_id:
 video_image:
 
 screenshots:
-  - url: /images/projects/movingscripts.jpg
-  - url: /images/projects/movingscripts.jpg
-  - url: /images/projects/movingscripts.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-01.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-02.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-03.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-04.jpg
+  - url: /images/projects/moving-scripts/slider-moving-scripts-05.jpg
 
 about: Moving Script é uma comunidade aberta onde, com um sistema de votação e um tema por semana, roteristas criam, compartilham e passam feedback. Assim a comunidade pode ver se suas idéias tem condições de ser comercializadas.
 

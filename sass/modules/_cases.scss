@@ -94,14 +94,16 @@ Cases
     .btn-mobile { display: none; }
   }
 
-  article {
-    width: 65%;
-    float: left;
-  }
+  &.with-team {
+    article {
+      width: 65%;
+      float: left;
+    }
 
-  aside {
-    width: 30%;
-    float: right;
+    aside {
+      width: 30%;
+      float: right;
+    }
   }
 }
 

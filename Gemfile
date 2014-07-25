@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.2'
 
 gem 'github-pages'      , '16'
 gem 'rake'
@@ -18,4 +18,3 @@ gem 'webmock'           , '< 1.16'
 gem 'i18n'              , '~> 0.6.9'
 gem 'colored'           , '~> 1.2'
 gem "compass"           , '= 0.12.3'
-gem 'jekyll-sitemap'    , '0.3.0'
