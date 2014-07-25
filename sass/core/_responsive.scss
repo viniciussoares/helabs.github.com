@@ -1416,15 +1416,16 @@ Media Queries for Smartphones
   .mvp-projects li {
     width: 100%;
 
-    .about{ width: 85%; }
+    .about { width: 85%; }
   }
 
-  .value-column{
-    width:100%;
+  .value-column {
+    width: 100%;
     display: block;
-    margin: 0 auto 0 auto;
-    &:first-child{
-      margin: 0 auto 0 auto;
+    margin: 0 auto;
+
+    &:first-child {
+      margin: 0 auto;
     }
   }
 
