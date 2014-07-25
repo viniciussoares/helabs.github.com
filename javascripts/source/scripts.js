@@ -420,8 +420,9 @@ BlogPosts = {};
 
 BlogPosts.init = function () {
   if (location.pathname === "/" || location.pathname === "/en/") {
-    this.container = '.our-blog';
+    this.container = '.our-blog .blog-containner';
     this.template = Handlebars.compile($('#blog-posts').hide().html());
+    $(this.container).addClass("loading");
     this.render();
   };
 };
@@ -449,12 +450,34 @@ BlogPosts.fetch = function() {
   return $.get('http://helabs.com.br/blog/atom.xml').then(normalizeToJson);
 };
 
+function createBlogSlider ($container) {
+  var blogslider = $container.bxSlider(getBxSliderData());
+
+  $(window).resize(function() {
+    blogslider.reloadSlider(getBxSliderData());
+  });
+
+  function getBxSliderData () {
+    return ({
+      mode: ($(window).width() < 960) ? "vertical" : "horizontal",
+      minSlides: 3, 
+      maxSlides: 3,
+      slideWidth: ($(window).width() < 960) ? 0 : 5000,
+      infiniteLoop: false,
+      controls: false,
+      slideMargin: 25
+    });
+  }
+}
+
 BlogPosts.render = function () {
   var template = this.template;
-  var container = this.container;
+  var $container = $(this.container);
+  
   this.fetch().then(function(posts) {
-    $(container).append(template({ posts: posts.slice(0, 3) }));
-  })
+    $container.append(template({ posts: posts.slice(0, 9) })).removeClass("loading");
+    createBlogSlider($container);
+  });
 }
 
 InstantClick.on('change', function() {

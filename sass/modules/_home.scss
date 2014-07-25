@@ -300,13 +300,22 @@ Home
     color: $grey3;
   }
 
-  article {
-    width: 31%;
-    float: left;
-    margin-right: 25px;
-    text-align: left;
+  .loading {
+    background: image-url('/images/loading.gif') no-repeat center bottom;
+    min-height: 60px;
+  }
 
-    &:last-child { margin-right: 0; }
+  article {
+    //width: 31%;
+    //float: left;
+    //margin-right: 25px;
+    text-align: left;
+    
+    //&:last-child { margin-right: 0; }
+    
+    &.slide {
+      margin: 0;  
+    }
 
     h5 {
       margin: 0;

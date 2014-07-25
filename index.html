@@ -37,7 +37,7 @@ en: /en/
   <section class="our-clients">
     <div class="containner">
 
-      <h4>Nossos Clientes</h4>
+      <h4>Alguns de Nossos Clientes</h4>
       <p>Ajudamos startups e grandes empresas em todo o mundo. Estes são alguns de nossos clientes.</p>
 
       <ul>
@@ -98,21 +98,28 @@ en: /en/
     </div>
   </section><!-- /Testimonials -->
 
+
   <section class="our-blog">
-    {% raw %}
-      <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
-        <div class="containner">
-          <h4>Nosso Blog</h4>
-          <p>Escrevemos sobre negócios, design e desenvolvimento. Confira nossos últimos posts.</p>
-          {{#each posts}}
-            <article>
-              <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
-              <p>Por <span>{{author}}</span> em <span>{{date}}</span></p>
-            </article>
-          {{/each}}
-        </div>
-      </script>
-    {% endraw %}
+    <div class="containner">
+    
+      <h4>Nosso Blog</h4>
+      <p>Escrevemos sobre negócios, design e desenvolvimento. Confira nossos últimos posts.</p>
+
+      {% raw %}
+        <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
+            {{#each posts}}
+              <article class="slide">
+                <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
+                <p>Por <span>{{author}}</span> em <span>{{date}}</span></p>
+              </article>
+            {{/each}}
+        </script>
+      {% endraw %}
+
+      <div class="blog-containner">
+        
+      </div>
+    </div>
   </section><!-- /Our Blog -->
 </div>
 

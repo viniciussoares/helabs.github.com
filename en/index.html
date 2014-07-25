@@ -97,20 +97,26 @@ pt: /
   </section><!-- /Testimonials -->
 
   <section class="our-blog">
-    {% raw %}
-      <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
-        <div class="containner">
-          <h4>Our Blog</h4>
-          <p>We write about bussines, design and development. Check out our latest posts.</p>
-          {{#each posts}}
-            <article>
-              <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
-              <p>By <span>{{author}}</span> at <span>{{date}}</span></p>
-            </article>
-          {{/each}}
-        </div>
-      </script>
-    {% endraw %}
+    <div class="container">
+      <h4>Our Blog</h4>
+      <p>We write about bussines, design and development. Check out our latest posts.</p>
+
+      {% raw %}
+        <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
+            {{#each posts}}
+              <article class="slide">
+                <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
+                <p>Por <span>{{author}}</span> em <span>{{date}}</span></p>
+              </article>
+            {{/each}}
+        </script>
+      {% endraw %}
+
+      <div class="blog-containner">
+        
+      </div>
+      
+    </div>
   </section><!-- /Our Blog -->
 </div>
 

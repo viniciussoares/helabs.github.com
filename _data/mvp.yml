@@ -1,5 +1,11 @@
 projects:
   -
+    name: Boleto Simples
+    url: '#'
+    slug: boleto-simples
+    image: /images/projects/boleto-simples.jpg
+    description: A forma mais simples e barata de gerar boletos bancários
+  -
     name: Brasil Pré-Pagos
     url: '#'
     slug: brasil-pre-pagos
