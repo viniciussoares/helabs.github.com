@@ -1633,7 +1633,26 @@ Media Queries for Smartphones
     }
   }
 
-  section.company-logos { display: none; }
+  section.testimonials { padding-bottom: 20px }
+
+  section.company-logos { 
+    padding-bottom: 40px;
+
+    figure { 
+      text-align: center;
+      width: 100%; 
+
+      img {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        float: none !important;
+
+        &:first-child { margin-left: -75px !important }
+      }
+
+    }
+  }
 
 
   /* Project page - Cases */
