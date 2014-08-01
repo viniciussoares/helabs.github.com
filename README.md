@@ -6,7 +6,7 @@ This is the HE:labs site, you can see the live site on http://helabs.com.br.
 
 To run this project you need to have:
 
-- Ruby 2.1.0 - You can use [RVM](http://rvm.io)
+- Ruby 2.1.2 - You can use [RVM](http://rvm.io)
 - Node - You can get Node via `$ brew install node` or on the [website](http://nodejs.org)
 - grunt-cli - You can get this via `$ npm install -g grunt-cli` or the [Getting Started guide](http://gruntjs.com/getting-started)
 
