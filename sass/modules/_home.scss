@@ -237,7 +237,6 @@ Home
     width: 100%;
     padding: 50px 0 50px 0;
     clear: both; 
-    text-align: left;
     overflow: hidden;
   }
 
@@ -245,20 +244,7 @@ Home
     text-align: left;
   }
 
-  .thumb {
-    float: left;
-    width: 400px;
-    overflow: hidden;
-    @include round_borders(4px);
-
-    img {
-      width: 100%;
-      display: block;
-    }
-  }
-
   .even-work {
-    // background: #fff;
     .thumb {
       float: right;
     }
