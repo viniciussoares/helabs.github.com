@@ -68,8 +68,6 @@ GEM
     guard-compass (0.0.8)
       compass (>= 0.10.5)
       guard (>= 1.8)
-    haml (4.0.5)
-      tilt
     html-pipeline (1.9.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
@@ -103,7 +101,6 @@ GEM
     jekyll-sitemap (0.5.1)
     jekyll-watch (1.0.0)
       listen (~> 2.7)
-    jekyll_ext (0.1.4)
     jemoji (0.3.0)
       gemoji (~> 2.0)
       html-pipeline (~> 1.9)
@@ -154,7 +151,6 @@ GEM
     slop (3.6.0)
     thor (0.19.1)
     thread_safe (0.3.4)
-    tilt (2.0.1)
     timers (1.1.0)
     toml (0.1.1)
       parslet (~> 1.5.0)
@@ -175,9 +171,7 @@ DEPENDENCIES
   foreman (= 0.63.0)
   github-pages (= 22)
   guard-compass (= 0.0.8)
-  haml (= 4.0.5)
   i18n (~> 0.6.9)
-  jekyll_ext
   nokogiri (~> 1.6.1)
   pry (~> 0.9.12.6)
   rake
