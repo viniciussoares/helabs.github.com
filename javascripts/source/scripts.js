@@ -22,6 +22,7 @@ var App = {
       if (this._translations.hasOwnProperty(locale)) {
         return locale;
       } else {
+
         return this.defaultLocale;
       }
     },
@@ -37,6 +38,7 @@ var App = {
   },
   StartApp: function() {
     BlogPosts.init();
+    this.Work.init();
     this.CollapsePlugin();
     this.Modal();
     this.InterfaceActions();
@@ -139,6 +141,15 @@ var App = {
       return JSON.parse(sessionStorage.getItem('user-navigation'));
     }
   },
+  Work: {
+    init: function() {
+      this.calculateProjectCount();
+    },
+    calculateProjectCount: function() {
+      var projectCount = $('#work-mvp ul li').size();
+      $('[data-project-count]').text(projectCount);
+    }
+  },
   InterfaceActions: function() {
 
     // Eduardo's easter egg
@@ -207,6 +218,75 @@ var App = {
           $(".pp_pic_holder.pp_default").css("top", window.pageYOffset + "px");
         }
       }
+    });
+
+
+    /* Work cycle */
+    var t = {
+      $el: $("#carousel-slider .slideshow"),
+      clickImage: function (e) {
+        var t = $(e.target),
+            n = t.index(),
+            i = t.parent().find(".cycle-slide-active").index();
+        return this.cycle(n == i ? "prev" : "next"), !1
+      },
+      makeFirstSlideCentered: function () {
+          this.$el.prepend(this.$el.find("img:last").remove())
+      },
+      init: function () {
+          this.makeFirstSlideCentered(), this.$el.cycle({
+            fx: "carousel",
+            paused: !0,
+            carouselVisible: 3,
+            carouselFluid: !0,
+            swipe: !0,
+            next: '#carousel-slider-next',
+            prev: '#carousel-slider-prev'
+          }), this.$el.on("click", "img", $.proxy(this.clickImage, this.$el)).find("img").css("opacity", "")
+      }
+    };
+    t.init();
+
+
+    /* Services */
+
+    $(".services h3").click(function() {
+      $(this).parent().find(".service-entry").toggle();
+    });
+
+    $(".service-01 a").click(function() {
+      $(".service-01").find(".service-entry").hide();
+      $(".service-02").find(".service-entry").show();
+    });
+
+    $(".service-02 a").click(function() {
+      $(".service-02").find(".service-entry").hide();
+      $(".service-03").find(".service-entry").show();
+    });
+
+    $(".service-03 a").click(function() {
+      $(".service-03").find(".service-entry").hide();
+      $(".service-04").find(".service-entry").show();
+    });
+
+    $(".service-04 a").click(function() {
+      $(".service-04").find(".service-entry").hide();
+      $(".service-05").find(".service-entry").show();
+    });
+
+    $(".service-05 a").click(function() {
+      $(".service-05").find(".service-entry").hide();
+      $(".service-06").find(".service-entry").show();
+    });
+
+    $(".service-06 a").click(function() {
+      $(".service-06").find(".service-entry").hide();
+      $(".service-07").find(".service-entry").show();
+    });
+
+    $(".service-07 a").click(function() {
+      $(".service-07").find(".service-entry").hide();
+      $(".service-08").find(".service-entry").show();
     });
 
 
@@ -339,9 +419,10 @@ var App = {
 BlogPosts = {};
 
 BlogPosts.init = function () {
-  if (location.pathname === "/" || location.pathname === "/en/") { 
-    this.container = '.our-blog';
+  if (location.pathname === "/" || location.pathname === "/en/") {
+    this.container = '.our-blog .blog-containner';
     this.template = Handlebars.compile($('#blog-posts').hide().html());
+    $(this.container).addClass("loading");
     this.render();
   };
 };
@@ -356,7 +437,7 @@ BlogPosts.fetch = function() {
       date.getFullYear();
   }
   function normalizeToJson(atom) {
-    return $(atom).find('entry').map(function() { 
+    return $(atom).find('entry').map(function() {
       var $entry = $(this);
       return {
         title: $entry.find('title').text(),
@@ -369,12 +450,37 @@ BlogPosts.fetch = function() {
   return $.get('http://helabs.com.br/blog/atom.xml').then(normalizeToJson);
 };
 
+function createBlogSlider ($container) {
+  var blogslider = $container.bxSlider(getBxSliderData());
+
+  $(window).resize(function() {
+    blogslider.reloadSlider(getBxSliderData());
+  });
+
+  function getBxSliderData () {
+    return ({
+      mode: ($(window).width() < 960) ? "vertical" : "horizontal",
+      minSlides: 3, 
+      maxSlides: 3,
+      slideWidth: ($(window).width() < 960) ? 0 : 5000,
+      infiniteLoop: true,
+      auto: true,
+      pause: 5000,
+      autoHover: true,
+      controls: false,
+      slideMargin: 25
+    });
+  }
+}
+
 BlogPosts.render = function () {
   var template = this.template;
-  var container = this.container;
+  var $container = $(this.container);
+  
   this.fetch().then(function(posts) {
-    $(container).append(template({ posts: posts.slice(0, 3) }));
-  })
+    $container.append(template({ posts: posts.slice(0, 9) })).removeClass("loading");
+    createBlogSlider($container);
+  });
 }
 
 InstantClick.on('change', function() {

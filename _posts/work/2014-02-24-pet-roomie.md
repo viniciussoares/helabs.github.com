@@ -7,10 +7,15 @@ en: '/en/works/pet-roomie/'
 
 name: Pet Roomie
 project_kind: Serviços para Animais de Estimação.
-image: /images/projects/petroomie.jpg
 
-project_url: http://petroomie.com.br
 display_url: petroomie.com.br
+
+screenshots:
+  - url: /images/projects/pet-roomie/slider-pet-roomie-01.jpg
+  - url: /images/projects/pet-roomie/slider-pet-roomie-02.jpg
+  - url: /images/projects/pet-roomie/slider-pet-roomie-03.jpg
+  - url: /images/projects/pet-roomie/slider-pet-roomie-04.jpg
+  - url: /images/projects/pet-roomie/slider-pet-roomie-05.jpg
 
 video_id:
 video_image:
@@ -36,6 +41,8 @@ project_team:
   - github: yogodoshi
   - github: marcioj
   - github: FlaviaFortes
+  - github: mikaelcarrara
+
   - github: souzagomes1989
   - github: 3runoDesign
   - github: franciscomxs

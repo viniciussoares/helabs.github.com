@@ -7,15 +7,18 @@ en: '/en/works/manager-book/'
 
 name: ManagerBook
 project_kind: Plataforma de Indicadores de Desempenho.
-image: /images/works/manager-book.jpg
 
-project_url: http://managerbook.com.br
 display_url: managerbook.com.br
 
 video_id: vZfu7rP5JRo
 video_image: /images/customers/marcelo-vieira.jpg
 
-
+screenshots:
+  - url: /images/projects/managerbook/slider-managerbook-01.jpg
+  - url: /images/projects/managerbook/slider-managerbook-02.jpg
+  - url: /images/projects/managerbook/slider-managerbook-03.jpg
+  - url: /images/projects/managerbook/slider-managerbook-04.jpg
+  - url: /images/projects/managerbook/slider-managerbook-05.jpg
 
 about: O ManagerBook é uma ferramenta para facilitar o compartilhamento dos indicadores de desempenho e eficiência de empresas. Conecta toda equipe em uma mesma direção e compartilha com ela todo o conhecimento da empresa.
 

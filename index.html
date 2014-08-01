@@ -81,7 +81,7 @@ en: /en/
   <section class="our-clients">
     <div class="containner">
 
-      <h4>Nossos Clientes</h4>
+      <h4>Alguns de Nossos Clientes</h4>
       <p>Ajudamos startups e grandes empresas em todo o mundo. Estes são alguns de nossos clientes.</p>
 
       <ul>
@@ -117,6 +117,18 @@ en: /en/
           <img src="/images/home/clients-movingscripts.png">
           <h5>MovingScripts<span>Estados Unidos</span></h5>
         </li>
+        <li>
+          <img src="/images/home/clients-brasil-pre-pagos.png">
+          <h5>Brasil Pré-Pagos<span>Brasil</span></h5>
+        </li>
+        <li>
+          <img src="/images/home/clients-b2w.png">
+          <h5>B2W<span>Brasil</span></h5>
+        </li>
+        <li>
+          <img src="/images/home/clients-boleto-simples.png">
+          <h5>Boleto Simples<span>Brasil</span></h5>
+        </li>
       </ul>
     </div>
   </section><!-- /our clients -->
@@ -130,21 +142,28 @@ en: /en/
     </div>
   </section><!-- /Testimonials -->
 
+
   <section class="our-blog">
-    {% raw %}
-      <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
-        <div class="containner">
-          <h4>Nosso Blog</h4>
-          <p>Escrevemos sobre negócios, design e desenvolvimento. Confira nossos últimos posts.</p>
-          {{#each posts}}
-            <article>
-              <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
-              <p>Por <span>{{author}}</span> em <span>{{date}}</span></p>
-            </article>
-          {{/each}}
-        </div>
-      </script>
-    {% endraw %}
+    <div class="containner">
+    
+      <h4>Nosso Blog</h4>
+      <p>Escrevemos sobre negócios, design e desenvolvimento. Confira nossos últimos posts.</p>
+
+      {% raw %}
+        <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
+            {{#each posts}}
+              <article class="slide">
+                <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
+                <p>Por <span>{{author}}</span> em <span>{{date}}</span></p>
+              </article>
+            {{/each}}
+        </script>
+      {% endraw %}
+
+      <div class="blog-containner">
+        
+      </div>
+    </div>
   </section><!-- /Our Blog -->
 </div>
 

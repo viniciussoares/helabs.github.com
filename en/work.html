@@ -18,11 +18,37 @@ pt: /trabalho/
       <div class="containner">
         <div class="work-thumb">
           <div class="browser-nav"></div>
+          <img src="/images/works/espn-tempo-real.jpg" alt="ESPN Tempo Real">
+        </div>
+        <div class="work-info">
+          <h3>ESPN Tempo Real</h3>
+          <p>ESPN Brasil real time scoreboard for live sporting events.</p>
+          <a href="/en/works/espn-tempo-real/" class="more">View more</a>
+        </div>
+      </div>
+    </li>
+    <li class="even-work">
+      <div class="containner">
+        <div class="work-thumb">
+          <div class="browser-nav"></div>
+          <img src="/images/works/espn-br.jpg" alt="ESPN BR">
+        </div>
+        <div class="work-info">
+          <h3>ESPN.com.br</h3>
+          <p>ESPN Brasil online portal, one of Brazil's biggest cable television sports channel. With a responsive version, it solved several problems with this user group, as they couldn't access the portal from a mobile device.</p>
+          <a href="/en/works/espn-br/" class="more">View more</a>
+        </div>
+      </div>
+    </li>
+    <li class="odd-work">
+      <div class="containner">
+        <div class="work-thumb">
+          <div class="browser-nav"></div>
           <img src="/images/works/espn-mobile.jpg" alt="ESPN Mobile">
         </div>
         <div class="work-info">
           <h3>ESPN.com.br Mobile</h3>
-          <p>Development of ESPN Brazil's mobile web app. Full integration with CMS in record time. No involvement from client's IT team.</p>
+          <p>ESPN Brasil mobile web app. Full integration with CMS in record time. No involvement from client's IT team.</p>
           <a href="/en/works/espn-mobile/" class="more">View More</a>
           <a href="/en/cases/espn-mobile/" class="more">Read the ESPN.com.br Mobile Story</a>
         </div>
@@ -223,10 +249,12 @@ pt: /trabalho/
 
 <section id="work-mvp">
   <div class="containner">
-    <h3>Besides to the above projects, we have developed a total of more than {{ site.data.mvp.number_of_projects }} projects.</h3>
+    <h3>Besides to the above projects, we have developed a total of more than <span data-project-count></span> projects.</h3>
     <ul>
       {% for project in site.data.mvp.projects %}
-      <li><p>{{ project.name }}</p></li>
+        {% unless project.highlighted %}
+          <li><p>{{ project.name }}</p></li>
+        {% endunless %}
       {% endfor %}
     </ul>
   </div>

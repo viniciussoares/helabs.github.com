@@ -68,7 +68,7 @@ layout: default
         <ul>
           {% for slug in page.projects %}
             <li>
-              {% for project in site.categories.projects %}
+              {% for project in site.data.mvp.projects %}
                 {% if project.slug == slug %}
                   <img src="{{ project.image }}" alt="{{ project.name }}">
                   <h3>{{ project.name }}</h3>

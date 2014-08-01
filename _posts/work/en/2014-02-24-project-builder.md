@@ -7,15 +7,18 @@ pt: '/trabalhos/project-builder/'
 
 name: Project Builder
 project_kind: Project Management Software.
-image: /images/projects/projectbuilder.jpg
 
-project_url: http://www.projectbuilder.com.br
 display_url: projectbuilder.com.br
 
-video_id:
-video_image:
+video_id: I6n1NI2lu_A
+video_image: /images/customers/aluisio-azevedo-project-builder.png
 
-
+screenshots:
+  - url: /images/projects/project-builder/slider-project-builder-01.jpg
+  - url: /images/projects/project-builder/slider-project-builder-02.jpg
+  - url: /images/projects/project-builder/slider-project-builder-03.jpg
+  - url: /images/projects/project-builder/slider-project-builder-04.jpg
+  - url: /images/projects/project-builder/slider-project-builder-05.jpg
 
 about: Project Builder is a project management SaaS to help manage your projects following PMI’s best practices. Manage tasks and deadlines between teams and collaborate in real time.
 

@@ -9,13 +9,17 @@ name: Web Simulado
 project_kind: E-learning platform to assist students.
 image: /images/projects/websimulado.jpg
 
-project_url: http://www.websimulado.com.br/
 display_url: websimulado.com.br
 
 video_id:
 video_image:
 
-
+screenshots:
+  - url: /images/projects/websimulado/slider-websimulado-01.jpg
+  - url: /images/projects/websimulado/slider-websimulado-02.jpg
+  - url: /images/projects/websimulado/slider-websimulado-03.jpg
+  - url: /images/projects/websimulado/slider-websimulado-04.jpg
+  - url: /images/projects/websimulado/slider-websimulado-05.jpg
 
 about: Web Simulado is an online portal helping serious students pass admission exams for Brazilian public school and public services. It offers real-life simulations with timed exams, scoring and rankings. At the end there are recommendations that informs where you can improve.
 

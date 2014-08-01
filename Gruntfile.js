@@ -18,6 +18,9 @@ module.exports = function(grunt) {
           'javascripts/application.min.js': [
             'javascripts/source/handlebars-v1.3.0.js',
             'javascripts/source/instantclick.min.js',
+            'javascripts/source/jquery.cycle2.js',
+            'javascripts/source/jquery.cycle2.carousel.js',
+            'javascripts/source/jquery.cycle2.swipe.js',
             'javascripts/source/jquery.localScroll.js',
             'javascripts/source/jquery.maskedinput.js',
             'javascripts/source/jquery.prettyPhoto.js',
@@ -26,6 +29,7 @@ module.exports = function(grunt) {
             'javascripts/source/jquery.validate.js',
             'javascripts/source/jquery.touchSwipe.min.js',
             'javascripts/source/jquery.liquid-slider.min.js',
+            'javascripts/source/jquery.bxslider.min.js',
             'javascripts/source/jquery.easing.1.3.js',
             'javascripts/source/testimonials.js',
             'javascripts/source/scripts.js'

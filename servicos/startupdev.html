@@ -280,7 +280,7 @@ redirect_from: /servicos/mvp/
   </div>
 </section> <!-- /mvp -->
 
-<section class="testimonials-mvp">
+<section class="testimonials-list">
   <div class="containner">
 
     <h3>Depoimentos de nossos clientes</h3>
@@ -294,7 +294,7 @@ redirect_from: /servicos/mvp/
     </ul>
 
   </div>
-</section> <!-- /testimonials-mvp -->
+</section> <!-- /testimonials-list -->
 
 <section id="contact">
   <div class="containner">
@@ -333,4 +333,8 @@ $(function(){
   $('#slider-id').liquidSlider();
   $('#slider-id2').liquidSlider();
 });
+</script>
+
+<script type="text/javascript">
+  mixpanel.track_forms("#talk-to-us", 'Submited - Contact form');
 </script>
