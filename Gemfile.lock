@@ -68,9 +68,6 @@ GEM
     guard-compass (0.0.8)
       compass (>= 0.10.5)
       guard (>= 1.8)
-    guard-jekyll-plus (1.4.9)
-      guard (>= 1.1.0)
-      jekyll (>= 1.0.0)
     haml (4.0.5)
       tilt
     html-pipeline (1.9.0)
@@ -178,7 +175,6 @@ DEPENDENCIES
   foreman (= 0.63.0)
   github-pages (= 22)
   guard-compass (= 0.0.8)
-  guard-jekyll-plus
   haml (= 4.0.5)
   i18n (~> 0.6.9)
   jekyll_ext
