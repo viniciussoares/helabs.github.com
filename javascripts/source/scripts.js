@@ -463,7 +463,10 @@ function createBlogSlider ($container) {
       minSlides: 3, 
       maxSlides: 3,
       slideWidth: ($(window).width() < 960) ? 0 : 5000,
-      infiniteLoop: false,
+      infiniteLoop: true,
+      auto: true,
+      pause: 5000,
+      autoHover: true,
       controls: false,
       slideMargin: 25
     });
