@@ -89,7 +89,7 @@ $ git rebase --continue
 
 ### Creating your profile
 
-Run `rake new_profile` task to generate some basic structure for the "blog post" associated with your profile. The new profile can be found in [`_posts/time`](https://github.com/Helabs/helabs.github.com/tree/master/_posts/time).
+Run `rake new_profile` task to generate some basic structure for the "blog post" associated with your profile. The portuguese version of your profile will be found in [`_posts/time`](https://github.com/Helabs/helabs.github.com/tree/master/_posts/time) and the english version in [`_posts/team`](https://github.com/Helabs/helabs.github.com/tree/master/_posts/team).
 
 ### Import blogposts
 
