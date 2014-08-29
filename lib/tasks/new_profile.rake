@@ -13,6 +13,7 @@ module NewProfileTask
       while (name = ask('Your full name:')).nil?; end
       while (image = ask('URL to an image of you (tip: type in your email to get your gravatar image)')).nil?; end
       while (job_title = ask('Your job title:')).nil?; end
+      while (slug = ask('Your @helabs.com.br username:')).nil?; end
 
       if image =~ /[\w+]+@[\w|\.]+/
         image ='http://gravatar.com/avatar/' + Digest::MD5.hexdigest(image) + '?s=160'
@@ -27,6 +28,7 @@ module NewProfileTask
       vars = {
         full_name: name,
         parameterized_name: I18n.transliterate(name).gsub(' ', '-').downcase,
+        slug: slug,
         image: image,
         job_title: job_title,
         job_cool: job_cool,
@@ -37,13 +39,12 @@ module NewProfileTask
           behance:  behance
         }
       }
-
-      new_profile   = ERB.new(File.read('lib/templates/new_profile.yml.erb'))
       template_vars = OpenStruct.new(vars)
 
       post_file_name = Time.now.strftime('%Y-%m-%d')
       post_file_name << "-#{vars[:parameterized_name]}"
 
+      new_profile = ERB.new(File.read('lib/templates/new_profile.yml.erb'))
       File.open("_posts/time/#{post_file_name}.html", 'w') do |f|
         f.puts new_profile.result(template_vars.instance_eval { binding })
       end
