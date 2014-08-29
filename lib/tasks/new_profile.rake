@@ -46,12 +46,12 @@ module NewProfileTask
 
       new_profile_pt = ERB.new(File.read('lib/templates/new_profile-pt.yml.erb'))
       File.open("_posts/time/#{post_file_name}.html", 'w') do |f|
-        f.puts new_profile.result(template_vars.instance_eval { binding })
+        f.puts new_profile_pt.result(template_vars.instance_eval { binding })
       end
 
       new_profile_en = ERB.new(File.read('lib/templates/new_profile-en.yml.erb'))
       File.open("_posts/team/#{post_file_name}.html", 'w') do |f|
-        f.puts new_profile.result(template_vars.instance_eval { binding })
+        f.puts new_profile_en.result(template_vars.instance_eval { binding })
       end
     end
 
