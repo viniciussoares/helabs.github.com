@@ -166,7 +166,7 @@ section#atendesimples-steps {
       margin-left: 60px;
       width: 250px;
       height: 285px;
-      background-position: 0 0;
+      background-position: center 0;
     }
   }
 
@@ -178,7 +178,7 @@ section#atendesimples-steps {
       margin: 40px 40px 0;
       width: 240px;
       height: 165px;
-      background-position: 0 -295px;
+      background-position: center -295px;
     }
   }
 
@@ -190,7 +190,7 @@ section#atendesimples-steps {
       margin: 120px 0 0 70px;
       width: 270px;
       height: 190px;
-      background-position: 0 -468px;
+      background-position: center -468px;
     }
   }
 
@@ -202,7 +202,7 @@ section#atendesimples-steps {
       margin-top: 40px;
       width: 270px;
       height: 210px;
-      background-position: 0 -660px;
+      background-position: center -660px;
     }
   }
 
@@ -214,7 +214,7 @@ section#atendesimples-steps {
       margin: 20px 0 0 60px;
       width: 240px;
       height: 200px;
-      background-position: 0 -880px;
+      background-position: center -880px;
     }
   }
 
@@ -245,9 +245,9 @@ section#atendesimples-steps {
     }
 
     &:before {
-      width: 250px;
+      width: 290px;
       height: 370px;
-      background-position: 0 -1080px;
+      background-position: center -1080px;
     }
   }
 }
