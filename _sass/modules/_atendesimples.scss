@@ -96,6 +96,11 @@ section#atendesimples-steps {
     border-bottom: 2px solid $grey1;
     padding: 40px 0;
 
+    iframe {  
+      display: block;
+      margin: 0 auto 20px;
+    }
+
     p {
       width: 85%;
       margin: 0 auto;
