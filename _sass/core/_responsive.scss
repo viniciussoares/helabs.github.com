@@ -1599,7 +1599,7 @@ Media Queries for Smartphones
     b { font-size: 13px; line-height: 22px;}
   }
 
-  section#atendesimples-steps  {
+  section#atendesimples-steps {
 
     article h2,
     h3 { text-align: left; }
@@ -1628,27 +1628,27 @@ Media Queries for Smartphones
 
     article:nth-child(2) {
       section:after, 
-      section:before { zoom: 0.55 }
+      section:before { zoom: 0.55 !important }
     } 
     
     article:nth-child(4) {
       section:after, 
-      section:before { zoom: 0.75 }
+      section:before { zoom: 0.75 !important }
     } 
     
     article:nth-child(5) {
       section:after, 
-      section:before { zoom: 0.75 }
+      section:before { zoom: 0.75 !important }
     } 
     
     article:nth-child(6) {
       section:after, 
-      section:before { zoom: 0.75 }
+      section:before { zoom: 0.75 !important }
     } 
     
     article:nth-child(7) {
       section:after, 
-      section:before { zoom: 0.45 }
+      section:before { zoom: 0.45 !important }
     } 
   }
 
