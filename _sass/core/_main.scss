@@ -230,13 +230,40 @@ Video Gallery
 }
 
 #contract-videos {
-  .videothumbs {
-    margin: 40px 0 20px 0;
+  
+  ul {
+    margin: 50px 0 0 17px;
 
     li {
-      width: 31%;
-      margin: 0 2% 20px 2%;
-    }
+      width: 26%;
+      height: 290px;
+      margin: 0 3% 20px 3%;
+      background: #fff url("/images/play.jpg") 15px 10px no-repeat;
+      background-size: 100%;
+      float: left;
+      opacity: 1;
+      
+      h5 {
+        margin: 10px 0 0 0;
+        font-size: $font-medium2;
+        line-height: 24px;
+        color: #000;
+      }
+
+      a img {
+        border: 1px solid $grey1;
+        padding: 10px;
+      }
+      
+      img {
+        width: 100%;
+        display: block;
+        opacity: .7;
+
+        &:hover { opacity: 1; }
+      }
+      
+    } // li
   } // .videothumbs
 }
 
