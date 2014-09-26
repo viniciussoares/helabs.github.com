@@ -24,8 +24,8 @@ def import_blogposts!
     Dir.glob('*.html').map { |f| File.absolute_path f }
   end
 
-  # get absolute filenames of _posts/time/en/*.html files
-  time_files += Dir.chdir(File.join('_posts', 'time', 'en')) do
+  # get absolute filenames of _posts/team/*.html files
+  time_files += Dir.chdir(File.join('_posts', 'team')) do
     Dir.glob('*.html').map { |f| File.absolute_path f }
   end
 
