@@ -163,11 +163,6 @@ Home
 /* Our clients */
 #home section.our-clients,
 #home section.our-cases {
-
-  a { 
-    color: inherit;
-    text-decoration: none;
-  }
   
   padding: 60px 0 50px;
   background-color: $light-grey1;
@@ -232,6 +227,11 @@ Home
       &:nth-child(4n+4) { margin-right: 0; }
     }
   }
+}
+
+#home section.our-clients ul li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
