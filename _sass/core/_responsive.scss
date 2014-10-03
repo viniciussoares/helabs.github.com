@@ -584,6 +584,8 @@ Media Queries for Tablets
 
   section#atendesimples-steps  {
 
+    iframe { width: 100% }
+
     article { padding: 30px 0; }
 
     article h2,
@@ -611,7 +613,6 @@ Media Queries for Tablets
           margin: 20px auto;
           display: block;
           height: $image-height;
-          background-size: auto $image-height;
           position: absolute;
           top: 0;
           width: 100%;
@@ -622,27 +623,48 @@ Media Queries for Tablets
 
 
       &:nth-child(2) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-01.png') }
+        &:after, &:before { 
+          height: 290px;
+          zoom: 0.7;
+        }
       }
 
       &:nth-child(3) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-02.png') }
+        padding-top: 220px;
+
+        &:after, &:before { 
+          height: 170px;
+          background-position: center -290px;
+        }
       }
 
       &:nth-child(4) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-03.png') }
+        &:after, &:before { 
+          height: 200px;
+          background-position: center -460px;
+        }
       }
 
       &:nth-child(5) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-04.png') }
+        &:after, &:before { 
+          background-position: center -665px;
+          height: 210px;
+        }
       }
 
       &:nth-child(6) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-05.png') }
+        &:after, &:before { 
+          background-position: center -875px;
+          height: 205px;
+        }
       }
 
       &:nth-child(7) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-06.png') }
+        &:after, &:before { 
+          background-position: center -1080px;
+          height: 380px;
+          zoom: 0.55;
+        }
       }
     }
   }
@@ -1579,7 +1601,7 @@ Media Queries for Smartphones
     b { font-size: 13px; line-height: 22px;}
   }
 
-  section#atendesimples-steps  {
+  section#atendesimples-steps {
 
     article h2,
     h3 { text-align: left; }
@@ -1603,15 +1625,35 @@ Media Queries for Smartphones
         $gap: 40px;
         position: relative;
         padding-top: $image-height + $gap;
-
-
-        &:after, &:before {
-          height: $image-height;
-          background-size: auto $image-height;
-        }
       }
     }
+
+    article:nth-child(2) {
+      section:after, 
+      section:before { zoom: 0.55 !important }
+    } 
+    
+    article:nth-child(4) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(5) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(6) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(7) {
+      section:after, 
+      section:before { zoom: 0.45 !important }
+    } 
   }
+
 
   section.testimonials {
     h2 { margin: 30px 0; }
@@ -2272,6 +2314,8 @@ Media Queries with more adjustments for Smartphones
 
   section#atendesimples-steps aside {
     padding: 20px 0;
+
+    iframe { height: 260px }
 
     p {
       font-size: 14px;
