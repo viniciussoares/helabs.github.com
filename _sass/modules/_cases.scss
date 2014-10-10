@@ -184,7 +184,7 @@ Cases
   article { float: left; }
 
   .video {
-    margin-bottom: 30px;
+    float: none;
 
     .video-thumb {
       -webkit-box-sizing: border-box;
@@ -213,8 +213,8 @@ Cases
     } // .video-thumb
   } // .video
 
+  .testimonials { padding-top: 30px }
   .testimonial {
-
     blockquote {
       display: block;
       font-size: $font-medium2;

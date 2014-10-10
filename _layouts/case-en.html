@@ -111,11 +111,13 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
       {% endif %}
 
       {% if page.customer_experience %}
-        <h3>Customer Testimonial</h3>
-        <article class="testimonial">
-          <i>{{ page.customer_experience }}</i>
-          <em>{{ page.customer_name }}</em>
-        </article>
+        <div class="testimonials">
+          <h3>Customer Testimonial</h3>
+          <article class="testimonial">
+            <i>{{ page.customer_experience }}</i>
+            <em>{{ page.customer_name }}</em>
+          </article>
+        </div>
       {% endif %}
     </div>
   </section>
