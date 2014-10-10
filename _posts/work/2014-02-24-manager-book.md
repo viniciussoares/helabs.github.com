@@ -11,8 +11,8 @@ project_kind: Plataforma de Indicadores de Desempenho.
 display_url: managerbook.com.br
 
 videos:
-  - id: vZfu7rP5JRo
-    image: /images/customers/marcelo-vieira.jpg
+  - id: YMoQQjafDwI
+    image: /images/customers/pedro-nascimento-managerbook.jpg
   - id: vZfu7rP5JRo
     image: /images/customers/marcelo-vieira.jpg
 
