@@ -161,6 +161,8 @@ User Profile
       margin: 40px 1% 0 1%;
       display: inline-block;
 
+      a { text-decoration: none }
+
       img {
         width: 98%;
         border: 1px solid $light-grey2;

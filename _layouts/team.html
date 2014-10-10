@@ -69,9 +69,17 @@ layout: default
           {% for slug in page.projects %}
             <li>
               {% for project in site.data.mvp.projects %}
+                {% if project.url %}
+                  <a href="/trabalhos/{{ project.url }}">
+                {% endif %}
+                
                 {% if project.slug == slug %}
                   <img src="{{ project.image }}" alt="{{ project.name }}">
                   <h3>{{ project.name }}</h3>
+                {% endif %}
+
+                {% if project.url %}
+                  </a>
                 {% endif %}
               {% endfor %}
             </li>
