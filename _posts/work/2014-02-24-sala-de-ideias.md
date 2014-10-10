@@ -10,8 +10,9 @@ project_kind:
 
 display_url: saladeideias.com.br
 
-video_id: 3QKluUSthJc
-video_image: /images/customers/fabiane-gori-e-helena-cardoso.jpg
+videos:
+  - id: 3QKluUSthJc
+    image: /images/customers/fabiane-gori-e-helena-cardoso.jpg 
 
 screenshots:
   - url: /images/projects/sala-de-ideias/slider-sala-de-ideias-01.jpg

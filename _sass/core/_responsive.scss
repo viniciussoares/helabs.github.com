@@ -1774,7 +1774,7 @@ Media Queries for Smartphones
 
       .video-thumb {
         width: 70%;
-        margin: auto;
+        margin: auto auto 20px !important;
         display: block;
       }
     }

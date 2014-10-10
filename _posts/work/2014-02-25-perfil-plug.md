@@ -10,8 +10,9 @@ project_kind:
 
 display_url: perfilplug.com
 
-video_id: 8vtjKSe3zE0
-video_image: /images/customers/flavia-fortes-perfil-plug.png
+videos:
+  - id: 8vtjKSe3zE0
+    image: /images/customers/flavia-fortes-perfil-plug.png
 
 screenshots:
   - url: /images/projects/perfil-plug/slider-perfil-plug-01.jpg

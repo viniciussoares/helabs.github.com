@@ -184,18 +184,24 @@ Cases
   article { float: left; }
 
   .video {
-    width: 40%;
-    margin-right: 5%;
+    margin-bottom: 30px;
 
     .video-thumb {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
       box-shadow: 0 4px 8px -3px #d8d8d8;
-      width: 95%;
+      width: 31.6%;
       background: #fff url("/images/play.jpg") no-repeat;
       background-size: 100%;
       margin: 0;
       padding: 10px;
       display: inline-block;
       opacity: 1;
+      margin-right: 2%;
+
+      &:last-child { margin-right: 0 }
 
       img {
         width: 100%;
@@ -208,7 +214,6 @@ Cases
   } // .video
 
   .testimonial {
-    width: 55%;
 
     blockquote {
       display: block;
@@ -220,7 +225,6 @@ Cases
       text-align: left;
       padding: 0;
       margin: 0;
-      width: 80%;
     }
 
     em {

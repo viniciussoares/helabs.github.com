@@ -18,11 +18,6 @@ screenshots:
   - url: /images/projects/pet-roomie/slider-pet-roomie-04.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-05.jpg
 
-video_id:
-video_image:
-
-
-
 about: PetRoomie is a community for pet lovers that offers pet services. There’s a wide range of services available, from overnight boarding, spas, grooming and petsitting to training and pet walkers.
 
 status: The project is finished, online, and has been used by many users.

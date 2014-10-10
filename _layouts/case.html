@@ -90,17 +90,19 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
   </div>
 </section>
 
-{% if page.video_id or page.customer_experience %}
+{% if page.videos or page.customer_experience %}
   <section class="client">
     <div class="containner">
-      {% if page.video_id %}
+      {% if page.videos %}
         <article class="video">
           <h3>Vídeos sobre o projeto</h3>
 
-          <div class="video-thumb">
-            <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ page.video_id }}" rel="prettyPhoto">
-            <img src="{{ page.video_image }}"></a>
-          </div>
+          {% for video in page.videos %}
+            <div class="video-thumb">
+              <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ video.id }}" rel="prettyPhoto">
+              <img src="{{ video.image }}"></a>
+            </div>
+          {% endfor %}
         </article>
       {% endif %}
 

@@ -8,8 +8,10 @@ en: '/en/works/espn-tempo-real/'
 name: ESPN Tempo Real
 project_kind: Acompanhamento de eventos esportivos ao vivo
 
-video_id: MYEjydImSxM
-video_image: /images/customers/thiago-belem-espn-mobile.png
+videos:
+  - id: MYEjydImSxM
+    image: /images/customers/thiago-belem-espn-mobile.png
+
 
 screenshots:
   - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-01.jpg

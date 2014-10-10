@@ -11,9 +11,6 @@ image: /images/projects/websimulado.jpg
 
 display_url: websimulado.com.br
 
-video_id:
-video_image:
-
 screenshots:
   - url: /images/projects/websimulado/slider-websimulado-01.jpg
   - url: /images/projects/websimulado/slider-websimulado-02.jpg

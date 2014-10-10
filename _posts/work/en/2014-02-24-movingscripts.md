@@ -10,9 +10,6 @@ project_kind: Creative community for publishing screenplays.
 
 display_url: movingscripts.com
 
-video_id:
-video_image:
-
 screenshots:
   - url: /images/projects/moving-scripts/slider-moving-scripts-01.jpg
   - url: /images/projects/moving-scripts/slider-moving-scripts-02.jpg

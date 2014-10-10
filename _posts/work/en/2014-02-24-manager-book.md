@@ -11,8 +11,11 @@ image: /images/works/manager-book.jpg
 
 display_url: managerbook.com.br
 
-video_id: vZfu7rP5JRo
-video_image: /images/customers/marcelo-vieira.jpg
+videos:
+  - id: vZfu7rP5JRo
+    image: /images/customers/marcelo-vieira.jpg
+  - id: vZfu7rP5JRo
+    image: /images/customers/marcelo-vieira.jpg
 
 screenshots:
   - url: /images/projects/managerbook/slider-managerbook-01.jpg

@@ -10,8 +10,9 @@ project_kind: Crowdfunding Plataform.
 
 display_url: earlyshares.com
 
-video_id: LiE2cPQSgtc
-video_image: /images/customers/maurice-lopes.jpg
+videos:
+  - id: LiE2cPQSgtc
+    image: /images/customers/maurice-lopes.jpg 
 
 screenshots:
   - url: /images/projects/early-shares/slider-early-shares-01.jpg

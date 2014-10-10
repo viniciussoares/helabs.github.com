@@ -17,9 +17,6 @@ screenshots:
   - url: /images/projects/pet-roomie/slider-pet-roomie-04.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-05.jpg
 
-video_id:
-video_image:
-
 
 
 about: A PetRoomie é uma comunidade que oferece serviços pro seu pet. Os serviços variam desde hotéis, babás, adestramento, passeio, banho e tosa.
