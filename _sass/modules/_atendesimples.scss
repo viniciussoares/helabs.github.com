@@ -86,7 +86,7 @@ Case: AtendeSimples
 
 /* Steps */
 
-section#atendesimples-steps {
+#atendesimples-steps {
   width: 100%;
   overflow: hidden;
   
@@ -121,7 +121,7 @@ section#atendesimples-steps {
     overflow: hidden;
     border-top: 1px solid $grey1;
     border-bottom: 1px solid $grey1;
-    padding: 60px 0;
+    padding: 60px 0 40px 0;
 
     h2 {
       margin-bottom: 20px;
@@ -137,14 +137,21 @@ section#atendesimples-steps {
     h3 {
       margin-bottom: 20px;
     }
+    
+    p,
+    .topics li {
+      font-size: $font-medium2;
+      line-height: 28px;
+    }
 
     p {
       margin-top: 10px;
-      font-size: $font-medium2;
-      line-height: 30px;
     }
 
-    ul.topics li { font-size: 16px; list-style-type: circle !important; }
+    .topics li {
+      list-style-type: circle !important;
+      margin: 0 0 0 40px;
+    }
   }
 
   article:nth-child(even) {
