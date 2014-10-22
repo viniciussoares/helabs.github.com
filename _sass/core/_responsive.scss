@@ -1454,6 +1454,7 @@ Media Queries for Smartphones
 
 
   /* ESPN Mobile */
+
   #cover-banner-espn {
     margin-top: 78px;
     padding: 0 0 50px 0;
@@ -1539,7 +1540,7 @@ Media Queries for Smartphones
   }
 
 
-  /* Mailing page*/
+  /* Mailing page */
 
   .cover-mailing-page {
     background-image: url("/images/mailing-cover-bg.jpg");
@@ -1601,8 +1602,16 @@ Media Queries for Smartphones
 
     b { font-size: 13px; line-height: 22px;}
   }
-
+  
   section#atendesimples-steps {
+    
+    .step-call {
+
+      iframe {  
+        padding: 0;
+        border: none;
+      }
+    }
 
     article h2,
     h3 { text-align: left; }
