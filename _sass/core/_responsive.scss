@@ -27,6 +27,10 @@ Media Queries for Tablets
 
 @media (max-width: 960px) {
 
+  footer { position: static }
+  .main { padding-bottom: 0 }
+
+
   .containner { width: 700px; }
   header.default .logo {
     width: 110px;
@@ -1945,10 +1949,10 @@ Media Queries with adjustments for Smartphones
   }
 
   .modalBox {
-  	width: 260px;
+    width: 260px;
     padding: 17px 10px 10px 10px;
-  	top: 5%;
-  	margin-left: -145px;
+    top: 5%;
+    margin-left: -145px;
   }
 
   #about-us {
@@ -2392,16 +2396,16 @@ Media Queries with more adjustments for Smartphones
 /* Webkit Hacks  */
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	#tiptip_content {
-		padding: 4px 8px 5px 8px;
-		background-color: rgba(45,45,45,0.88);
-	}
-	#tiptip_holder.tip_bottom #tiptip_arrow_inner {
-		border-bottom-color: rgba(45,45,45,0.88);
-	}
-	#tiptip_holder.tip_top #tiptip_arrow_inner {
-		border-top-color: rgba(20,20,20,0.92);
-	}
+  #tiptip_content {
+    padding: 4px 8px 5px 8px;
+    background-color: rgba(45,45,45,0.88);
+  }
+  #tiptip_holder.tip_bottom #tiptip_arrow_inner {
+    border-bottom-color: rgba(45,45,45,0.88);
+  }
+  #tiptip_holder.tip_top #tiptip_arrow_inner {
+    border-top-color: rgba(20,20,20,0.92);
+  }
 }
 
 
