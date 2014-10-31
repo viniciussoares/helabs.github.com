@@ -31,7 +31,6 @@ projects:
     description: Site de treinamento para questões de prova de concurso público, com apoio de professores.
   -
     name: Watch ESPN
-    url: 'espn-watch'
     slug: espn-watch
     image: /images/projects/espn-watch.jpg
     description: Portal de vídeos com conteúdo exclusivo ESPN para afiliados
