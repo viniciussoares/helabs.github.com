@@ -439,11 +439,13 @@ Home
   &:hover{
     -webkit-animation: opentag 2s; /* Chrome, Safari, Opera */
     animation: opentag 2s;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     .action-link{display: none;}
     .book-link{
       -webkit-animation: showlink 2s; /* Chrome, Safari, Opera */
       animation: showlink 2s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       display:block;
     }
