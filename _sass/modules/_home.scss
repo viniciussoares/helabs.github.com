@@ -401,33 +401,13 @@ Home
   &:hover { opacity: .8; }
 }
 
+
+
+
 /*  SIDETAG OF MAURO'S BOOK   */
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes opentag {
-    from {left:-120px;}
-    to {left:0;}
-}
 
-/* Standard syntax */
-@keyframes opentag {
-    from {left:-120px;}
-    to {left:0;}
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes showlink {
-    from {opacity:0;}
-    to {opacity:100%;}
-}
-
-/* Standard syntax */
-@keyframes showlink {
-    from {opacity:0;}
-    to {opacity:100%;}
-}
-
-.side-tag{
+.side-tag {
   width: 140px;
   height: 140px;
   background-color: rgba(0,0,0, 0.5);
@@ -435,14 +415,15 @@ Home
   top: 180px;
   left:-120px;
   z-index: 1;
+  color: #ffffff;
   padding: 20px 0 20px 20px;
-  &:hover{
+  &:hover {
     -webkit-animation: opentag 1s; /* Chrome, Safari, Opera */
     animation: opentag 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    .action-link{display: none;}
-    .book-link{
+    .action-link {display: none;}
+    .book-link {
       -webkit-animation: showlink 2s; /* Chrome, Safari, Opera */
       animation: showlink 2s;
       -webkit-animation-fill-mode: forwards;
@@ -450,7 +431,8 @@ Home
       display:block;
     }
   }
-  .action-link{
+
+  .action-link {
     display:block;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -462,27 +444,29 @@ Home
     top:70px;
     right:-25px;
     position: absolute;
-
   }
-  .book-link{ display: none;}
-  .autor, hr{
+
+  .book-link { display: none;}
+  .autor, hr {
     width: 70px;
     margin-left: 0;
   }
-  .autor{
-    color: #ffffff;
+
+  .autor {
     font-size: 14px;
     display: inline-block;
   }
-  a{ 
-    color: #ffffff;
+
+  a { 
     text-decoration: none;
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
+    color: #ffffff;
     &:hover{ opacity: 0.7;}
   }
-  .cover-book{
+
+  .cover-book {
     content: " ";
     width: 60px;
     height: 83px;
@@ -492,7 +476,22 @@ Home
     background: url("/images/home/book.png") no-repeat;
     position: absolute;
   }
-  .action-text{
-    color: #ffffff;
-  }
+}
+
+@-webkit-keyframes opentag {
+    from {left:-120px;}
+    to {left:0;}
+}
+@keyframes opentag {
+    from {left:-120px;}
+    to {left:0;}
+}
+
+@-webkit-keyframes showlink {
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+@keyframes showlink {
+    from {opacity:0;}
+    to {opacity:100%;}
 }
