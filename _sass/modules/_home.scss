@@ -403,15 +403,66 @@ Home
 
 /*  SIDETAG OF MAURO'S BOOK   */
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes opentag {
+    from {left:-120px;}
+    to {left:0;}
+}
+
+/* Standard syntax */
+@keyframes opentag {
+    from {left:-120px;}
+    to {left:0;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes showlink {
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+
+/* Standard syntax */
+@keyframes showlink {
+    from {opacity:0;}
+    to {opacity:100%;}
+}
+
 .side-tag{
   width: 140px;
   height: 140px;
   background-color: rgba(0,0,0, 0.5);
   position: fixed;
   top: 180px;
-  left:0;
+  left:-120px;
   z-index: 1;
-  padding: 20px 10px 20px 20px;
+  padding: 20px 0 20px 20px;
+  &:hover{
+    -webkit-animation: opentag 2s; /* Chrome, Safari, Opera */
+    animation: opentag 2s;
+    animation-fill-mode: forwards;
+    .action-link{display: none;}
+    .book-link{
+      -webkit-animation: showlink 2s; /* Chrome, Safari, Opera */
+      animation: showlink 2s;
+      animation-fill-mode: forwards;
+      display:block;
+    }
+  }
+  .action-link{
+    display:block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    height: 25px;
+    margin:0;
+    padding:0;
+    top:70px;
+    right:-25px;
+    position: absolute;
+
+  }
+  .book-link{ display: none;}
   .autor, hr{
     width: 70px;
     margin-left: 0;
@@ -439,5 +490,7 @@ Home
     background: url("/images/home/book.png") no-repeat;
     position: absolute;
   }
-
+  .action-text{
+    color: #ffffff;
+  }
 }
