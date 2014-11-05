@@ -437,8 +437,8 @@ Home
   z-index: 1;
   padding: 20px 0 20px 20px;
   &:hover{
-    -webkit-animation: opentag 2s; /* Chrome, Safari, Opera */
-    animation: opentag 2s;
+    -webkit-animation: opentag 1s; /* Chrome, Safari, Opera */
+    animation: opentag 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     .action-link{display: none;}
