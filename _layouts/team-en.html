@@ -66,26 +66,30 @@ layout: english
       <section class="projects-worked">
         <div class="containner">
           <h2>Projects</h2>
+          
           <ul>
             {% for slug in page.projects %}
               <li>
                 {% for project in site.data.mvp.projects %}
-                  {% if project.url %}
-                    <a href="/en/works/{{ project.url }}">
-                  {% endif %}
-
                   {% if project.slug == slug %}
+        
+                    {% if project.url %}
+                      <a href="/trabalhos/{{ project.url }}">
+                    {% endif %}
+                  
                     <img src="{{ project.image }}" alt="{{ project.name }}">
                     <h3>{{ project.name }}</h3>
+
+                    {% if project.url %}
+                      </a>
+                    {% endif %}
                   {% endif %}
 
-                  {% if project.url %}
-                    </a>
-                  {% endif %}
                 {% endfor %}
               </li>
             {% endfor %}
           </ul>
+          
         </div>
       </section> <!-- /projects-worked -->
     {% endif %}
