@@ -408,32 +408,32 @@ Home
 
 
 .side-tag {
-  width: 140px;
+  background: #000;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
   height: 140px;
-  background-color: rgba(0,0,0, 0.5);
+  left: -120px;
+  padding: 20px 0 20px 20px;
   position: fixed;
   top: 180px;
-  left:-120px;
+  width: 140px;
   z-index: 1;
-  color: #ffffff;
-  padding: 20px 0 20px 20px;
+  border-radius: 0 5px 5px 0;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+
   &:hover {
-    -webkit-animation: opentag 1s; /* Chrome, Safari, Opera */
-    animation: opentag 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    .action-link {display: none;}
-    .book-link {
-      -webkit-animation: showlink 2s; /* Chrome, Safari, Opera */
-      animation: showlink 2s;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      display:block;
-    }
+    left: 0;
+    
+    .action-link { display: none }
+    .book-link { display: block }
   }
 
   .action-link {
-    display:block;
+    display: block;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -446,7 +446,8 @@ Home
     position: absolute;
   }
 
-  .book-link { display: none;}
+  .book-link { display: none }
+
   .autor, hr {
     width: 70px;
     margin-left: 0;
@@ -458,40 +459,21 @@ Home
   }
 
   a { 
-    text-decoration: none;
+    color: #fff;
     font-size: 18px;
-    font-weight: 300;
     font-style: italic;
-    color: #ffffff;
-    &:hover{ opacity: 0.7;}
+    font-weight: 300;
+    text-decoration: none;
   }
 
   .cover-book {
+    background-position: center center;
+    background: url("/images/home/book.png") no-repeat;
     content: " ";
-    width: 60px;
+    display: inline-block;
     height: 83px;
     margin: 10px 0 0 15px;
-    background-position: center center;
-    display: inline-block;
-    background: url("/images/home/book.png") no-repeat;
     position: absolute;
+    width: 60px;
   }
-}
-
-@-webkit-keyframes opentag {
-    from {left:-120px;}
-    to {left:0;}
-}
-@keyframes opentag {
-    from {left:-120px;}
-    to {left:0;}
-}
-
-@-webkit-keyframes showlink {
-    from {opacity:0;}
-    to {opacity:100%;}
-}
-@keyframes showlink {
-    from {opacity:0;}
-    to {opacity:100%;}
 }
