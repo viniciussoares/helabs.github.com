@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* Viewport */
 
 html,
@@ -26,6 +27,10 @@ Media Queries for Tablets
 
 @media (max-width: 960px) {
 
+  footer { position: static }
+  .main { padding-bottom: 0 }
+
+
   .containner { width: 700px; }
   header.default .logo {
     width: 110px;
@@ -48,6 +53,8 @@ Media Queries for Tablets
   }
 
   /* Home */
+
+  .side-tag{ display:none;}
 
   #home {
     section.hero {
@@ -584,6 +591,8 @@ Media Queries for Tablets
 
   section#atendesimples-steps  {
 
+    iframe { width: 100% }
+
     article { padding: 30px 0; }
 
     article h2,
@@ -611,7 +620,6 @@ Media Queries for Tablets
           margin: 20px auto;
           display: block;
           height: $image-height;
-          background-size: auto $image-height;
           position: absolute;
           top: 0;
           width: 100%;
@@ -622,27 +630,48 @@ Media Queries for Tablets
 
 
       &:nth-child(2) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-01.png') }
+        &:after, &:before { 
+          height: 290px;
+          zoom: 0.7;
+        }
       }
 
       &:nth-child(3) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-02.png') }
+        padding-top: 220px;
+
+        &:after, &:before { 
+          height: 170px;
+          background-position: center -290px;
+        }
       }
 
       &:nth-child(4) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-03.png') }
+        &:after, &:before { 
+          height: 200px;
+          background-position: center -460px;
+        }
       }
 
       &:nth-child(5) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-04.png') }
+        &:after, &:before { 
+          background-position: center -665px;
+          height: 210px;
+        }
       }
 
       &:nth-child(6) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-05.png') }
+        &:after, &:before { 
+          background-position: center -875px;
+          height: 205px;
+        }
       }
 
       &:nth-child(7) section {
-        &:after, &:before { background-image: url('/images/works/atendesimples/as-case-section-06.png') }
+        &:after, &:before { 
+          background-position: center -1080px;
+          height: 380px;
+          zoom: 0.55;
+        }
       }
     }
   }
@@ -1431,6 +1460,7 @@ Media Queries for Smartphones
 
 
   /* ESPN Mobile */
+
   #cover-banner-espn {
     margin-top: 78px;
     padding: 0 0 50px 0;
@@ -1516,7 +1546,7 @@ Media Queries for Smartphones
   }
 
 
-  /* Mailing page*/
+  /* Mailing page */
 
   .cover-mailing-page {
     background-image: url("/images/mailing-cover-bg.jpg");
@@ -1578,8 +1608,16 @@ Media Queries for Smartphones
 
     b { font-size: 13px; line-height: 22px;}
   }
+  
+  section#atendesimples-steps {
+    
+    .step-call {
 
-  section#atendesimples-steps  {
+      iframe {  
+        padding: 0;
+        border: none;
+      }
+    }
 
     article h2,
     h3 { text-align: left; }
@@ -1603,15 +1641,35 @@ Media Queries for Smartphones
         $gap: 40px;
         position: relative;
         padding-top: $image-height + $gap;
-
-
-        &:after, &:before {
-          height: $image-height;
-          background-size: auto $image-height;
-        }
       }
     }
+
+    article:nth-child(2) {
+      section:after, 
+      section:before { zoom: 0.55 !important }
+    } 
+    
+    article:nth-child(4) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(5) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(6) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(7) {
+      section:after, 
+      section:before { zoom: 0.45 !important }
+    } 
   }
+
 
   section.testimonials {
     h2 { margin: 30px 0; }
@@ -1732,7 +1790,7 @@ Media Queries for Smartphones
 
       .video-thumb {
         width: 70%;
-        margin: auto;
+        margin: auto auto 20px !important;
         display: block;
       }
     }
@@ -1768,7 +1826,12 @@ Media Queries for Smartphones
 
   /* Footer */
 
-  footer { padding: 20px 0 255px 0; }
+  footer { 
+    padding: 20px 0 255px 0; 
+    position: static;
+  }
+
+  .main { padding-bottom: 0 }
 
   .offices { padding: 0 0 30px; }
 
@@ -1879,7 +1942,7 @@ Media Queries with adjustments for Smartphones
 
   .blog-posts {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .projects-worked {
@@ -1893,10 +1956,10 @@ Media Queries with adjustments for Smartphones
   }
 
   .modalBox {
-  	width: 260px;
+    width: 260px;
     padding: 17px 10px 10px 10px;
-  	top: 5%;
-  	margin-left: -145px;
+    top: 5%;
+    margin-left: -145px;
   }
 
   #about-us {
@@ -2273,6 +2336,8 @@ Media Queries with more adjustments for Smartphones
   section#atendesimples-steps aside {
     padding: 20px 0;
 
+    iframe { height: 260px }
+
     p {
       font-size: 14px;
       line-height: 26px;
@@ -2338,16 +2403,16 @@ Media Queries with more adjustments for Smartphones
 /* Webkit Hacks  */
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	#tiptip_content {
-		padding: 4px 8px 5px 8px;
-		background-color: rgba(45,45,45,0.88);
-	}
-	#tiptip_holder.tip_bottom #tiptip_arrow_inner {
-		border-bottom-color: rgba(45,45,45,0.88);
-	}
-	#tiptip_holder.tip_top #tiptip_arrow_inner {
-		border-top-color: rgba(20,20,20,0.92);
-	}
+  #tiptip_content {
+    padding: 4px 8px 5px 8px;
+    background-color: rgba(45,45,45,0.88);
+  }
+  #tiptip_holder.tip_bottom #tiptip_arrow_inner {
+    border-bottom-color: rgba(45,45,45,0.88);
+  }
+  #tiptip_holder.tip_top #tiptip_arrow_inner {
+    border-top-color: rgba(20,20,20,0.92);
+  }
 }
 
 

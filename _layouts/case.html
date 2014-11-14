@@ -4,39 +4,45 @@ title:  Cases - Web Software Development
 description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web, aplicativos web, SaaS e Cloud Computing.
 ---
 
-<section class="case-hero">
-  <div class="containner">
-    <article>
-      <h2>{{ page.name }}</h2>
-      <p>{{ page.project_kind }}</p>
+<div class="main">
 
-      {% if page.project_url %}
-        <a class="external-link" href="{{ page.project_url }}" target="_blank">{{ page.display_url }}</a>
-      {% endif %}
-    </article>
-  </div>
-</section>
+  <section class="case-hero">
+    <div class="containner">
+      <article>
+        <h2>{{ page.name }}</h2>
+        <p>{{ page.project_kind }}</p>
 
-{% if page.screenshots %}
-  <section id="carousel-slider">
-    <div class="slideshow">
-      {% for screenshot in page.screenshots %}
-        <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
-      {% endfor %}
+        {% if page.project_url %}
+          <a class="external-link" href="{{ page.project_url }}" target="_blank">{{ page.display_url }}</a>
+        {% endif %}
+      </article>
     </div>
-
-    <a href="#" id="carousel-slider-prev" class="carousel-slider-nav"></a>
-    <a href="#" id="carousel-slider-next" class="carousel-slider-nav"></a>
   </section>
-{% endif %}
 
-{% assign has_active_team_members = false %}
-{% if page.project_team %}
-    {% for person in site.categories.time %}
-      {% for team_member in page.project_team %}
-        {% for sa in person.social_accounts %}
-          {% if sa.provider == 'github' and sa.username == team_member.github  %}
-            {% assign has_active_team_members = true %}
+  {% if page.screenshots %}
+    <section id="carousel-slider">
+      <div class="slideshow">
+        {% for screenshot in page.screenshots %}
+          <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
+        {% endfor %}
+      </div>
+
+      <a href="#" id="carousel-slider-prev" class="carousel-slider-nav"></a>
+      <a href="#" id="carousel-slider-next" class="carousel-slider-nav"></a>
+    </section>
+  {% endif %}
+
+  {% assign has_active_team_members = false %}
+  {% if page.project_team %}
+      {% for person in site.categories.time %}
+        {% for team_member in page.project_team %}
+          {% for sa in person.social_accounts %}
+            {% if sa.provider == 'github' and sa.username == team_member.github  %}
+              {% assign has_active_team_members = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if has_active_team_members %}
             {% break %}
           {% endif %}
         {% endfor %}
@@ -44,77 +50,79 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
           {% break %}
         {% endif %}
       {% endfor %}
-      {% if has_active_team_members %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-{% endif %}
+  {% endif %}
 
-{% if has_active_team_members %}
-<section class="main-infos with-team">
-{% else %}
-<section class="main-infos">
-{% endif %}
-  <div class="containner">
-    <article>
-      <h3>Sobre o Projeto</h3>
-      <p>{{ page.about }}</p>
-      <p>{{ page.status }}</p>
-      <p>{{ page.what_has_been_done }}</p>
-    </article>
+  {% if has_active_team_members %}
+  <section class="main-infos with-team">
+  {% else %}
+  <section class="main-infos">
+  {% endif %}
+    <div class="containner">
+      <article>
+        <h3>Sobre o Projeto</h3>
+        <p>{{ page.about }}</p>
+        <p>{{ page.status }}</p>
+        <p>{{ page.what_has_been_done }}</p>
+      </article>
 
-    <aside>
-      {% if has_active_team_members %}
-        <h3>Equipe</h3>
-        <ul>
-          {% for person in site.categories.time %}
-            {% for team_member in page.project_team %}
-              {% for sa in person.social_accounts %}
-                {% if sa.provider == 'github' and sa.username == team_member.github  %}
-                  <li>
-                    <a href="{{ person.permalink }}">
-                      <figure>
-                        <img src="{{ person.image }}" alt="{{ person.full_name }}" width="50" height="50" />
-                      </figure>
-                      <h4>{{ person.full_name }}</h4>
-                      <p>{{ person.job_title }}</p>
-                    </a>
-                  </li>
-                {% endif %}
+      <aside>
+        {% if has_active_team_members %}
+          <h3>Equipe</h3>
+          <ul>
+            {% for person in site.categories.time %}
+              {% for team_member in page.project_team %}
+                {% for sa in person.social_accounts %}
+                  {% if sa.provider == 'github' and sa.username == team_member.github  %}
+                    <li>
+                      <a href="{{ person.permalink }}">
+                        <figure>
+                          <img src="{{ person.image }}" alt="{{ person.full_name }}" width="50" height="50" />
+                        </figure>
+                        <h4>{{ person.full_name }}</h4>
+                        <p>{{ person.job_title }}</p>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
               {% endfor %}
             {% endfor %}
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </aside>
-  </div>
-</section>
-
-{% if page.video_id or page.customer_experience %}
-  <section class="client">
-    <div class="containner">
-      {% if page.video_id %}
-        <article class="video">
-          <h3>Vídeos sobre o projeto</h3>
-
-          <div class="video-thumb">
-            <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ page.video_id }}" rel="prettyPhoto">
-            <img src="{{ page.video_image }}"></a>
-          </div>
-        </article>
-      {% endif %}
-
-      {% if page.customer_experience %}
-        <h3>Depoimento</h3>
-        <article class="testimonial">
-          <blockquote>"{{ page.customer_experience }}"</blockquote>
-          <em>{{ page.customer_name }}</em>
-        </article>
-      {% endif %}
+          </ul>
+        {% endif %}
+      </aside>
     </div>
   </section>
-{% endif %}
 
-<div class="bottom-nav">
-  <a class="red-button" href="/trabalho/">Conheça outros projetos</a>
+  {% if page.videos or page.customer_experience %}
+    <section class="client">
+      <div class="containner">
+        {% if page.videos %}
+          <article class="video">
+            <h3>Vídeos sobre o projeto</h3>
+
+            {% for video in page.videos %}
+              <div class="video-thumb">
+                <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ video.id }}" rel="prettyPhoto">
+                <img src="{{ video.image }}"></a>
+              </div>
+            {% endfor %}
+          </article>
+        {% endif %}
+
+        {% if page.customer_experience %}
+          <div class="testimonials">
+            <h3>Depoimento</h3>
+            <article class="testimonial">
+              <blockquote>"{{ page.customer_experience }}"</blockquote>
+              <em>{{ page.customer_name }}</em>
+            </article>
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+
+  <div class="bottom-nav">
+    <a class="red-button" href="/trabalho/">Conheça outros projetos</a>
+  </div>
+
 </div>

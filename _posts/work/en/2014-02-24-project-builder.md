@@ -10,8 +10,9 @@ project_kind: Project Management Software.
 
 display_url: projectbuilder.com.br
 
-video_id: I6n1NI2lu_A
-video_image: /images/customers/aluisio-azevedo-project-builder.png
+videos:
+  - id: I6n1NI2lu_A
+    image: /images/customers/aluisio-azevedo-project-builder.png 
 
 screenshots:
   - url: /images/projects/project-builder/slider-project-builder-01.jpg

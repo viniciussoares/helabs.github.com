@@ -163,6 +163,7 @@ Home
 /* Our clients */
 #home section.our-clients,
 #home section.our-cases {
+  
   padding: 60px 0 50px;
   background-color: $light-grey1;
   border-top: 1px solid $light-grey2;
@@ -226,6 +227,11 @@ Home
       &:nth-child(4n+4) { margin-right: 0; }
     }
   }
+}
+
+#home section.our-clients ul li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
@@ -393,4 +399,81 @@ Home
   color: #fff;
 
   &:hover { opacity: .8; }
+}
+
+
+
+
+/*  SIDETAG OF MAURO'S BOOK   */
+
+
+.side-tag {
+  background: #000;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+  height: 140px;
+  left: -120px;
+  padding: 20px 0 20px 20px;
+  position: fixed;
+  top: 180px;
+  width: 140px;
+  z-index: 1;
+  border-radius: 0 5px 5px 0;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+
+  &:hover {
+    left: 0;
+    
+    .action-link { display: none }
+    .book-link { display: block }
+  }
+
+  .action-link {
+    display: block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    height: 25px;
+    margin:0;
+    padding:0;
+    top:70px;
+    right:-25px;
+    position: absolute;
+  }
+
+  .book-link { display: none }
+
+  .autor, hr {
+    width: 70px;
+    margin-left: 0;
+  }
+
+  .autor {
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  a { 
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  .cover-book {
+    background-position: center center;
+    background: url("/images/home/book.png") no-repeat;
+    content: " ";
+    display: inline-block;
+    height: 83px;
+    margin: 10px 0 0 15px;
+    position: absolute;
+    width: 60px;
+  }
 }

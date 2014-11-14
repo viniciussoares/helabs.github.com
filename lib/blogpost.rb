@@ -26,7 +26,7 @@ class Blogpost
   end
 
   def export_to(filename)
-    file_content = File.read(filename)
+    file_content = File.read(filename).force_encoding('utf-8')
     frontmatter = YAML.load(
       file_content.scan(/\A(---\s*\n.*?\n?)^(---\s*$\n?)/m).first.first
     )

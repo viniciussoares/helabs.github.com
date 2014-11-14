@@ -11,16 +11,16 @@ image: /images/projects/petroomie.jpg
 
 display_url: petroomie.com.br
 
+videos:
+  - id: wRlKCsNyR0E
+    image: /images/customers/matheus-bras-petroomie.jpg 
+
 screenshots:
   - url: /images/projects/pet-roomie/slider-pet-roomie-01.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-02.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-03.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-04.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-05.jpg
-
-video_id:
-video_image:
-
 
 
 about: PetRoomie is a community for pet lovers that offers pet services. There’s a wide range of services available, from overnight boarding, spas, grooming and petsitting to training and pet walkers.

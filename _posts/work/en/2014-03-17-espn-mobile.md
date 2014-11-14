@@ -10,8 +10,9 @@ project_kind: Mobile version of ESPN.com.br
 
 display_url: m.espn.com.br
 
-video_id: TabJNvOVVHk
-video_image: /images/customers/thiago-belem-espn-mobile.png
+videos:
+  - id: TabJNvOVVHk
+    image: /images/customers/thiago-belem-espn-mobile.png 
 
 screenshots:
   - url: /images/projects/espn-mobile/slider-espn-mobile-01.jpg

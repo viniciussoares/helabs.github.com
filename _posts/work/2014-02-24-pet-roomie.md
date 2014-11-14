@@ -10,16 +10,16 @@ project_kind: Serviços para Animais de Estimação.
 
 display_url: petroomie.com.br
 
+videos:
+  - id: wRlKCsNyR0E
+    image: /images/customers/matheus-bras-petroomie.jpg 
+
 screenshots:
   - url: /images/projects/pet-roomie/slider-pet-roomie-01.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-02.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-03.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-04.jpg
   - url: /images/projects/pet-roomie/slider-pet-roomie-05.jpg
-
-video_id:
-video_image:
-
 
 
 about: A PetRoomie é uma comunidade que oferece serviços pro seu pet. Os serviços variam desde hotéis, babás, adestramento, passeio, banho e tosa.

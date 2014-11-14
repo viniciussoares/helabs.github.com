@@ -21,8 +21,10 @@ screenshots:
   - url: /images/projects/atende-simples/slider-atende-simples-04.jpg
   - url: /images/projects/atende-simples/slider-atende-simples-05.jpg
 
-video_id: Rp4V3idA0DU
-video_image: /images/customers/andre-dos-santos.jpg
+videos:
+  - id: Rp4V3idA0DU
+    image: /images/customers/andre-dos-santos.jpg
+
 
 about: O AtendeSimples oferece uma solução rápida e prática de atendimento ao cliente para pequenas empresas.
 

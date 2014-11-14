@@ -23,8 +23,9 @@ screenshots:
   - url: /images/projects/atende-simples/slider-atende-simples-04.jpg
   - url: /images/projects/atende-simples/slider-atende-simples-05.jpg
 
-video_id: Rp4V3idA0DU
-video_image: /images/customers/andre-dos-santos.jpg
+videos:
+  - id: Rp4V3idA0DU
+    image: /images/customers/andre-dos-santos.jpg 
 
 about: Atende Simples transformed the process of creating and managing customer support which, in Brazil, used to take weeks, different suppliers and a lot of money, into a simple, fast and self-service task.
 

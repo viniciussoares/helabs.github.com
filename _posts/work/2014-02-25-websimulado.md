@@ -10,8 +10,6 @@ project_kind: Plataforma para auxiliar estudantes.
 
 display_url: websimulado.com.br
 
-video_id:
-video_image:
 
 screenshots:
   - url: /images/projects/websimulado/slider-websimulado-01.jpg
