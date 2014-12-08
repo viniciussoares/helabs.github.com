@@ -1838,9 +1838,11 @@ Media Queries for Smartphones
   .offices li {
     width: 100%;
     margin-top: 20px;
+
     &.phone-contact{
       width: 100%;
     }
+
     &.social-he-links{
       width: 100%
     }
@@ -1897,7 +1899,6 @@ Media Queries for Smartphones
   }
 
   label.error { right: 10px; }
-
 
 
   /* Media Kit */
@@ -2171,7 +2172,6 @@ Media Queries with more adjustments for Smartphones
       background-size: 100%;
     }
 
-
   }
 
   .videothumbs li, .videothumbs2 li { width: 90%; }
@@ -2202,7 +2202,7 @@ Media Queries with more adjustments for Smartphones
   }
 
 
-  /* Work MVP*/
+  /* Work MVP */
 
   #work-mvp {
     padding: 20px 0 35px 0;
@@ -2349,7 +2349,6 @@ Media Queries with more adjustments for Smartphones
       }
     }
   }
-
 
 
   /* Project page - Cases */
