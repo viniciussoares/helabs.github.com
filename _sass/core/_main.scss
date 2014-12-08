@@ -51,6 +51,7 @@ span.red { color: #b20000; }
 /* ====================
 Progress Bar
 ==================== */
+
 #instantclick-bar {
   background: #fff;
   height: 5px;
@@ -94,8 +95,6 @@ Nav
   margin-top: 8px;
   text-align: right;
   float: right;
-
-
 
   li {
     display: inline;
@@ -161,42 +160,6 @@ Nav
   background: $light-grey1;
   box-shadow: inset 0 0 7px #f1f1f1;
 }
-
-
-/* ====================
-Breadcrumbs
-==================== */
-
-#breadcrumbs {
-  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  padding: 10px 0 12px 0;
-  background: $he_red;
-  border-bottom: 1px solid #ff1717;
-  margin-top: 79px;
-  margin-bottom: -81px;
-  position: relative;
-  z-index: 1000;
-
-  li {
-    margin-right: 15px;
-    display: inline-block;
-    font-size: $font-small;
-    color: #fff;
-  }
-
-  a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #ffc2c2;
-
-    &:hover {
-      text-decoration: underline;
-      color: #fff;
-    }
-  }
-}
-
 
 
 /* ====================
