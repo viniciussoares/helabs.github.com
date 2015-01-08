@@ -197,7 +197,7 @@ Video Gallery
 }
 
 #contract-videos {
-  
+
   ul {
     margin: 50px 0 0 17px;
 
@@ -209,7 +209,7 @@ Video Gallery
       background-size: 100%;
       float: left;
       opacity: 1;
-      
+
       h5 {
         margin: 10px 0 0 0;
         font-size: $font-medium2;
@@ -221,7 +221,7 @@ Video Gallery
         border: 1px solid $grey1;
         padding: 10px;
       }
-      
+
       img {
         width: 100%;
         display: block;
@@ -229,7 +229,7 @@ Video Gallery
 
         &:hover { opacity: 1; }
       }
-      
+
     } // li
   } // .videothumbs
 }
@@ -306,7 +306,7 @@ Testimonials
 
   li {
     width: 25%;
-    height: 220px;
+    height: 235px;
     margin: 0 2% 30px 2%;
     padding: 2%;
     float: left;
