@@ -291,6 +291,10 @@ Cover
   color: #b30000;
   display: block;
   float: left;
+  
+  &:hover {
+    opacity: .9;
+  }
 }
 
 
