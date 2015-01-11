@@ -23,7 +23,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     <section id="carousel-slider">
       <div class="slideshow">
         {% for screenshot in page.screenshots %}
-          <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
+          <img src="{{ '{{ screenshot.url }}' | asset_path }}" alt="{{ screenshot.caption }}">
         {% endfor %}
       </div>
 
@@ -80,7 +80,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
                     <li>
                         <a href="{{ person.permalink }}">
                           <figure>
-                            <img src="{{ person.image }}" alt="{{ person.full_name }}" width="50" height="50" />
+                            <img src="{{ '{{ person.image }}' | asset_path }}" alt="{{ person.full_name }}" width="50" height="50" />
                           </figure>
                           <span>{{ person.full_name }}</span>
                           <p>{{ person.job_title }}</p>
@@ -106,7 +106,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
             {% for video in page.videos %}
               <div class="video-thumb">
                 <a href="http://www.youtube.com/watch?feature=player_embedded&v={{ video.id }}" rel="prettyPhoto">
-                <img src="{{ video.image }}"></a>
+                <img src="{{ '{{ video.image }}' | asset_path }}"></a>
               </div>
             {% endfor %}
           </article>

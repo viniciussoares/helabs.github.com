@@ -9,7 +9,7 @@ layout: english
     <section class="introduction">
       <article>
         <figure>
-          <img src="{{ page.image }}" alt="{{ page.full_name }}">
+          <img src="{{ '{{ page.image }}' | asset_path }}" alt="{{ page.full_name }}">
         </figure>
         <h2>{{ page.full_name }}</h2>
         <h3 class="job-title">
@@ -77,7 +77,7 @@ layout: english
                       <a href="/trabalhos/{{ project.url }}">
                     {% endif %}
                   
-                    <img src="{{ project.image }}" alt="{{ project.name }}">
+                    <img src="{{ '{{ project.image }}' | asset_path }}" alt="{{ project.name }}">
                     <h3>{{ project.name }}</h3>
 
                     {% if project.url %}

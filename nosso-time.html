@@ -21,7 +21,7 @@ en: /en/our-team/
         {% for person in site.categories.time reversed %}
           <li>
             {% if person.permalink %}<a href="{{ person.permalink }}">{% endif %}
-              <img src="{{ person.image }}" alt="{{ person.full_name }}">
+              <img src="{{ person.image | asset_path }}" alt="{{ person.full_name }}">
               <h3>{{ person.full_name }}</h3>
               <p>{{ person.job_title }}</p>
             {% if person.permalink %}</a>{% endif %}
@@ -39,7 +39,7 @@ en: /en/our-team/
         {% endfor %}
       	<li class="voce" style="display: none;">
       	  <a href="/jobs/">
-      		  <img src="/images/time/time-voce.jpg" alt="Você">
+      		  <img src="{{ 'time/time-voce.jpg' | asset_path }}" alt="Você">
       	  </a>
     		  <h3>Você</h3>
     		  <p>Faça parte do time!</p>
@@ -55,19 +55,19 @@ en: /en/our-team/
       <ul>
         <li>
           <a href="http://www.youtube.com/watch?feature=player_embedded&v=6KuOCJtfB9Q" rel="prettyPhoto">
-            <img src="/images/eventos/umdianaherio.jpg">
+            <img src="{{ 'eventos/umdianaherio.jpg' | asset_path }}">
           </a>
           <h5>Um dia na HE:labs</h5>
         </li>
         <li>
           <a href="http://www.youtube.com/watch?feature=player_embedded&v=uRIv37JZNtE" rel="prettyPhoto">
-            <img src="/images/eventos/churrasco.jpg">
+            <img src="{{ 'eventos/churrasco.jpg' | asset_path }}">
           </a>
           <h5>Churrasco</h5>
         </li>
         <li>
           <a href="http://www.youtube.com/watch?feature=player_embedded&v=kTJld0J7cp0" rel="prettyPhoto">
-            <img src="/images/eventos/fimdeano.jpg">
+            <img src="{{ 'eventos/fimdeano.jpg' | asset_path }}">
           </a>
           <h5>Festa de Ano Novo</h5>
         </li>

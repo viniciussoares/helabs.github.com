@@ -28,7 +28,7 @@ Cliente Feliz
     border: 1px solid $grey2;
     padding: 5px;
     
-    background-image: url("/images/play.jpg");
+    background-image: url("play.jpg");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -79,13 +79,13 @@ Cliente Feliz
     }
 
     &:before {
-      background: url('/images/cliente-feliz/aspa1-black.png') no-repeat scroll top left;
+      background: url('cliente-feliz/aspa1-black.png') no-repeat scroll top left;
       opacity: .2;
       margin-right: 10px;
     }
 
     &:after {
-      background: url('/images/cliente-feliz/aspa2-black.png') no-repeat scroll top left;
+      background: url('cliente-feliz/aspa2-black.png') no-repeat scroll top left;
       opacity: .2;
       margin-left: 10px;
     }

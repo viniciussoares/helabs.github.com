@@ -43,7 +43,7 @@ Cases
     }
 
     figure.browser-frame {
-      background: image-url('/images/cases/browser.png') no-repeat;
+      background: image-url('cases/browser.png') no-repeat;
       width: 460px;
       height: 260px;
       overflow: hidden;
@@ -147,7 +147,7 @@ Cases
 }
 
 .external-link {
-  background: url('/images/external_link.png') 0 center no-repeat;
+  background: url('external_link.png') 0 center no-repeat;
   padding-left: 30px;
   background-size: auto 20px;
   color: #fff;
@@ -193,7 +193,7 @@ Cases
 
       box-shadow: 0 4px 8px -3px #d8d8d8;
       width: 31.6%;
-      background: #fff url("/images/play.jpg") no-repeat;
+      background: #fff url("play.jpg") no-repeat;
       background-size: 100%;
       margin: 0;
       padding: 10px;
@@ -260,12 +260,12 @@ Cases
 
   #carousel-slider-prev {
     left: 70px;
-    background: url("/images/cases/slider-prev.png") 0 0 no-repeat;
+    background: url("cases/slider-prev.png") 0 0 no-repeat;
   }
 
   #carousel-slider-next {
     right: 70px;
-    background: url("/images/cases/slider-next.png") 0 0 no-repeat;
+    background: url("cases/slider-next.png") 0 0 no-repeat;
   }
 
   .slideshow {

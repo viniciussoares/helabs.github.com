@@ -8,7 +8,7 @@ Case: AtendeSimples
 
 #hero-atendesimples {
   width: 100%;
-  background: $atende_simples url('/images/cases/atende-simples/atendesimples_bg.png') center center;
+  background: $atende_simples url('cases/atende-simples/atendesimples_bg.png') center center;
   background-size: cover;
   margin-top: 80px;
   padding: 50px 0 0 0;
@@ -53,12 +53,12 @@ Case: AtendeSimples
       }
 
       &:before {
-        background: url('/images/cases/atende-simples/quote_left.png') no-repeat scroll top left;
+        background: url('cases/atende-simples/quote_left.png') no-repeat scroll top left;
         margin-right: 5px;
       }
 
       &:after {
-        background: url('/images/cases/atende-simples/quote_right.png') no-repeat scroll top left;
+        background: url('cases/atende-simples/quote_right.png') no-repeat scroll top left;
         margin-left: 5px;
       }
     }
@@ -169,7 +169,7 @@ Case: AtendeSimples
   article:nth-child(odd) section:before, article:nth-child(even) section:after {
     content: '';
     display: inline-block;
-    background: url('/images/cases/atende-simples/step_images_sprite.png');
+    background: url('cases/atende-simples/step_images_sprite.png');
   }
 
 
@@ -311,12 +311,12 @@ section.testimonials {
       }
 
       &:before {
-        background: url('/images/cases/atende-simples/quote_left_black.png') no-repeat scroll top left;
+        background: url('cases/atende-simples/quote_left_black.png') no-repeat scroll top left;
         margin-right: 10px;
       }
 
       &:after {
-        background: url('/images/cases/atende-simples/quote_right_black.png') no-repeat scroll top left;
+        background: url('cases/atende-simples/quote_right_black.png') no-repeat scroll top left;
         margin-left: 10px;
       }
     }
@@ -377,7 +377,7 @@ section.company-logos {
     article:nth-child(odd) section:before, article:nth-child(even) section:after {
       content: '';
       display: inline-block;
-      background: url('/images/cases/atende-simples/step_images_sprite@2x.png');
+      background: url('cases/atende-simples/step_images_sprite@2x.png');
     }
   }
 /*retina*/
