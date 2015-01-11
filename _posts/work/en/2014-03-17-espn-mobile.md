@@ -12,14 +12,14 @@ display_url: m.espn.com.br
 
 videos:
   - id: TabJNvOVVHk
-    image: /images/customers/thiago-belem-espn-mobile.png 
+    image: customers/thiago-belem-espn-mobile.png 
 
 screenshots:
-  - url: /images/projects/espn-mobile/slider-espn-mobile-01.jpg
-  - url: /images/projects/espn-mobile/slider-espn-mobile-02.jpg
-  - url: /images/projects/espn-mobile/slider-espn-mobile-03.jpg
-  - url: /images/projects/espn-mobile/slider-espn-mobile-04.jpg
-  - url: /images/projects/espn-mobile/slider-espn-mobile-05.jpg
+  - url: projects/espn-mobile/slider-espn-mobile-01.jpg
+  - url: projects/espn-mobile/slider-espn-mobile-02.jpg
+  - url: projects/espn-mobile/slider-espn-mobile-03.jpg
+  - url: projects/espn-mobile/slider-espn-mobile-04.jpg
+  - url: projects/espn-mobile/slider-espn-mobile-05.jpg
 
 about: The mobile version of ESPN.com.br was created to facilitate access to the content via mobile devices. With it, the users (which are called sports fans) can follow the news from anywhere.
 

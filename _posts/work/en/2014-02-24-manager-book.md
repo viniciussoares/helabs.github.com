@@ -7,22 +7,22 @@ pt: '/trabalhos/manager-book/'
 
 name: ManagerBook
 project_kind: Performance Indicators for Businesses.
-image: /images/works/manager-book.jpg
+image: works/manager-book.jpg
 
 display_url: managerbook.com.br
 
 videos:
   - id: YMoQQjafDwI
-    image: /images/customers/pedro-nascimento-managerbook.jpg
+    image: customers/pedro-nascimento-managerbook.jpg
   - id: vZfu7rP5JRo
-    image: /images/customers/marcelo-vieira.jpg
+    image: customers/marcelo-vieira.jpg
 
 screenshots:
-  - url: /images/projects/managerbook/slider-managerbook-01.jpg
-  - url: /images/projects/managerbook/slider-managerbook-02.jpg
-  - url: /images/projects/managerbook/slider-managerbook-03.jpg
-  - url: /images/projects/managerbook/slider-managerbook-04.jpg
-  - url: /images/projects/managerbook/slider-managerbook-05.jpg
+  - url: projects/managerbook/slider-managerbook-01.jpg
+  - url: projects/managerbook/slider-managerbook-02.jpg
+  - url: projects/managerbook/slider-managerbook-03.jpg
+  - url: projects/managerbook/slider-managerbook-04.jpg
+  - url: projects/managerbook/slider-managerbook-05.jpg
 
 about: ManagerBook is a online collaborative tool that allows businesses to share their KPIs internally so that everyone is on the same page and shares essencial business knowledge more effectively.
 

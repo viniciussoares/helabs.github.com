@@ -12,14 +12,14 @@ display_url: projectbuilder.com.br
 
 videos:
   - id: I6n1NI2lu_A
-    image: /images/customers/aluisio-azevedo-project-builder.png 
+    image: customers/aluisio-azevedo-project-builder.png 
 
 screenshots:
-  - url: /images/projects/project-builder/slider-project-builder-01.jpg
-  - url: /images/projects/project-builder/slider-project-builder-02.jpg
-  - url: /images/projects/project-builder/slider-project-builder-03.jpg
-  - url: /images/projects/project-builder/slider-project-builder-04.jpg
-  - url: /images/projects/project-builder/slider-project-builder-05.jpg
+  - url: projects/project-builder/slider-project-builder-01.jpg
+  - url: projects/project-builder/slider-project-builder-02.jpg
+  - url: projects/project-builder/slider-project-builder-03.jpg
+  - url: projects/project-builder/slider-project-builder-04.jpg
+  - url: projects/project-builder/slider-project-builder-05.jpg
 
 about: Project Builder is a project management SaaS to help manage your projects following PMI’s best practices. Manage tasks and deadlines between teams and collaborate in real time.
 

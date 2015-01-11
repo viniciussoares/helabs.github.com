@@ -9,7 +9,7 @@ layout: default
     <section class="introduction">
       <article>
         <figure>
-          <img src="{{ '{{ page.image }}' | asset_path }}" alt="{{ page.full_name }}">
+          <img src="{{ page.image | asset_path }}" alt="{{ page.full_name }}">
         </figure>
         <h2>{{ page.full_name }}</h2>
         <h3 class="job-title">
@@ -73,12 +73,12 @@ layout: default
               <li>
                 {% for project in site.data.mvp.projects %}
                   {% if project.slug == slug %}
-        
+
                     {% if project.url %}
                       <a href="/trabalhos/{{ project.url }}">
                     {% endif %}
-                  
-                    <img src="{{ '{{ project.image }}' | asset_path }}" alt="{{ project.name }}">
+
+                    <img src="{{ project.image | asset_path }}" alt="{{ project.name }}">
                     <h3>{{ project.name }}</h3>
 
                     {% if project.url %}
@@ -90,7 +90,7 @@ layout: default
               </li>
             {% endfor %}
           </ul>
-          
+
         </div>
       </section> <!-- /projects-worked -->
     {% endif %}

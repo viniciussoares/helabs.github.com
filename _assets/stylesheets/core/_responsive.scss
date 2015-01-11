@@ -1549,7 +1549,7 @@ Media Queries for Smartphones
   /* Mailing page */
 
   .cover-mailing-page {
-    background-image: url("mailing-cover-bg.jpg");
+    background-image: asset-url("mailing-cover-bg.jpg");
     background-position: bottom center;
     margin-top: 40px;
   }
@@ -2168,7 +2168,7 @@ Media Queries with more adjustments for Smartphones
     .videothumbs li img:hover, .videothumbs2 li img:hover{ opacity: 0.5; }
 
     .videothumbs li:hover, .videothumbs2 li:hover {
-      background: url("play.jpg") no-repeat white;
+      background: asset-url("play.jpg") no-repeat white;
       background-size: 100%;
     }
 
@@ -2178,7 +2178,7 @@ Media Queries with more adjustments for Smartphones
   .videothumbs li img:hover, .videothumbs2 li img:hover{ opacity: 0.5; }
 
   .videothumbs li:hover, .videothumbs2 li:hover {
-    background: url("play.jpg") no-repeat white;
+    background: asset-url("play.jpg") no-repeat white;
     background-size: 100%;
   }
 

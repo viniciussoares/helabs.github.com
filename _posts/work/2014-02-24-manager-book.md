@@ -12,16 +12,16 @@ display_url: managerbook.com.br
 
 videos:
   - id: YMoQQjafDwI
-    image: /images/customers/pedro-nascimento-managerbook.jpg
+    image: customers/pedro-nascimento-managerbook.jpg
   - id: vZfu7rP5JRo
-    image: /images/customers/marcelo-vieira.jpg
+    image: customers/marcelo-vieira.jpg
 
 screenshots:
-  - url: /images/projects/managerbook/slider-managerbook-01.jpg
-  - url: /images/projects/managerbook/slider-managerbook-02.jpg
-  - url: /images/projects/managerbook/slider-managerbook-03.jpg
-  - url: /images/projects/managerbook/slider-managerbook-04.jpg
-  - url: /images/projects/managerbook/slider-managerbook-05.jpg
+  - url: projects/managerbook/slider-managerbook-01.jpg
+  - url: projects/managerbook/slider-managerbook-02.jpg
+  - url: projects/managerbook/slider-managerbook-03.jpg
+  - url: projects/managerbook/slider-managerbook-04.jpg
+  - url: projects/managerbook/slider-managerbook-05.jpg
 
 about: O ManagerBook é uma ferramenta para facilitar o compartilhamento dos indicadores de desempenho e eficiência de empresas. Conecta toda equipe em uma mesma direção e compartilha com ela todo o conhecimento da empresa.
 

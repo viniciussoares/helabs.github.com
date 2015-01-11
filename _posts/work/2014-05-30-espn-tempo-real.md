@@ -10,15 +10,15 @@ project_kind: Acompanhamento de eventos esportivos ao vivo
 
 videos:
   - id: MYEjydImSxM
-    image: /images/customers/thiago-belem-espn-mobile.png
+    image: customers/thiago-belem-espn-mobile.png
 
 
 screenshots:
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-01.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-02.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-03.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-04.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-05.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-01.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-02.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-03.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-04.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-05.jpg
 
 about: O Tempo Real é propriedade da ESPN Brasil e divide domínio com a ESPN.com.br. Sua função é transmitir a cobertura de jogos e eventos esportivos simultaneamente ao desenrolar dos mesmos, ou seja, "ao vivo". Assim, atendendo à uma demanda que até não muito tempo atrás só a TV e o Rádio atendiam.
 

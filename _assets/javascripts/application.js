@@ -1,3 +1,22 @@
+//= require jquery-1.11.0.min.js
+//= require handlebars-v1.3.0.js
+//= require instantclick.min.js
+//= require jquery.cycle2.js
+//= require jquery.cycle2.carousel.js
+//= require jquery.cycle2.swipe.js
+//= require jquery.localScroll.js
+//= require jquery.maskedinput.js
+//= require jquery.prettyPhoto.js
+//= require jquery.scrollTo.js
+//= require jquery.tipTip.js
+//= require jquery.validate.js
+//= require jquery.touchSwipe.min.js
+//= require jquery.liquid-slider.min.js
+//= require jquery.bxslider.min.js
+//= require jquery.easing.1.3.js
+//= require testimonials.js
+//= require_tree .
+
 var App = {
   I18n: {
     _translations: {

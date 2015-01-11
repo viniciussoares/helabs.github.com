@@ -7,7 +7,7 @@ User Profile
 
 #profile section.introduction {
   padding: 100px 0 30px;
-  background: $he_red url("profile-pattern.png");
+  background: $he_red asset-url("profile-pattern.png");
   border-bottom: 6px solid $grey2;
   overflow: hidden;
 
@@ -118,7 +118,7 @@ User Profile
   &:before, &:after {
     content: '';
     display: block;
-    background: url('divider-quote.png');
+    background: asset-url('divider-quote.png');
     width: 560px;
     height: 4px;
   }
@@ -236,7 +236,7 @@ User Profile
   a {
     height: 30px;
     text-decoration: none;
-    background: url("icons/profile-social.png") no-repeat;
+    background: asset-url("icons/profile-social.png") no-repeat;
     padding-left: 33px;
     line-height: 30px;
     margin-right: 25px;
@@ -258,7 +258,7 @@ User Profile
   only screen and (min--moz-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 240dpi) {
   .social-links a {
-    background: url("icons/profile-social@2x.png") left no-repeat;
+    background: asset-url("icons/profile-social@2x.png") left no-repeat;
     background-size: 30px 150px;
   }
 }

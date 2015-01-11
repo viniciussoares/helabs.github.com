@@ -12,11 +12,11 @@ display_url: websimulado.com.br
 
 
 screenshots:
-  - url: /images/projects/websimulado/slider-websimulado-01.jpg
-  - url: /images/projects/websimulado/slider-websimulado-02.jpg
-  - url: /images/projects/websimulado/slider-websimulado-03.jpg
-  - url: /images/projects/websimulado/slider-websimulado-04.jpg
-  - url: /images/projects/websimulado/slider-websimulado-05.jpg
+  - url: projects/websimulado/slider-websimulado-01.jpg
+  - url: projects/websimulado/slider-websimulado-02.jpg
+  - url: projects/websimulado/slider-websimulado-03.jpg
+  - url: projects/websimulado/slider-websimulado-04.jpg
+  - url: projects/websimulado/slider-websimulado-05.jpg
 
 about: Web Simulado lhe dá acesso a diversos simulados através dos editoriais lançados sobre provas e concursos. E ainda, marca o seu tempo de prova, estipula seu ranking entre os concorrentes e indica quais matérias/pontos você deverá se dedicar mais para conseguir uma melhor nota.
 

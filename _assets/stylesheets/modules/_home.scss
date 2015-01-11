@@ -8,7 +8,7 @@ Home
 /* Hero Cover */
 
 #home section.hero {
-  background: $grey3 url("home/hero-image.jpg");
+  background: $grey3 asset-url("home/hero-image.jpg");
   padding: 160px 0 80px;
   text-align: center;
   border-bottom: 4px solid $grey2;
@@ -148,7 +148,7 @@ Home
     &:after {
       content: '';
       display: block;
-      background: url('home/divider.png');
+      background: asset-url('home/divider.png');
       width: 33px;
       height: 9px;
       margin: 50px auto 0;
@@ -386,7 +386,7 @@ Home
 .white-button {
   width: 437px;
   height: 60px;
-  background: url("red-button.png") center no-repeat;
+  background: asset-url("red-button.png") center no-repeat;
   text-decoration: none;
   font: 22px 'lato';
   text-transform: uppercase;
@@ -468,7 +468,7 @@ Home
 
   .cover-book {
     background-position: center center;
-    background: url("home/book.png") no-repeat;
+    background: asset-url("home/book.png") no-repeat;
     content: " ";
     display: inline-block;
     height: 83px;

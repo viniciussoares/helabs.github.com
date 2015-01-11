@@ -7,18 +7,18 @@ pt: '/trabalhos/espn-tempo-real/'
 
 name: ESPN Tempo Real
 project_kind: Live monitoring of sports events
-image: /images/works/espn-tempo-real.jpg
+image: works/espn-tempo-real.jpg
 
 videos:
   - id: MYEjydImSxM
-    image: /images/customers/thiago-belem-espn-mobile.png  
+    image: customers/thiago-belem-espn-mobile.png  
 
 screenshots:
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-01.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-02.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-03.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-04.jpg
-  - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-05.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-01.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-02.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-03.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-04.jpg
+  - url: projects/espn-tempo-real/slider-espn-tempo-real-05.jpg
 
 about: Tempo Real is property of ESPN Brazil and shares the same domain of ESPN.com.br. It's used for live coverage of games and sports events and it's answering a demand that only TV and Radio fulfilled until not too long ago.
 

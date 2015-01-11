@@ -7,7 +7,7 @@ pt: '/trabalhos/atende-simples/'
 
 name: Atende Simples
 project_kind: Atende Simples offers a complete and professional phone customer support for businesses.
-image: /images/projects/atendesimples.jpg
+image: projects/atendesimples.jpg
 
 project_url: http://www.atendesimples.com/
 project_case_url: /en/cases/atende-simples/
@@ -15,17 +15,17 @@ display_url: atendesimples.com
 
 
 screenshots:
-  - url: /images/projects/atende-simples/slider-atende-simples-01.jpg
+  - url: projects/atende-simples/slider-atende-simples-01.jpg
     caption: Tela de cadastro do Atende Simples
-  - url: /images/projects/atende-simples/slider-atende-simples-02.jpg
+  - url: projects/atende-simples/slider-atende-simples-02.jpg
     caption: Tela de configuração do primeiro atendente, quem irá receber a chamada
-  - url: /images/projects/atende-simples/slider-atende-simples-03.jpg
-  - url: /images/projects/atende-simples/slider-atende-simples-04.jpg
-  - url: /images/projects/atende-simples/slider-atende-simples-05.jpg
+  - url: projects/atende-simples/slider-atende-simples-03.jpg
+  - url: projects/atende-simples/slider-atende-simples-04.jpg
+  - url: projects/atende-simples/slider-atende-simples-05.jpg
 
 videos:
   - id: Rp4V3idA0DU
-    image: /images/customers/andre-dos-santos.jpg 
+    image: customers/andre-dos-santos.jpg 
 
 about: Atende Simples transformed the process of creating and managing customer support which, in Brazil, used to take weeks, different suppliers and a lot of money, into a simple, fast and self-service task.
 

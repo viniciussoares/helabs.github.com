@@ -81,13 +81,13 @@ Sobre Nós
     }
 
     article:first-child {
-      background: $he_red url('about-us/mission_image.png') center center;
+      background: $he_red asset-url('about-us/mission_image.png') center center;
       background-size: cover;
       background-position: 0 20px;
     }
 
     article:last-child {
-      background: $he_red url('about-us/vision_image.png') center center;
+      background: $he_red asset-url('about-us/vision_image.png') center center;
       background-size: cover;
       background-position: 0 20px;
     }
@@ -102,7 +102,7 @@ Sobre Nós
       h4:before {
         content: '';
         display: block;
-        background: url('about-us/about_us_icons.png');
+        background: asset-url('about-us/about_us_icons.png');
         height: 100px;
         width: 100px;
         margin: -50px auto 30px;
@@ -153,7 +153,7 @@ Sobre Nós
   #about-us section:last-child article h4:before{
     content: '';
     display: block;
-    background: url('about-us/about_us_icons@2x.png');
+    background: asset-url('about-us/about_us_icons@2x.png');
     background-size: 100px 1000px;
   }
 }

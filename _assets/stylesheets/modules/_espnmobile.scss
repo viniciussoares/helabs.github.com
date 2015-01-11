@@ -8,13 +8,13 @@ ESPN Mobile
 #cover-banner-espn {
   margin-top: 80px;
   padding: 50px 0 50px 0;
-  background: url('cases/espn-mobile/espn_bg.jpg') center bottom;
+  background: asset-url('cases/espn-mobile/espn_bg.jpg') center bottom;
   background-size: cover;
   height: 630px;
   color: #fff;
   
   .iphone {
-    background: url('cases/espn-mobile/iphone.png') no-repeat scroll top left;
+    background: asset-url('cases/espn-mobile/iphone.png') no-repeat scroll top left;
     width: 367px;
     height: 671px;
     float:left;
@@ -43,7 +43,7 @@ ESPN Mobile
   }
 
   .link {
-    background: url('cases/espn-mobile/link.png') no-repeat scroll right top;
+    background: asset-url('cases/espn-mobile/link.png') no-repeat scroll right top;
     float: right;
     height: 36px;
     position: relative;
@@ -87,7 +87,7 @@ ESPN Mobile
     line-height: 1.6;
     
     &:before {
-      background: url('cases/espn-mobile/aspa1.png') no-repeat scroll top left;
+      background: asset-url('cases/espn-mobile/aspa1.png') no-repeat scroll top left;
       width: 35px;
       height: 28px;
       content: "";
@@ -96,7 +96,7 @@ ESPN Mobile
     }
 
     &:after {
-      background: url('cases/espn-mobile/aspa2.png') no-repeat scroll top left;
+      background: asset-url('cases/espn-mobile/aspa2.png') no-repeat scroll top left;
       width: 35px;
       height: 28px;
       content: "";

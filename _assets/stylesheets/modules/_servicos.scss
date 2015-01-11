@@ -78,7 +78,7 @@ Services
 #to-service-08 {
   width: 30px;
   height: 30px;
-  background: url("services-arrow.png") left no-repeat;
+  background: asset-url("services-arrow.png") left no-repeat;
   display: inline-block;
   text-indent: -9999px;
   margin: 10px 0 25px 60px;
@@ -100,7 +100,7 @@ Services
     #to-service-06,
     #to-service-07,
     #to-service-08 {
-      background: url("services-arrow@2x.png") left no-repeat;
+      background: asset-url("services-arrow@2x.png") left no-repeat;
       background-size: 30px 30px;
     }
 

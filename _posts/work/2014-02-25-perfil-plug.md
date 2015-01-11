@@ -12,13 +12,13 @@ display_url: perfilplug.com
 
 videos:
   - id: 8vtjKSe3zE0
-    image: /images/customers/flavia-fortes-perfil-plug.png
+    image: customers/flavia-fortes-perfil-plug.png
 
 screenshots:
-  - url: /images/projects/perfil-plug/slider-perfil-plug-01.jpg
-  - url: /images/projects/perfil-plug/slider-perfil-plug-02.jpg
-  - url: /images/projects/perfil-plug/slider-perfil-plug-03.jpg
-  - url: /images/projects/perfil-plug/slider-perfil-plug-04.jpg
+  - url: projects/perfil-plug/slider-perfil-plug-01.jpg
+  - url: projects/perfil-plug/slider-perfil-plug-02.jpg
+  - url: projects/perfil-plug/slider-perfil-plug-03.jpg
+  - url: projects/perfil-plug/slider-perfil-plug-04.jpg
 
 
 about: Com o Perfil Plug é possível montar seu perfil de consumidor e ganhar Plug$ (moeda interna) para trocá-los por prêmios, como vale-presentes em diversas lojas conhecidas!
