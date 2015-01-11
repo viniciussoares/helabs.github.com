@@ -171,9 +171,12 @@ var App = {
   },
   InterfaceActions: function() {
 
-    // Eduardo's easter egg
-    $("img[src='/images/time/time-eduardo.jpg']").hover(function() {
-      $(this).attr("src", "/images/time/time-eduardo.gif");
+    // Easter egg
+    $("img[data-easter-egg-image]").hover(function() {
+      var newImage = $(this).data("easter-egg-image")
+      if (newImage) {
+        $(this).attr("src", newImage);
+      }
     });
 
     $("#talk-to-us").validate({
