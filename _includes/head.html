@@ -21,14 +21,14 @@
   {% endif %}
   <meta content="{{ page.description }}" name="description">
 
-  <link rel="icon" type="image/png" sizes="192x192" href="http://helabs.com.br/images/icons/ios/he192px.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ "icons/ios/he192px.png" | asset_url }}">
 
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title }} - HE:labs">
   <meta property="og:site_name" content="helabs.com.br">
-  <meta property="og:image" content="http://helabs.com.br/images/logo_sq.jpg">
+  <meta property="og:image" content="{{ "logo_sq.jpg" | asset_url }}" >
   <meta property="og:description" content="{{ page.description }}">
 
   <!-- Google Webmaster -->
@@ -40,10 +40,10 @@
   {% stylesheet application %}
 
   <!-- iOS icon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="http://helabs.com.br/images/icons/ios/he57px.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="http://helabs.com.br/images/icons/ios/he72px.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="http://helabs.com.br/images/icons/ios/he114px.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="http://helabs.com.br/images/icons/ios/he144px.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ "icons/ios/he57px.png" | asset_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "icons/ios/he72px.png" | asset_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "icons/ios/he114px.png" | asset_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "icons/ios/he144px.png" | asset_url }}">
 
   <!-- iOS/Android WebApp Optmizations -->
   <meta name="apple-mobile-web-app-title" content="HE:labs">
