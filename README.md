@@ -121,9 +121,16 @@ Linux `google-chrome --disable-web-security`
 
 Just remember to restart your browser without this option, if you need to navigate in others pages, since this option make your browser vulnerable.
 
+
+
+### Integrations
+
+We have an integration using Zapier between the wufoo form on "Fale Conosco" with Pipedrive (CRM), so any changes on fale conosco form need to be updated on Zapier
+
+
+
 ## Maintainers
 
-- [Thiago Gonzalez](https://github.com/thiagonzalez)
 - [Mikael Carrara](https://github.com/mikaelcarrara)
 
 ## Made with love by HE:labs
