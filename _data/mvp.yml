@@ -463,6 +463,16 @@ projects:
     slug: ideias
     image: /images/projetos/mvp/ideias.jpg
 
+testimonials-videos:
+  -
+    youtube_id: YoWwUgubOlw
+  -
+    youtube_id: 6x6RuDhAw5s
+  -
+    youtube_id: cEqYWkze9Oo
+  -
+    youtube_id: WP_xiqlGI7Y
+
 testimonials:
   -
     name: "Lucas Boscacci Lima"
@@ -497,40 +507,50 @@ testimonials-en:
   -
     name: "Matheus Diaz e Ronnie Possatti"
     company: "Horus"
+    short_description: "The Startupdev service has overcome our expectations. We were able to emphasize exactly the most important targets for the first stage."
     description: "The Startup DEV service has overcome our expectations. We were able to emphasize exactly the most important targets for the first stage. We're quite sure that the quickly and skillfully developed product was a great first step for our project! Thank you for the experience."
   -
     name: "Rodrigo Soares"
     company: "Hintask"
+    short_description: "We can only thank Startupdev. The development team was extremely professional and managed to surpass all expectations. Congratulations!"
     description: "We can only thank Startup DEV. The development team was extremely professional and managed to surpass all expectations. To have a fully functional prototype with a design of choice in 48 hours is something monstrous. Congratulations!"
   -
-    name: "José Roberto H. da Gama"
+    name: "José Roberto"
     company: "NetAdvocacia"
+    short_description: "My experience with Startupdev was great. The work was focused, delivered on time and with quality. Moreover, the technical advice made all the difference, for the feeling at the end was to have received more than what had been planned and paid for."
     description: "My experience with Startup DEV was great. The work was focused, delivered on time and with quality. Moreover, the technical advice made ​​all the difference, for the feeling at the end was to have received more than what had been planned and paid for."
   -
     name: "Kauê Linden"
     company: "Game Guiz"
+    short_description: "To develop our project through Startupdev was the quickest way I found to get the project we envisioned on air. I recommend it and I'm sure I will be back soon for other rounds."
     description: "To develop our project through Startup DEV was the quickest way I found to get the project we envisioned on air. Besides leaving satisfied with my design online in just three days, the process was a real lesson on how to organize projects related to software development. I recommend it and I'm sure I will be back soon for other rounds."
   -
     name: "Amure Pinho"
-    company: "Amigo Não Se Compra / SyncMobile"
+    company: "Amigo Não Se Compra"
+    short_description: "The work done by the team at Startupdev is fantastic. Technical knowledge and the ability of the team to understand the project and draw the MVP not only ensures the delivery of the project within an exceptional time frame, but it makes the final product smarter. I really approve it!"
     description: "The work done by the team at Startup DEV is fantastic. Technical knowledge and the ability of the team to understand the project and draw the MVP not only ensures the delivery of the project within an exceptional time frame, but it makes the final product smarter. I really approve it!"
   -
     name: "Diego Ivo"
     company: "Rank Monitor"
+    short_description: "With the help of the Startupdev staff, Conversion could market an innovative SEO tool, simple and very functional. Our tool had millions of pageviews, which was very important to us."
     description: "With the help of the Startup DEV staff, Conversion could market an innovative SEO tool, simple and very functional. Our tool had millions of pageviews, which was very important to us."
   -
     name: "Andre Diamand"
-    company: "Zupty / VentureOn"
+    company: "Zupty"
+    short_description: "The Startupdev team not only brings the beloved software in a few days, but in this time they also teach us in practice what is a real LEAN project, conducted with quality and care."
     description: "The Startup DEV team not only brings the beloved software in three days, but in this time they also teach us in practice what is a real LEAN project, conducted with quality and care."
   -
     name: "Pablo Braga"
-    company: "Safetracking / Sidetech"
+    company: "Safetracking"
+    short_description: "Our experience with Startupdev was very good. The proposed format is very productive because during the initial meeting it uses techniques which give an overview of the project before you even start."
     description: "Sidetech's experience with Startup DEV was very good. The proposed format is very productive because during the initial meeting it uses techniques which give an overview of the project before you even start. The points system gives you the flexibility to define what is really a priority and what can be developed later, when customers or investors take an interest in your project. <br> The staff is super capable and the development work was actually done in 48 hours."
   -
     name: "Joaquim Torres"
     company: "ContaCal"
+    short_description: "The Startupdev staff was essential to the realization of ContaCal. They not only know a lot about software development, but they have lots of experience in the web business, which makes them great partners for creating an MVP."
     description: "The Startup DEV staff was essential to the realization of ContaCal. They not only know a lot about software development, but they have lots of experience in the web business, which makes them great partners for creating an MVP."
   -
-    name: "Mario Sousa de Alencar"
+    name: "Mario Sousa"
     company: "Shopping Passion"
+    short_description: "I can confirm that Startupdev is full of extremely experienced people providing a great service for those who wish to start a business on the internet but do not have the technological knowledge to do it."
     description: "I can confirm that Startup DEV is full of extremely experienced people providing a great service for those who wish to start a business on the internet but do not have the technological knowledge to do it. However, the methodology is also very effective for entrepreneurs who already have a clearly defined MVP, so that in fact the idea can be transformed into a prototype to be tested."

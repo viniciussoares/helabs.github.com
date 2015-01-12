@@ -1,0 +1,249 @@
+---
+layout: english
+title: Build your web-based MVP in one week! Startupdev is your solution!
+description: HE:labs is pioneer in web development, web applications, SaaS and Cloud Computing.
+pt: /servicos/startupdev/
+---
+
+<div class="main">
+
+  <section id="cover-mvp">
+    <div class="containner">
+      <h2>Get your product ready to test with real users!</h2>
+
+      <p class="description">
+        In only one week!
+      </p>
+
+      <ul id="mvp-steps">
+        <li>
+          <img src="/images/mvp-page/formula-01.png" alt="Sua ideia de produto">
+          <p>Your great<br>ideia</p>
+        </li>
+        <li class="plus-icon plus-01">+</li>
+        <li>
+          <img src="/images/mvp-page/formula-02.png" alt="1 developer Rails + 1 designer web">
+          <p>3 people<br>team</p>
+        </li>
+        <li class="plus-icon plus-02">+</li>
+        <li>
+          <img src="/images/mvp-page/formula-03.png" alt="Reunião + 3 dias de trabalho">
+          <p>1 day meeting <br>+ 4 days development</p>
+        </li>
+        <li class="plus-icon plus-03">+</li>
+        <li>
+          <img src="/images/mvp-page/formula-04.png" alt="Investimento de R$ 12 mil">
+          <p>USD$ 5k<br> fixed bid investment</p>
+        </li>
+        <li class="equal-icon">=</li>
+        <li>
+          <img src="/images/mvp-page/formula-05.png" alt="Seu MVP no ar!">
+          <p>Your MVP<br> ready!</p>
+        </li>
+      </ul>
+
+      <a href="#contact">Hire Us!</a>
+
+    </div>
+  </section> <!-- /cover-mvp -->
+
+  <section id="values">
+
+    <div id="mvp">
+      <div class="containner">
+
+        <h3>
+          Meet the process</strong>
+        </h3>
+
+        <iframe width="960" height="512" src="//www.youtube.com/embed/gZFXo82lXDM" frameborder="0" allowfullscreen></iframe>
+
+        <p>* Erratum: Despite the video say 2 days, the right is a work week, 5 consecutive days.</p>
+      </div>
+    </div> <!-- /mvp -->
+  </section> <!-- values -->
+
+  <section class="testimonials-list">
+    <div class="containner">
+      <h3>Testimonials</h3>
+
+      {% for testimonial in site.data.mvp.testimonials-videos %}
+      <iframe width="475" height="360" src="//www.youtube.com/embed/{{ testimonial.youtube_id }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      {% endfor %}
+      <br><br>
+      <ul>
+        {% for testimonial in site.data.mvp.testimonials-en %}
+        <li>
+          <p>"{{ testimonial.short_description }}"</p>
+          <span class="client-name">{{ testimonial.name }}<br>Project: {{ testimonial.company }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </section> <!-- /testimonials-list -->
+
+  <section id="mvp">
+    <div class="containner">
+
+      <h3>Some cases</h3>
+
+      <ul class="mvp-projects">
+        <li>
+          <h4>Estou Jogando</h4>
+          <img src="/images/projects/mvp/estou-jogando.jpg" alt="Estou Jogando">
+          <div class="about">
+            <p>- Social network for brazilian gamers<br>
+               - Reviews, updates and game wishlist<br>
+               - Facebook login and integration<br>
+               - Comments<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>PetRoomie</h4>
+          <img src="/images/projects/petroomie.jpg" alt="drinks4us">
+
+          <div class="about">
+            <p>- An Airbnb for pets<br>
+               - Facebook login and integration<br>
+               - Posts, reservations and reputation system<br>
+               - Payment gateway integration
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>The Open Compass</h4>
+          <img src="/images/projects/theopencompass.jpg" alt="theopencompass">
+          <div class="about">
+            <p>- Guide for restaurants and other entertainments<br>
+               - Tags search<br>
+               - Facebook login and integration<br>
+               - Payment gateway integration
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>SocialFly</h4>
+          <img src="/images/projects/mvp/socialfly.jpg" alt="SocialFly">
+          <div class="about">
+            <p>- Viral video portal<br>
+              - Content management<br>
+              - Facebook and Twitter sharing
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>Sala de Ideias</h4>
+          <img src="/images/projects/mvp/saladeideias.jpg" alt="Sala de Ideias">
+          <div class="about">
+            <p>- Blog<br>
+              - Content management<br>
+              - Facebook and Twitter sharing
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>Contacal</h4>
+          <img src="/images/projects/mvp/contacal.jpg" alt="Contacal">
+          <div class="about">
+            <p>- Meals calories counter<br>
+              - Complex food database<br>
+              - Content management<br>
+              - Full login system
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>WebSimulado</h4>
+          <img src="/images/projects/mvp/websimulado.jpg" alt="WebSimulado">
+          <div class="about">
+            <p>- Contests and evaluation system<br>
+               - Simulation contests<br>
+               - Exams download<br>
+               - Content management<br>
+               - Exams ranking
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>No Trambone</h4>
+          <img src="/images/projects/mvp/no-trambone.jpg" alt="No Trambone">
+          <div class="about">
+            <p>- Public complaints about bad services<br>
+               - Content management<br>
+               - Facebook login and integration<br>
+               - Facebook and Twitter sharing
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>Mamãe Eu Kero</h4>
+          <img src="/images/projects/mvp/mamaeeukero.jpg" alt="Mamaeeukero">
+          <div class="about">
+            <p>- General content for recent mothers<br>
+               - Content management<br>
+               - Facebook login and integration<br>
+               - Facebook and Twitter sharing
+            </p>
+          </div>
+        </li>
+        <li>
+          <h4>Amigo não se compra</h4>
+          <img src="/images/projects/mvp/amigo-nao-se-compra.jpg" alt="amigonaosecompra">
+          <div class="about">
+            <p>- Community service for pet adoption<br>
+               - Content management<br>
+               - Full post, index and pet searchi<br>
+               - Facebook and Twitter sharing
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section> <!-- /mvp -->
+
+  <section id="contact">
+    <div class="containner">
+
+      <h3>Hire us!</h3>
+      <form id="talk-to-us" action="https://helabs.wufoo.eu/forms/x7x2q5/#public" method="post" name="form8" autocomplete="off">
+        <input name="Field23" type="hidden" value="MVP"/>
+        <ul>
+          <li><input name="Field18" type="text" class="text spacing" placeholder="First name" required></li>
+          <li><input name="Field19" type="text" class="text spacing" placeholder="Last name" required></li>
+          <li><input name="Field3" type="text" class="text spacing" placeholder="E-mail"></li>
+          <li><input id="phone" name="Field16" type="text" class="text" placeholder="Skype or phone number" required></li>
+          <li><button name="saveForm">Submit</button></li>
+        </ul>
+
+        <input type="hidden" name="Field27" value="">
+
+        <div style="display: none">
+          <label for="comment">Do Not Fill This Out</label>
+          <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+          <input type="hidden" id="idstamp" name="idstamp" value="Jal0NbH7k3GrinmOORbLY2/bUZwIQZfSkVXdl6Ow4Ag=">
+        </div>
+
+      </form>
+
+    </div>
+  </section> <!-- /contact -->
+
+  <!-- Slider JS-->
+  <script src="/javascripts/source/jquery.easing.1.3.js"></script>
+  <script src="/javascripts/source/jquery.touchSwipe.min.js"></script>
+  <script src="/javascripts/source/jquery.liquid-slider.min.js"></script>
+  <script>
+  /* If installing in the footer, you won't need $(function() {} */
+  $(function(){
+    $('#slider-id').liquidSlider();
+    $('#slider-id2').liquidSlider();
+  });
+  </script>
+
+  <script type="text/javascript">
+    mixpanel.track_forms("#talk-to-us", 'Submited - Contact form');
+  </script>
+
+</div>
