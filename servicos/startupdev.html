@@ -340,6 +340,14 @@ redirect_from: /servicos/mvp/
   </script>
 
   <script type="text/javascript">
+    $(function(){
+      if(window.location.hash == "#public") {
+        alert('Obrigado pelo seu contato. Retornaremos o mais rápido possível!');
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
     mixpanel.track_forms("#talk-to-us", 'Submited - Contact form');
   </script>
 

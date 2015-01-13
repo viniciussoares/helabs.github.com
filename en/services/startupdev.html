@@ -244,6 +244,14 @@ pt: /servicos/startupdev/
   </script>
 
   <script type="text/javascript">
+    $(function(){
+      if(window.location.hash == "#public") {
+        alert('Thank you for your contact. We will get back as soon as possible!');
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
     mixpanel.track_forms("#talk-to-us", 'Submited - Contact form');
   </script>
 
