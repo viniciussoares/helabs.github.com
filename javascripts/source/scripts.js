@@ -173,6 +173,11 @@ var App = {
       }
     });
 
+    $('#submit-btn').on('click',function(){
+      $('#talk-to-us').submit();
+      return false;
+    });
+
     //
     $('.hide-content').addClass("hidden");
 
