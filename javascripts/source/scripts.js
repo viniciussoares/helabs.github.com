@@ -460,7 +460,7 @@ function createBlogSlider ($container) {
   function getBxSliderData () {
     return ({
       mode: ($(window).width() < 960) ? "vertical" : "horizontal",
-      minSlides: 3, 
+      minSlides: 3,
       maxSlides: 3,
       slideWidth: ($(window).width() < 960) ? 0 : 5000,
       infiniteLoop: true,
@@ -476,7 +476,7 @@ function createBlogSlider ($container) {
 BlogPosts.render = function () {
   var template = this.template;
   var $container = $(this.container);
-  
+
   this.fetch().then(function(posts) {
     $container.append(template({ posts: posts.slice(0, 9) })).removeClass("loading");
     createBlogSlider($container);
@@ -493,7 +493,17 @@ InstantClick.on('change', function() {
 
   $(function() {
     App.StartApp();
+    testimonialHeight();
   });
 });
 
 InstantClick.init();
+
+function testimonialHeight(){
+
+  var height = -1;
+  $('.testimonials-list li').each(function() {
+    height = Math.max($(this).height(), height);
+  }).css('height', height + "px");
+
+};
