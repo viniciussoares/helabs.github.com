@@ -412,14 +412,14 @@ Privacy
 /* Footer */
 
 .main {
-  padding-bottom: 258px; /* Fix footer */
+  padding-bottom: 280px; /* Fix footer */
 }
 
 footer {
   border-top: 1px solid #fff;
   width: 100%;
   background-color: $grey4;
-  padding: 30px 0 85px 0;
+  padding: 30px 0 70px 0;
   font-size: $font-medium;
   position: absolute;
   bottom: 0;
@@ -437,30 +437,38 @@ footer {
 
 .tel {
   @include round_borders (2px);
-  height: 25px;
-  line-height: 25px;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 0 5px 0 5px;
-  margin-top: 5px;
+  padding: 3px 5px 1px 5px;
+  margin: 1px 0 12px 0;
+  display: inline-block;
   color: #fff;
-  clear: both;
 }
 
 .offices {
   overflow: hidden;
 
   li {
-  	width: 33%;
+  	width: 22%;
+    height: 150px;
+    background: #3b3b3b;
+    margin-right: 1%;
+    padding: 15px 2%;
     line-height: 17px;
     font-size: $font-small;
     float: left;
+  }
+
+  li:last-child {
+  	width: auto;
+    background: none;
+    margin-right: 0;
+    float: right;
   }
 
   address span { display: block; }
 
   li.phone-contact{
     color: #fff;
-    width: 16%;
     display: block;
   }
 
@@ -471,7 +479,6 @@ footer {
   }
 
   li.social-he-links {
-    width: 18%;
     display: block;
 
     a {
