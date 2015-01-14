@@ -43,6 +43,7 @@ var App = {
     this.Modal();
     this.InterfaceActions();
     this.UserNavigation.init();
+    testimonialHeight();
   },
 
   CollapsePlugin: function() {
@@ -498,7 +499,6 @@ InstantClick.on('change', function() {
 
   $(function() {
     App.StartApp();
-    testimonialHeight();
   });
 });
 
