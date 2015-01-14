@@ -297,6 +297,13 @@ var App = {
     });
 
 
+    /* Animated header */
+    
+    $(window).on("scroll touchmove", function() {
+      $('header.default').toggleClass('tiny', $(document).scrollTop() > 0);
+    });
+
+
     /* General */
 
     $('nav, .advice, header, #right, #single-page').localScroll({

@@ -67,22 +67,46 @@ Patterns
   margin: auto;
 }
 
-.default {
+.header {
+  width:100%;
+  height:100px;
+  background: #26b;
+  color: #fff;
+  position:fixed;
+  top:0;
+  left:0;
+  transition: height 500ms, background 500ms;
+}
+
+header.default {
   width: 100%;
-  background-color: #fff;
+  height: 75px;
   border-top: 5px solid $he_red;
   box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, 0.3);
-  padding: 10px 0 10px 0;
   position: fixed;
-  left: 0; top: 0;
+  background: #fff;
+  left: 0;
+  top: 0;
   z-index: 1200;
   float: left;
 
   .logo {
     width: 160px;
+    margin-top: 10px;
     float: left;
 
-    &:hover { opacity: .8; }
+    &:hover {
+      opacity: .8;
+    }
+  } // .logo
+}
+
+header.default.tiny {
+  height: 40px;
+  
+  .logo {
+    width: 90px;
+    margin-top: 4px;
   }
 }
 
@@ -92,7 +116,7 @@ Nav
 ==================== */
 
 #menu2 {
-  margin-top: 8px;
+  margin-top: 18px;
   text-align: right;
   float: right;
 
@@ -106,7 +130,7 @@ Nav
     height: 36px;
     border: 1px solid #fff;
     line-height: 36px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: $font-small;
@@ -118,6 +142,19 @@ Nav
       color: $he_red;
     }
   }
+}
+
+header.default.tiny {
+  
+  #menu2 {
+    margin-top: 7px;
+
+    a {
+      height: 24px;
+      line-height: 24px;
+      font-size: 11px;
+    }
+  } // #menu2
 }
 
 
