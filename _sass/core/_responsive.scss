@@ -1859,18 +1859,26 @@ Media Queries for Smartphones
 
   .main { padding-bottom: 0 }
 
-  .offices { padding: 0 0 30px; }
 
-  .offices li {
-    width: 100%;
-    margin-top: 20px;
-
-    &.phone-contact{
+  .offices {
+    padding: 0 0 20px 0;
+    
+    li {
       width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin: 20px 0 0 0;
+
+      &.phone-contact,
+      &.social-he-links {
+        width: 100%;
+      }
     }
 
-    &.social-he-links{
-      width: 100%
+    li:last-child {
+    	width: 100%;
+      background: #3b3b3b;
+      float: left;
     }
   }
 
