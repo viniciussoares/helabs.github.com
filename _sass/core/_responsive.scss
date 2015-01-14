@@ -832,11 +832,23 @@ Media Queries for Smartphones
 
   .containner {
     width: 90%;
-    padding: 0 5% 0 5%;
+    padding: 0 5%;
   }
 
-  header.default .logo { width: 100px; }
-  #menu-trigger { display: inline-block; }
+  header.default,
+  header.default.tiny {
+    height: auto;
+    padding: 10px 0;
+
+    .logo {
+      width: 100px;
+      margin: 0;
+    }
+  }
+
+  #menu-trigger {
+    display: inline-block;
+  }
 
   #home section.testmonial {
     padding: 25px 0 10px 0 !important;
@@ -873,7 +885,7 @@ Media Queries for Smartphones
         background: $he_red;
         color: #fff;
       }
-    }
+    } // a
   }
 
   .current-page {
@@ -886,7 +898,8 @@ Media Queries for Smartphones
   .languages {
     background: none;
     padding: 0;
-    right: 95px; top: 28px;
+    right: 95px;
+    top: 21px;
     color: $grey3;
 
     &:hover {
