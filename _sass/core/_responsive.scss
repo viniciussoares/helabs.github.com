@@ -27,21 +27,15 @@ Media Queries for Tablets
 
 @media (max-width: 960px) {
 
-  footer { position: static }
-  .main { padding-bottom: 0 }
 
-
-  .containner { width: 700px; }
-  header.default .logo {
-    width: 110px;
-    margin: 8px 0 10px;
+  // Main
+  
+  .main {
+    padding-bottom: 0;
   }
 
-  #menu2 {
-    margin-top: 8px;
-    a {
-      padding: 0 5px;
-    }
+  .containner {
+    width: 700px;
   }
 
   .external-link {
@@ -52,11 +46,19 @@ Media Queries for Tablets
     position: static;
   }
 
+  footer {
+    position: static;
+  }
+
+
   /* Home */
 
-  .side-tag{ display:none;}
+  .side-tag {
+    display: none;
+  }
 
   #home {
+
     section.hero {
       padding: 140px 0 60px;
       border-bottom: none;
@@ -66,7 +68,8 @@ Media Queries for Tablets
         line-height: 80px;
       }
 
-      h3, .logo-tip-trigger {
+      h3,
+      .logo-tip-trigger {
         margin: 60px 0 10px;
         font-size: 18px;
       }
@@ -75,7 +78,9 @@ Media Queries for Tablets
     section.what-we-do {
       padding: 0 0 20px;
 
-      &:before { display: none; }
+      &:before {
+        display: none;
+      }
 
       article {
         width: 90%;
@@ -89,7 +94,9 @@ Media Queries for Tablets
     section.testmonial {
       padding: 20px 0;
 
-      &:before { display: none; }
+      &:before {
+        display: none;
+      }
 
       em {
         width: 90%;
@@ -113,12 +120,13 @@ Media Queries for Tablets
         float: none;
         margin: 20px auto;
         text-align: center;
+
         p {
           text-align: center;
         }
 
         &:last-child { margin-right: auto;}
-      }
+      } // article
     }
   }
 
@@ -130,7 +138,9 @@ Media Queries for Tablets
     padding: 40px 0 40px 0;
   }
 
-  #cover-mailing { margin-top: 80px; }
+  #cover-mailing {
+    margin-top: 80px;
+  }
 
 
   /* Sobre Nós */
@@ -138,6 +148,7 @@ Media Queries for Tablets
   #about-us {
 
     section {
+
       em {
         width: 100%;
         margin-top: 20px;
@@ -151,6 +162,7 @@ Media Queries for Tablets
     }
 
     section:first-child {
+
       article {
         padding-top: 100px;
         height: 260px;
@@ -166,6 +178,7 @@ Media Queries for Tablets
       padding: 0 0 40px;
 
       aside {
+
         .videothumbs2 li {
           margin: 0 20px 0 0;
         }
