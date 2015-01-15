@@ -127,19 +127,21 @@ ESPN Mobile
 
   .lead {
     color: #333;
+    float: none;
+    display: block;
     font-size: $font-large;
     font-weight: lighter;
-    margin-left: 0 !important;
-    text-align: center !important;
     line-height: 33px;
-    float: none;
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 85%;
 
     iframe {
       display: block;
       padding: 10px;
       border: 1px solid $grey1;
       background: #fff;
-      margin: 20px auto;
+      margin: 0 auto 20px;
     }
 
     span {
