@@ -458,16 +458,19 @@ footer {
     float: left;
   }
 
-  li:last-child {
-  	width: auto;
+  .phone-contact,
+  .social-he-links {
     background: none;
-    margin-right: 0;
     float: right;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   address span { display: block; }
 
-  li.phone-contact{
+  li.phone-contact {
+  	width: 13%;
+    margin-right: 4%;
     color: #fff;
     display: block;
   }
@@ -479,31 +482,35 @@ footer {
   }
 
   li.social-he-links {
-    display: block;
+  	width: 10%;
+    margin-right: 0;
 
     a {
       display: block;
-      width: 100%;
-      background: url("/images/icons/profile-social.png") no-repeat;
-      color: #8E8C8E;
+      background: #3b3b3b url("/images/icons/profile-social.png") no-repeat;
+      color: #fff;
       text-align: left;
       height: 30px;
-      margin-bottom: 5px;
+      margin-bottom: 2px;
       line-height: 30px;
-      padding-left: 40px;
+      padding: 0 0 0 38px;
       text-align: left;
       text-decoration: none;
 
+      &:hover {
+        background-color: $he_red;
+      }
+
       &.github {
-        background-position: 0 -60px;
+        background-position: 3px -60px;
       }
 
       &.dribble {
-        background-position: 0 -30px;
+        background-position: 3px -30px;
       }
 
       &.twitter {
-        background-position: 0 0;
+        background-position: 3px 1px;
       }
     }
   }
