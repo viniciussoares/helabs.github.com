@@ -469,8 +469,8 @@ footer {
   address span { display: block; }
 
   li.phone-contact {
-  	width: 13%;
-    margin-right: 4%;
+  	width: 130px;
+    margin-right: 50px;
     color: #fff;
     display: block;
   }
@@ -482,7 +482,7 @@ footer {
   }
 
   li.social-he-links {
-  	width: 10%;
+  	width: 90px;
     margin-right: 0;
 
     a {
@@ -520,9 +520,11 @@ footer {
   width: 100%;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 12px 0 12px 0;
+  height: 40px;
+  line-height: 40px;
   color: #fff;
   position: absolute;
+  font-size: $font-small;
   margin: 0;
   bottom: 0;
   left: 0;
@@ -532,7 +534,9 @@ footer {
     float: left;
   }
 
-  ul { float: right; }
+  ul {
+    float: right;
+  }
 
   li {
     margin-left: 20px;

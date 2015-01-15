@@ -819,6 +819,13 @@ Media Queries for Tablets
   .box_colors_show { display:none; }
 
   ul.downloads li { width: 350px;}
+  
+  
+  /* Footer */
+
+  .offices {
+    
+  }
 
 }
 
@@ -1861,29 +1868,39 @@ Media Queries for Smartphones
 
 
   .offices {
-    padding: 0 0 20px 0;
+    padding: 15px 0 20px 0;
     
     li {
       width: 100%;
+      padding: 15px;
       height: auto;
-      margin-top: 20px;
-      margin: 20px 0 0 0;
+      margin: 30px 0 0 0;
 
       &.phone-contact,
       &.social-he-links {
         width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
+    
+    li:first-child {
+      margin-top: 0;
+    }
+    
+    li.phone-contact {
+      width: 100%;
+      margin-right: 0;
+    }
 
-    li:last-child {
-    	width: 100%;
-      background: #3b3b3b;
-      float: left;
+    h3 {
+      margin-top: 0;
     }
   }
 
   .footer-links {
-    padding: 10px 0;
+    height: auto;
+    padding: 5px 0 20px 0;
 
     p {
       width: 100%;
@@ -1891,7 +1908,10 @@ Media Queries for Smartphones
       margin: 0;
     }
 
-    ul { width: 100%; }
+    ul {
+      width: 100%;
+      margin-top: 10px;
+    }
 
     li {
       width: 100%;
@@ -1902,8 +1922,8 @@ Media Queries for Smartphones
     }
 
     a {
-      width: 94%;
-      padding: 0 3% 0 3%;
+      width: 96%;
+      padding: 0 2%;
       height: 30px;
       line-height: 30px;
       background: #444;
