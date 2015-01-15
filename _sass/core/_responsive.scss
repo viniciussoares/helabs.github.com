@@ -1873,7 +1873,6 @@ Media Queries for Smartphones
     li {
       width: 100%;
       padding: 15px;
-      height: auto;
       margin: 30px 0 0 0;
 
       &.phone-contact,
@@ -1891,10 +1890,6 @@ Media Queries for Smartphones
     li.phone-contact {
       width: 100%;
       margin-right: 0;
-    }
-
-    h3 {
-      margin-top: 0;
     }
   }
 
