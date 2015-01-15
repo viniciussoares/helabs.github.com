@@ -90,9 +90,7 @@ Patterns
 }
 
 
-/* ====================
-Nav
-==================== */
+/* Nav */
 
 #menu2 {
   margin-top: 18px;
@@ -105,7 +103,6 @@ Nav
   }
 
   a {
-    @include round_borders (2px);
     height: 36px;
     line-height: 36px;
     padding: 0 10px;
@@ -116,15 +113,26 @@ Nav
     color: $grey3;
 
     &:hover {
-      color: $he_red;
+      background-color: #333 !important;
+      color: #fff;
     }
   }
 }
 
+
+/* Header configs */
+
 #home {
   .default {
-    background: rgba(#fff, .8);
+    border-top: none;
+    background: rgba(#fff, 0);
   }
+  
+  #menu2 {
+    a {
+      background: rgba(#fff, .8);
+    }
+  } // #menu2
 }
 
 .default.tiny,
@@ -133,23 +141,9 @@ Nav
   background: rgba(#fff, .9);
   box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, .1);
   
-  #menu2 {
-    a {
-      border: none;
-    }
-  }
-  
   .logo {
     width: 90px;
     margin-top: 4px;
-  }
-}
-
-#home .default {
-  #menu2 {
-    a {
-      border: none;
-    }
   }
 }
 
