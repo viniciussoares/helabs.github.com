@@ -123,7 +123,7 @@ Nav
 
 #home {
   .default {
-    background: rgba(#fff, 0);
+    background: rgba(#fff, .7);
   }
 }
 
@@ -131,6 +131,7 @@ Nav
 #home .default.tiny {
   height: 40px;
   background: rgba(#fff, .9);
+  box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, .1);
   
   #menu2 {
     a {
