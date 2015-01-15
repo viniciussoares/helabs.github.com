@@ -93,19 +93,19 @@ Patterns
 /* Nav */
 
 #menu2 {
+  margin-top: 18px;
   text-align: right;
   float: right;
 
   li {
     display: inline;
-    margin-left: 1px;
-    float: left;
+    margin-left: 0;
   }
 
   a {
-    height: 75px;
-    line-height: 75px;
-    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: $font-small;
@@ -124,7 +124,7 @@ Patterns
 
 #home {
   .default {
-    background: rgba(#fff, .2);
+    background: rgba(#fff, 0);
   }
   
   #menu2 {
