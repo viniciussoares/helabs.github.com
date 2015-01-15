@@ -67,17 +67,6 @@ Patterns
   margin: auto;
 }
 
-.header {
-  width:100%;
-  height:100px;
-  background: #26b;
-  color: #fff;
-  position:fixed;
-  top:0;
-  left:0;
-  transition: height 500ms, background 500ms;
-}
-
 header.default {
   width: 100%;
   height: 75px;
