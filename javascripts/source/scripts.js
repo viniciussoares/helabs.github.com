@@ -43,7 +43,16 @@ var App = {
     this.Modal();
     this.InterfaceActions();
     this.UserNavigation.init();
-    testimonialHeight();
+    this.testimonialHeight();
+  },
+  
+  // dynamic testimonial height
+  testimonialHeight: function(){
+    var height = -1;
+    $('.testimonials-list li').each(function() {
+      height = Math.max($(this).height(), height);
+    }).css('height', height + "px");
+
   },
 
   CollapsePlugin: function() {
@@ -503,12 +512,3 @@ InstantClick.on('change', function() {
 });
 
 InstantClick.init();
-
-function testimonialHeight(){
-
-  var height = -1;
-  $('.testimonials-list li').each(function() {
-    height = Math.max($(this).height(), height);
-  }).css('height', height + "px");
-
-};
