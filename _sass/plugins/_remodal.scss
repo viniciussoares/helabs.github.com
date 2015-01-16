@@ -2,6 +2,10 @@
    Remodal necessary styles
    ========================================================================== */
 
+$base-color: #fff;
+$flat-blue: #3e5368;
+$flat-green: #16a085;
+
 /* Hide scroll bar */
 
 html.remodal-is-locked,
@@ -174,31 +178,31 @@ body.remodal-is-active .remodal {
   text-decoration: none;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-}
 
-.remodal-close:after {
-  color: #3e5368;
-  content: "×";
-  cursor: pointer;
-  display: block;
-  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
-  font-size: 28px;
-  line-height: 28px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  text-decoration: none;
-}
+  &:after {
+    color: $flat-blue;
+    content: "×";
+    cursor: pointer;
+    display: block;
+    font-family: $sans_serif !important;
+    font-size: 28px;
+    line-height: 25px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+  }
 
-.remodal-close:hover,
-.remodal-close:active {
-  background: #3e5368;
-}
+  &:hover,
+  &:active {
+    background: $flat-blue;
 
-.remodal-close:hover.remodal-close:after,
-.remodal-close:active.remodal-close:after {
-  color: $light-grey2;
+    &.remodal-close:after,
+    &.remodal-close:after {
+      color: $light-grey2;
+    }
+  }
 }
 
 /* Dialog buttons */
@@ -206,9 +210,10 @@ body.remodal-is-active .remodal {
 .remodal-confirm,
 .remodal-cancel {
   background-clip: padding-box;
+  color: $base-color;
   cursor: pointer;
   display: inline-block;
-  font-size: 10pt;
+  font-size: $font-medium2;
   margin: 0 0 5px 0;
   padding: 9px 0;
   text-align: center;
@@ -220,28 +225,18 @@ body.remodal-is-active .remodal {
   transition: all 0.2s ease-out;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-}
-
-.remodal-confirm {
-  color: #16a085;
-  border: 2px solid #16a085;
-  background: $light-grey2;
-}
-
-.remodal-confirm:hover,
-.remodal-confirm:active {
-  color: $light-grey2;
-  background: #16a085;
-}
-
-.remodal-cancel {
-  color: #fff;
-  font-size: $font-medium2;
-  background: $he_red;
 
   &:hover {
     opacity: .8;
   }
+}
+
+.remodal-confirm {
+  background: $flat-green;
+}
+
+.remodal-cancel {
+  background: $he_red;
 }
 
 /* Media queries
@@ -270,17 +265,21 @@ body.remodal-is-active .remodal {
   margin: 20px auto;
 }
 
-.lt-ie9 .remodal-close:after {
-  margin: auto;
-  text-align: center;
+.lt-ie9 .remodal-close {
+
+  &:after {
+    margin: auto;
+    text-align: center;
+  }
+
+  &:hover,
+  &:active {
+    background: transparent;
+
+    &.remodal-close:after,
+    &.remodal-close:after {
+      color: $flat-blue;
+    }
+  }
 }
 
-.lt-ie9 .remodal-close:hover,
-.lt-ie9 .remodal-close:active {
-  background: transparent;
-}
-
-.lt-ie9 .remodal-close:hover.remodal-close:after,
-.lt-ie9 .remodal-close:active.remodal-close:after {
-  color: #3e5368;
-}
