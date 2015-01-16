@@ -163,48 +163,6 @@ body.remodal-is-active .remodal {
   vertical-align: middle;
 }
 
-/* Close button */
-
-.remodal-close {
-  height: 28px;
-  left: 5px;
-  position: absolute;
-  top: 5px;
-  width: 28px;
-  -webkit-transition: background 0.2s ease-out;
-  -moz-transition: background 0.2s ease-out;
-  -o-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
-  text-decoration: none;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-
-  &:after {
-    color: $flat-blue;
-    content: "×";
-    cursor: pointer;
-    display: block;
-    font-family: $sans_serif !important;
-    font-size: 28px;
-    line-height: 25px;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    text-decoration: none;
-  }
-
-  &:hover,
-  &:active {
-    background: $flat-blue;
-
-    &.remodal-close:after,
-    &.remodal-close:after {
-      color: $light-grey2;
-    }
-  }
-}
-
 /* Dialog buttons */
 
 .remodal-confirm,
@@ -264,22 +222,3 @@ body.remodal-is-active .remodal {
   min-height: 0;
   margin: 20px auto;
 }
-
-.lt-ie9 .remodal-close {
-
-  &:after {
-    margin: auto;
-    text-align: center;
-  }
-
-  &:hover,
-  &:active {
-    background: transparent;
-
-    &.remodal-close:after,
-    &.remodal-close:after {
-      color: $flat-blue;
-    }
-  }
-}
-
