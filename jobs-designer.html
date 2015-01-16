@@ -73,23 +73,30 @@ with_job_openings: false
 
 
         {% if page.with_job_openings %}
-          <section id="jobs-form">
-            <h3>Curtiu? Preencha o formulário abaixo!</h3>
-            <form action="https://helabs.wufoo.com/forms/m7p9m3/#public" method="post" name="form21" autocomplete="off">
-              <ul>
-                <li><input name="Field9" type="text" placeholder="Digite seu Nome"></li>
-                <li><input name="Field11" type="text" placeholder="Digite seu Email"></li>
-                <li><input name="Field16" type="text" placeholder="Digite seu DDD e Telefone"></li>
-                <li><textarea name="Field12" cols="" rows="" placeholder="Mande o link do seu GitHub, blog ou portfolio e diga por que você curte a HE:labs!"></textarea></li>
-                <li><input name="saveForm" type="submit" value="Enviar"/></li>
-              </ul>
-              <div style="display:none;">
-                <label for="comment">Do Not Fill This Out</label>
-                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                <input type="hidden" id="idstamp" name="idstamp" value="k8nsjg8Eb95u149Co1SpZ8bYVT36bN5qIO3AtzsKD2Q=">
-              </div>
-            </form>
-          </section> <!-- /jobs-form -->
+          <section id="jobs">
+
+            <div class="containner">
+              <h3 class="form-title">Curtiu? Preencha o formulário abaixo!</h3>
+
+              <form id="talk-to-us" action="https://helabs.wufoo.com/forms/m7p9m3/#public" method="post" name="form21" autocomplete="off">
+
+                <ul>
+                  <li><input name="Field9" type="text" class="text spacing" placeholder="Seu nome" required></li>
+                  <li><input name="Field11" type="text" class="text spacing" placeholder="Seu Email" required></li>
+                  <li><input id="phone" name="Field16" type="text" class="text" placeholder="Digite seu DDD e Telefone" required></li>
+                  <li><textarea name="Field12" cols="" rows="" class="text" placeholder="Mande o link do seu GitHub, blog ou portfolio e diga por que você curte a HE:labs!" required></textarea></li>
+                  <li><button name="saveForm" type="submit">Enviar</button></li>
+                </ul>
+                <div style="display:none;">
+                  <label for="comment">Do Not Fill This Out</label>
+                  <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                  <input type="hidden" id="idstamp" name="idstamp" value="k8nsjg8Eb95u149Co1SpZ8bYVT36bN5qIO3AtzsKD2Q=">
+                </div>
+
+              </form>
+
+            </div>
+          </section> <!-- /jobs -->
         {% endif %}
       </div>
     </div> <!-- /about-position -->
