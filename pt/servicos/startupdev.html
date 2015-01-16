@@ -331,7 +331,7 @@ redirect_from: /servicos/startupdev/
 
       </form>
 
-      <div class="remodal" data-remodal-id="modal">
+      <div class="remodal" data-remodal-id="public">
         <h1>Obrigado!</h1>
         <br>
         <p>
@@ -364,7 +364,7 @@ redirect_from: /servicos/startupdev/
     $(function(){
       if(window.location.hash == "#public") {
         $(function () {
-           var inst = $.remodal.lookup[$('[data-remodal-id=modal]').data('remodal')];
+           var inst = $.remodal.lookup[$('[data-remodal-id=public]').data('remodal')];
            inst.open();
            inst.close();
         });
