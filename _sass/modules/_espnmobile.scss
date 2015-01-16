@@ -150,16 +150,15 @@ ESPN Mobile
     }
   }
 
-  li:first-child {
-    width: 100%;
-    padding: 30px 0;
-    @include clearfix;
-  }
-
   li {
     width: 100%;
     padding: 50px 0;
     @include clearfix;
+
+    &:first-child {
+      padding: 30px 0;
+    }
+
   }
 
   li:nth-child(odd) { background: $light-grey1; }
