@@ -298,10 +298,12 @@ var App = {
 
 
     /* Animated header */
-    
-    $(window).on("scroll touchmove", function() {
-      $('header.default').toggleClass('tiny', $(document).scrollTop() > 0);
-    });
+
+    if(document.body.offsetWidth >= 686) {
+       $(window).on("scroll touchmove", function() {
+         $('header.default').toggleClass('tiny', $(document).scrollTop() > 0);
+       });
+     }
 
 
     /* General */

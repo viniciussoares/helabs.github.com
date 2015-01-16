@@ -852,6 +852,26 @@ Media Queries for Smartphones
       margin: 0;
     }
   }
+  
+  #menu2 {
+    a {
+      margin-left: 0;
+      margin-bottom: 1px;
+    }
+  }
+  
+  #home {
+    .default {
+      background: rgba(#fff, 1);
+      box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, .1);
+    }
+  
+    #menu2 {
+      a {
+        background: #333;
+      }
+    } // #menu2
+  }
 
   #menu-trigger {
     display: inline-block;
