@@ -12,14 +12,14 @@ ESPN Mobile
   background-size: cover;
   height: 630px;
   color: #fff;
-  
+
   .iphone {
     background: url('/images/cases/espn-mobile/iphone.png') no-repeat scroll top left;
     width: 367px;
     height: 671px;
     float:left;
-    
-    iframe { 
+
+    iframe {
       background: none repeat scroll 0 0 #333;
       border: 0 none;
       float: left;
@@ -65,12 +65,12 @@ ESPN Mobile
     margin-top: 2em;
     text-align: right;
     width: 60%;
-    
+
     img {
       float: right;
       margin-left: 20px;
     }
-    
+
     span {
       font-weight: lighter;
       font-size: 14px;
@@ -85,7 +85,7 @@ ESPN Mobile
     margin: 10px 0 0;
     width: 60%;
     line-height: 1.6;
-    
+
     &:before {
       background: url('/images/cases/espn-mobile/aspa1.png') no-repeat scroll top left;
       width: 35px;
@@ -127,12 +127,23 @@ ESPN Mobile
 
   .lead {
     color: #333;
+    float: none;
+    display: block;
     font-size: $font-large;
     font-weight: lighter;
-    margin-left: 0 !important;
-    text-align: center !important;
     line-height: 33px;
-    float: none;
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 85%;
+
+    iframe {
+      display: block;
+      padding: 10px;
+      border: 1px solid $grey1;
+      background: #fff;
+      margin: 0 auto 20px;
+      max-width: 100%;
+    }
 
     span {
       font-weight: bold;
@@ -141,8 +152,13 @@ ESPN Mobile
 
   li {
     width: 100%;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     @include clearfix;
+
+    &:first-child {
+      padding: 30px 0;
+    }
+
   }
 
   li:nth-child(odd) { background: $light-grey1; }
@@ -174,14 +190,14 @@ ESPN Mobile
 
   .odd-work img { float: left; }
   .even-work img { float: right; }
-  
+
   .odd-work p,
   .even-work p {
     font-size: $font-medium2;
     line-height: 28px;
   }
-  
-  .odd-work p { 
+
+  .odd-work p {
     margin-left: 350px;
     text-align: left;
   }
@@ -190,7 +206,7 @@ ESPN Mobile
     margin-right: 350px;
     text-align: right;
   }
-  
+
   .work-info {
 
     h3 {

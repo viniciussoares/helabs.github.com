@@ -45,7 +45,7 @@ var App = {
     this.UserNavigation.init();
     this.testimonialHeight();
   },
-  
+
   // dynamic testimonial height
   testimonialHeight: function(){
     var height = -1;
@@ -310,6 +310,15 @@ var App = {
     $("a[rel^='external']").each(function() {
       $(this).attr("target", "_blank");
     });
+
+
+    /* Animated header */
+
+    if(document.body.offsetWidth >= 686) {
+       $(window).on("scroll touchmove", function() {
+         $('header.default').toggleClass('tiny', $(document).scrollTop() > 0);
+       });
+     }
 
 
     /* General */
