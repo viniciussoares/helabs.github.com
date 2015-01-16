@@ -12,7 +12,9 @@ display_url: m.espn.com.br
 
 videos:
   - id: TabJNvOVVHk
-    image: /images/customers/thiago-belem-espn-mobile.png 
+    image: /images/customers/thiago-belem-espn-mobile.png
+  - id: xoYB0XnQRZI
+    image: /images/customers/jean-oddi-espn-mobile.png
 
 screenshots:
   - url: /images/projects/espn-mobile/slider-espn-mobile-01.jpg
