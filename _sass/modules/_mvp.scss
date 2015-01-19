@@ -201,7 +201,7 @@ Services - MVP
 .mvp-projects {
   text-align: center;
 
-  li {
+  > li {
     width: 46%;
     margin: 0 1% 50px 1%;
     display: inline-block;
@@ -209,7 +209,6 @@ Services - MVP
   }
 
   img {
-    width: 97%;
     border: 1px solid $light-grey2;
     padding: 1%;
   }
@@ -226,14 +225,20 @@ Services - MVP
   h4 { color: $he_red; }
 
   .about{
-    padding: 25px 0 10px 25px;
+    min-height: 110px;
+    padding: 20px 0 20px 10px;
     color: #fff;
     font-size: 16px;
     text-align: left;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.8);
     min-width: 405px;
-    margin: 5px;
+    margin: 5px 2px;
+
+    li:before {
+      content: '- ';
+    }
+
   }
 }
 
