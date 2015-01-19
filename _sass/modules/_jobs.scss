@@ -5,8 +5,13 @@
 Jobs
 ==================== */
 
-#jobs {
+#jobs, #jobs-section {
   margin-top: 60px;
+  .form-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+  }
 }
 
 .jobs-cover {

@@ -16,7 +16,7 @@ with_job_openings: true
     </div>
   </div>
 
-  <section id="jobs">
+  <section id="jobs-section">
 
     <div class="about-position">
       <div class="containner">
@@ -38,31 +38,11 @@ with_job_openings: true
 
         </section> <!-- /job-description -->
 
-        {% if page.with_job_openings %}
-          <section id="jobs-form">
-
-            <h3>Preenche os requisitos acima? Preencha o formulário abaixo!</h3>
-
-            <form action="https://helabs.wufoo.com/forms/m7p9m3/#public" method="post" name="form21" autocomplete="off">
-              <ul>
-                <li><input name="Field9" type="text" placeholder="Digite seu Nome"></li>
-                <li><input name="Field11" type="text" placeholder="Digite seu Email"></li>
-                <li><input name="Field16" type="text" placeholder="Digite seu DDD e Telefone"></li>
-                <li><textarea name="Field12" cols="" rows="" placeholder="Mande o link do seu GitHub, blog ou portfolio e diga por que você curte a HE:labs!"></textarea></li>
-                <li><input name="saveForm" type="submit" value="Enviar"/></li>
-              </ul>
-              <div style="display:none;">
-                <label for="comment">Do Not Fill This Out</label>
-                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                <input type="hidden" id="idstamp" name="idstamp" value="k8nsjg8Eb95u149Co1SpZ8bYVT36bN5qIO3AtzsKD2Q=">
-              </div>
-            </form>
-          </section> <!-- /jobs-form -->
-        {% endif %}
+        {% include jobs_form.html %}
 
       </div>
     </div> <!-- /about-position -->
 
-  </section> <!-- /jobs -->
+  </section> <!-- /jobs-section -->
 
 </div>
