@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/manager-book/'
+redirect_from: /trabalhos/manager-book/
+permalink: '/pt/trabalhos/manager-book/'
 en: '/en/works/manager-book/'
 
 name: ManagerBook

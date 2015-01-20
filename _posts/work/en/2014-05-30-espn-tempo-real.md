@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/espn-tempo-real/'
-pt: '/trabalhos/espn-tempo-real/'
+pt: '/pt/trabalhos/espn-tempo-real/'
 
 name: ESPN Tempo Real
 project_kind: Live monitoring of sports events
@@ -11,7 +11,7 @@ image: /images/works/espn-tempo-real.jpg
 
 videos:
   - id: MYEjydImSxM
-    image: /images/customers/thiago-belem-espn-mobile.png  
+    image: /images/customers/thiago-belem-espn-mobile.png
 
 screenshots:
   - url: /images/projects/espn-tempo-real/slider-espn-tempo-real-01.jpg

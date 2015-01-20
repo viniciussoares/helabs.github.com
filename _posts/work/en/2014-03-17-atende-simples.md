@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/atende-simples/'
-pt: '/trabalhos/atende-simples/'
+pt: '/pt/trabalhos/atende-simples/'
 
 name: Atende Simples
 project_kind: Atende Simples offers a complete and professional phone customer support for businesses.

@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/early-shares/'
-pt: '/trabalhos/early-shares/'
+pt: '/pt/trabalhos/early-shares/'
 
 name: Early Shares
 project_kind: Crowdfunding Plataform.

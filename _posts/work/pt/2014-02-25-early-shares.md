@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/early-shares/'
+redirect_from: /trabalhos/early-shares/
+permalink: '/pt/trabalhos/early-shares/'
 en: '/en/works/early-shares/'
 
 name: Early Shares

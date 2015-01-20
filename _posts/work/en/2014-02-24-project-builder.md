@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/project-builder/'
-pt: '/trabalhos/project-builder/'
+pt: '/pt/trabalhos/project-builder/'
 
 name: Project Builder
 project_kind: Project Management Software.

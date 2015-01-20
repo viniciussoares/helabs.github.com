@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/sala-de-ideias/'
+redirect_from: /trabalhos/sala-de-ideias/
+permalink: '/pt/trabalhos/sala-de-ideias/'
 en: '/en/works/sala-de-ideias/'
 
 name: Sala de Ideias
@@ -12,7 +13,7 @@ display_url: saladeideias.com.br
 
 videos:
   - id: 3QKluUSthJc
-    image: /images/customers/fabiane-gori-e-helena-cardoso.jpg 
+    image: /images/customers/fabiane-gori-e-helena-cardoso.jpg
 
 screenshots:
   - url: /images/projects/sala-de-ideias/slider-sala-de-ideias-01.jpg

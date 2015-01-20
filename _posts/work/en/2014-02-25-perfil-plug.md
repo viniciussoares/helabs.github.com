@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/perfil-plug/'
-pt: '/trabalhos/perfil-plug/'
+pt: '/pt/trabalhos/perfil-plug/'
 
 name: Perfil Plug
 project_kind:

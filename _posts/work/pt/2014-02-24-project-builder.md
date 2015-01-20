@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/project-builder/'
+redirect_from: /trabalhos/project-builder/
+permalink: '/pt/trabalhos/project-builder/'
 en: '/en/works/project-builder/'
 
 name: Project Builder
@@ -12,7 +13,7 @@ display_url: projectbuilder.com.br
 
 videos:
   - id: I6n1NI2lu_A
-    image: /images/customers/aluisio-azevedo-project-builder.png  
+    image: /images/customers/aluisio-azevedo-project-builder.png
 
 screenshots:
   - url: /images/projects/project-builder/slider-project-builder-01.jpg

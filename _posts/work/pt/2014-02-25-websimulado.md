@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/websimulado/'
+redirect_from: /trabalhos/websimulado/
+permalink: '/pt/trabalhos/websimulado/'
 en: '/en/works/websimulado/'
 
 name: Web Simulado

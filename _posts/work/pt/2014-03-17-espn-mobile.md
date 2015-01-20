@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/espn-mobile/'
+redirect_from: /trabalhos/espn-mobile/
+permalink: '/pt/trabalhos/espn-mobile/'
 en: '/en/works/espn-mobile/'
 
 name: ESPN Mobile

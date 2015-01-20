@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/atende-simples/'
+redirect_from: /trabalhos/atende-simples/
+permalink: '/pt/trabalhos/atende-simples/'
 en: '/en/works/atende-simples/'
 
 name: Atende Simples

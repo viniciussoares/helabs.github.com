@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/movingscripts/'
+redirect_from: /trabalhos/movingscripts/
+permalink: '/pt/trabalhos/movingscripts/'
 en: '/en/works/movingscripts/'
 
 name: Moving Scripts

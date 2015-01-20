@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/pet-roomie/'
+redirect_from: /trabalhos/pet-roomie/
+permalink: '/pt/trabalhos/pet-roomie/'
 en: '/en/works/pet-roomie/'
 
 name: Pet Roomie
@@ -12,7 +13,7 @@ display_url: petroomie.com.br
 
 videos:
   - id: wRlKCsNyR0E
-    image: /images/customers/matheus-bras-petroomie.jpg 
+    image: /images/customers/matheus-bras-petroomie.jpg
 
 screenshots:
   - url: /images/projects/pet-roomie/slider-pet-roomie-01.jpg

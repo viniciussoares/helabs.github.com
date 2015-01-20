@@ -2,7 +2,8 @@
 layout: case
 category: case
 
-permalink: '/trabalhos/espn-tempo-real/'
+redirect_from: /trabalhos/espn-tempo-real/
+permalink: '/pt/trabalhos/espn-tempo-real/'
 en: '/en/works/espn-tempo-real/'
 
 name: ESPN Tempo Real
