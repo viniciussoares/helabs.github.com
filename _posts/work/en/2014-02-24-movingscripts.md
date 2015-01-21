@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/movingscripts/'
-pt: '/trabalhos/movingscripts/'
+pt: '/pt/trabalhos/movingscripts/'
 
 name: Moving Scripts
 project_kind: Creative community for publishing screenplays.

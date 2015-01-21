@@ -3,7 +3,7 @@ layout: case-en
 category: case
 
 permalink: '/en/works/manager-book/'
-pt: '/trabalhos/manager-book/'
+pt: '/pt/trabalhos/manager-book/'
 
 name: ManagerBook
 project_kind: Performance Indicators for Businesses.
