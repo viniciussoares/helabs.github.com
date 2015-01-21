@@ -471,7 +471,7 @@ BlogPosts.fetch = function() {
       }
     }).toArray();
   }
-  return $.get('http://helabs.com.br/blog/atom.xml').then(normalizeToJson);
+  return $.get('/blog/atom.xml').then(normalizeToJson);
 };
 
 function createBlogSlider ($container) {
