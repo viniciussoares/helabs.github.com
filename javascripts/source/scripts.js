@@ -443,7 +443,7 @@ var App = {
 BlogPosts = {};
 
 BlogPosts.init = function () {
-  if (location.pathname === "/" || location.pathname === "/en/") {
+  if (location.pathname === "/pt/" || location.pathname === "/en/") {
     this.container = '.our-blog .blog-containner';
     this.template = Handlebars.compile($('#blog-posts').hide().html());
     $(this.container).addClass("loading");
