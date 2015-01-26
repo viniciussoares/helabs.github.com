@@ -63,6 +63,9 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
         <p>{{ page.about }}</p>
         <p>{{ page.status }}</p>
         <p>{{ page.what_has_been_done }}</p>
+        {% if page.project_case_url %}
+          <p>Veja o <a href="{{ page.project_case_url }}">caso completo</a>.</p>
+        {% endif %}
       </article>
 
       <aside>

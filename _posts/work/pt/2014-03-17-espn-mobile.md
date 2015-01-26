@@ -9,6 +9,7 @@ en: '/en/works/espn-mobile/'
 name: ESPN Mobile
 project_kind: Versão mobile do ESPN.com.br
 
+project_case_url: /pt/cases/espn-mobile/
 display_url: m.espn.com.br
 
 videos:
