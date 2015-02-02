@@ -238,6 +238,19 @@ pt: /pt/servicos/startupdev/
 
       </form>
 
+      <div class="remodal" data-remodal-id="public">
+        <h1>Thank You!</h1>
+        <br>
+        <p>
+          We really appreciate your contact.
+        </p>
+        <p>
+          We'll get in touch as soon as possible!
+        </p>
+        <br>
+        <a class="remodal-cancel" href="#">Dismiss</a>
+      </div>
+
     </div>
   </section> <!-- /contact -->
 
@@ -245,6 +258,7 @@ pt: /pt/servicos/startupdev/
   <script src="/javascripts/source/jquery.easing.1.3.js"></script>
   <script src="/javascripts/source/jquery.touchSwipe.min.js"></script>
   <script src="/javascripts/source/jquery.liquid-slider.min.js"></script>
+  <script src="/javascripts/source/jquery.remodal.js"></script>
   <script>
   /* If installing in the footer, you won't need $(function() {} */
   $(function(){
@@ -257,7 +271,11 @@ pt: /pt/servicos/startupdev/
     $(function(){
       if(window.location.hash == "#public") {
         $.get("//www.googleadservices.com/pagead/conversion/951310530/?label=ig9hCI3kgVkQwrHPxQM&amp;guid=ON&amp;script=0");
-        alert('Thank you for your contact. We will get back as soon as possible!');
+        $(function () {
+           var inst = $.remodal.lookup[$('[data-remodal-id=public]').data('remodal')];
+           inst.open();
+           inst.close();
+        });
       }
     });
   </script>

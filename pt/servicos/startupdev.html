@@ -29,7 +29,7 @@ redirect_from: /servicos/startupdev/
         <li class="plus-icon plus-01">+</li>
         <li>
           <img src="/images/mvp-page/formula-02.png" alt="1 developer Rails + 1 designer web">
-          <p>1 Ruby on Rails<br>developer +<br>1 designer web</p>
+          <p>2 Ruby on Rails<br>developers +<br>1 designer web</p>
         </li>
         <li class="plus-icon plus-02">+</li>
         <li>
@@ -331,6 +331,19 @@ redirect_from: /servicos/startupdev/
 
       </form>
 
+      <div class="remodal" data-remodal-id="public">
+        <h1>Obrigado!</h1>
+        <br>
+        <p>
+          Agradecemos pelo seu contato.
+        </p>
+        <p>
+          Retornaremos o mais rápido possível!
+        </p>
+        <br>
+        <a class="remodal-cancel" href="#">Ok</a>
+      </div>
+
     </div>
   </section> <!-- /contact -->
 
@@ -338,6 +351,7 @@ redirect_from: /servicos/startupdev/
   <script src="/javascripts/source/jquery.easing.1.3.js"></script>
   <script src="/javascripts/source/jquery.touchSwipe.min.js"></script>
   <script src="/javascripts/source/jquery.liquid-slider.min.js"></script>
+  <script src="/javascripts/source/jquery.remodal.js"></script>
   <script>
   /* If installing in the footer, you won't need $(function() {} */
   $(function(){
@@ -349,7 +363,11 @@ redirect_from: /servicos/startupdev/
   <script type="text/javascript">
     $(function(){
       if(window.location.hash == "#public") {
-        alert('Obrigado pelo seu contato. Retornaremos o mais rápido possível!');
+        $(function () {
+           var inst = $.remodal.lookup[$('[data-remodal-id=public]').data('remodal')];
+           inst.open();
+           inst.close();
+        });
       }
     });
   </script>
