@@ -379,6 +379,30 @@ projects:
     description: Software que oferece simulados para concursos públicos.
     highlighted: true
   -
+    name: Negocios Brasil
+    slug: negocios-brasil
+    image: /images/projects/mvp/negocios-brasil.jpg
+  -
+    name: Worthix
+    slug: worthix
+    image: /images/projects/worthix.jpg
+  -
+    name: Blog
+    slug: blog
+    image: /images/projects/blog.jpg
+  -
+    name: Worxcloud
+    slug: worxcloud
+    image: /images/projects/worxcloud.jpg
+  -
+    name: Midiab2w
+    slug: midiab2w
+    image: /images/projects/midiab2w.jpg
+  -
+    name: Triagem Auditiva
+    slug: triagem-auditiva
+    image: /images/projects/triagem-auditiva.jpg
+  -
     name: Alik
     slug: alik
     image: /images/projetos/mvp/alik.jpg
