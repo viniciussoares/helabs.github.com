@@ -20,12 +20,12 @@ def import_blogposts!
   end # --> { 'transliterated_author_name' => [ @blogpost, ... ], ... }
 
   # get absolute filenames of _posts/time/*.html files
-  time_files = Dir.chdir(File.join('_posts', 'time')) do
+  time_files = Dir.chdir(File.join('_posts', 'team-members', 'pt')) do
     Dir.glob('*.html').map { |f| File.absolute_path f }
   end
 
   # get absolute filenames of _posts/team/*.html files
-  time_files += Dir.chdir(File.join('_posts', 'team')) do
+  time_files += Dir.chdir(File.join('_posts', 'team-members', 'en')) do
     Dir.glob('*.html').map { |f| File.absolute_path f }
   end
 
@@ -35,7 +35,7 @@ def import_blogposts!
   # iterate through time/*.html files
   time_files.each do |time_file|
     person_name = I18n.transliterate(
-      Jekyll::Post.new(site, Dir.pwd, '', "time/#{File.basename(time_file)}").data['full_name']
+      Jekyll::Post.new(site, Dir.pwd, '', "team-members/en/#{File.basename(time_file)}").data['full_name']
     )
 
     language = 'en/' if time_file.include? '/en/'
