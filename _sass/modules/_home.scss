@@ -64,7 +64,10 @@ Home
     }
 
     h4 {
+      background: rgba($light-grey1, 1);
       font-size: $font-large;
+      height: 40px;
+      line-height: 40px;
       color: $he_red;
       text-transform: uppercase;
       font-weight: 300;
@@ -72,12 +75,17 @@ Home
 
     p {
       margin-top: 10px;
+      margin-bottom: 0;
       font-size: $font-medium;
       color: rgba($grey3, .9);
       line-height: 26px;
       text-align: left;
 
       em { color: $black; }
+    }
+    
+    a {
+      font-weight: bold;
     }
   } //  article
   
