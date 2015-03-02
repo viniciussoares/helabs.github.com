@@ -55,20 +55,27 @@ Home
     margin-left: 4%;
     display: inline-block;
     vertical-align: top;
-    height: 180px;
+    height: 340px;
+    text-align: center;
+
+    img {
+      width: 45%;
+      margin-bottom: 10px;
+    }
 
     h4 {
-      font-size: 24px;
+      font-size: $font-large;
       color: $he_red;
       text-transform: uppercase;
       font-weight: 300;
     }
 
     p {
-      margin-top: 15px;
+      margin-top: 10px;
       font-size: $font-medium;
       color: rgba($grey3, .9);
       line-height: 26px;
+      text-align: left;
 
       em { color: $black; }
     }
