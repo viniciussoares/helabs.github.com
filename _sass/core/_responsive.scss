@@ -59,35 +59,10 @@ Media Queries for Tablets
 
   #home {
 
-    section.hero {
-      padding: 140px 0 60px;
-      border-bottom: none;
-
-      h2 {
-        font-size: 60px;
-        line-height: 80px;
-      }
-
-      h3,
-      .logo-tip-trigger {
-        margin: 60px 0 10px;
-        font-size: 18px;
-      }
-    }
-
     section.what-we-do {
-      padding: 0 0 20px;
-
-      &:before {
-        display: none;
-      }
 
       article {
-        width: 90%;
-
-        &:after {
-          display: none;
-        }
+        height: auto;
       }
     }
 
@@ -940,40 +915,23 @@ Media Queries for Smartphones
 
   #home {
     section.hero {
-      padding: 100px 20px 40px;
+      padding: 110px 0 30px 0;
       border-bottom: none;
 
       h2 {
-        font-size: 48px;
-        line-height: 60px;
-      }
-
-      h3, .logo-tip-trigger {
-        margin: 40px 0 10px;
-        font-size: 16px;
+        font-size: $font-big;
       }
     }
 
     section.what-we-do {
-      padding: 0 0 10px;
+      padding: 0 0 60px 0;
 
       &:before { display: none; }
 
       article {
         width: 100%;
-        margin: 40px 0;
-
-        h4 {
-          font-size: 22px;
-          text-align: left;
-        }
-
-        p {
-          margin-top: 15px;
-          font-size: 16px;
-          line-height: 30px;
-          text-align: left;
-        }
+        margin: 60px 0 0 0;
+        height: auto;
 
         &:after {
           display: none;
@@ -2202,12 +2160,12 @@ Media Queries with more adjustments for Smartphones
     section.hero {
 
       h2 {
-        font-size: 22px;
-        line-height: 36px;
+        font-size: $font-large;
       }
 
-      h3, .logo-tip-trigger {
-        font-size: 12px;
+      h3 {
+        font-size: $font-medium2;
+        line-height: 28px;
       }
     }
   }
