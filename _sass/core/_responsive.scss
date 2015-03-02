@@ -1880,7 +1880,7 @@ Media Queries for Smartphones
   /* Footer */
 
   footer { 
-    padding: 20px 0 255px 0; 
+    padding: 20px 0 205px 0; 
     position: static;
   }
 
@@ -1901,6 +1901,10 @@ Media Queries for Smartphones
         padding-top: 0;
         padding-bottom: 0;
       }
+    }
+    
+    .salvador {
+      width: 100%;
     }
     
     li:first-child {
