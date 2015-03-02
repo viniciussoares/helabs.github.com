@@ -443,7 +443,7 @@ footer {
   @include round_borders (2px);
   background-color: rgba(0, 0, 0, 0.4);
   padding: 3px 5px 1px 5px;
-  margin: 1px 0 12px 0;
+  margin: 6px 0 12px 0;
   display: inline-block;
   color: #fff;
 }
@@ -464,12 +464,7 @@ footer {
   .salvador {
     width: 30%;
   }
-  
-  .tels {
-    margin-top: 5px;
-  }
 
-  .phone-contact,
   .social-he-links {
     background: none;
     float: right;
@@ -477,18 +472,13 @@ footer {
     padding-right: 0;
   }
 
-  address span { display: block; }
-
-  li.phone-contact {
-  	width: 130px;
-    margin-right: 50px;
-    color: #fff;
+  address span {
     display: block;
   }
 
   h3 {
     text-transform: uppercase;
-    margin: 5px 0 7px 0;
+    margin: 7px 0 7px 0;
     color: #fff;
   }
 
