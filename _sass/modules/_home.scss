@@ -42,6 +42,24 @@ Home
   
 }
 
+#home {
+  h4 {
+    font-size: $font-large;
+    color: $grey4;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .headline-desc {
+    margin-top: 20px;
+    font-size: $font-medium;
+    text-align: center;
+    color: $grey3;
+
+    span { display: block }
+  }
+}
+
 
 /* What we do */
 
@@ -99,26 +117,9 @@ Home
 
 #home section.our-clients,
 #home section.our-cases {
-  
-  padding: 60px 0 50px;
+  padding: 60px 0 50px 0;
   background-color: $light-grey1;
   border-top: 1px solid $light-grey2;
-
-  h4 {
-    font-size: $font-large;
-    color: $grey4;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  p {
-    margin-top: 25px;
-    font-size: $font-medium2;
-    text-align: center;
-    color: rgba( $grey3, 0.8 );
-
-    span { display: block }
-  }
 
   ul {
     width: 100%;
@@ -200,11 +201,9 @@ Home
   background-color: $grey4;
   @include clearfix;
   color: $white;
-
+  
   h4 {
-    font-size: $font-large;
-    text-align: center;
-    text-transform: uppercase;
+    color: $white;
   }
 }
 
@@ -214,19 +213,6 @@ Home
 #home .our-blog {
   padding: 60px 0 70px 0;
   @include clearfix;
-
-  h4 {
-    font-size: $font-large;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  p {
-    margin: 20px 0 60px;
-    font-size: $font-medium2;
-    text-align: center;
-    color: $grey3;
-  }
 
   .loading {
     background: image-url('/images/loading.gif') no-repeat center bottom;
