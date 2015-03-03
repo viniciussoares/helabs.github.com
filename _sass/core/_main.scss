@@ -362,16 +362,38 @@ Privacy
 
 .bottom-nav {
   border-top: 1px solid #eaeaea;
-  padding: 15px 0 15px 0;
+  padding: 20px 0;
   background: $light-grey2;
   clear: both;
+  text-align: center;
+}
+
+
+/* Red Button */
+
+.red-button {
+  border-radius: 3px;
+  height: 60px;
+  line-height: 60px !important;
+  background: $he_red;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: $font-large 'lato';
+  display: inline-block;
+  padding: 0 20px;
+  z-index: 9999;
+  color: #fff;
+
+  &:hover {
+    opacity: .9;
+  }
 }
 
 
 /* Footer */
 
 .main {
-  padding-bottom: 266px; /* Fix footer */
+  padding-bottom: 269px; /* Fix footer */
 }
 
 footer {

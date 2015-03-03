@@ -194,19 +194,22 @@ body_id: "home"
 
     <section class="testmonial">
       <div class="containner">
+        
+        <h4>Depoimentos</h4>
+
         <blockquote>
           "Fiquei muito satisfeito com o resultado, não só porque eles cumpriram com tudo que tinham prometido no início, mas principalmente pela qualidade do trabalho."
         </blockquote>
+
         <p>Andre, <a href="/pt/cases/atende-simples/" title="Veja a História do Atende Simples">Atende Simples</a>.</p>
+
       </div>
-    </section><!-- /Testimonials -->
+    </section> <!-- /Testimonials -->
 
     <section class="our-blog">
       <div class="containner">
-
         <h4>Nosso Blog</h4>
         <p>Escrevemos sobre negócios, design e desenvolvimento. Confira nossos últimos posts.</p>
-
         {% raw %}
           <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
               {{#each posts}}
@@ -217,24 +220,17 @@ body_id: "home"
               {{/each}}
           </script>
         {% endraw %}
-
-        <div class="blog-containner">
-
-        </div>
+        <div class="blog-containner"></div>
       </div>
-    </section><!-- /Our Blog -->
-  </div>
+    </section> <!-- /Our Blog -->
 
-  <div class="bottom-nav">
-    <a class="red-button" href="/love/">
-      Por que nos amar?
-    </a>
-  </div>
+  </div> <!-- /home -->
+
+  {% include bottom-nav-pt.html %}
 
   <script type="text/javascript">
     mixpanel.track_links(".red-button", "Clicked - Referências");
     mixpanel.track_links(".logo-tip-trigger", "Clicked - HE:Mobile");
-
     mixpanel.track_links(".social-twitter", "Clicked - Twitter HE:labs");
     mixpanel.track_links(".social-github", "Clicked - Github HE:labs");
     mixpanel.track_links(".social-facebook", "Clicked - Facebook HE:labs");
@@ -243,7 +239,5 @@ body_id: "home"
     mixpanel.track_links(".social-blog", "Clicked - Blog HE:labs");
     mixpanel.track_links(".social-mailing", "Clicked - Mailing HE:labs");
   </script>
-
-
 
 </div> <!-- /main -->
