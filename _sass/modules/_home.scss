@@ -44,15 +44,18 @@ Home
 
 #home {
   h4 {
-    font-size: $font-large;
-    color: $grey4;
+    font-size: $font-large2;
+    color: $he_red;
     text-transform: uppercase;
+    font-weight: 300;
     text-align: center;
   }
 
   .headline-desc {
     margin-top: 20px;
+    text-transform: uppercase;
     font-size: $font-medium;
+    line-height: 23px;
     text-align: center;
     color: $grey3;
 
