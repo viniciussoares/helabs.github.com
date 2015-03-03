@@ -103,10 +103,6 @@ Home
 
       em { color: $black; }
     }
-    
-    a {
-      font-weight: bold;
-    }
   } //  article
   
   article:first-child {
@@ -118,7 +114,7 @@ Home
 /* Cases */
 
 #home .our-cases { 
-  padding: 60px 0;
+  padding: 60px 0 90px 0;
   background: $light-grey2;
   @include clearfix;
 
@@ -137,37 +133,23 @@ Home
     }
     
     .info {
-      margin-top: 17px;
+      margin-top: 20px;
       
       p {
-        line-height: 24px;
+        line-height: 25px;
         font-size: $font-medium;
         margin: 0;
       }
       
       a {
-        height: 36px;
-        line-height: 36px;
-        border-radius: 3px;
-        background: $he_red;
-        color: $white;
-        padding: 0 15px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: $font-small;
-        font-weight: bold;
-        margin-top: 12px;
-        
-        &:hover {
-          opacity: .8;
-        }
+        margin-top: 15px;
       }
     }
     
     h5 {
       font-size: $font-medium2;
       text-transform: uppercase;
-      margin: 0 0 7px 0;
+      margin: 0 0 10px 0;
     }
   }
   

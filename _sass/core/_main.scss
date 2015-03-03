@@ -390,6 +390,26 @@ Privacy
 }
 
 
+/* More Link */
+
+.more-link {
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  background: $he_red;
+  color: $white;
+  padding: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-small;
+  font-weight: bold;
+  
+  &:hover {
+    opacity: .8;
+  }
+}
+
+
 /* Footer */
 
 .main {
