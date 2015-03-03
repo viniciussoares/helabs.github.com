@@ -198,25 +198,10 @@ Home
 
 /* Testimonial */
 
-#home section.testmonial {
-  padding: 20px 0 25px 0;
+#home .testmonial {
+  padding: 25px 0;
   background-color: $grey4;
   @include clearfix;
-
-  &:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid $light-grey1;
-
-    position: relative;
-    top: -23px;
-    margin-left: -10px;
-    left: 50%;
-  }
 
   blockquote {
     width: 80%;
