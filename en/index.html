@@ -41,54 +41,57 @@ redirect_from: /
       </div>
     </section> <!-- /What we do -->
 
-    <section id="work" class="our-cases">
+    <section class="our-cases">
+      <div class="containner">
 
         <h4>Our cases</h4>
-        <p>
+        <p class="headline-desc">
           Our products are used in diverse businesses and industries. <span>Some highlights:</span>
         </p>
 
-        <article class="atende-simples odd-work">
-
-          <div class="containner">
-
-            <div class="work-thumb">
-              <a href="/en/cases/atende-simples/" title="Read the Atende Simples Story"><img src="/images/home/cases-atende-simples.png" alt="Atende Simples" /></a>
+        <ul>
+          <li class="atende-simples">
+            <div class="thumb">
+              <a href="/en/cases/atende-simples/" title="Read the Atende Simples Story">
+                <img src="/images/home/cases-atende-simples.png" alt="Atende Simples">
+              </a>
             </div>
-
-            <div class="work-info">
-              <h3>Atende Simples</h3>
+            <div class="info">
+              <h5>Atende Simples</h5>
               <p>Atende Simples allows companies to create their own toll-free number and a professional call center setup within minutes.</p>
-              <a href="/en/cases/atende-simples/" class="more">Read the Atende Simples Story</a>
+              <a href="/en/cases/atende-simples/" class="more-link">
+                Read the story
+              </a>
             </div>
-
-          </div>
-
-        </article>
-
-        <article class="espn even-work">
-
-          <div class="containner">
-
-            <div class="work-thumb">
-              <a href="/en/cases/espn-mobile/" title="Read the ESPN.com.br Mobile Story"><img src="/images/home/cases-espn-mobile.png" alt="ESPN Mobile Case" /></a>
+          </li>
+          <li class="espn">
+            <div class="thumb">
+              <a href="/en/cases/espn-mobile/" title="Read the ESPN.com.br Mobile Story">
+                <img src="/images/home/cases-espn-mobile.png" alt="ESPN Mobile Case">
+              </a>
             </div>
-            <div class="work-info">
-              <h3>ESPN.com.br Mobile</h3>
+            <div class="info">
+              <h5>ESPN.com.br Mobile</h5>
               <p>Development of ESPN Brazil's mobile web app. Full integration with CMS in record time.</p>
-              <a href="/en/cases/espn-mobile/" class="more">Read the ESPN.com.br Mobile Story</a>
+              <a href="/en/cases/espn-mobile/" class="more-link">
+                Read the story
+              </a>
             </div>
+          </li>
+        </ul>
 
-          </div>
-
-        </article>
-
-    </section><!-- /our cases -->
+      </div>
+    </section> <!-- /our-cases -->
 
     <section class="our-clients">
       <div class="containner">
+
         <h4>Our Clients</h4>
-        <p>We've helped startups and established companies in Brazil and around the world. These are some of our clients:</p>
+       
+        <p class="headline-desc">
+          We've helped startups and established companies in Brazil and around the world. These are some of our clients:
+        </p>
+
         <ul>
           <li>
             <img src="/images/home/clients-citrix.png">
@@ -179,41 +182,35 @@ redirect_from: /
             <h5>BonuzMe<span>Brasil</span></h5>
           </li>
         </ul>
-      </div>
-    </section><!-- /our clients -->
 
-    <section class="testmonial">
-      <div class="containner">
-        <blockquote>
-          My experience with HE:labs was great and the project was a huge success. What you guys did and your skills in web development make any task seem easy.
-        </blockquote>
-        <p>Maurice Lopes, <a href="/en/works/early-shares/" title="View More">Early Shares</a></p>
       </div>
-    </section><!-- /Testimonials -->
+    </section> <!-- /our clients -->
 
     <section class="our-blog">
       <div class="containner">
+
         <h4>Our Blog</h4>
-        <p>We write about bussines, design and development. Check out our latest posts.</p>
+        <p class="headline-desc">
+          We write about bussines, design and development. Check out our latest posts.</span>
+        </p>
 
         {% raw %}
           <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
-              {{#each posts}}
-                <article class="slide">
-                  <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
-                  <p>By <span>{{author}}</span> at <span>{{date}}</span></p>
-                </article>
-              {{/each}}
+            {{#each posts}}
+              <article class="slide">
+                <h5><a href="{{url}}" data-no-instant>{{title}}</a></h5>
+                <p>By <span>{{author}}</span> at <span>{{date}}</span></p>
+              </article>
+            {{/each}}
           </script>
         {% endraw %}
 
-        <div class="blog-containner">
-
-        </div>
+        <div class="blog-containner"></div>
 
       </div>
-    </section><!-- /Our Blog -->
-  </div>
+    </section> <!-- /our Blog -->
+
+  </div> <!-- /home -->
 
   <div class="bottom-nav">
     <a class="red-button" href="/en/love/">
