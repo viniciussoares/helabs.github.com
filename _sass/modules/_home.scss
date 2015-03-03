@@ -69,7 +69,7 @@ Home
 #home .what-we-do {
   background: $white;
   @include clearfix;
-  padding: 60px 0 70px 0;
+  padding: 60px 0 90px 0;
 
   article {
     width: 30%;
@@ -174,21 +174,57 @@ Home
 /* Cases */
 
 #home .our-cases { 
-  clear: both;
   padding: 60px 0;
-  background: $grey4;
-  
-  h4 {
-    color: $white;
-  }
-
-  .headline-desc {
-    color: $grey2;
-  }
+  background: $grey1;
+  @include clearfix;
 
   li {
     width: 46%;
     display: inline-block;
+    height: 470px;
+    margin-top: 35px;
+    
+    a img {
+      box-shadow: 0 2px 3px #ccc;
+      border-radius: 3px;
+      width: 96%;
+      padding: 2%;
+      background: $white;
+    }
+    
+    .info {
+      margin-top: 17px;
+      
+      p {
+        line-height: 24px;
+        font-size: $font-medium;
+        margin: 0;
+      }
+      
+      a {
+        height: 36px;
+        line-height: 36px;
+        border-radius: 3px;
+        background: $he_red;
+        color: $white;
+        padding: 0 15px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: $font-small;
+        font-weight: bold;
+        margin-top: 12px;
+        
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+    
+    h5 {
+      font-size: $font-medium2;
+      text-transform: uppercase;
+      margin: 0 0 7px 0;
+    }
   }
   
   li:nth-child(odd) {
