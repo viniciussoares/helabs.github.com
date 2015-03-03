@@ -134,14 +134,19 @@ Cliente Feliz
   @include clearfix;
 
   li {
-    width: 65%;
+    width: 60%;
     margin: auto;
     padding: 20px 20px 25px 20px;
     margin-bottom: 15px;
   }
   
-  li:nth-child(odd) { background: $light-grey1; }
-  li:nth-child(even) { background: $light-grey2; }
+  li:nth-child(odd) {
+    background: $light-grey1;
+  }
+
+  li:nth-child(even) {
+    background: $light-grey2;
+  }
 
   h3 {
     margin: 55px 0 50px 0;
