@@ -10,7 +10,6 @@ Home
 #home .hero {
   background: $grey3 url("/images/home/hero-image.jpg");
   padding: 160px 0 60px 0;
-  border-bottom: 4px solid $grey2;
   background-position: center top;
   background-repeat: no-repeat;
   text-align: center;
@@ -116,66 +115,11 @@ Home
 }
 
 
-/* Our clients */
-
-#home .our-clients {
-  padding: 60px 0 50px 0;
-  background-color: $light-grey1;
-  border-top: 1px solid $light-grey2;
-
-  ul {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 60px;
-    text-align: center;
-
-    li {
-      width: 22%;
-      height: 185px;
-      background-color: #fff;
-      border-radius: 3px;
-      margin: 0 1% 30px 1%;
-      border: 1px solid $grey1;
-      display: inline-block;
-
-      img {
-        width: 100%;
-        margin: auto;
-        display: block;
-      }
-
-      h5 {
-        width: 100%;
-        border-top: 1px solid $light-grey2;
-        font-size: $font-medium2;
-        padding-top: 14px;
-        margin-top: 0;
-
-        span {
-          font-weight: normal;
-          display: block;
-          color: rgba( $grey3, 0.6 );
-          margin-top: 5px;
-          font-size: $font-medium;
-        }
-      }
-
-      &:nth-child(4n+4) { margin-right: 0; }
-    }
-  }
-}
-
-#home section.our-clients ul li a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
 /* Cases */
 
 #home .our-cases { 
   padding: 60px 0;
-  background: $grey1;
+  background: $light-grey2;
   @include clearfix;
 
   li {
@@ -185,7 +129,7 @@ Home
     margin-top: 35px;
     
     a img {
-      box-shadow: 0 2px 3px #ccc;
+      box-shadow: 0 1px 3px $grey2;
       border-radius: 3px;
       width: 96%;
       padding: 2%;
@@ -234,6 +178,61 @@ Home
   li:nth-child(even) {
     float: right;
   }
+}
+
+
+/* Our clients */
+
+#home .our-clients {
+  padding: 60px 0 50px 0;
+  background-color: $light-grey1;
+  border-top: 1px solid $light-grey2;
+
+  ul {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    text-align: center;
+
+    li {
+      width: 22%;
+      height: 185px;
+      background: $white;
+      border-radius: 3px;
+      margin: 0 1% 30px 1%;
+      display: inline-block;
+      box-shadow: 0 1px 3px $grey2;
+
+      img {
+        width: 100%;
+        margin: auto;
+        display: block;
+      }
+
+      h5 {
+        width: 100%;
+        border-top: 1px solid $light-grey2;
+        font-size: $font-medium2;
+        padding-top: 14px;
+        margin-top: 0;
+
+        span {
+          font-weight: normal;
+          display: block;
+          color: rgba( $grey3, 0.6 );
+          margin-top: 5px;
+          font-size: $font-medium;
+        }
+      }
+
+      &:nth-child(4n+4) { margin-right: 0; }
+    }
+  }
+}
+
+#home section.our-clients ul li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
