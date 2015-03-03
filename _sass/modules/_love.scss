@@ -130,13 +130,14 @@ Cliente Feliz
 
 .test-list {
   border-top: 10px solid $light-grey2;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   @include clearfix;
 
   li {
     width: 65%;
     margin: auto;
-    padding: 20px 2% 25px 2%;
+    padding: 20px 20px 25px 20px;
+    margin-bottom: 15px;
   }
   
   li:nth-child(odd) { background: $light-grey1; }
@@ -155,6 +156,17 @@ Cliente Feliz
     font-family: Georgia, serif;
     line-height: 24px;
     margin: 0 0 12px 0;
+  }
+  
+  img {
+    border-radius: 30px;
+    border: 2px solid $white;
+    width: 60px;
+    float: left;
+  }
+  
+  .test-infos {
+    margin-left: 80px;
   }
 }
 
