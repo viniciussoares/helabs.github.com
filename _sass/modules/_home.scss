@@ -95,8 +95,8 @@ Home
 }
 
 
-
 /* Our clients */
+
 #home section.our-clients,
 #home section.our-cases {
   
@@ -105,10 +105,7 @@ Home
   border-top: 1px solid $light-grey2;
 
   h4 {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    word-spacing: 0.15em;
+    font-size: $font-large;
     color: $grey4;
     text-transform: uppercase;
     text-align: center;
@@ -116,7 +113,7 @@ Home
 
   p {
     margin-top: 25px;
-    font-size: 16px;
+    font-size: $font-medium2;
     text-align: center;
     color: rgba( $grey3, 0.8 );
 
@@ -199,58 +196,34 @@ Home
 /* Testimonial */
 
 #home .testmonial {
-  padding: 25px 0;
+  padding: 45px 0;
   background-color: $grey4;
   @include clearfix;
+  color: $white;
 
-  blockquote {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-    color: $grey2;
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 300;
+  h4 {
+    font-size: $font-large;
     text-align: center;
-    font-style: italic;
-  }
-
-  figure {
-    width: 80px;
-    margin: 10px auto 0;
-  }
-
-  p {
-    text-align: center;
-    color: rgba( $light-grey2, 0.6 );
-    display: block;
-    margin-top: 10px;
-
-    a {
-      color: $grey2;
-    }
+    text-transform: uppercase;
   }
 }
 
 
 /* Our Blog */
 
-#home section.our-blog {
+#home .our-blog {
   padding: 60px 0 70px 0;
   @include clearfix;
 
   h4 {
-    font-size: 30px;
-    letter-spacing: 0.04em;
-    font-weight: 500;
-    color: $he_red;
+    font-size: $font-large;
     text-align: center;
     text-transform: uppercase;
   }
 
   p {
     margin: 20px 0 60px;
-    font-size: 16px;
+    font-size: $font-medium2;
     text-align: center;
     color: $grey3;
   }
