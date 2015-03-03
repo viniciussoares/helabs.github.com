@@ -114,14 +114,14 @@ Home
 /* Cases */
 
 #home .our-cases { 
-  padding: 60px 0 90px 0;
+  padding: 60px 0 80px 0;
   background: $light-grey2;
   @include clearfix;
 
   li {
     width: 46%;
     display: inline-block;
-    height: 470px;
+    height: 450px;
     margin-top: 35px;
     
     a img {
