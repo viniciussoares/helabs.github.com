@@ -118,8 +118,7 @@ Home
 
 /* Our clients */
 
-#home section.our-clients,
-#home section.our-cases {
+#home .our-clients {
   padding: 60px 0 50px 0;
   background-color: $light-grey1;
   border-top: 1px solid $light-grey2;
@@ -174,25 +173,30 @@ Home
 
 /* Cases */
 
-#home section.our-cases { 
-  clear:both;
-  padding-bottom: 30px;
-
-  article {
-    width: 100%;
-    padding: 50px 0 50px 0;
-    clear: both; 
-    overflow: hidden;
+#home .our-cases { 
+  clear: both;
+  padding: 60px 0;
+  background: $grey4;
+  
+  h4 {
+    color: $white;
   }
 
-  .work-info p {
-    text-align: left;
+  .headline-desc {
+    color: $grey2;
   }
 
-  .even-work {
-    .thumb {
-      float: right;
-    }
+  li {
+    width: 46%;
+    display: inline-block;
+  }
+  
+  li:nth-child(odd) {
+    float: left;
+  }
+
+  li:nth-child(even) {
+    float: right;
   }
 }
 
