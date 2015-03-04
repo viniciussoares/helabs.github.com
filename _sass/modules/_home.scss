@@ -114,52 +114,7 @@ Home
 /* Cases */
 
 #home .our-cases { 
-  padding: 60px 0 80px 0;
-  background: $light-grey2;
-  @include clearfix;
-
-  li {
-    width: 46%;
-    display: inline-block;
-    height: 450px;
-    margin-top: 35px;
-    
-    a img {
-      box-shadow: 0 1px 3px $grey2;
-      border-radius: 3px;
-      width: 96%;
-      padding: 2%;
-      background: $white;
-    }
-    
-    .info {
-      margin-top: 20px;
-      
-      p {
-        line-height: 25px;
-        font-size: $font-medium;
-        margin: 0;
-      }
-      
-      a {
-        margin-top: 15px;
-      }
-    }
-    
-    h5 {
-      font-size: $font-medium2;
-      text-transform: uppercase;
-      margin: 0 0 10px 0;
-    }
-  }
-  
-  li:nth-child(odd) {
-    float: left;
-  }
-
-  li:nth-child(even) {
-    float: right;
-  }
+  padding: 60px 0 40px 0;
 }
 
 
