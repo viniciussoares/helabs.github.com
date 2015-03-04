@@ -191,31 +191,71 @@ body_id: "home"
           </li>
         </ul>
       </div>
-    </section><!-- /our clients -->
+    </section> <!-- /our-clients -->
 
-    <section class="testmonial">
+    <section class="test-list">
       <div class="containner">
-        
+
         <h4>Depoimentos</h4>
         <p class="headline-desc">
           Somos gratos por termos clientes fantásticos!
         </p>
 
-        <blockquote>
-          "Fiquei muito satisfeito com o resultado, não só porque eles cumpriram com tudo que tinham prometido no início, mas principalmente pela qualidade do trabalho."
-        </blockquote>
-
-        <p>Andre, <a href="/pt/cases/atende-simples/" title="Veja a História do Atende Simples">Atende Simples</a>.</p>
+        <ul>
+          <li>
+            <img src="/images/testimonials/marcos.jpg">
+            <div class="test-infos">
+              <p>"Atendeu plenamente as nossas expectativas pelo uso de melhores práticas mundiais e reuso de recursos agilizando o processo!"</p>
+              <span class="client-name">Marcos Bonadies - Pro2You</span>
+            </div>
+          </li>
+          <li>
+            <img src="/images/testimonials/julio.jpg">
+            <div class="test-infos">
+              <p>"Foi preciso implementar o app utilizando as nossas APIs, e a HE:mobile realizou isto praticamente sem perguntar nada para nós, de forma super tranquila.</p>
+              <p>Através da HE:mobile nós conseguimos acelerar o nosso backlog, e a experiência deles com dispositivos móveis foi fundamental para atingirmos os resultados que esperávamos."</p>
+              <span class="client-name">Julio Shnaider Gejer - Locaweb</span>
+            </div>
+          </li>
+          <li>
+            <img src="/images/testimonials/finocchio.jpg">
+            <div class="test-infos">
+              <p>"Queria dizer que eu fui surpreendido. Durante as duas semanas de Startup Dev Mobile o time deu uma aula de gestão de projetos.</p>
+              <p>Achamos que talvez o escopo estivesse grande demais, mas no fim deu tudo certo. E, além disso, entregaram uma coisa que para nós é muito importante: o fator 'Uau!'</p>
+              <p>Hoje olho para o app e digo: 'Uau!'"</p>
+              <span class="client-name">José Finocchio Jr. - App PM Canvas Mobile</span>
+            </div>
+          </li>
+          <li>
+            <img src="/images/testimonials/bruno.jpg">
+            <div class="test-infos">
+              <p>"Trabalhar com a HE:mobile superou minhas expectativas.</p>
+              <p>É muito importante trabalhar com quem o ajuda a desenvolver e estruturar suas ideias, e com a HE:mobile foi assim. Muito mais do que uma equipe capaz de cumprir metas e tarefas, me deparei com pessoas inteligentes e criativas, que elevaram o nível do meu trabalho em todas as esferas."</p>
+              <span class="client-name">Bruno Thomé - Projeto App Fly</span>
+            </div>
+          </li>
+          <li>
+            <img src="/images/testimonials/klaus.jpg">
+            <div class="test-infos">
+              <p>"Gostei de trabalhar com o pessoal da HE:Mobile.</p>
+              <p>Eles têm um bom domínio das tecnologias envolvidas e se mostraram bastante ágeis e flexíveis ao longo do processo.</p>
+              <p>Isso foi fundamental, dada a natureza exploratória do meu projeto."</p>
+              <span class="client-name">Klaus Wuestefeld - Objective Solutions</span>
+            </div>
+          </li>
+        </ul>
 
       </div>
-    </section> <!-- /Testimonials -->
+    </section> <!-- /test-list -->
 
     <section class="our-blog">
       <div class="containner">
+
         <h4>Nosso Blog</h4>
         <p class="headline-desc">
           Escrevemos sobre negócios, design e desenvolvimento. Confira nossos últimos posts.
         </p>
+
         {% raw %}
           <script id="blog-posts" type="text/x-handlebars-template" data-no-instant="true">
               {{#each posts}}
@@ -226,7 +266,9 @@ body_id: "home"
               {{/each}}
           </script>
         {% endraw %}
+
         <div class="blog-containner"></div>
+
       </div>
     </section> <!-- /Our Blog -->
 

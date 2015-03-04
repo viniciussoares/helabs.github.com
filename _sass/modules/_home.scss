@@ -220,17 +220,34 @@ Home
 
 /* Testimonial */
 
-#home .testmonial {
-  padding: 45px 0;
+#home .test-list {
+  border-top: none;
+  padding: 60px 0;
   background-color: $grey4;
   @include clearfix;
   color: $white;
+  
+  ul {
+    margin-top: 50px;
+  }
+
+  li:nth-child(odd) {
+    background: #444;
+  }
+
+  li:nth-child(even) {
+    background: #555;
+  }
   
   h4 {
     color: $white;
   }
 
   .headline-desc {
+    color: $grey2;
+  }
+  
+  .client-name {
     color: $grey2;
   }
 }
