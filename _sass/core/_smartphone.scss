@@ -930,6 +930,20 @@ Media Queries for Smartphones
       }
     }
   }
+  
+  
+  /* Cases */
+
+  .our-cases { 
+    padding: 10px 0 50px 0;
+
+    li {
+      width: 100%;
+      height: auto;
+      float: none;
+      margin: 35px 0 0 0;
+    }
+  }
 
 
   /* Home: Our Clients */
@@ -1068,8 +1082,6 @@ Media Queries for Smartphones
    #font_show,
   .box_colors_show,
   .bt_download { display: none; }
-
-
 }
 
 
@@ -1148,24 +1160,6 @@ Media Queries with adjustments for Smartphones
     margin-bottom: 25px;
     display: inline-block;
     float: none;
-  }
-
-
-  /* Work Second Level */
-
-  #work-more {
-
-    ul {
-      width: 100%;
-
-      li {
-        .work-thumb,
-        .work-thumb-mobile {
-          width: 70%;
-          margin-bottom: 30px;
-        }
-      }
-    }
   }
 
 
@@ -1250,20 +1244,6 @@ Media Queries with adjustments for Smartphones
     width: 300px;
   }
 
-
-  /* Home: Our Clients */
-
-  .our-clients,
-  .our-cases {
-    padding-bottom: 30px !important;
-
-    li {
-      width: 70% !important;
-      height: auto !important;
-      margin: 0 0 20px 0;
-    }
-  }
-
 }
 
 
@@ -1339,20 +1319,6 @@ Media Queries with more adjustments for Smartphones
   .submenuhome { display:none; }
   .ourprocess { display:none; }
   .thumbs { display: none; }
-
-  /*-*/
-
-  #cover-banner {
-    height: auto;
-    padding: 20px 0 30px 0;
-  
-    h2 {
-      font-size: 22px;
-      line-height: 25px;
-    }
-
-    p { font-size: $font-medium; }
-  }
 
 
   /* Work MVP */
