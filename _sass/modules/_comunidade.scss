@@ -19,28 +19,33 @@ Comunidade
 }
 
 .logos-list {
-  p {
-    margin: 10px 0 0 0;
-    font-weight: bold;
-    font-size: $font-medium;
-    color: $he_red;
-  }
-
-  a { text-decoration: none; }
+  text-align: center;
 
   > li {
-    box-shadow: 0 4px 8px -3px #d8d8d8;
-    width: 24%;
-    background: none repeat scroll 0 0 white;
-    margin: 10px 3% 10px 3%;
-    padding: 10px;
+    width: 22%;
     text-align: center;
-    display: inline-block;
     font-size: $font-medium;
+    background: $white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px $grey2;
+    margin: 0 1% 30px 1%;
+    display: inline-block;
 
     img {
       width: 100%;
       display: block;
     }
+  }
+  
+  p {
+    margin: 10px 0 12px 0;
+    font-weight: bold;
+    font-size: $font-medium;
+    font-family: 'lato';
+    color: $grey4;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

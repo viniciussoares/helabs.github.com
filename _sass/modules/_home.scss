@@ -250,13 +250,28 @@ Home
       margin-top: 5px;
       font-size: 12px;
       line-height: 28px;
-      color: rgba( $grey3, 0.6 );
+      color: rgba($grey3, .6);
       margin-bottom: 0;
       text-align: left;
 
-      span { color: $grey3; }
+      span {
+        color: $grey3;
+      }
     }
   } // article
+}
+
+
+// Comunidade
+
+#home .comunity {
+  padding: 60px 0 50px 0;
+  background-color: $light-grey1;
+  border-top: 1px solid $light-grey2;
+  
+  .logos-list {
+    margin-top: 60px;
+  }
 }
 
 
