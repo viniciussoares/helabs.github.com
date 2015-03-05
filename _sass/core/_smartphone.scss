@@ -29,16 +29,16 @@ Media Queries for Smartphones
       margin-bottom: 1px;
     }
   }
-  
+
   #home {
     .default {
       background: rgba(#fff, 1);
       box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, .1);
     }
-  
+
     #menu2 {
       a {
-        background: #333;
+        background: $grey4;
       }
     } // #menu2
   }
@@ -699,7 +699,7 @@ Media Queries for Smartphones
 
     li {
       width: 45% !important;
-      height: 235px !important;
+      height: auto !important;
     }
   }
 
