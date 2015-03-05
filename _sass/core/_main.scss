@@ -364,12 +364,14 @@ Privacy
   border-top: 10px solid $light-grey2;
   padding-bottom: 35px;
   @include clearfix;
+  text-align: center;
 
   li {
     width: 75%;
     margin: auto;
     padding: 20px 20px 25px 20px;
     margin-bottom: 15px;
+    text-align: left;
   }
   
   li:nth-child(odd) {
@@ -403,6 +405,24 @@ Privacy
   
   .test-infos {
     margin-left: 100px;
+  }
+
+  .containner > a {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    background: $grey3;
+    color: $white;
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: $font-small;
+    font-weight: bold;
+  
+    &:hover {
+      opacity: .8;
+    }
   }
 }
 
