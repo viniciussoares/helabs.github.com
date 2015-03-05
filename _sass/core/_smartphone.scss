@@ -187,14 +187,6 @@ Media Queries for Smartphones
   }
 
 
-  /* Breadcrumbs */
-
-  #breadcrumbs {
-    margin-top: 78px;
-    margin-bottom: -60px;
-  }
-
-
   /* Cover Banner */
 
   #cover-banner {
@@ -247,20 +239,6 @@ Media Queries for Smartphones
 
     input[type="submit"] { margin-bottom: 25px; }
   }
-
-
-  /* Red Button */
-
-  .red-button {
-    @include round_borders (12px);
-    width: 250px;
-    height: auto;
-    padding: 15px !important;
-    text-align: center;
-    font-size: $font-medium2;
-  }
-
-  #time .red-button { margin-bottom: 40px; }
 
 
   /* Sobre Nós */
@@ -1018,8 +996,6 @@ Media Queries with more adjustments for Smartphones
 
   .icons a img { width: 50px; }
 
-  .red-button { max-width: 220px; }
-
   .cover-jobs li {
     margin: 10px 0 0 0;
     display: inline-block;
@@ -1066,103 +1042,6 @@ Media Queries with more adjustments for Smartphones
   .submenuhome { display:none; }
   .ourprocess { display:none; }
   .thumbs { display: none; }
-
-
-  /* Work MVP */
-
-  #work-mvp {
-    padding: 20px 0 35px 0;
-    position: relative;
-
-    .more {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      display: block;
-      font-size: 18px;
-      line-height: 18px;
-      margin: 0 0 0 -10px;
-      padding: 0 7px 4px;
-      border-radius: 0 8px 8px 0;
-      background: #e8e8e8;
-      text-align: center;
-      color: #b80606;
-      border: none;
-      text-decoration: none;
-
-      /* Safari */
-      -webkit-transform: rotate(90deg);
-
-      /* Firefox */
-      -moz-transform: rotate(90deg);
-
-      /* IE */
-      -ms-transform: rotate(90deg);
-
-      /* Opera */
-      -o-transform: rotate(90deg);
-
-      /* Internet Explorer */
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    }
-
-    &.expanded {
-      li:nth-child(n+6) { display: block; }
-      .more {
-        /* Safari */
-        -webkit-transform: rotate(-90deg);
-
-        /* Firefox */
-        -moz-transform: rotate(-90deg);
-
-        /* IE */
-        -ms-transform: rotate(-90deg);
-
-        /* Opera */
-        -o-transform: rotate(-90deg);
-
-        /* Internet Explorer */
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-      }
-    }
-
-    h3 {
-      font-size: 18px;
-      line-height: 30px;
-    }
-
-    ul {
-      margin: 20px 0 0 0;
-    }
-
-    li {
-      display: block;
-      width: 80%;
-      margin: 0 auto 10px;
-      border-radius: 4px;
-      padding: 10px 0;
-      text-align: center;
-
-      &:nth-child(n+6) {
-        display: none;
-      }
-
-      a:hover { color: $grey3; }
-    }
-  }
-
-
-  /* MVP Projects */
-
-  .mvp-projects li {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    .about{
-      font-size: 12px;
-      padding: 10px;
-    }
-  }
 
 
   /* AtendeSimples */
