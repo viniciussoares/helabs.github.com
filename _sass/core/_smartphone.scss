@@ -133,26 +133,16 @@ Media Queries for Smartphones
         }
       }
     }
-
-    section.testmonial {
-      padding: 20px 0;
-
-      em, i {
-        width: 100%;
-        text-align: left;
-      }
-
-      em {
-        font-size: 16px;
-        line-height: 28px;
-      }
-
-      i {
-        margin-top: 20px;
-      }
-
-      figure { display: none; }
+    
+    
+    // Testmonial List
+    
+    .marcos-test {
+      display: none;
     }
+
+
+    // Our Blog
 
     section.our-blog {
       padding: 30px 0;
