@@ -1,4 +1,5 @@
 require 'blogpost'
+require 'profile_builder'
 require 'vcr'
 require 'pry'
 
