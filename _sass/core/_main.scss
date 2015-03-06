@@ -340,6 +340,37 @@ Cover
 }
 
 
+/* Cover link */
+
+.open-source-link,
+.generic-link {
+  font: normal 16px $sans_serif;
+  margin: 20px 0 0 0;
+  display: inline-block;
+  text-decoration: underline;
+  color: #fff;
+
+  &:hover { opacity: .8; }
+}
+
+.open-source-link {
+  background: url("/images/icons/open-source.png") left no-repeat;
+  padding: 0 0 0 40px;
+  height: 30px;
+  line-height: 30px !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 240dpi) {
+  .open-source-link {
+    background: url("/images/icons/open-source@2x.png") left no-repeat;
+    background-size: 30px 30px;
+  }
+}
+
+
+
 /* ====================
 Privacy
 ==================== */
