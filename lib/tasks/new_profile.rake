@@ -2,6 +2,7 @@ task :new_profile do
   require 'erb'
   require 'ostruct'
   require 'i18n'
+  require 'digest'
 
   NewProfileTask.run
 end
@@ -45,12 +46,12 @@ module NewProfileTask
       post_file_name << "-#{vars[:parameterized_name]}"
 
       new_profile_pt = ERB.new(File.read('lib/templates/new_profile-pt.yml.erb'))
-      File.open("_posts/time/#{post_file_name}.html", 'w') do |f|
+      File.open("_posts/team-members/pt/#{post_file_name}.html", 'w') do |f|
         f.puts new_profile_pt.result(template_vars.instance_eval { binding })
       end
 
       new_profile_en = ERB.new(File.read('lib/templates/new_profile-en.yml.erb'))
-      File.open("_posts/team/#{post_file_name}.html", 'w') do |f|
+      File.open("_posts/team-members/en/#{post_file_name}.html", 'w') do |f|
         f.puts new_profile_en.result(template_vars.instance_eval { binding })
       end
     end
