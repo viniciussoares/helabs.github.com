@@ -93,11 +93,8 @@ Team
 
 /* Open Source link */
 
-.open-source-link {
-  height: 30px;
-  line-height: 30px !important;
-  background: url("/images/icons/open-source.png") left no-repeat;
-  padding: 0 0 0 40px;
+.open-source-link,
+.youtube-link {
   font: normal 16px $sans_serif;
   margin: 20px 0 0 0;
   display: inline-block;
@@ -105,6 +102,13 @@ Team
   color: #fff;
 
   &:hover { opacity: .8; }
+}
+
+.open-source-link {
+  background: url("/images/icons/open-source.png") left no-repeat;
+  padding: 0 0 0 40px;
+  height: 30px;
+  line-height: 30px !important;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
