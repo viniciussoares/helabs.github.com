@@ -5,6 +5,11 @@
 Home
 ==================== */
 
+/*  Home header  */
+
+#home header.default img{ display: none;}
+#home header.default.tiny img{ display: block;}
+
 /* Hero Cover */
 
 #home .hero {
@@ -24,6 +29,13 @@ Home
     font-weight: bold;
     display: block;
     font-size: $font-extra-big;
+    img{ 
+      height: 100px;
+      width: auto;
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 20px;
+    }
   }
 
   h3 {

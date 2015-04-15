@@ -63,7 +63,10 @@ Media Queries for Tablets
     display: none;
   }
 
+
   #home {
+
+    .hero h2 img{ height: 60px; }
 
     section.what-we-do {
 
