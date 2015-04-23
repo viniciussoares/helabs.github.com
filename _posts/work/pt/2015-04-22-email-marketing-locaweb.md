@@ -22,7 +22,9 @@ about: Tenha na palma da mão o controle total dos envios das contas do seu Emai
 
 status: Gráficos visuais em um aplicativo intuitivo para facilitar sua navegação e compreensão dos dados.
 
-customer_name: Pendente
+customer_experience: Foi preciso implementar o app utilizando as nossas APIs, e a HE:mobile realizou isto praticamente sem perguntar nada para nós, de forma super tranquila. Através da HE:mobile nós conseguimos acelerar o nosso backlog, e a experiência deles com dispositivos móveis foi fundamental para atingirmos os resultados que esperávamos.
+
+customer_name: Julio Shnaider Gejer, Locaweb
 
 
 
