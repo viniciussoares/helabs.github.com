@@ -6,7 +6,7 @@ permalink: '/en/works/brasil-mesada/'
 pt: '/pt/trabalhos/brasil-mesada/'
 
 name: Brasil Mesada
-project_kind: The Brasil Mesada is an app for management and education of money use. With it you can control the money usage of you family, specially you children's.
+project_kind: The Brasil Mesada is an app for management and education of money use. With it you can control the money usage of you family, specially your children's.
 image: /images/projects/brasil-mesada.jpg
 
 
@@ -16,7 +16,7 @@ screenshots:
   - url: /images/projects/brasil-mesada/brasil-mesada-01.jpg
   - url: /images/projects/brasil-mesada/brasil-mesada-02.jpg
 
-about: Brasil Mesada is an App for Android and iOS to help you to expense management through an allowance card. From quick and easy way you can transfer money to the owner of the card from the phone. Freedom, autonomy and education to manage their own money .
+about: Brasil Mesada is an App for Android and iOS that helps you manage  expenses with an allowance card. Its quick and easy to transfer the card owner money from the phone. Freedom, autonomy and education for kids to manage their own money.
 
 project_team:
   - github: leaudro
