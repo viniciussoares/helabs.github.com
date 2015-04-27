@@ -1,6 +1,6 @@
 # HE:labs site
 
-This is the HE:labs site, you can see the live site on http://helabs.com.br.
+This is the HE:labs site, you can see the live site on http://helabs.com.br
 
 ## Dependencies
 

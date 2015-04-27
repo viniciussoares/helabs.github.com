@@ -283,19 +283,19 @@ Cover
 
 #cover-banner, #cases-banner {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-  @include red_gradient;
+  //@include red_gradient;
+  background: $grey3;
   text-align: center;
   margin-top: 80px;
-  padding: 50px 0 50px 0;
-  color: #fff;
+  padding: 35px 0 40px 0;
+  color: $white;
 
   h2 {
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
-    font-size: 62px;
+    font-size: 55px;
     line-height: 65px;
-    color: #fff;
+    color: $white;
   }
 
   p {
@@ -340,49 +340,35 @@ Cover
 }
 
 
-/* ====================
-Testimonials
-==================== */
+/* Cover link */
 
-.testimonials-list {
-  width: 100%;
-  border-top: 10px solid $light-grey2;
-  padding-bottom: 20px;
-  @include clearfix;
+.open-source-link,
+.generic-link {
+  font: normal 16px $sans_serif;
+  margin: 20px 0 0 0;
+  display: inline-block;
+  text-decoration: underline;
+  color: #fff;
 
-  li {
-    width: 25%;
-     
-    margin: 0 2% 30px 2%;
-    padding: 2%;
-    float: left;
-  }
+  &:hover { opacity: .8; }
+}
 
-  li:nth-child(even) {background: $light-grey1; }
-  li:nth-child(odd) {background: $light-grey2; }
+.open-source-link {
+  background: url("/images/icons/open-source.png") left no-repeat;
+  padding: 0 0 0 40px;
+  height: 30px;
+  line-height: 30px !important;
+}
 
-  h3 {
-    margin: 55px 0 50px 0;
-    font-size: $font-big;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-size: 19px;
-    font-style: italic;
-    font-family: Georgia, serif;
-    line-height: 26px;
-    margin: 0 0 12px 0;
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 240dpi) {
+  .open-source-link {
+    background: url("/images/icons/open-source@2x.png") left no-repeat;
+    background-size: 30px 30px;
   }
 }
 
-.client-name {
-  font-weight: bold;
-  font-family: 'Lato', sans-serif;
-  font-size: $font-medium;
-  color: $grey3;
-}
 
 
 /* ====================
@@ -403,27 +389,207 @@ Privacy
 }
 
 
+// Testimonials List
+
+.test-list {
+  border-top: 10px solid $light-grey2;
+  padding-bottom: 35px;
+  @include clearfix;
+  text-align: center;
+
+  li {
+    width: 75%;
+    margin: auto;
+    padding: 20px 20px 25px 20px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  li:nth-child(odd) {
+    background: $light-grey1;
+  }
+
+  li:nth-child(even) {
+    background: $light-grey2;
+  }
+
+  h3 {
+    margin: 55px 0 50px 0;
+    font-size: $font-big;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  li p {
+    font-size: $font-medium;
+    font-style: italic;
+    font-family: Georgia, serif;
+    line-height: 24px;
+    margin: 0 0 12px 0;
+  }
+  
+  img {
+    border-radius: 40px;
+    width: 80px;
+    float: left;
+  }
+  
+  .test-infos {
+    margin-left: 100px;
+  }
+
+  .containner > a {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    background: $grey3;
+    color: $white;
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: $font-small;
+    font-weight: bold;
+  
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.client-name {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: $font-medium;
+  color: $grey3;
+}
+
+
+/* Cases */
+
+.our-cases { 
+  padding: 20px 0 40px 0;
+  background: $light-grey2;
+  @include clearfix;
+  &.web{ background-color: #fff;}
+
+  h2 { 
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+  }
+
+  li {
+    width: 46%;
+    display: inline-block;
+    height: 500px;
+    margin-top: 45px;
+
+    a img {
+      box-shadow: 0 1px 3px $grey2;
+      border-radius: 3px;
+      width: 96%;
+      padding: 2%;
+      background: $white;
+    }
+    
+    .info {
+      margin-top: 20px;
+      
+      p {
+        line-height: 25px;
+        font-size: $font-medium;
+        margin: 0;
+      }
+      
+      a {
+        margin-top: 15px;
+      }
+    }
+    
+    h5 {
+      font-size: $font-medium2;
+      text-transform: uppercase;
+      margin: 0 0 10px 0;
+    }
+
+  }
+  
+  li:nth-child(odd) {
+    float: left;
+  }
+
+  li:nth-child(even) {
+    float: right;
+  }
+}
+
+
 /* Bottom Nav */
 
 .bottom-nav {
   border-top: 1px solid #eaeaea;
-  padding: 15px 0 15px 0;
+  padding: 20px 0;
   background: $light-grey2;
   clear: both;
+  text-align: center;
+}
+
+
+/* Red Button */
+
+.red-button {
+  border-radius: 3px;
+  height: 60px;
+  line-height: 60px !important;
+  background: $he_red;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: $font-large 'lato';
+  display: inline-block;
+  padding: 0 20px;
+  z-index: 9999;
+  color: #fff;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+
+/* More Link */
+
+.more-link {
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  background: $he_red;
+  color: $white;
+  padding: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-small;
+  font-weight: bold;
+  
+  &:hover {
+    opacity: .8;
+  }
 }
 
 
 /* Footer */
 
 .main {
-  padding-bottom: 240px; /* Fix footer */
+  padding-bottom: 269px; /* Fix footer */
 }
 
 footer {
   border-top: 1px solid #fff;
   width: 100%;
   background-color: $grey4;
-  padding: 30px 0 60px 0;
+  padding: 30px 0 52px 0;
   font-size: $font-medium;
   position: absolute;
   bottom: 0;
@@ -443,7 +609,7 @@ footer {
   @include round_borders (2px);
   background-color: rgba(0, 0, 0, 0.4);
   padding: 3px 5px 1px 5px;
-  margin: 1px 0 12px 0;
+  margin: 6px 0 12px 0;
   display: inline-block;
   color: #fff;
 }
@@ -460,8 +626,11 @@ footer {
     font-size: $font-small;
     float: left;
   }
+  
+  .salvador {
+    width: 30%;
+  }
 
-  .phone-contact,
   .social-he-links {
     background: none;
     float: right;
@@ -469,24 +638,23 @@ footer {
     padding-right: 0;
   }
 
-  address span { display: block; }
-
-  li.phone-contact {
-  	width: 130px;
-    margin-right: 50px;
-    color: #fff;
+  address span {
     display: block;
   }
 
   h3 {
     text-transform: uppercase;
-    margin: 0 0 7px 0;
+    margin: 7px 0 7px 0;
     color: #fff;
   }
 
   li.social-he-links {
-  	width: 90px;
+  	width: 95px;
     margin-right: 0;
+    
+    h3 {
+      margin: 1px 0 10px 0;
+    }
 
     a {
       display: block;

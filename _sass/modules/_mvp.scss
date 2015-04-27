@@ -365,3 +365,199 @@ Services - MVP
 
 .hidden > div { display: none; }
 .visible > div { display: block; }
+
+
+/*
+Max Width, 960px
+Media Queries for Tablets
+------------------------------------------------------------------------------*/
+
+@media (max-width: 960px) {
+
+
+  /* MVP */
+
+  #cover-mvp {
+    margin-top: 80px;
+    padding: 40px 0 40px 0;
+
+    h2 {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    .description { font-size: $font-medium2; }
+
+  }
+
+  #mvp-steps {
+    margin-left: 0 !important;
+    margin-top: 30px;
+  }
+
+  #mvp-steps li {
+    width: 135px;
+
+    img { width: 60%; }
+
+    p {
+      min-height: 35px;
+      font-size: $font-small;
+      line-height: 17px;
+    }
+  }
+
+  .plus-icon,
+  .equal-icon { margin-top: 32px; }
+
+  #cover-entry {
+    .column-01 {
+
+      h3 {
+        font-size: $font-medium2;
+        margin: 0 0 10px 0;
+      }
+
+      p {
+        font-size: $font-medium;
+        line-height: 22px;
+      }
+    }
+
+    iframe { height: 240px; }
+  }
+
+  #mvp {
+
+    h3 {
+      margin: 45px 0 30px 0;
+      font-size: $font-large;
+
+      strong {
+        font-weight: 300;
+        font-size: $font-medium2;
+      }
+    }
+  }
+
+  .mvp-projects li {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    .about{
+      width:670px;
+    }
+  }
+
+  .testimonials-list {
+
+    li {
+      width: 96%;
+      height: auto;
+      margin: 0 0 25px 0;
+    }
+  }
+
+
+}
+
+
+/*
+Max Width, 686px
+Media Queries for Smartphones
+------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 686px) {
+  
+
+  /* Work MVP */
+
+  #work-mvp {
+    h3 {
+      font-size: 22px;
+      line-height: 40px;
+    }
+
+    ul {
+      margin: 50px 0  0 10%;
+    }
+  }
+
+
+  /* MVP */
+
+  #cover-mvp {
+    margin-top: 60px;
+  }
+
+  #cover-entry {
+    margin: 45px 0 0 0;
+
+    .column-01 {
+      width: 100%;
+      border-top: none;
+      padding: 0;
+      margin-top: 35px;
+    }
+
+    .column-02 {
+      width: 80%;
+      padding: 0 10% 0 10%;
+
+      iframe {
+        height: auto;
+        min-height: 240px;
+      }
+    }
+
+  }
+
+  #mvp-steps {
+    margin-left: 0;
+    margin-top: 38px;
+  }
+
+  #mvp-steps li {
+    width: 100%;
+    display: inline-block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: none;
+
+    img { width: 70px; }
+    p { min-height: auto; }
+  }
+
+  .plus-icon,
+  .equal-icon {
+    width: 100% !important;
+    margin: 10px 0 0 0;
+  }
+
+  #mvp {
+
+    h3 {
+      font-size: $font-large;
+
+      strong { font-size: $font-medium2; }
+    }
+  }
+
+  .mvp-projects li {
+    width: 100%;
+
+    .about { width: 85%; }
+  }
+
+  .value-column {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    &:first-child {
+      margin: 0 auto;
+    }
+  }
+
+  
+}

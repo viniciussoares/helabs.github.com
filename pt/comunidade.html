@@ -11,7 +11,7 @@ redirect_from: /comunidade/
   <div id="cover-banner">
     <div class="containner">
       <h2>Comunidade</h2>
-      <p>Sempre suportamos a comunidade com conteúdo, patrocínios, palestras...</p>
+      <p>Sempre suportamos a comunidade com conteúdo, patriocínios, palestras e workshops.</p>
       <a class="open-source-link" href="/opensource/">
         Open Source
       </a>
@@ -21,26 +21,12 @@ redirect_from: /comunidade/
   <section id="apoios">
     <div class="containner">
 
-      <h3 class="apoio-h3">
-        Nossos projetos e iniciativas
-      </h3>
-
-      {% include community_ours.html %}
-
-      <h3 class="apoio-h3">
-        Apoios e Patrocínios
-      </h3>
-
-      {% include community_others.html %}
+      {% include logos_list.html %}
 
     </div>
   </section> <!--/ apoios-->
 
-  <div class="bottom-nav">
-    <a class="red-button" href="/trabalho/">
-  	  Conheça nosso trabalho
-    </a>
-  </div>
+  {% include bottom-nav-pt.html %}
 
   <script type="text/javascript">
     mixpanel.track_links(".red-button", "Clicked - Conheça nosso trabalho");

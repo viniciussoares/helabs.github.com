@@ -381,3 +381,131 @@ section.company-logos {
     }
   }
 /*retina*/
+  
+
+/*
+Max Width, 686px
+Media Queries for Smartphones
+------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 686px) {
+  
+
+  /* AtendeSimples */
+
+  #hero-atendesimples {
+    padding-top: 30px;
+
+    h2 {
+      font-size: $font-medium2;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    figure {
+      margin-top: 20px;
+      height: auto;
+    }
+
+    blockquote {
+      margin: -20px auto 0;
+
+      i {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      em {
+        margin-top: 10px;
+      }
+    }
+
+    a.btn {
+      font-size: $font-medium;
+      max-width: 160px;
+    }
+
+    b { font-size: 13px; line-height: 22px;}
+  }
+  
+  section#atendesimples-steps {
+    
+    .step-call {
+
+      iframe {  
+        padding: 0;
+        border: none;
+      }
+    }
+
+    article h2,
+    h3 { text-align: left; }
+
+    article h2 { font-size: 26px; }
+
+    article p {
+      font-size: $font-medium2;
+      line-height: 26px;
+    }
+
+    article:nth-child(2),
+    article:nth-child(3),
+    article:nth-child(4),
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7) {
+
+      section {
+        $image-height: 150px;
+        $gap: 40px;
+        position: relative;
+        padding-top: $image-height + $gap;
+      }
+    }
+
+    article:nth-child(2) {
+      section:after, 
+      section:before { zoom: 0.55 !important }
+    } 
+    
+    article:nth-child(4) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(5) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(6) {
+      section:after, 
+      section:before { zoom: 0.75 !important }
+    } 
+    
+    article:nth-child(7) {
+      section:after, 
+      section:before { zoom: 0.45 !important }
+    } 
+  }
+
+  section.company-logos { 
+    padding-bottom: 40px;
+
+    figure { 
+      text-align: center;
+      width: 100%; 
+
+      img {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        float: none !important;
+
+        &:first-child { margin-left: -75px !important }
+      }
+
+    }
+  }
+  
+}
