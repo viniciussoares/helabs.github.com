@@ -16,11 +16,8 @@ screenshots:
   - url: /images/projects/medical-log/medical-log-04.jpg
 
 
-<<<<<<< HEAD
+
 about: Developed for you to never forget the time to take your medicines. Add your prescriptions into the app with the camera, and then archive them in a single place. The Medical log was developed for to you have at hand your prescriptions, medicine's info, doses and schedules. The app is designed to be clean and intuitive, making your daily life easier.
-=======
-about: Developed for you never forget the hour of your medicines. Register your recites in your cellphone. The Medical log was developed to you have your recipes in your hands, information on medications , doses and schedules. The app is designed to be clear and intuitive, making it even easier your daily life.
->>>>>>> internal pages
 
 project_team:
   - github: rapozawa
