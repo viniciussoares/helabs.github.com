@@ -16,7 +16,7 @@ screenshots:
   - url: /images/projects/medical-log/medical-log-04.jpg
 
 
-about: Developed for you never forget the hour of your medicines. Register your recites in your cellphone. The Medical log was developed to you have your recipes in your hands, information on medications , doses and schedules. The app is designed to be clear and intuitive, making it even easier your daily life.
+about: This app as developed to help you to remenber the hour of your medicine. And you also can have your recipes in your hands, the information of your medications, doses and schedules. The app was designed to be clear and intuitive, making your daily life easier.
 
 project_team:
   - github: rapozawa
