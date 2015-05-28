@@ -17,7 +17,7 @@ screenshots:
   - url: /images/projects/ie-capoeira/ie-capoeira-04.jpg
 
 
-about: Um app que reúne todos os eventos de capoeira em suas mãos, além aproximar capoeristas de todo mundo.Acompanhe a lista de todos os eventos de capoeira no mundo. Três abas. Uma para ver todos os eventos, outra só os na sua cidade e outra só os eventos que você agendou. Cada evento tem sua própria sala de bate papo para troca de informações sobre ele.
+about: Um app que reúne todos os eventos de capoeira em suas mãos, além aproximar capoeiristas de todo o mundo. Acompanhe a lista de todos os eventos de capoeira no mundo. Três abas: uma para ver todos os eventos, outra só os na sua cidade e outra só os eventos que você agendou. Cada evento tem sua própria sala de bate papo para troca de informações sobre ele.
 
 
 project_team:
