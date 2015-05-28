@@ -16,8 +16,7 @@ screenshots:
   - url: /images/projects/ie-capoeira/ie-capoeira-04.jpg
 
 
-about: An app that put all capoeira events in your hands, and let you get closer to others capoeiristas around the world. You will have a list of all capoeira events. Three tabs: one to see all events, other to see events on your city and another to see only the events that you have scheduled. Each event has its own chat room to share information about it.
-
+about: An app that put all capoeira events in your hands, and let you get closer to others capoeiristas around the world. You will have a list of all capoeira events. Three tabs, one to see all events, other to see events on your city and another to see only the events that you have scheduled. Each event has its own chat room to share information about it.
 
 project_team:
   - github: leaudro
