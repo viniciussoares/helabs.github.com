@@ -128,7 +128,7 @@ Patterns
     background: rgba(#fff, 0);
     box-shadow: none;
   }
-  
+
   #menu2 {
     a {
       background: rgba(#fff, .7);
@@ -141,7 +141,7 @@ Patterns
   height: 40px;
   background: rgba(#fff, .9);
   box-shadow: 0 -24px 8px 27px rgba(0, 0, 0, .1);
-  
+
   .logo {
     width: 90px;
     margin-top: 4px;
@@ -149,7 +149,7 @@ Patterns
 }
 
 .default.tiny {
-  
+
   #menu2 {
     margin-top: 7px;
 
@@ -404,7 +404,7 @@ Privacy
     margin-bottom: 15px;
     text-align: left;
   }
-  
+
   li:nth-child(odd) {
     background: $light-grey1;
   }
@@ -427,13 +427,13 @@ Privacy
     line-height: 24px;
     margin: 0 0 12px 0;
   }
-  
+
   img {
     border-radius: 40px;
     width: 80px;
     float: left;
   }
-  
+
   .test-infos {
     margin-left: 100px;
   }
@@ -450,7 +450,7 @@ Privacy
     margin-top: 20px;
     font-size: $font-small;
     font-weight: bold;
-  
+
     &:hover {
       opacity: .8;
     }
@@ -467,13 +467,13 @@ Privacy
 
 /* Cases */
 
-.our-cases { 
+.our-cases {
   padding: 20px 0 40px 0;
   background: $light-grey2;
   @include clearfix;
   &.web{ background-color: #fff;}
 
-  h2 { 
+  h2 {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
@@ -494,21 +494,21 @@ Privacy
       padding: 2%;
       background: $white;
     }
-    
+
     .info {
       margin-top: 20px;
-      
+
       p {
         line-height: 25px;
         font-size: $font-medium;
         margin: 0;
       }
-      
+
       a {
         margin-top: 15px;
       }
     }
-    
+
     h5 {
       font-size: $font-medium2;
       text-transform: uppercase;
@@ -516,7 +516,7 @@ Privacy
     }
 
   }
-  
+
   li:nth-child(odd) {
     float: left;
   }
@@ -572,7 +572,7 @@ Privacy
   display: inline-block;
   font-size: $font-small;
   font-weight: bold;
-  
+
   &:hover {
     opacity: .8;
   }
@@ -626,7 +626,7 @@ footer {
     font-size: $font-small;
     float: left;
   }
-  
+
   .salvador {
     width: 30%;
   }
@@ -651,7 +651,7 @@ footer {
   li.social-he-links {
   	width: 95px;
     margin-right: 0;
-    
+
     h3 {
       margin: 1px 0 10px 0;
     }
@@ -683,7 +683,7 @@ footer {
       &.twitter {
         background-position: 3px 1px;
       }
-      
+
       &.youtube {
         background-position: 3px -150px;
       }
@@ -733,4 +733,13 @@ footer {
 	#tiptip_holder.tip_top #tiptip_arrow_inner {
 		border-top-color: rgba(20,20,20,0.92);
 	}
+}
+
+
+/* List */
+.simple-list {
+  li {
+     list-style-type: circle;
+     margin-left: 25px;
+  }
 }
