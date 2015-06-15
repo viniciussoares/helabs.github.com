@@ -13,7 +13,6 @@ Contact
 
   li { position: relative; }
 
-  select,
   input[type="text"],
   input[type="email"] {
     @include round_borders (4px);
@@ -27,11 +26,6 @@ Contact
     font-size: $font-medium2;
     font-weight: normal !important;
     outline: none;
-  }
-
-  select {
-    color: #949494;
-    width: 100%;
   }
 
   textarea {

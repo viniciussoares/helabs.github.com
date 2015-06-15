@@ -6,20 +6,14 @@ var App = {
         Field19: "Last name is required",
         Field3: "Email is required",
         Field16: "Skype username or phone is required",
-        Field5: "Message is required",
-        Field41: "Project name is required",
-        Field43: "First name is required",
-        Field44: "Last name is required"
+        Field5: "Message is required"
       },
       pt: {
         Field18: "Nome é obrigatório",
         Field19: "Sobrenome é obrigatório",
         Field3: "Email inválido",
         Field16: "Usuário no Skype ou telefone é obrigatório",
-        Field5: "Resumo do projeto é obrigatório",
-        Field41: "Nome do projeto é obrigatório",
-        Field43: "Nome é obrigatório",
-        Field44: "Sobrenome é obrigatório"
+        Field5: "Resumo do projeto é obrigatório"
       }
     },
     defaultLocale: "pt",
@@ -183,9 +177,6 @@ var App = {
       messages: {
         Field18: App.I18n.t('Field18'),
         Field19: App.I18n.t('Field19'),
-        Field41: App.I18n.t('Field41'),
-        Field43: App.I18n.t('Field43'),
-        Field44: App.I18n.t('Field44'),
         Field3: App.I18n.t('Field3'),
         Field16: App.I18n.t('Field16'),
         Field5: App.I18n.t('Field5')
