@@ -27,6 +27,7 @@ module.exports = function(grunt) {
             'javascripts/source/jquery.scrollTo.js',
             'javascripts/source/jquery.tipTip.js',
             'javascripts/source/jquery.validate.js',
+            'javascripts/source/jquery.remodal.js', 
             'javascripts/source/jquery.touchSwipe.min.js',
             'javascripts/source/jquery.liquid-slider.min.js',
             'javascripts/source/jquery.bxslider.min.js',
