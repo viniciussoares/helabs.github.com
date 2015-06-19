@@ -24,14 +24,30 @@
         </div>
 
       </form>
+      <div class="remodal" data-remodal-id="public">
+        <h1>Seus dados foram enviados com sucesso! </h1>
+        <br>
+        <p>
+          O time HE:labs verificará as informações e caso seu perfil seja condizente com o perfil esperado para a vaga, entraremos em contato em até 7 dias. 
+        </p>
+        <br>
+        <a class="remodal-cancel" href="#">Voltar</a>
+      </div>
 
     </div>
   </section> <!-- /jobs -->
+
   <script type="text/javascript">
     $(function(){
       if(window.location.hash == "#public") {
-        alert('Seus dados foram enviados com sucesso!\n\nO time HE:labs verificará as informações e caso\nseu perfil seja condizente com o perfil esperado\npara a vaga, entraremos em contato em até 7 dias.');
+        $(function () {
+            var inst = $.remodal.lookup[$('[data-remodal-id=public]').data('remodal')];
+            inst.open();
+            inst.close();
+        });
       }
     });
   </script>
+  <script src='/javascripts/source/jquery.remodal.js'  data-no-instant></script>
+
 {% endif %}
