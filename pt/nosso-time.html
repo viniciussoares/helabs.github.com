@@ -22,7 +22,7 @@ redirect_from: /nosso-time/
         {% for person in site.categories.time reversed %}
           <li>
             {% if person.permalink %}<a href="{{ person.permalink }}">{% endif %}
-              <img src="{{ person.image }}" alt="{{ person.full_name }}">
+            <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}">
               <h3>{{ person.full_name }}</h3>
               <p>{{ person.job_title }}</p>
             {% if person.permalink %}</a>{% endif %}
