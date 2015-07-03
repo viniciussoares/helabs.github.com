@@ -131,7 +131,7 @@ We have an integration using Zapier between the wufoo form on "Fale Conosco" wit
 
 ## Maintainers
 
-- [Mikael Carrara](https://github.com/mikaelcarrara)
+- [Marcio Sena](https://github.com/marciovsena)
 
 ## Made with love by HE:labs
 
