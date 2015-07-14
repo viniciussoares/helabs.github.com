@@ -192,6 +192,13 @@ var App = {
       }
     });
 
+    /* Force refresh page and load image - bug fix firefox */
+    $("a.languages, a#menu-time, a#menu-team").click(function(event) { 
+      event.preventDefault(); 
+      window.location = $(this).attr("href");
+     });
+
+
     $('#submit-btn').on('click',function(){
       $('#talk-to-us').submit();
       return false;
