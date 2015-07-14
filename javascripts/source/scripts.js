@@ -193,7 +193,7 @@ var App = {
     });
 
     /* Force refresh page and load image - bug fix firefox */
-    $("a.languages").click(function(event) { 
+    $("a.languages, a#menu-time, a#menu-team").click(function(event) { 
       event.preventDefault(); 
       window.location = $(this).attr("href");
      });
