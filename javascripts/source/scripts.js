@@ -194,10 +194,9 @@ var App = {
 
     /* Force refresh page and load image - bug fix firefox */
     $("a.languages, a#menu-time, a#menu-team").click(function(event) { 
-      event.preventDefault(); 
-      window.location = $(this).attr("href");
+      event.preventDefault();
+      location.reload();
      });
-
 
     $('#submit-btn').on('click',function(){
       $('#talk-to-us').submit();
