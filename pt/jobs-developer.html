@@ -24,7 +24,7 @@ redirect_from: /jobs-developer/
 
         <section class="job-description">
 
-          <h3>Vaga para Ruby Developer com Experiencia</h3>
+          <h3>Vaga para Ruby Developer</h3>
 
           <p>Você precisa dominar <strong>Ruby on Rails com testes automatizados</strong>, Git, ter bom conhecimento de Javascript, HTML e CSS.</p>
           <p>Aqui não existem diferentes níveis de programadores. Temos times eficientes porque prezamos por programadores de alto nível, que são capazes de se comunicar bem e trabalhar diretamente com os clientes.</p>
@@ -33,20 +33,41 @@ redirect_from: /jobs-developer/
           <p>É necessário ter noções de inglês: leitura, escrita e oral. Falar fluentemente é um diferencial. Temos clientes em todos os cantos do mundo e a língua padrão de comunicação dentro da empresa é o inglês.</p>
           <p>Cada um pode escolher as ferramentas com que prefere trabalhar. Gostamos de Macs. Fornecemos um para cada programador do time.</p>
 
-          <h4>Preencha o formulário abaixo se você tem os pré-requisitos:</h4>
-            <ul class='simple-list'>
-              <li>Dominar Ruby on Rails com testes automatizados</li>
-              <li>Já ter trabalho com Rails profissionalmente por algum tempo</li>
-            </ul>
+          <ul class='simple-list'>
+            <li>Dominar Ruby on Rails com testes automatizados</li>
+            <li>Já ter trabalho com Rails profissionalmente por algum tempo</li>
+          </ul>
 
 
           {% unless page.with_job_openings %}
             <p><strong>Por enquanto não temos vagas disponíveis. Aguarde!</strong></p>
           {% endunless %}
-
         </section> <!-- /job-description -->
 
-        {% include jobs_form.html job_title="web dev" %}
+        <section id='select-job-form'>
+          <div id='ruby-dev-senior'>
+            <h3><input type='radio' name='ruby-job'>Sou um Ruby/Rails Developer com experiência</h3>
+            <ul class='simple-list'>
+              <li>Trabalho a mais de 2 anos profissionalmente com ruby/rails</li>
+              <li>Tenho conhecimento em testes automatizados e consigo escrever testes com Rspec</li>
+            </ul>
+            <div class="form" style="display:none;">
+                <iframe src="https://eduardo-helabs.youcanbook.me/?noframe=true&skipHeaderFooter=true" style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>
+                <script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
+            </div>
+          </div>
+
+          <div id='ruby-dev'>
+            <h3><input type='radio' name='ruby-job'>Ainda estou aprendendo Ruby/Rails</h3>
+            <ul class='simple-list'>
+              <li>Tenho menos de 6 meses de experiência trabalhando com ruby</li>
+              <li>Tenho pouco conhecimento em fazer testes de unidade e aceitação em uma aplicação Rails</li>
+            </ul>
+            <div class="form" style="display:none;">
+              {% include jobs_form.html job_title="web dev" %}
+            </div>
+          </div>
+        </section>
 
       </div>
     </div> <!-- /about-position -->
