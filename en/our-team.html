@@ -20,7 +20,7 @@ pt: /pt/nosso-time/
       <ul>
         {% for person in site.categories.team reversed %}
           <li>
-            {% if person.permalink %}<a href="{{ person.permalink }}">{% endif %}
+            {% if person.permalink %}<a href="{{ person.permalink }}" class="profile">{% endif %}
               <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}">
               <h3>{{ person.full_name }}</h3>
               <p>
@@ -77,7 +77,6 @@ pt: /pt/nosso-time/
           <h5>New year party</h5>
         </li>
       </ul>
-
     </div>
   </div> <!-- /videothumbs -->
 

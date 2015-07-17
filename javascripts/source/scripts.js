@@ -193,9 +193,9 @@ var App = {
     });
 
     /* Force refresh page and load image - bug fix firefox */
-    $("a.languages, a#menu-time, a#menu-team").click(function(event) { 
+    $("a.languages, a#menu-time, a#menu-team, a.profile").click(function(event) { 
       event.preventDefault();
-      location.reload();
+      window.location.href = $(this).attr("href");
      });
 
     $('#submit-btn').on('click',function(){
