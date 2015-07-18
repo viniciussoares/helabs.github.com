@@ -20,12 +20,46 @@ Jobs
   }
 
   #select-job-form {
-    h3 {
-      border: 1px solid red;
-      padding: 10px;
+    overflow: hidden;
+
+    input[type='radio'] { display: none; }
+
+    label {
+      border-radius: 3px;
+      background: $he_red;
+      color: #fff;
+      display: inline-block;
+      font: 'lato';
+      margin-bottom: 20px;
+      padding: 20px;
+      text-decoration: none;
       width: 70%;
+
+      &:hover {
+        opacity: .9;
+      }
     }
 
+    #ruby-dev-senior,
+    #ruby-dev {
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      text-align: center;
+      width: 50%;
+    }
+
+    #ruby-dev-senior {
+      float: left;
+    }
+
+    #ruby-dev {
+      float: right;
+    }
+
+    .form-ruby {
+      clear: both;
+    }
   }
 }
 
