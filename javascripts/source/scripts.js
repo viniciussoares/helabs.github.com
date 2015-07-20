@@ -486,7 +486,7 @@ BlogPosts.fetch = function() {
       }
     }).toArray();
   }
-  return $.get('/blog/atom.xml').then(normalizeToJson);
+  return $.get('/blog/atom-lite.xml').then(normalizeToJson);
 };
 
 function createBlogSlider ($container) {
