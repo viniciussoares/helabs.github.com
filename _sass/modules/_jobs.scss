@@ -22,7 +22,7 @@ Jobs
   #select-job-form {
     overflow: hidden;
 
-    input[type='radio'] { display: none; }
+    input[type='radio'] { margin-right:5px; }
 
     label {
       border-radius: 3px;
@@ -33,7 +33,7 @@ Jobs
       margin-bottom: 20px;
       padding: 20px;
       text-decoration: none;
-      width: 70%;
+      width: 75%;
 
       &:hover {
         opacity: .9;
