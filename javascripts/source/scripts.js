@@ -171,6 +171,7 @@ var App = {
     // Eduardo's easter egg
     $("img[src='/images/time/time-eduardo.jpg']").hover(function() {
       $(this).attr("src", "/images/time/time-eduardo.gif");
+      $(this).attr("srcset", "/images/time/time-eduardo.gif 2x");
     });
 
     $("#talk-to-us").validate({
