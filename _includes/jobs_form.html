@@ -1,6 +1,5 @@
 {% if page.with_job_openings %}
   <section id="jobs">
-
     <div class="containner">
       <h3 class="form-title">Curtiu? Preencha o formulário abaixo!</h3>
 
@@ -14,7 +13,7 @@
           <li><input name="Field19" type="text" class="text spacing" placeholder="Seu sobrenome" required></li>
           <li><input name="Field3" type="text" class="text spacing" placeholder="Seu Email" required></li>
           <li><input id="phone" name="Field16" type="text" class="text" placeholder="Seu usuário no Skype ou Telefone" required></li>
-          <li><textarea name="Field5" cols="" rows="" class="text" placeholder="Mande o link do seu GitHub, blog ou portfolio e diga por que você curte a HE:labs! Seja detalhista e fale bastante de sua experiencia" required></textarea></li>
+          <li><textarea name="Field5" cols="" rows="" class="text" placeholder="{{ include.job_description_text}}" required></textarea></li>
           <li><input name="Field43" type="text" class="text spacing" placeholder="Como ficou sabendo da vaga?" required></li>
           <li><button name="saveForm" type="submit">Enviar</button></li>
         </ul>
@@ -29,7 +28,7 @@
         <h1>Seus dados foram enviados com sucesso! </h1>
         <br>
         <p>
-          O time HE:labs verificará as informações e caso seu perfil seja condizente com o perfil esperado para a vaga, entraremos em contato em até 7 dias. 
+          O time HE:labs verificará as informações e caso seu perfil seja condizente com o perfil esperado para a vaga, entraremos em contato em até 7 dias.
         </p>
         <br>
         <a class="remodal-cancel" href="#">OK</a>
