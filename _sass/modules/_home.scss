@@ -33,7 +33,7 @@ Home
     display: block;
     font-size: $font-extra-big;
 
-    img { 
+    img {
       height: 100px;
       width: auto;
       vertical-align: middle;
@@ -53,7 +53,7 @@ Home
     display: block;
     padding: 20px 30px 25px 30px;
   }
-  
+
 }
 
 #home {
@@ -121,7 +121,7 @@ Home
       em { color: $black; }
     }
   } //  article
-  
+
   article:first-child {
     margin-left: 0;
   }
@@ -130,7 +130,7 @@ Home
 
 /* Cases */
 
-#home .our-cases { 
+#home .our-cases {
   padding: 60px 0 40px 0;
 }
 
@@ -198,7 +198,7 @@ Home
   background-color: $grey4;
   @include clearfix;
   color: $white;
-  
+
   ul {
     margin-top: 50px;
   }
@@ -210,7 +210,7 @@ Home
   li:nth-child(even) {
     background: #555;
   }
-  
+
   h4 {
     color: $white;
   }
@@ -218,7 +218,7 @@ Home
   .headline-desc {
     color: $grey2;
   }
-  
+
   .client-name {
     color: $grey2;
   }
@@ -241,11 +241,11 @@ Home
     //float: left;
     //margin-right: 25px;
     text-align: left;
-    
+
     //&:last-child { margin-right: 0; }
-    
+
     &.slide {
-      margin: 0;  
+      margin: 0;
     }
 
     h5 {
@@ -285,14 +285,14 @@ Home
   padding: 60px 0 50px 0;
   background-color: $light-grey1;
   border-top: 1px solid $light-grey2;
-  
+
   .logos-list {
     margin-top: 60px;
   }
 }
 
 
-/*  SIDETAG OF MAURO'S BOOK   */
+//  SIDETAG OF MAURO'S BOOK
 
 
 .side-tag {
@@ -315,7 +315,7 @@ Home
 
   &:hover {
     left: 0;
-    
+
     .action-link { display: none }
     .book-link { display: block }
   }
@@ -346,7 +346,7 @@ Home
     display: inline-block;
   }
 
-  a { 
+  a {
     color: #fff;
     font-size: 18px;
     font-style: italic;
@@ -364,4 +364,39 @@ Home
     position: absolute;
     width: 60px;
   }
+}
+
+// BOTTOM BAR VAGAS
+
+#bottom-bar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #02c373;
+  color: #fff;
+  padding: 15px 0;
+  z-index: 9999;
+  .bar-wrap{
+    width: 960px;
+    margin: 0 auto;
+    display: block;
+  }
+  span{
+    display: inline-block;
+    &:before{
+      content: " ";
+      width: 20px;
+      height: 20px;
+      background: url("/images/home/briefcase.png") no-repeat;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: -3px;
+    }
+  }
+  a{
+    color: #fff;
+    font-weight: bold;
+    &.close-bar{ float:right; margin-top: 3px;}
+  }
+
 }
