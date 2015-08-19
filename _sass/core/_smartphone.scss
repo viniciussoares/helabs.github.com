@@ -21,12 +21,12 @@ Media Queries for Smartphones
     .logo {
       margin: 0;
     }
-    
+
     img {
       display: block !important;
     }
   }
-  
+
   #menu2 {
     a {
       margin-left: 0;
@@ -114,6 +114,12 @@ Media Queries for Smartphones
 
   /* Home */
 
+  #bottom-bar .bar-wrap{
+    width: 90%;
+    span{ font-size:12px; width: 80%; }
+    span:before{ display: none;}
+  }
+
   #home {
     section.hero {
       padding: 110px 0 30px 0;
@@ -139,10 +145,11 @@ Media Queries for Smartphones
         }
       }
     }
-    
-    
+
+
+
     // Testmonial List
-    
+
     .marcos-test {
       display: none;
     }
@@ -651,11 +658,11 @@ Media Queries for Smartphones
       }
     }
   }
-  
-  
+
+
   /* Cases */
 
-  .our-cases { 
+  .our-cases {
     padding: 10px 0 50px 0;
 
     li {
@@ -680,8 +687,8 @@ Media Queries for Smartphones
 
   /* Footer */
 
-  footer { 
-    padding: 20px 0 205px 0; 
+  footer {
+    padding: 20px 0 205px 0;
     position: static;
   }
 
@@ -690,7 +697,7 @@ Media Queries for Smartphones
 
   .offices {
     padding: 15px 0 20px 0;
-    
+
     li {
       width: 100%;
       padding: 15px;
@@ -703,15 +710,15 @@ Media Queries for Smartphones
         padding-bottom: 0;
       }
     }
-    
+
     .salvador {
       width: 100%;
     }
-    
+
     li:first-child {
       margin-top: 0;
     }
-    
+
     li.phone-contact {
       width: 100%;
       margin-right: 0;
@@ -903,7 +910,7 @@ Media Queries with adjustments for Smartphones
       margin: 0 1% 25px 1%;
       width: 45%;
     }
-    
+
     li:nth-child(odd) { background: #f2f2f2; }
     li:nth-child(even) { background: #f8f8f8; }
   }
@@ -978,9 +985,9 @@ Media Queries with more adjustments for Smartphones
 
   #home {
 
-    .hero h2 img{ 
-      height: 50px; 
-      display: block; 
+    .hero h2 img{
+      height: 50px;
+      display: block;
       margin: 10px auto;
       text-align: center;
     }

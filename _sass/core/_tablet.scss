@@ -35,7 +35,7 @@ Media Queries for Tablets
 
 
   // Main
-  
+
   .main {
     padding-bottom: 0;
   }
@@ -114,6 +114,8 @@ Media Queries for Tablets
     }
   }
 
+  #bottom-bar .bar-wrap{ width: 700px;}
+
 
   /* Cover Banner */
 
@@ -125,7 +127,7 @@ Media Queries for Tablets
   #cover-mailing {
     margin-top: 80px;
   }
-  
+
 
   // Testimonials List
 
@@ -370,8 +372,8 @@ Media Queries for Tablets
       display: block;
     }
 
-    b { 
-      text-align: center; 
+    b {
+      text-align: center;
       margin-top: 0;
     }
   }
@@ -424,7 +426,7 @@ Media Queries for Tablets
 
 
       &:nth-child(2) section {
-        &:after, &:before { 
+        &:after, &:before {
           height: 290px;
           zoom: 0.7;
         }
@@ -433,35 +435,35 @@ Media Queries for Tablets
       &:nth-child(3) section {
         padding-top: 220px;
 
-        &:after, &:before { 
+        &:after, &:before {
           height: 170px;
           background-position: center -290px;
         }
       }
 
       &:nth-child(4) section {
-        &:after, &:before { 
+        &:after, &:before {
           height: 200px;
           background-position: center -460px;
         }
       }
 
       &:nth-child(5) section {
-        &:after, &:before { 
+        &:after, &:before {
           background-position: center -665px;
           height: 210px;
         }
       }
 
       &:nth-child(6) section {
-        &:after, &:before { 
+        &:after, &:before {
           background-position: center -875px;
           height: 205px;
         }
       }
 
       &:nth-child(7) section {
-        &:after, &:before { 
+        &:after, &:before {
           background-position: center -1080px;
           height: 380px;
           zoom: 0.55;
@@ -470,8 +472,8 @@ Media Queries for Tablets
     }
   }
 
-  section.testimonials blockquote { 
-    width: 100%; 
+  section.testimonials blockquote {
+    width: 100%;
 
     i {
       font-size: 15px;
@@ -480,7 +482,7 @@ Media Queries for Tablets
       &:before { margin-right: 2px }
       &:after { margin-left: 5px }
 
-      &:before, 
+      &:before,
       &:after {
         background-size: 18px auto;
         height: 14px;
@@ -611,5 +613,5 @@ Media Queries for Tablets
   .box_colors_show { display:none; }
 
   ul.downloads li { width: 350px;}
-  
+
 }
