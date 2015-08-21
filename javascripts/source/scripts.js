@@ -167,6 +167,20 @@ var App = {
     }
   },
   InterfaceActions: function() {
+    var bottomBar = "show_bottom_bar";
+    if(document.cookie.indexOf(bottomBar) == -1){
+      $("#bottom-bar").show();
+    }else{
+      $("a.close-bar").click();
+    }
+    $("a.close-bar").click(function(event) { 
+      event.preventDefault();
+      $('#bottom-bar').fadeOut();
+      var d = new Date();
+      d.setTime(d.getTime() + (1*24*60*60*1000));
+      var expires = "expires="+d.toUTCString();
+      document.cookie=bottomBar+"=false; expires="+expires;
+     });
 
     // Eduardo's easter egg
     $("img[src='/images/time/time-eduardo.jpg']").hover(function() {
@@ -197,7 +211,7 @@ var App = {
     $("a.languages, a#menu-time, a#menu-team, a.profile").click(function(event) { 
       event.preventDefault();
       window.location.href = $(this).attr("href");
-     });
+ });
 
     $('#submit-btn').on('click',function(){
       $('#talk-to-us').submit();
@@ -537,3 +551,5 @@ InstantClick.on('change', function() {
 });
 
 InstantClick.init();
+
+
