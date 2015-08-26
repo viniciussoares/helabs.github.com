@@ -1,2 +1,2 @@
 jekyll: bundle exec jekyll serve --watch
-grunt: grunt watch
+watch: npm run watch
