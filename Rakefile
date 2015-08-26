@@ -6,6 +6,13 @@ RSpec::Core::RakeTask.new(:spec)
 
 task :default => :spec
 
+def ask(question)
+  begin
+    STDOUT.puts "#{question} (y/n)"
+    input = STDIN.gets.strip.downcase
+  end until %w(y n).include?(input)
+  input
+end
 
 desc 'Remove unused images'
 task :prune_images do
@@ -34,6 +41,9 @@ desc 'Push to staging.helabs.com.br'
 task :staging do
   require 'colored'
 
+  answer = ask "Are your sure?"
+  exit if answer == 'n'
+
   puts '=> Memorizing current branch name...'.magenta
   current_branch = `git branch | grep "*"`.gsub('*', '').strip
 
@@ -42,6 +52,9 @@ task :staging do
 
   puts '=> Create orphan staging branch...'.magenta
   system 'git checkout --orphan staging'
+
+  puts '=> Building javascript files...'.magenta
+  system 'npm run build'
 
   puts '=> Disallow robots...'.magenta
   File.open('robots.txt', 'w') { |file| file.write "User-agent: *\nDisallow: /" }
@@ -65,4 +78,24 @@ task :staging do
   system "git checkout #{current_branch}"
 
   puts '=> Done. It can take up to 10 minutes for your changes to appear staging.helabs.com.br'.yellow
+end
+
+desc 'Push to helabs.com'
+task :production do
+  require 'colored'
+
+  answer = ask "Are your sure?"
+  exit if answer == 'n'
+
+  puts '=> Building javascript files...'.magenta
+  system 'npm run build'
+
+  puts '=> Add everything...'.magenta
+  system 'git add --all'
+
+  puts '=> Commit everything...'.magenta
+  system 'git commit -m "Generated files"'
+
+  puts '=> Pushing to production.'.magenta
+  system 'git push'
 end
