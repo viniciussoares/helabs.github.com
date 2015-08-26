@@ -14,6 +14,10 @@ exclude:
 - 'Procfile'
 - '.sass-cache'
 - 'node_modules'
+- 'javascripts'
+
+keep_files:
+- 'dist'
 
 permalink: pretty
 
