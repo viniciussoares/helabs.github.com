@@ -15,3 +15,7 @@ exports.config =
     watched: ['javascripts']
   modules:
     wrapper: false
+  overrides:
+    production:
+      paths:
+        public: 'dist'
