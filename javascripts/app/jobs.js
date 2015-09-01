@@ -1,8 +1,9 @@
-console.log('jobs.js');
-
-$('#select-job-form').on('click', 'input[type=radio]', function() {
-  formClass = $(this).data('form');
-  console.log(formClass);
-  $('.form-ruby').hide();
-  $('.' + formClass).show();
+InstantClick.on('change', function() {
+  $(function() {
+    $('#select-job-form').on('click', 'input[type=radio]', function() {
+      formClass = $(this).data('form');
+      $('.form-ruby').hide();
+      $('.' + formClass).show();
+    });
+  })
 });
