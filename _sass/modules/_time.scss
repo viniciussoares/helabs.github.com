@@ -21,6 +21,7 @@ Team
       position: relative;
       display: inline-block;
       color: $grey4;
+      vertical-align: top;
 
       img,
       a img {
@@ -98,7 +99,7 @@ Team
   padding: 55px 0 25px 0;
   text-align: center;
   margin-bottom: 0;
-  
+
   li {
     border: none;
     display: inline-block;
