@@ -42,42 +42,13 @@ redirect_from: /jobs-developer/
             <li>Já ter trabalhado com Rails profissionalmente por algum tempo</li>
           </ul>
 
+          <br>
+          <p>Acesse nosso formulário: <a href="https://helabs.recruiterbox.com/jobs/fk0hdze/">Formulário para a vaga de Ruby</a></p>
+
           {% unless page.with_job_openings %}
             <p><strong>Por enquanto não temos vagas disponíveis. Aguarde!</strong></p>
           {% endunless %}
         </section> <!-- /job-description -->
-
-        <section id='select-job-form'>
-          <div id='ruby-dev'>
-            <label for="chk-ruby-job">
-              <input type='radio' name='ruby-job' data-form='form-ruby-dev' id="chk-ruby-job">
-              Tenho pouca experiência com Ruby/Rails
-            </label>
-            <p>
-              Tenho <b>pouca experiência</b> trabalhando com ruby. Tenho <b>pouco conhecimento</b> em fazer testes de unidade e aceitação em uma aplicação Rails
-            </p>
-          </div>
-
-          <div id='ruby-dev-senior'>
-            <label for="chk-ruby-job-senior">
-              <input type='radio' name='ruby-job' data-form='form-ruby-dev-senior' id="chk-ruby-job-senior">
-              Sou um Ruby/Rails Developer com experiência
-            </label>
-            <p>
-              Trabalho a <b>mais de 2 anos</b> profissionalmente com ruby/rails. Tenho <b>conhecimento em testes automatizados</b> e consigo escrever testes com RSpec.
-            </p>
-          </div>
-
-          <div class="form-ruby form-ruby-dev-senior" style="display:none;">
-            <iframe src="https://eduardo-helabs.youcanbook.me/?noframe=true&skipHeaderFooter=true" style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>
-            <script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
-          </div>
-
-          <div class="form-ruby form-ruby-dev" style="display:none;">
-            {% include jobs_form.html job_title="web dev" job_description_text="Mande o link do seu GitHub, blog ou portfolio e diga por que você curte a HE:labs! Seja detalhista e fale bastante de sua experiencia"%}
-          </div>
-
-        </section>
 
       </div>
     </div> <!-- /about-position -->
