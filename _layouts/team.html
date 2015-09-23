@@ -41,13 +41,15 @@ layout: default
             </div>
           {% endif %}
 
-          <h4>Social</h4>
-          <ul class="social-links">
-            {% if page.twitter %}<li><a href="https://twitter.com/{{ page.twitter }}" class="profile-twitter">@{{ page.twitter }}</a></li>{% endif %}
-            {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
-            {% if page.github %}<li><a href="https://github.com/{{ page.github }}" class="profile-github">{{ page.github }}</a></li>{% endif %}
-            {% if page.facebook %}<li><a href="https://www.facebook.com/{{ page.facebook }}" class="profile-facebook">{{ page.full_name }}</a></li>{% endif %}
-          </ul>
+          {% if page.twitter || page.dribbble || page.github || page.facebook %}
+            <h4>Social</h4>
+            <ul class="social-links">
+              {% if page.twitter %}<li><a href="https://twitter.com/{{ page.twitter }}" class="profile-twitter">@{{ page.twitter }}</a></li>{% endif %}
+              {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
+              {% if page.github %}<li><a href="https://github.com/{{ page.github }}" class="profile-github">{{ page.github }}</a></li>{% endif %}
+              {% if page.facebook %}<li><a href="https://www.facebook.com/{{ page.facebook }}" class="profile-facebook">{{ page.full_name }}</a></li>{% endif %}
+            </ul>
+          {% endif %}
         </article>
       </div>
     </section> <!-- /bio -->
@@ -73,11 +75,11 @@ layout: default
               <li>
                 {% for project in site.data.mvp.projects %}
                   {% if project.slug == slug %}
-        
+
                     {% if project.url %}
                       <a href="/trabalhos/{{ project.url }}">
                     {% endif %}
-                  
+
                     <img src="{{ project.image }}" alt="{{ project.name }}">
                     <h3>{{ project.name }}</h3>
 
@@ -90,7 +92,7 @@ layout: default
               </li>
             {% endfor %}
           </ul>
-          
+
         </div>
       </section> <!-- /projects-worked -->
     {% endif %}
