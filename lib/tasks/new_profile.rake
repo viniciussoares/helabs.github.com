@@ -15,6 +15,7 @@ module NewProfileTask
       while (image = ask('URL to an image of you (tip: type in your email to get your gravatar image)')).nil?; end
       while (job_title = ask('Your job title:')).nil?; end
       while (slug = ask('Your @helabs.com.br username:')).nil?; end
+      while (location = ask("Your latitude and longitude e.g. \e[33m-22.918747, -43.177080\e[0m\:")).nil?; end
 
       if image =~ /[\w+]+@[\w|\.]+/
         image ='http://gravatar.com/avatar/' + Digest::MD5.hexdigest(image) + '?s=160'
@@ -29,8 +30,9 @@ module NewProfileTask
       vars = {
         full_name: name,
         parameterized_name: I18n.transliterate(name).gsub(' ', '-').downcase,
-        slug: slug,
         image: image,
+        slug: slug,
+        location: location,
         job_title: job_title,
         job_cool: job_cool,
         social_accounts: {
