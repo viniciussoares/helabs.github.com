@@ -42,8 +42,7 @@ module NewProfileTask
       }
       template_vars = OpenStruct.new(vars)
 
-      post_file_name = Time.now.strftime('%Y-%m-%d')
-      post_file_name << "-#{vars[:parameterized_name]}"
+      post_file_name = "2015-06-03-#{vars[:parameterized_name]}"
 
       new_profile_pt = ERB.new(File.read('lib/templates/new_profile-pt.yml.erb'))
       File.open("_posts/team-members/pt/#{post_file_name}.html", 'w') do |f|
