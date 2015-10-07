@@ -15,6 +15,10 @@
       zoom: 4
     });
 
+    google.maps.event.addListener(map, 'zoom_changed', function() {
+      if (map.getZoom() < 2) map.setZoom(2);
+    });
+
     for (i in team) {
       var person = team[i],
           position = person.location.split(',');
