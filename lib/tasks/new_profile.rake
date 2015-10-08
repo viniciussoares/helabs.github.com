@@ -1,3 +1,4 @@
+
 task :new_profile do
   require 'erb'
   require 'ostruct'
@@ -8,6 +9,8 @@ task :new_profile do
 end
 
 module NewProfileTask
+  require_relative '../profile_builder'
+
   class << self
     def run
       # Required fields
@@ -28,13 +31,13 @@ module NewProfileTask
       behance  = ask('Your behance user:')
 
       vars = {
-        full_name: name,
-        parameterized_name: I18n.transliterate(name).gsub(' ', '-').downcase,
-        image: image,
-        slug: slug,
-        location: location,
-        job_title: job_title,
-        job_cool: job_cool,
+        full_name:           name,
+        parameterized_name:  parametrized_name(name),
+        slug:                slug,
+        image:               image,
+        location:            location,
+        job_title:           job_title,
+        job_cool:            job_cool,
         social_accounts: {
           github:   github,
           twitter:  twitter,
@@ -42,19 +45,14 @@ module NewProfileTask
           behance:  behance
         }
       }
-      template_vars = OpenStruct.new(vars)
 
-      post_file_name = "2015-06-03-#{vars[:parameterized_name]}"
+      ProfileBuilder.new(vars).build_all
+    end
 
-      new_profile_pt = ERB.new(File.read('lib/templates/new_profile-pt.yml.erb'))
-      File.open("_posts/team-members/pt/#{post_file_name}.html", 'w') do |f|
-        f.puts new_profile_pt.result(template_vars.instance_eval { binding })
-      end
+    private
 
-      new_profile_en = ERB.new(File.read('lib/templates/new_profile-en.yml.erb'))
-      File.open("_posts/team-members/en/#{post_file_name}.html", 'w') do |f|
-        f.puts new_profile_en.result(template_vars.instance_eval { binding })
-      end
+    def parametrized_name(name)
+      I18n.transliterate(name).gsub(' ', '-').downcase
     end
 
     def ask(question, opts = {default_value: nil})
