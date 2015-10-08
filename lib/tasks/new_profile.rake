@@ -1,4 +1,4 @@
-
+desc 'Creates a cozy profile for a new teammate. Welcome to HE:labs!'
 task :new_profile do
   require 'erb'
   require 'ostruct'
