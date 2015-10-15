@@ -144,6 +144,35 @@ Jobs
 }
 
 
+
+// Recruitbox
+
+.recruitbox {
+  border-top: 1px solid $grey2;
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  a {
+    border-radius: 2px;
+    background: $he_red;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: $white;
+    font-weight: bold;
+    font-size: $font-medium2;
+    padding: 0 15px;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+
 /* Apprentice Program */
 
 .apprentice-program {
