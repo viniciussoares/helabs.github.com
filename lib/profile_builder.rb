@@ -35,6 +35,6 @@ class ProfileBuilder
   end
 
   def file_name
-    "#{Time.now.strftime('%Y-%m-%d')}-#{template_vars.parameterized_name}"
+    "2015-06-03-#{template_vars.parameterized_name}"
   end
 end

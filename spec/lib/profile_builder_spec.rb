@@ -1,10 +1,6 @@
 require 'spec_helper'
 
 describe ProfileBuilder do
-  let(:now) { Time.parse('2015-03-06 09:42') }
-
-  before { allow(Time).to receive(:now).and_return(now) }
-
   describe '#build_pt' do
     context 'when complete vars params' do
       let(:vars) {
@@ -25,7 +21,7 @@ describe ProfileBuilder do
         }
       }
 
-      let(:file_path) { '_posts/team-members/pt/2015-03-06-john-doe.html' }
+      let!(:file_path) { '_posts/team-members/pt/2015-06-03-john-doe.html' }
 
       before { ProfileBuilder.new(vars).build_pt }
       after { File.delete(file_path) }
@@ -68,7 +64,7 @@ describe ProfileBuilder do
         }
       }
 
-      let(:file_path) { '_posts/team-members/pt/2015-03-06-.html' }
+      let(:file_path) { '_posts/team-members/pt/2015-06-03-.html' }
 
       before { ProfileBuilder.new(vars).build_pt }
       after { File.delete(file_path) }
@@ -112,7 +108,7 @@ describe ProfileBuilder do
         }
       }
 
-      let(:file_path) { '_posts/team-members/en/2015-03-06-john-doe.html' }
+      let(:file_path) { '_posts/team-members/en/2015-06-03-john-doe.html' }
 
       before { ProfileBuilder.new(vars).build_en }
       after { File.delete(file_path) }
@@ -155,7 +151,7 @@ describe ProfileBuilder do
         }
       }
 
-      let(:file_path) { '_posts/team-members/en/2015-03-06-.html' }
+      let(:file_path) { '_posts/team-members/en/2015-06-03-.html' }
 
       before { ProfileBuilder.new(vars).build_en }
       after { File.delete(file_path) }
