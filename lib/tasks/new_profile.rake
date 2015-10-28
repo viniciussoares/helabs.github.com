@@ -59,8 +59,17 @@ module NewProfileTask
     end
 
     def info_about_picture(name)
-      puts "Your picture file name should be: #{yellow("time-#{parametrized_name(name)}.jpg")} and #{yellow("time-#{parametrized_name(name)}@2x.jpg")}."
+      puts "Your photo file should be: #{image_of(name)} and #{image2x_of(name)}."
     end
+
+    def image_of(name)
+      yellow("/images/time/time-#{parametrized_name(name)}.jpg")
+    end
+
+    def image2x_of(name)
+      yellow("/images/time/time-#{parametrized_name(name)}@2x.jpg")
+    end
+
 
     def yellow(text)
       "\e[33m#{text}\e[0m"
