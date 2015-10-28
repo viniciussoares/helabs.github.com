@@ -8,7 +8,6 @@ describe ProfileBuilder do
           full_name:           'John Doe',
           parameterized_name:  'john-doe',
           slug:                'john',
-          image:               '/path/to/image.jpg',
           job_title:           'Developer',
           job_cool:            'Brew Master',
           location:            '-12.972532, -38.439881',
@@ -32,7 +31,8 @@ describe ProfileBuilder do
         it { expect(File).to exist(file_path) }
         it { expect(file_text).to match('permalink: "/pt/nosso-time/john-doe') }
         it { expect(file_text).to match('en: "/en/our-team/john-doe"') }
-        it { expect(file_text).to match('image: "/path/to/image.jpg"') }
+        it { expect(file_text).to match('image: "/images/time/time-john-doe.jpg"') }
+        it { expect(file_text).to match('image2x: "/images/time/time-john-doe@2x.jpg"') }
         it { expect(file_text).to match('full_name: John Doe') }
         it { expect(file_text).to match('job_title: Developer') }
         it { expect(file_text).to match('job_cool: Brew Master') }
@@ -75,7 +75,8 @@ describe ProfileBuilder do
         it { expect(File).to exist(file_path) }
         it { expect(file_text).to match('permalink: "/pt/nosso-time/\"') }
         it { expect(file_text).to match('en: "/en/our-team/\"') }
-        it { expect(file_text).to match('image: ""') }
+        it { expect(file_text).to match('image: "/images/time/time-.jpg"') }
+        it { expect(file_text).to match('image2x: "/images/time/time-@2x.jpg"') }
         it { expect(file_text).to match('full_name: \n') }
         it { expect(file_text).to match('job_title: \n') }
         it { expect(file_text).to match('job_cool: \n') }
@@ -95,7 +96,6 @@ describe ProfileBuilder do
           full_name:           'John Doe',
           parameterized_name:  'john-doe',
           slug:                'john',
-          image:               '/path/to/image.jpg',
           job_title:           'Developer',
           job_cool:            'Brew Master',
           location:            '-12.972532, -38.439881',
@@ -119,7 +119,8 @@ describe ProfileBuilder do
         it { expect(File).to exist(file_path) }
         it { expect(file_text).to match('permalink: "/en/our-team/john-doe"') }
         it { expect(file_text).to match('pt: "/pt/nosso-time/john-doe"') }
-        it { expect(file_text).to match('image: "/path/to/image.jpg"') }
+        it { expect(file_text).to match('image: "/images/time/time-john-doe.jpg"') }
+        it { expect(file_text).to match('image2x: "/images/time/time-john-doe@2x.jpg"') }
         it { expect(file_text).to match('full_name: John Doe') }
         it { expect(file_text).to match('job_title: Developer') }
         it { expect(file_text).to match('job_cool: Brew Master') }
@@ -162,7 +163,8 @@ describe ProfileBuilder do
         it { expect(File).to exist(file_path) }
         it { expect(file_text).to match('permalink: "/en/our-team/\"') }
         it { expect(file_text).to match('pt: "/pt/nosso-time/\"') }
-        it { expect(file_text).to match('image: ""') }
+        it { expect(file_text).to match('image: "/images/time/time-.jpg"') }
+        it { expect(file_text).to match('image2x: "/images/time/time-@2x.jpg"') }
         it { expect(file_text).to match('full_name: \n') }
         it { expect(file_text).to match('job_title: \n') }
         it { expect(file_text).to match('job_cool: \n') }
