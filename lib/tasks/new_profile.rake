@@ -15,14 +15,9 @@ module NewProfileTask
     def run
       # Required fields
       while (name = ask('Your full name:')).nil?; end
-      while (image = ask('URL to an image of you (tip: type in your email to get your gravatar image)')).nil?; end
       while (job_title = ask('Your job title:')).nil?; end
       while (slug = ask('Your @helabs.com.br username:')).nil?; end
       while (location = ask("Your latitude and longitude e.g. \e[33m-22.918747, -43.177080\e[0m\:")).nil?; end
-
-      if image =~ /[\w+]+@[\w|\.]+/
-        image ='http://gravatar.com/avatar/' + Digest::MD5.hexdigest(image) + '?s=160'
-      end
 
       job_cool = ask("A \"cool\" job title to be shown on your profile page (Defaults to the job title)")
       twitter  = ask('Your twitter handle:')
@@ -30,11 +25,12 @@ module NewProfileTask
       dribbble = ask('Your dribbble user:')
       behance  = ask('Your behance user:')
 
+      info_about_picture(name)
+
       vars = {
         full_name:           name,
         parameterized_name:  parametrized_name(name),
         slug:                slug,
-        image:               image,
         location:            location,
         job_title:           job_title,
         job_cool:            job_cool,
@@ -52,6 +48,7 @@ module NewProfileTask
     private
 
     def parametrized_name(name)
+      I18n.enforce_available_locales = false
       I18n.transliterate(name).gsub(' ', '-').downcase
     end
 
@@ -59,6 +56,14 @@ module NewProfileTask
       STDOUT.print "#{question} "
       answer = STDIN.gets.chomp.strip
       !answer.empty? && answer || opts[:default_value]
+    end
+
+    def info_about_picture(name)
+      puts "Your picture file name should be: #{yellow("time-#{parametrized_name(name)}.jpg")} and #{yellow("time-#{parametrized_name(name)}@2x.jpg")}."
+    end
+
+    def yellow(text)
+      "\e[33m#{text}\e[0m"
     end
   end
 end
