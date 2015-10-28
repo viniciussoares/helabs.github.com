@@ -1,4 +1,5 @@
 # HE:labs site
+[![Build Status][travis_badge]][travis]
 
 This is the HE:labs site, you can see the live site on http://helabs.com.br
 
@@ -138,3 +139,6 @@ We have an integration using Zapier between the wufoo form on "Fale Conosco" wit
 ![HE:labs](http://helabs.com.br/images/logo.png)
 
 This app was created and is maintained by [HE:labs](https://github.com/Helabs).
+
+[travis]: https://travis-ci.org/Helabs/helabs.github.com
+[travis_badge]: http://img.shields.io/travis/Helabs/helabs.github.com/master.svg?style=flat
