@@ -2,6 +2,9 @@ var App = {
   I18n: {
     _translations: {
       en: {
+        Field1: "Name is required",
+        Field2: "Email is required",
+        Field7: "Message is required",
         Field18: "First name is required",
         Field19: "Last name is required",
         Field3: "Email is required",
@@ -12,6 +15,9 @@ var App = {
         Field44: "Last name is required"
       },
       pt: {
+        Field1: "Nome é obrigatório",
+        Field2: "Email inválido",
+        Field7: "Mensagem é obrigatória",
         Field18: "Nome é obrigatório",
         Field19: "Sobrenome é obrigatório",
         Field3: "Email inválido",

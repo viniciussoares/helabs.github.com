@@ -1,0 +1,144 @@
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// ----- Roboto ----- //
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700)
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+
+$gray: #6b6b6b
+$black: #000
+$plum: #727272
+$red: #d22f2f
+$white: #ffffff
+
+// ----- Base ----- //
+
+$c-background: #ffffff
+$c-border: lighten($plum, 30%)
+$c-text: #444
+
+// ----- Components ----- //
+
+// ...
+
+// ----- Structures ----- //
+
+// Logo
+
+$c-background-logo: $red
+
+// Header
+
+$c-color-header-title: $white
+$c-color-header-date: $red
+$c-color-header-play: $white
+
+// SC Player
+
+$c-background-sc-player: $white
+$c-color-sc-player-trackslist-a: $gray
+$c-color-sc-player-trackslist-span: $gray
+
+$c-background-sc-player-buffer: rgba($gray, 0.1)
+$c-background-sc-played: rgba($red, 0.2)
+
+// Cast
+
+$c-color-cast-description: $black
+$c-color-cast-speakers-title: $plum
+
+// Speakers
+
+$c-color-speakers-title: $red
+$c-color-speakers-name: $red
+
+// Contact
+
+$c-color-contact-title: $plum
+
+$c-border-contact-input: $c-border
+$c-border-contact-submit: $red
+$c-background-contact-submit: $white
+$c-color-contact-submit: $red
+
+$c-background-contact-submit-invert: $red
+$c-color-contact-submit-invert: $white
+
+// Footer
+
+$c-background-footer: $red
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px
+
+// ----- Typography ----- //
+
+$b-fontFamily: Roboto, sans-serif
+$b-fontSize: 16px
+$b-fontSize-xs: 75%
+$b-fontSize-s: 90%
+$b-fontSize-l: 115%
+$b-fontSize-xl: 150%
+$b-fontSize-h1: 200%
+$b-fontSize-h2: 150%
+$b-fontSize-h3: 125%
+$b-fontSize-h4: 110%
+$b-lineHeight: 1.5
+
+// ----- Sizing ----- //
+
+$b-maxWidth: em(1024px)
+$b-maxWidth-s: em(700px)
+$b-space: em(20px)
+$b-space-xs: $b-space * 0.25
+$b-space-s: $b-space * 0.5
+$b-space-l: $b-space * 2
+$b-space-xl: $b-space * 4
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: em(480px)
+$g-m: em(800px)
+$g-l: em(1024px)
+
+// Settings
+
+$g-columns: 12
+$g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
+$g-gutter: $b-space
+$g-silent: false
+
+// Selector
+
+$g-selector: if($g-silent, unquote("%"), unquote("."))
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ...

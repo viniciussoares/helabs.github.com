@@ -1,0 +1,56 @@
+// *************************************
+//
+//   Structure
+//   -> Header
+//
+// *************************************
+
+#he-cast .header
+  background-size: cover
+  background: $c-background-logo url('/images/hecast/cover_image.png') no-repeat
+  margin-top: 107px
+  padding: em(80px) em(80px) 0
+
+  @include respond-to($g-m, max-width)
+    margin-top: 82px
+    padding: 30px 20px 0
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// -------- Link -------- //
+
+#he-cast .header a
+  border: none
+  text-decoration: none
+
+// -------- Title -------- //
+
+.header-title
+  +heading()
+  color: $c-color-header-title
+  font-size: $b-fontSize-h1 * 1.5
+  font-weight: 100
+  margin: 0px auto
+  max-width: 650px
+  padding: 0 0 10px
+  text-align: center
+
+// -------- Date -------- //
+
+.header-date
+  color: $c-color-header-date
+  display: block
+  font-size: 12px
+  font-weight: 700
+  text-align: center
+  width: 100%
+
+// -------- SC Iframe -------- //
+
+.header-sc-iframe
+  left: 50%
+  position: relative
+  top: 38px
+  transform: translate(-50%, 0px)

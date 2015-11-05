@@ -1,0 +1,51 @@
+// *************************************
+//
+//   Structure
+//   -> Footer
+//
+// *************************************
+
+#he-cast .footer
+  background: $c-background-footer
+  bottom: 0
+  height: 106px
+  padding: 20px 0 !important
+  position: absolute
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// -------- Logo -------- //
+
+.footer-logo
+  @extend .text-hidden
+  background: $c-background-logo url('/images/hecast/footer_symbol_white.png') no-repeat
+  background-size: em(25px)
+  height: em(25px)
+  margin: 0 auto em(10px)
+  width: 46px
+
+// -------- Copyright -------- //
+
+.footer-copyright
+  color: #fff
+  display: block
+  font-size: 13px
+  font-weight: 100
+  line-height: 24px
+  margin: 0px auto
+  max-width: 340px
+  text-align: center
+
+// -------- Copyright Link -------- //
+
+.footer-copyright a
+  border: none
+  color: #fff
+  text-decoration: none
+
+// States
+
+.footer-copyright a:hover
+  text-decoration: underline

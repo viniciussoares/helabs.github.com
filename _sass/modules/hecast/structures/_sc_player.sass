@@ -1,0 +1,185 @@
+// *************************************
+//
+//   Structure
+//   -> SC Player
+//
+// *************************************
+
+.sc-player
+  background: $c-background-sc-player
+  border-radius: $b-borderRadius $b-borderRadius 0 0
+  margin: 70px auto 10px
+  overflow: hidden
+  padding: em(10px)
+  width: 380px
+
+  @include respond-to($g-s, max-width)
+    width: 180px
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.sc-player.playing
+  .sc-play
+    background: url('/images/hecast/pause.png') no-repeat
+    background-size: em(20px) em(20px)
+
+  .sc-scrubber
+    display: block
+
+  .sc-trackslist
+    display: none
+
+    @include respond-to($g-s, max-width)
+      display: block
+      width: 68px
+
+      span
+        display: none
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// -------- Artwork list -------- //
+
+.sc-artwork-list
+  display: none
+
+// -------- Info -------- //
+
+.sc-info
+  display: none
+
+// -------- Trackslist -------- //
+
+.sc-trackslist
+  float: left
+  height: 20px
+  list-style: none
+  margin: 0
+  padding: 0 0 0 em(16px)
+
+// Scaffolding
+
+// List
+
+.sc-trackslist li
+  margin-bottom: 2px
+  overflow: hidden
+
+// Span
+
+.sc-trackslist span
+  color: $c-color-sc-player-trackslist-span
+  display: block
+  float: left
+  font-size: $b-fontSize-xs
+  padding-left: em(16px)
+
+// Link
+
+.sc-trackslist a
+  @extend .ellipsis
+  border: none
+  color: $c-color-sc-player-trackslist-a
+  display: block
+  float: left
+  font-size: $b-fontSize-xs
+  padding: 1px 0px
+  text-decoration: none
+  width: 300px
+
+  @include respond-to($g-s, max-width)
+    width: 100px
+
+// -------- Info Toggle -------- //
+
+.sc-info-toggle
+  display: none
+
+// -------- Controls -------- //
+
+.sc-controls
+  float: left
+  height: 20px
+
+// States
+
+.sc-controls .hidden
+  display: none
+
+// -------- Play -------- //
+
+.sc-play
+  @extend .text-hidden
+  background: url('/images/hecast/play.png') no-repeat
+  background-size: em(20px) em(20px)
+  border: none
+  display: inline-block
+  height: em(20px)
+  text-decoration: none
+  width: em(20px)
+
+
+// -------- Waveform Container -------- //
+
+.sc-waveform-container
+  height: 20px
+
+// -------- Scrubber -------- //
+
+.sc-scrubber
+  cursor: pointer
+  display: none
+  float: left
+  height: 20px
+  padding: 0 0 0 em(10px)
+  width: em(350px)
+
+  @include respond-to($g-s, max-width)
+    float: right
+    padding: 0
+    width: initial
+
+// Scaffolding
+
+// Scrubber IMG
+
+.sc-scrubber img
+  height: 20px
+  width: em(270px)
+
+// -------- Time Span -------- //
+
+.sc-time-span
+  float: left
+  height: 20px
+  position: relative
+
+  @include respond-to($g-s, max-width)
+    display: none
+
+// -------- Buffer -------- //
+
+.sc-buffer
+  background: $c-background-sc-player-buffer none repeat scroll 0% 0%
+  height: em(20px)
+  position: absolute
+  top: 0
+
+// -------- Played -------- //
+
+.sc-played
+  background: $c-background-sc-played
+  height: em(20px)
+  position: absolute
+  top: 0
+
+// -------- Time Indicators -------- //
+
+.sc-time-indicators
+  float: left
+  font-size: $b-fontSize-xs
+  padding: em(4px) 0 em(4px) em(10px)
