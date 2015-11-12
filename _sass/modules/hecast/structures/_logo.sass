@@ -1,0 +1,20 @@
+// *************************************
+//
+//   Structure
+//   -> Logo
+//
+// *************************************
+
+#he-cast .logo
+  @extend .text-hidden
+  background-attachment: fixed
+  background-position: center em(10px)
+  background: $c-background-logo url('/images/hecast/nav_logo_white.png') no-repeat scroll 50% 20px
+  height: em(54px)
+  position: fixed
+  width: 100%
+  z-index: 9999
+
+  @include respond-to($g-m, max-width)
+    background-size: 106px
+    height: 82px

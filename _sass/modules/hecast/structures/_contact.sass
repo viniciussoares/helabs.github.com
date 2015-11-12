@@ -1,0 +1,92 @@
+// *************************************
+//
+//   Structure
+//   -> Contact
+//
+// *************************************
+
+#he-cast .contact
+  margin: 20px auto
+  max-width: em(600px)
+  padding-bottom: 106px
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// -------- Title -------- //
+
+.contact-title
+  color: $c-color-contact-title
+  font-size: $b-fontSize-h1 * $b-lineHeight
+  font-weight: 200
+  text-align: center
+
+// -------- Hint -------- //
+
+.contact-hint
+  color: $c-color-speakers-title
+  font-weight: 600
+  padding: 18px 0 0
+  text-align: center
+
+// -------- Form -------- //
+
+.contact-form
+  margin: 30px auto
+  max-width: 500px
+  padding: 10px
+
+// -------- Input Group -------- //
+
+.contact-form-input-group
+  position: relative
+
+// -------- Input Group Error -------- //
+
+.contact-form-input-group .error
+  right: -4px
+
+// -------- Input -------- //
+
+.contact-input
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  border-radius: em(5px)
+  border: 1px solid $c-border-contact-input
+  box-sizing: border-box
+  font-size: $b-fontSize
+  margin-bottom: 20px
+  padding: 15px
+  width: 100%
+
+// -------- Textarea -------- //
+
+.contact-textearea
+  @extend .contact-input
+  font-family: $b-fontFamily
+  height: em(150px)
+
+// -------- Textarea Hidden -------- //
+
+.textearea-hidden
+  display: none
+
+// -------- Submit -------- //
+
+.contact-submit
+  background: $c-background-contact-submit
+  border-radius: em(5px)
+  border: 1px solid $c-border-contact-submit
+  color: $c-color-contact-submit
+  cursor: pointer
+  font-size: $b-fontSize-s
+  font-weight: 600
+  padding: em(16px)
+  width: 100%
+
+// States
+
+.contact-submit:hover
+  background: $c-background-contact-submit-invert
+  color: $c-color-contact-submit-invert

@@ -1,0 +1,123 @@
+// *************************************
+//
+//   Structure
+//   -> Speaker
+//
+// *************************************
+
+.speaker
+  @extend .g-b
+  @extend .g-b--s--1of1
+  @extend .g-b--m--1of2
+  @extend .g-b--l--1of2
+
+  height: 300px
+  list-style: none
+  overflow: hidden
+  padding: 0 5px !important
+  text-align: center
+
+  @include respond-to($g-m, max-width)
+    height: initial
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// -------- Speakers -------- //
+
+.speakers
+  margin: 0px auto
+  max-width: 990px
+  overflow: hidden
+
+// -------- Wrapper -------- //
+
+.speakers-wrapper
+  overflow: hidden
+  margin-top: 50px
+
+// -------- Wrapper Link -------- //
+
+.speakers-wrapper a
+  border: none
+  text-decoration: none
+
+// -------- Title -------- //
+
+.speakers-title
+  color: $c-color-speakers-title
+  font-weight: 600
+  padding: 18px 0 0
+  text-align: center
+
+// -------- Social -------- //
+
+.speaker-social
+  display: inline-block
+  list-style: none
+  padding: 10px 0px
+
+  @include respond-to($g-m)
+    padding: 10px 0px
+    width: 100%
+
+// -------- Social Link -------- //
+
+.speaker-social-link
+  float: left
+  padding: 0 10px
+  overflow: hidden
+
+  @include respond-to($g-m)
+    padding: 10px 10px 10px 0
+
+// -------- Social Link a -------- //
+
+.speaker-social-link a
+  margin-right: 0
+
+
+// -------- Picture -------- //
+
+.speaker-picture
+  border-radius: 50%
+
+// -------- Image Link -------- //
+
+.speaker-image-link
+  @extend .g-b
+  @extend .g-b--s--1of1
+  @extend .g-b--m--1of2
+  @extend .g-b--l--1of2
+
+  padding: 0 10px !important
+
+// -------- Information Wrapper -------- //
+
+.speaker-information-wrapper
+  @extend .g-b
+  @extend .g-b--s--1of1
+  @extend .g-b--m--1of2
+  @extend .g-b--l--1of2
+
+  padding: 10px !important
+
+// -------- Name -------- //
+
+.speaker-name
+  color: $c-color-speakers-name
+  font-size: $b-fontSize-h2
+  font-weight: 400
+
+  @include respond-to($g-m)
+    text-align: left
+
+// -------- Description -------- //
+
+.speaker-description
+  font-weight: 300
+  line-height: 24px
+
+  @include respond-to($g-m)
+    text-align: left

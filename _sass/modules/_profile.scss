@@ -253,6 +253,8 @@ User Profile
 .profile-github { background-position: 0 -60px !important; }
 .profile-facebook { background-position: 0 -90px !important; }
 .profile-behance { background-position: 0 -120px !important; }
+.profile-youtube { background-position: 0 -150px !important; }
+.profile-instagram { background-position: 0 -180px !important; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -260,6 +262,6 @@ User Profile
 
   .social-links a {
     background: url("/images/icons/profile-social@2x.png") left no-repeat;
-    background-size: 30px 180px;
+    background-size: 30px 212px;
   }
 }
