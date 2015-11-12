@@ -1,4 +1,4 @@
-HEcast = {
+var HEcast = {
   StartApp: function() {
     this.InterfaceActions();
   },
