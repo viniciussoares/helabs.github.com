@@ -8,7 +8,11 @@ exports.config =
       order:
         before: [
           'javascripts/vendor/jquery-1.11.0.min.js',
-          'javascripts/vendor/jquery.cycle2.js',
+          'javascripts/vendor/jquery.cycle2.js'
+        ],
+        after: [
+          'javascripts/vendor/sc-player.js',
+          'javascripts/vendor/soundcloud.player.api.js'
         ]
   paths:
     public: '_site/dist'
