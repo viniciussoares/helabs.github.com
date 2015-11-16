@@ -133,6 +133,7 @@ We have an integration using Zapier between the wufoo form on "Fale Conosco" wit
 ## Maintainers
 
 - [Marcio Sena](https://github.com/marciovsena)
+- [Saulo Santiago](https://github.com/SauloSilva)
 
 ## Made with love by HE:labs
 
