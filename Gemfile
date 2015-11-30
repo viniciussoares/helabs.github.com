@@ -4,6 +4,7 @@ ruby '2.2.3'
 
 gem 'github-pages'      , '22'
 gem 'rake'
+gem 'jekyll-sitemap'    , '0.5.1'
 gem 'foreman'           , '= 0.63.0'
 gem 'rspec'             , '~> 2.14.1'
 gem 'pry'               , '~> 0.9.12.6'
