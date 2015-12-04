@@ -25,6 +25,14 @@
 
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
+  {% if page.en %}
+  <link rel="alternate" href="http://helabs.com{{ page.en }}" hreflang="en" />
+  <link rel="alternate" href="http://helabs.com{{ page.url }}" hreflang="pt-br" />
+  {% else %}
+  <link rel="alternate" href="http://helabs.com{{ page.url }}" hreflang="en" />
+  <link rel="alternate" href="http://helabs.com{{ page.pt }}" hreflang="pt-br" />
+  {% endif %}
+
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title }} - HE:labs">
   <meta property="og:site_name" content="helabs.com.br">
