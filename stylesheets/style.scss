@@ -4,7 +4,6 @@
 @charset "utf-8";
 
 
-
 // Site 2016
 
 // ----- Vendors ----- //
@@ -33,6 +32,6 @@
 @import "site-2016/layouts/home";
 
 // ----- Plugins ----- //
-@import "site-2016/plugins/typed.css";
-@import "site-2016/plugins/animate.css";
- 
+// @import "site-2016/plugins/typed.css";
+@import "site-2016/plugins/animate"; 
+  

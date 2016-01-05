@@ -1,6 +1,5 @@
 .main-banner{
 	@include span-columns(12);
-	@include omega(0);
 	background: url(/site-2016/images/background-home-banner.jpg) no-repeat center center;
 	background-size: cover;
 	-moz-background-size: cover;
@@ -25,11 +24,10 @@
 		font-weight: 300;
 	}
 
-}
+} 
 
 .section-offer{
 	@include span-columns(12);
-	@include omega(0);
 	@include pad(rem(26));
 	background: #F2EBEB;
 	min-height: rem(768);
@@ -77,4 +75,4 @@
 		max-width: rem(365);
 		text-align: left;
 	}
-}
+} 
