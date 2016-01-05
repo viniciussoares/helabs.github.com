@@ -4,7 +4,8 @@
 	background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	-webkit-background-size: cover;    	
+	-webkit-background-size: cover;    
+	background-attachment: fixed;	
 	min-height: 100vh;
     position: relative;
 
@@ -16,6 +17,7 @@
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		-webkit-background-size: cover;
+		background-attachment: fixed;	
 	    min-height: 100vh;    	
     }
 
@@ -82,9 +84,8 @@
 
 	&__service{
 		color: $darkish-red;
-		font-family: $serifa-font-family;
+		font-family: $heading-font-family;
 		font-size: rem(26);
-		font-weight: 700;
 		margin-top: rem(26);
 		text-align: center;
 	}
@@ -94,7 +95,7 @@
 		font-size: rem(18); 
 		line-height: rem(28);
 		margin:0 auto;
-		max-width: rem(365);
+		max-width: rem(330);
 		text-align: center;
 	}
 
