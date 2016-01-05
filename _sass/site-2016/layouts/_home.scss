@@ -5,7 +5,7 @@
 	background-attachment: fixed;	
 	min-height: 100vh;
 	position: relative;
-
+  
 	&__video{
 		position: absolute;
 		@include span-columns(12);
@@ -13,13 +13,13 @@
 		background-size: cover;
 		background-attachment: fixed;	
 		min-height: 100vh;    	
-	}
-
-	&__content{
+	} 
+ 
+	&__content{ 
 		margin: rem(164) auto 0;
 		max-width: rem(950);
 	}
-
+  
 	&__title{
 		color: $light-red;
 		font-size: rem(100);

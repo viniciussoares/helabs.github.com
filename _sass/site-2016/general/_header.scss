@@ -4,7 +4,6 @@
 	z-index: 1;
 }  
 
-
 .navbar{
 	@include outer-container();
 	padding: rem(30) $base-spacing 0;
@@ -13,7 +12,7 @@
 		@include size( rem(142) rem(50));
 		display: block;
 		float: left;  
-	}
+	} 
 }
 
 .navbar-nav{
