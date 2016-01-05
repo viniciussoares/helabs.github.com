@@ -1,11 +1,23 @@
 .main-banner{
 	@include span-columns(12);
-	background: url(/site-2016/images/background-home-banner.jpg) no-repeat center center;
+	background: url(/site-2016/images/background-video1.gif) no-repeat center center;
 	background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	-webkit-background-size: cover;
-	min-height: rem(800);
+	-webkit-background-size: cover;    	
+	min-height: 100vh;
+    position: relative;
+
+    &__video{
+    	position: absolute;
+		@include span-columns(12);
+		background: url(/site-2016/images/bg-image.png) no-repeat center center;
+		background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-webkit-background-size: cover;
+	    min-height: 100vh;    	
+    }
 
 	&__content{
 		margin: rem(164) auto 0;
@@ -14,7 +26,7 @@
 
 	&__title{
 		color: $light-red;
-		font-size: rem(90);
+		font-size: rem(100);
 	}
 
 	&__subtitle{
