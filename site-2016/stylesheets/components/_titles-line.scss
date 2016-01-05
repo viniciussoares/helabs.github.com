@@ -1,0 +1,36 @@
+// *************************************
+//
+// components/titles-line
+// 
+// *************************************
+.title-line{
+	position: relative;
+
+	&--center{
+
+		&:after{
+			background: $darkish-red;
+			bottom: rem(-30);
+			content: '';
+			height: rem(16);		
+			left: 45%; 
+			position: absolute;
+			width: rem(80);
+		}
+
+	}
+
+	&--left{
+
+		&:after{
+			background: $darkish-red;
+			bottom: rem(-30);
+			content: '';
+			height: rem(16);		
+			left: 0; 
+			position: absolute;
+			width: rem(80);
+		}
+
+	}	
+} 

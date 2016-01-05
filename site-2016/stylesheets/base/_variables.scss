@@ -1,0 +1,50 @@
+// *************************************
+//
+// base/variables
+//
+// *************************************
+
+// Typography
+$base-font-family: 'Source Sans Pro', sans-serif;
+$heading-font-family: 'serifa_bqroman', sans-serif;
+$serifa-font-family: 'Serifa Std', sans-serif;
+$headings:  "h1, h2, h3, h4, h5, h6";
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.2;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-spacing: $base-line-height * 1rem;
+$small-spacing: $base-spacing / 2;
+
+// Colors
+$light-red: #ff4245;
+$dark: #3b3131;
+$light: #ffffff;
+$darkish-red: #a40810;
+$black-86: rgba(56, 50, 50, 0.86);
+$darkish-red-40: rgba(163, 8, 15, 0.4);
+$greyish-brown: #444141;
+$greyish-brown-66: rgba(89, 77, 76, 0.66);
+$greyish-brown: #594d4c;
+$light-red-80: rgba(255, 65, 68, 0.8);
+$greyish-brown-44: rgba(89, 77, 76, 0.44);
+
+// Font Colors
+$base-font-color: $dark;
+$action-color: $dark ;
+
+// Border
+
+
+// Background Colors
+$base-background-color: darken( $light, 2%);
+
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

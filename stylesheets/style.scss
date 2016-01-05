@@ -3,11 +3,12 @@
 
 @charset "utf-8";
 
+
 // Core
 @import "core/variables";
 @import "core/main";
 
-// Modules: Global nav
+ // Modules: Global nav
 @import "modules/home";
 @import "modules/magica";
 @import "modules/love";
@@ -44,3 +45,4 @@
 @import "plugins/slider";
 @import "plugins/bxslider";
 @import "plugins/remodal";
+ 

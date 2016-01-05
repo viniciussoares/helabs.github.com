@@ -1,0 +1,80 @@
+.main-banner{
+	@include span-columns(12);
+	@include omega(0);
+	background: url(../images/background-home-banner.jpg) no-repeat center center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	min-height: rem(800);
+
+	&__content{
+		margin: rem(164) auto 0;
+		max-width: rem(950);
+	}
+
+	&__title{
+		color: $light-red;
+		font-size: rem(90);
+	}
+
+	&__subtitle{
+		color: $light;
+		font-family: $base-font-family;
+		font-size: rem(40);
+		font-weight: 300;
+	}
+
+}
+
+.section-offer{
+	@include span-columns(12);
+	@include omega(0);
+	@include pad(rem(26));
+	background: #F2EBEB;
+	min-height: rem(768);
+
+	&__heading{
+		margin: 0 auto;	
+		max-width: rem(870);
+		text-align: center;		
+	}
+
+	&__title{
+		color: $light-red;
+		display: inline-block;
+		font-size: rem(70);
+	}
+
+	&__subtitle{
+		color: #444141;
+		display: inline-block;
+		font-family: $base-font-family;
+		font-size: rem(28);
+		font-weight: 400;
+		margin: rem(30) 0;
+	}
+
+	&__box{
+		@include span-columns(4 of 12);
+		text-align: center;
+	}
+
+	&__service{
+		color: $light-red;
+		font-family: $serifa-font-family;
+		font-size: rem(36);
+		font-weight: 400;
+		margin-top: rem(26);
+		text-align: center;
+	}
+
+	&__description{
+		color: #444141;
+		font-size: rem(20);
+		line-height: rem(30);
+		margin:0 auto;
+		max-width: rem(365);
+		text-align: left;
+	}
+}
