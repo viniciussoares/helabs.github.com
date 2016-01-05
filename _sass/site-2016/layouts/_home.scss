@@ -1,25 +1,19 @@
 .main-banner{
 	@include span-columns(12);
 	background: url(/site-2016/images/background-video1.gif) no-repeat center center;
-	background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-webkit-background-size: cover;    
+	background-size: cover; 
 	background-attachment: fixed;	
 	min-height: 100vh;
-    position: relative;
+	position: relative;
 
-    &__video{
-    	position: absolute;
+	&__video{
+		position: absolute;
 		@include span-columns(12);
 		background: url(/site-2016/images/bg-image.png) no-repeat center center;
 		background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		-webkit-background-size: cover;
 		background-attachment: fixed;	
-	    min-height: 100vh;    	
-    }
+		min-height: 100vh;    	
+	}
 
 	&__content{
 		margin: rem(164) auto 0;
@@ -36,6 +30,26 @@
 		font-family: $base-font-family;
 		font-size: rem(40);
 		font-weight: 300;
+	}
+
+	&__arrow-down{
+    background: url(/site-2016/images/services-arrow-down.png) no-repeat 50% 50%;
+    display: block;
+    height: 80px;
+    margin-top: 14vh; 
+    position: relative;
+    width: 100%;
+
+    .animation{
+			background-color: #f2ebeb;
+			border-radius: 100%;
+			top: 50px;
+			display: block;
+			height: 5px;
+			margin: auto;
+			position: relative;
+			width: 2px;
+    }	
 	}
 
 } 
