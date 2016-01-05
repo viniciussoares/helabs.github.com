@@ -9,13 +9,17 @@
 	&--center{
 
 		&:after{
-			background: $darkish-red;
-			bottom: rem(-30);
+			// background: $darkish-red;
+			// bottom: rem(-30);
+			// content: '';
+			// height: rem(16);		
+			// left: 45%; 
+			// position: absolute;
+			// width: rem(80);
+			background: pink;
+			width: 50px;
 			content: '';
-			height: rem(16);		
-			left: 45%; 
-			position: absolute;
-			width: rem(80);
+			margin: 0 auto;
 		}
 
 	}

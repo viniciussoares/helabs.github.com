@@ -26,9 +26,9 @@
 
 } 
 
-.section-offer{
+.section-services{
 	@include span-columns(12);
-	@include pad(rem(26));
+	@include pad(rem(60) 0);
 	background: #F2EBEB;
 	min-height: rem(768);
 
@@ -41,38 +41,52 @@
 	&__title{
 		color: $light-red;
 		display: inline-block;
-		font-size: rem(70);
+		font-size: rem(60);
 	}
 
 	&__subtitle{
 		color: #444141;
 		display: inline-block;
 		font-family: $base-font-family;
-		font-size: rem(28);
-		font-weight: 400;
-		margin: rem(30) 0;
+		font-size: rem(18);
+		line-height: rem(28);
+		margin: rem(30) 0 0;
+
+		ins{
+			color: $light-red;
+			font-weight: 700;
+		}
 	}
 
 	&__box{
 		@include span-columns(4 of 12);
 		text-align: center;
+		margin-top: rem(85);
+
+		img{
+			max-width: rem(160);
+		}
 	}
 
 	&__service{
-		color: $light-red;
+		color: $darkish-red;
 		font-family: $serifa-font-family;
-		font-size: rem(36);
-		font-weight: 400;
+		font-size: rem(26);
+		font-weight: 700;
 		margin-top: rem(26);
 		text-align: center;
 	}
 
 	&__description{
-		color: #444141;
-		font-size: rem(20);
-		line-height: rem(30);
+		color: $greyish-brown;
+		font-size: rem(18); 
+		line-height: rem(28);
 		margin:0 auto;
 		max-width: rem(365);
-		text-align: left;
+		text-align: center;
 	}
+
+	strong{
+		font-weight: 700;
+	}	
 } 
