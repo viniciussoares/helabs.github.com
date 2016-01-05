@@ -4,45 +4,35 @@
 @charset "utf-8";
 
 
-// Core
-@import "core/variables";
-@import "core/main";
 
- // Modules: Global nav
-@import "modules/home";
-@import "modules/magica";
-@import "modules/love";
-@import "modules/sobrenos";
-@import "modules/time";
-@import "modules/profile";
-@import "modules/trabalho";
-@import "modules/contato";
-@import "modules/hecast/index";
+// Site 2016
 
-// Modules: Cases
-@import "modules/atendesimples";
-@import "modules/espnmobile";
+// ----- Vendors ----- //
+@import "site-2016/bourbon/bourbon";
+@import "site-2016/neat/neat-helpers";
+@import "site-2016/base/grid-settings";
+@import "site-2016/neat/neat";
 
-// Services
-@import "modules/servicos";
+// ----- Base ----- //
+@import "site-2016/base/normalize";
+@import "site-2016/base/variables";
+@import "site-2016/base/typography";
+@import "site-2016/base/buttons";
+@import "site-2016/base/forms";
 
-// Modules: Secondary Pages
-@import "modules/valores";
-@import "modules/comunidade";
-@import "modules/opensource";
-@import "modules/mailing";
-@import "modules/mediakit";
-@import "modules/jobs";
-@import "modules/cases";
+// ----- Components ----- //
+@import "site-2016/components/titles-line";
+@import "site-2016/components/hidden-elements";
 
-// Responsive
-@import "core/tablet";
-@import "core/smartphone";
+// ----- General ----- //
+@import "site-2016/general/content";
+@import "site-2016/general/header";
+@import "site-2016/general/footer";
 
-// Plugins
-@import "plugins/prettyPhoto";
-@import "plugins/tiptip";
-@import "plugins/slider";
-@import "plugins/bxslider";
-@import "plugins/remodal";
+// ----- Layouts ----- //
+@import "site-2016/layouts/home";
+
+// ----- Plugins ----- //
+@import "site-2016/plugins/typed.css";
+@import "site-2016/plugins/animate.css";
  

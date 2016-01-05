@@ -11,9 +11,9 @@
 
 	&-brand{
 		@include size( rem(170) rem(60));
-		background: url(../images/logo-helabs.png) no-repeat top center;
+		background: url(/site-2016/images/logo-helabs.png) no-repeat top center;
 		display: block;
-		float: left;
+		float: left;  
 	}
 }
 
