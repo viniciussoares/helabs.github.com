@@ -443,6 +443,12 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+@keyframes upDown {
+	0%   { transform: translateX(0px) translateY(0px); }
+  50%  { transform: translateX(0px) translateY(-4px); }
+	100% { transform: translateX(0px) translateY(0px); }
+}
+
 @keyframes wobble {
   from {
     -webkit-transform: none;

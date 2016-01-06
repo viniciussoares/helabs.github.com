@@ -4,17 +4,15 @@
 	z-index: 1;
 }  
 
-
 .navbar{
 	@include outer-container();
 	padding: rem(30) $base-spacing 0;
 
 	&-brand{
-		@include size( rem(170) rem(60));
-		background: url(/site-2016/images/logo-helabs.png) no-repeat top center;
+		@include size( rem(142) rem(50));
 		display: block;
 		float: left;  
-	}
+	} 
 }
 
 .navbar-nav{
@@ -25,10 +23,10 @@
 	&__item{
 		display: inline-block;
 		font-size: rem(16);
-
+ 
 		a{
 			color: #F2F2F2;
-			padding: rem(15) rem(25);
+			padding: rem(10) rem(25);
 		}
 
 		&--bordered{
