@@ -1,120 +1,125 @@
+// *************************************
+//
+// layouts/home
+//  
+// *************************************
 .main-banner{
-	@include span-columns(12);
-	background: url(/site-2016/images/background-video1.gif) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	min-height: 100vh;
-	position: relative;
+  @include span-columns(12);
+  background: url(/site-2016/images/background-video1.gif) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+ 
+  &__video{
+    @include span-columns(12);
+    background-attachment: fixed;
+    background-size: cover; 
+    background: url(/site-2016/images/bg-image.png) repeat center center;
+    min-height: 100vh;
+    height: 100%;
+    position: absolute;
+  }
 
-	&__video{
-		position: absolute;
-		@include span-columns(12);
-		background: url(/site-2016/images/bg-image.png) no-repeat center center;
-		background-size: cover;
-		background-attachment: fixed;
-		min-height: 100vh;
-	}
+  &__content{
+    margin: rem(164) auto 0;
+    max-width: rem(950);
+  }
 
-	&__content{
-		margin: rem(164) auto 0;
-		max-width: rem(950);
-	}
+  &__title{
+    color: $light-red;
+    font-size: rem(100);
+  }
 
-	&__title{
-		color: $light-red;
-		font-size: rem(100);
-	}
+  &__subtitle{
+    color: $light;
+    font-family: $base-font-family;
+    font-size: rem(40); 
+    font-weight: 300;
+  }
 
-	&__subtitle{
-		color: $light;
-		font-family: $base-font-family;
-		font-size: rem(40);
-		font-weight: 300;
-	}
-
-	&__arrow-down{
-    background: url(/site-2016/images/services-arrow-down.png) no-repeat 50% 50%;
+  &__arrow-down{
+    background: url(/site-2016/images/services-arrow-down.png) no-repeat top center;
     display: block;
     height: 80px;
-    margin-top: 14vh;
-    position: relative;
+    position: absolute;
+    bottom: rem(24);
     width: 100%;
-
     .animation{
-			background-color: #f2ebeb;
-			border-radius: 100%;
-			top: 50px;
-			display: block;
-			height: 5px;
-			margin: auto;
-			position: relative;
-			width: 2px;
-			animation: upDown 500ms infinite;
+      background-color: #f2ebeb;
+      border-radius: 100%;
+      top: 50px;
+      display: block;
+      height: 5px;
+      margin: auto;
+      position: relative;
+      width: 2px;
+      animation: upDown 500ms infinite;
     }
-	}
+  }
 
 }
 
 .section-services{
-	@include span-columns(12);
-	@include pad(rem(60) 0);
-	background: #F2EBEB;
-	min-height: rem(768);
+  @include span-columns(12);
+  @include pad(rem(60) 0);
+  background: #F2EBEB;
+  min-height: rem(768);
 
-	&__heading{
-		margin: 0 auto;
-		max-width: rem(870);
-		text-align: center;
-	}
+  &__heading{
+    margin: 0 auto;
+    max-width: rem(870);
+    text-align: center;
+  }
 
-	&__title{
-		color: $light-red;
-		display: inline-block;
-		font-size: rem(60);
-	}
+  &__title{
+    color: $light-red;
+    display: inline-block;
+    font-size: rem(60);
+  }
 
-	&__subtitle{
-		color: #444141;
-		display: inline-block;
-		font-family: $base-font-family;
-		font-size: rem(18);
-		line-height: rem(28);
-		margin: rem(30) 0 0;
+  &__subtitle{
+    color: #444141;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 0;
+    ins{
+      color: $light-red;
+      font-weight: 700;
+    }
+  }
 
-		ins{
-			color: $light-red;
-			font-weight: 700;
-		}
-	}
+  &__box{
+    @include span-columns(4 of 12);
+    text-align: center;
+    margin-top: rem(85);
+    img{
+      max-width: rem(160);
+    }
+  }
 
-	&__box{
-		@include span-columns(4 of 12);
-		text-align: center;
-		margin-top: rem(85);
+  &__service{
+    color: $darkish-red;
+    font-family: $heading-font-family;
+    font-size: rem(26);
+    margin-top: rem(26);
+    text-align: center;
+  }
 
-		img{
-			max-width: rem(160);
-		}
-	}
+  &__description{
+    color: $greyish-brown;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin:0 auto;
+    max-width: rem(330);
+    text-align: center;
+  }
 
-	&__service{
-		color: $darkish-red;
-		font-family: $heading-font-family;
-		font-size: rem(26);
-		margin-top: rem(26);
-		text-align: center;
-	}
-
-	&__description{
-		color: $greyish-brown;
-		font-size: rem(18);
-		line-height: rem(28);
-		margin:0 auto;
-		max-width: rem(330);
-		text-align: center;
-	}
-
-	strong{
-		font-weight: 700;
-	}
+  strong{
+    font-weight: 700;
+  }
 }
