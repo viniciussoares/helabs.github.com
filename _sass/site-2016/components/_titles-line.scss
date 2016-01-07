@@ -9,27 +9,19 @@
 
   &--center {
 
-    &:after{
-      background: $darkish-red;
-      bottom: rem(-20);
-      content: '';
-      height: rem(12);
-      left: 41%;
-      position: absolute;
-      width: rem(70);
+    &::after {
+      @extend %after-title-line;
+      @include position(null, null null rem(-20) 41%);
+      @include size(rem(70) rem(12));
     }
   }
 
   &--left {
 
-    &:after {
-      background: $darkish-red;
-      bottom: rem(-30);
-      content: '';
-      height: rem(16);
-      left: 0;
-      position: absolute;
-      width: rem(80);
+    &::after {
+      @extend %after-title-line;
+      @include position(null, null null rem(-30) 0);
+      @include size(rem(80) rem(16));
     }
   }
 }
