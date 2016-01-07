@@ -4,39 +4,39 @@
 //
 // *************************************
 .main-header {
-	@include size(100% 100px);
-	@include position(absolute, 0 null null 0);
-	z-index: 1;
+  @include position(absolute, 0 null null 0);
+  @include size(100% 100px);
+  z-index: 1;
 }
 
 .navbar {
-	@include outer-container();
-	padding: rem(20) $base-spacing 0;
+  @include outer-container();
+  padding: rem(20) $base-spacing 0;
 
-	&-brand {
-		@include size( rem(142) rem(50));
-		display: block;
-		float: left;
-	}
+  &-brand {
+    @include size(rem(142) rem(50));
+    display: block;
+    float: left;
+  }
 }
 
 .navbar-nav {
-	@include span-columns(10 of 12);
-	float: right;
-	text-align: right;
+  @include span-columns(10 of 12);
+  float: right;
+  text-align: right;
 
-	&__item {
-		display: inline-block;
-		font-size: rem(16);
+  &__item {
+    display: inline-block;
+    font-size: rem(16);
 
-		a {
-			color: #F2F2F2;
-			padding: rem(10) rem(25);
-		}
+    a {
+      color: $white-smoke;
+      padding: rem(10) rem(25);
+    }
 
-		&--bordered {
-			border: 1px solid $light;
-			border-radius: rem(10);
-		}
-	}
+    &--bordered {
+      border: 1px solid $light;
+      border-radius: rem(10);
+    }
+  }
 }
