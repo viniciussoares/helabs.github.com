@@ -1,24 +1,24 @@
-.main-footer{
+.main-footer {
   background-color: $black;
-  color:$light;
+  color: $light;
 
   * {
     font-family: $base-font-family !important;
   }
 
   section {
-    clear:both;
+    clear: both;
     display: block;
-    padding:0;
+    padding: 0;
 
-    .wrapper{
-      padding:rem(30);
-      clear:both;
+    .wrapper {
+      clear: both;
+      padding: rem(30);
     }
 
     h3 {
-      color:$light-primary;
-      font-size:rem(16);
+      color: $light-primary;
+      font-size: rem(16);
       font-weight: 700;
       text-align: left;
       text-transform: uppercase;
@@ -27,7 +27,7 @@
     ul {
 
       a {
-        color:$light-primary;
+        color: $light-primary;
       }
     }
 
@@ -40,46 +40,47 @@
       }
 
       h4 {
-        color:$light-red;
+        color: $light-red;
       }
 
       p {
-        font-size:rem(12);
+        font-size: rem(12);
       }
 
       .full-link {
-        color:#89817e;
-        float:right;
+        color: $warm-grey;
+        float: right;
         font-style: italic;
         text-decoration: underline;
       }
+
+      .article {
+        max-width: 76%;
+      }
+
+      .books {
+        margin-left: 1%;
+        max-width: 23%;
+      }
     }
 
-    .section-articles.article {
-      max-width: 76%;
-    }
-
-    .section-articles.books {
-      margin-left:1%;
-      max-width: 23%;
-    }
   }
 }
 
 .section-footer__about--links {
 
   .wrapper {
-    border-bottom:1px solid rgba(242, 235, 235, 0.20);
-    border-top:1px solid rgba(242, 235, 235, 0.20);
+    border-bottom: 1px solid rgba($light, .2);
+    border-top: 1px solid rgba($light, .2);
   }
 
   .section-footer-about {
-    float:left;
-    margin-right:5%;
-    width:35%;
+    float: left;
+    margin-right: 5%;
+    width: 35%;
 
     p {
-      font-size:rem(22);
+      font-size: rem(22);
       line-height: 40px;
     }
 
@@ -88,23 +89,23 @@
     }
 
     .btn-hire-us {
-      border-radius: rem(10);
       border: 1px solid $light-red;
-      color: #f2ebeb;
-      float:left;
+      border-radius: rem(10);
+      color: $light-primary;
+      float: left;
       font-size: rem(28);
-      margin-top:20px;
+      margin-top: 20px;
       padding: rem(15) rem(35);
     }
   }
 
   .section-footer-links {
-    float:right;
-    width:60%;
+    float: right;
+    width: 60%;
 
     &__box {
-      float:left;
-      width:20%;
+      float: left;
+      width: 20%;
 
       ul {
         padding-left: 0;
@@ -112,13 +113,13 @@
 
       li {
         list-style: none;
-        padding:rem(5) 0;
+        padding: rem(5) 0;
       }
 
       a {
-        color:$light-primary;
-        cursor:pointer;
-        font-size:rem(14);
+        color: $light-primary;
+        cursor: pointer;
+        font-size: rem(14);
       }
     }
   }
@@ -127,57 +128,88 @@
 .from-social {
 
   .wrapper {
-    padding:rem(30) 0 rem(20) 0;
+    padding: rem(30) 0 rem(20);
 
     p {
-      color:$light-primary;
-      float:left;
-      font-size:rem(12);
-      margin:5px 0 0 0;
+      color: $light-primary;
+      float: left;
+      font-size: rem(12);
+      margin: 5px 0 0;
       text-align: justify;
     }
   }
 
   .footer-social {
-    float:right;
+    float: right;
     list-style: none;
-    margin:0;
+    margin: 0;
     padding: 0;
 
     li {
-      float:left;
-      margin-right:20px;
+      float: left;
+      margin-right: 20px;
 
       &:last-child {
-        margin-right:0;
+        margin-right: 0;
       }
 
       a {
         display: block;
-        height:26px;
+        height: 26px;
         text-indent: -9999px;
-        width:26px;
+        width: 26px;
       }
     }
 
     .social-github {
-      background:url(/site-2016/images/icon-github.png) no-repeat top left;
+      background: url('/site-2016/images/icon-github.png') no-repeat top left;
     }
 
     .social-linkedin {
-      background:url(/site-2016/images/icon-linkedin.png) no-repeat top left;
+      background: url('/site-2016/images/icon-linkedin.png') no-repeat top left;
     }
 
     .social-instagram {
-      background:url(/site-2016/images/icon-instagram.png) no-repeat top left;
+      background: url('/site-2016/images/icon-instagram.png') no-repeat top left;
     }
 
     .social-facebook {
-      background:url(/site-2016/images/icon-facebook.png) no-repeat top left;
+      background: url('/site-2016/images/icon-facebook.png') no-repeat top left;
     }
 
     .social-twitter {
-      background:url(/site-2016/images/icon-twitter.png) no-repeat top left;
+      background: url('/site-2016/images/icon-twitter.png') no-repeat top left;
     }
+  }
+}
+
+.section-waiting {
+  background-color: $light-red;
+  clear: both;
+  padding: 40px;
+  text-align: center;
+
+  &__title {
+    color: $dark;
+    font-size: rem(60);
+  }
+
+  &__subtitle {
+    color: $light;
+    font-family: $base-font-family;
+    font-size: rem(40);
+    margin: 0 0 10px;
+  }
+
+  .btn-waiting {
+    border: 2px solid $light;
+    border-radius: rem(10);
+    clear: both;
+    color: $light;
+    display: inline-block;
+    font-size: rem(38);
+    font-weight: bold;
+    margin-top: 20px;
+    padding: rem(15) rem(55);
   }
 }
