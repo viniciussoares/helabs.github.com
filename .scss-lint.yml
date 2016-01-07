@@ -1,0 +1,7 @@
+scss_files: '_sass/site-2016/**/*.scss'
+
+linters:
+  SelectorDepth:
+    max_depth: 4
+  NestingDepth:
+    max_depth: 4
