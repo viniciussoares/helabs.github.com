@@ -9,7 +9,7 @@
 
   &--center {
 
-    &:after{
+    &::after {
       @extend %after-title-line;
       @include position(null, null null rem(-20) 41%);
       @include size(rem(70) rem(12));
@@ -18,7 +18,7 @@
 
   &--left {
 
-    &:after {
+    &::after {
       @extend %after-title-line;
       @include position(null, null null rem(-30) 0);
       @include size(rem(80) rem(16));
