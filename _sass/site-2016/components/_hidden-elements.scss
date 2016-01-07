@@ -1,21 +1,26 @@
+// *************************************
+//
+// components/hidden-elements - Waypoints plugin with animate.css
+//
+// *************************************
+
 // Hidden Elements
 
 .main-banner__title,
 .main-banner__subtitle,
 .section-offer__heading,
-.section-offer__box
-{
-	visibility: hidden;
+.section-offer__box {
+  visibility: hidden;
 
-	&.animated{ 
-		visibility: visible;
-	}
+  &.animated {
+    visibility: visible;
+  }
 }
 
 // Delay Elements
-.del-1{
-	animation-delay: .1s;
+.del-1 {
+  animation-delay: .1s;
 }
-.del-2{
-	animation-delay: .2s;
+.del-2 {
+  animation-delay: .2s;
 }

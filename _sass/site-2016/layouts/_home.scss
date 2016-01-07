@@ -1,7 +1,7 @@
 // *************************************
 //
 // layouts/home
-//  
+//
 // *************************************
 .main-banner{
   @include span-columns(12);
@@ -12,11 +12,11 @@
   height: 100%;
   position: relative;
   overflow: hidden;
- 
+
   &__video{
     @include span-columns(12);
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
     background: url(/site-2016/images/bg-image.png) repeat center center;
     min-height: 100vh;
     height: 100%;
@@ -36,7 +36,7 @@
   &__subtitle{
     color: $light;
     font-family: $base-font-family;
-    font-size: rem(40); 
+    font-size: rem(40);
     font-weight: 300;
   }
 
@@ -121,5 +121,21 @@
 
   strong{
     font-weight: 700;
+  }
+}
+
+
+.section-brands{
+  @include span-columns(12);
+  @include pad(rem(60) 0);
+  background: $greyish-brown;
+  min-height: rem(360);
+
+  &__title{
+    color: $light-primary;
+    font-family: $heading-font-family;
+    font-size: rem(30);
+    width: 100%;
+    text-align: center;
   }
 }
