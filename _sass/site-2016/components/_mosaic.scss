@@ -1,0 +1,115 @@
+// *************************************
+//
+// components/mosaic
+//
+// *************************************
+.mosaic {
+  background: $greyish-brown;
+  display: block;
+  height: rem(715);
+  margin: 0 auto;
+  max-width: rem(1368);
+  width: 100%;
+
+  img {
+    @include filter(grayscale(100%));
+    float: left;
+    opacity: .9;
+    transition: .2s;
+    width: 100%;
+
+    &:hover {
+      @include filter(grayscale(0));
+    }
+  }
+
+  &__column {
+    @include clearfix;
+    @include omega(2n);
+    @include span-columns(6 of 12, block-collapse);
+
+    &--one {
+      @include clearfix;
+      @include omega(2n);
+      @include span-columns(4 of 6, block-collapse);
+      margin: 0;
+    }
+
+    &--two {
+      @include clearfix;
+      @include span-columns(2 of 6, block-collapse);
+      margin: 0;
+    }
+  }
+
+  &__box {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    &--hover {
+      @include position(absolute, null null null 0);
+      background: $darkish-red;
+      display: block;
+      height: 100px;
+      width: 100%;
+    }
+  }
+
+
+}
+
+.mosaic-slider {
+  @include pad(rem(20));
+  @include span-columns(12);
+  background: $light-red;
+  color: $light;
+  min-height: rem(274);
+
+  &__title {
+    font-family: $base-font-family;
+    font-size: rem(24);
+    font-weight: 700;
+  }
+
+  &__quote {
+    font-family: $base-font-family;
+    font-size: rem(18);
+    font-style: italic;
+    line-height: rem(28);
+    margin-bottom: rem(30);
+  }
+
+  &__footer {
+    float: right;
+    width: rem(280);
+  }
+
+  &__profile {
+    float: left;
+    font-size: rem(16);
+    padding-right: rem(10);
+    text-align: right;
+    width: rem(240);
+
+    .name {
+      display: inline-block;
+      font-family: $heading-font-family;
+    }
+
+    .job {
+      display: inline-block;
+      font-family: $serifa-font-family;
+    }
+  }
+
+  &__pic {
+    @include size(40px);
+    float: right;
+
+    img {
+      @include filter(grayscale(0));
+      border-radius: 50%;
+    }
+  }
+}
