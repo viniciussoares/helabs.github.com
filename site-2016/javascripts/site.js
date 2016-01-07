@@ -1,6 +1,6 @@
 (function ($) {
   "use strict";
- 
+
   // SCROLL ANIMATIONS
   function onScrollAnimations() {
     $('.main-banner__title').waypoint(function() {
@@ -12,17 +12,17 @@
       $('.main-banner__subtitle').addClass('animated fadeInUp');
     }, {
       offset: '75%'
-    }); 
+    });
     $('.section-offer__heading').waypoint(function() {
       $('.section-offer__heading').addClass('animated fadeIn');
     }, {
       offset: '75%'
-    });     
+    });
     $('.section-offer__box').waypoint(function() {
       $('.section-offer__box').addClass('animated fadeInUp');
     }, {
       offset: '75%'
-    });    
+    });
   }
 
   // SCROLL TO TOP
@@ -55,7 +55,7 @@
     function newTyped(){ /* A new typed object */ }
     function foo(){ console.log("Callback"); }
   }
-  
+
 
   function init() {
     onScrollAnimations();
@@ -64,6 +64,10 @@
   }
 
   init();
+
+  $('.bxblog, .bxtwitter').bxSlider({
+    mode: 'fade'
+  });
 
 })(jQuery);
 
