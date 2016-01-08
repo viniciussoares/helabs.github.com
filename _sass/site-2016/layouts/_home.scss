@@ -15,9 +15,9 @@
 
   &__video {
     @include span-columns(12);
-    background: url('/site-2016/images/bg-image.png') repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: url('/site-2016/images/pattern.png') repeat center center;
+    //background-attachment: fixed;
+    //background-size: cover;
     height: 100vh;
     min-height: rem(770);
     position: absolute;
