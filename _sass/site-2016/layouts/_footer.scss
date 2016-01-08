@@ -223,8 +223,16 @@
   height: 100%;
   min-height: 85vh;
   overflow: hidden;
-  padding: 40px 0;
   position: relative;
+
+  &__bg {
+    @include span-columns(12);
+    background: url('/site-2016/images/pattern.png') repeat center center;
+    height: 100vh;
+    min-height: rem(770);
+    padding: 40px 0;
+    position: absolute;
+  }
 
   .wrapper {
     max-height: 660px;

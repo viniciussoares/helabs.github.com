@@ -13,11 +13,9 @@
   overflow: hidden;
   position: relative;
 
-  &__video {
+  &__bg {
     @include span-columns(12);
     background: url('/site-2016/images/pattern.png') repeat center center;
-    //background-attachment: fixed;
-    //background-size: cover;
     height: 100vh;
     min-height: rem(770);
     position: absolute;
