@@ -149,6 +149,21 @@
     }
   }
 
+  .full-case {
+    color: $light;
+    float: left;
+    font-family: $base-font-family;
+    font-size: rem(18);
+
+    &::after {
+      content: url("/site-2016/images/arrow-white-small.svg");
+      display: block;
+      margin-top: -10px;
+      width: 90px;
+    }
+
+  }
+
   &__quote {
     font-family: $base-font-family;
     font-size: rem(18);

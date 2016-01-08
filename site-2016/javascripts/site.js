@@ -58,8 +58,11 @@
 
   // SLIDERS
   function slider(){
-    $('.bxblog, .bxtwitter, .bxprojects').bxSlider({
+    $('.bxblog, .bxtwitter').bxSlider({
       mode: 'fade'
+    });
+    $('.bxprojects').bxSlider({
+      slideMargin: 60
     });
   }
 
