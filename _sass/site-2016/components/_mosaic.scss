@@ -16,6 +16,7 @@
     float: left;
     height: 100%;
     max-width: 100%;
+    vertical-align: bottom;
   }
 
   &__column {
@@ -79,7 +80,9 @@
       text-align: center;
 
       &::after {
-        border-bottom: 1px solid $light;
+        content: url("/site-2016/images/arrow-white.svg");
+        display: block;
+        margin-top: -10px;
       }
     }
   }
