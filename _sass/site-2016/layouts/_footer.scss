@@ -393,9 +393,8 @@
   }
 
   .meet-team {
+    @include size(rem(100) rem(239));
     background-color: $darkish-red;
-    height: rem(239);
-    width: rem(100);
 
     .btn-team {
       @include vertical-align();
