@@ -452,24 +452,30 @@
   }
 
   &__box {
-    margin-top: rem(85);
+    margin: rem(85) auto 0;
+    max-width: rem(1100);
     text-align: center;
+
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+
     li {
       display: inline-block;
       list-style: none;
       @include span-columns(4 of 12);
+
       a {
         color: $darkish-red;
+        font-family: $heading-font-family;
         font-size: rem(26);
         text-align: center;
       }
 
-      // img {
-      //   max-width: 250px;
-      //   max-height: 250px;
-      // }
-      strong {
-        display: block;
+      span {
+        display: inline-block;
+        margin-top: rem(25);
       }
     }
 
