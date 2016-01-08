@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="152px" height="11px" viewBox="0 0 152 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4.4 (395) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="landing_page" sketch:type="MSArtboardGroup" transform="translate(-610.000000, -3591.000000)">
+            <g id="how-we-roll" sketch:type="MSLayerGroup" transform="translate(0.000000, 2867.000000)">
+                <g id="more-button" transform="translate(568.000000, 682.000000)" sketch:type="MSShapeGroup">
+                    <g id="text" transform="translate(41.000000, 18.000000)">
+                        <g id="arrow" transform="translate(2.000000, 24.000000)">
+                            <path d="M0,5.6373057 L145,5.6373057" id="Line" stroke="#A40810" stroke-linecap="round"></path>
+                            <path d="M144.64284,-1.14575016e-13 L150.14284,5.5 L144.64284,11 L144.64284,-1.14575016e-13 L144.64284,-1.14575016e-13 Z" id="Rectangle-68" fill="#A40810"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
