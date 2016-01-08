@@ -9,6 +9,7 @@
   height: rem(715);
   margin: 0 auto;
   max-width: rem(1368);
+  overflow: hidden;
   width: 100%;
 
   img {
@@ -16,11 +17,17 @@
     float: left;
     opacity: .9;
     transition: .2s;
-    width: 100%;
+    //width: 100%;
 
     &:hover {
       @include filter(grayscale(0));
     }
+  }
+
+  figure,
+  img {
+    height: 100%;
+    max-width: 100%;
   }
 
   &__column {
@@ -44,18 +51,47 @@
 
   &__box {
     display: block;
+    float: left;
+    overflow: hidden;
     position: relative;
     width: 100%;
 
     &--hover {
-      @include position(absolute, null null null 0);
+      @include transition(all, .2s ease-in-out);
       background: $darkish-red;
-      display: block;
-      height: 100px;
-      width: 100%;
+      color: $light;
+      display: none;
+      height: inherit;
+      overflow: hidden;
+      padding: $base-spacing;
+      z-index: 1;
     }
   }
 
+  &__box:hover > .mosaic__box--hover {
+    @include transform(translate(0, -110%));
+    //display: block;
+  }
+
+  &__more-projects {
+    @include size(100% rem(110));
+    background-color: $darkish-red;
+    float: left;
+
+    .btn-projects {
+      @include vertical-align();
+      color: $white-smoke;
+      display: block;
+      font-family: $serifa-font-family;
+      font-size: rem(26);
+      padding: 0 10px;
+      text-align: center;
+
+      &::after {
+        border-bottom: 1px solid $light;
+      }
+    }
+  }
 
 }
 
@@ -70,6 +106,40 @@
     font-family: $base-font-family;
     font-size: rem(24);
     font-weight: 700;
+  }
+
+  .bxprojects {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bx-wrapper {
+    background: $light-red;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bx-viewport {
+    background: $light-red;
+    border: 0;
+    height: 153px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bx-pager {
+    bottom: 10px;
+    z-index: 99;
+
+    &.bx-default-pager a {
+      background-color: rgba($light, .4) !important;
+    }
+
+    &.bx-default-pager a:hover,
+    &.bx-default-pager a.active {
+      background-color: $light-primary !important;
+    }
   }
 
   &__quote {

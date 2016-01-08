@@ -56,18 +56,23 @@
     function foo(){ console.log("Callback"); }
   }
 
+  // SLIDERS
+  function slider(){
+    $('.bxblog, .bxtwitter, .bxprojects').bxSlider({
+      mode: 'fade'
+    });
+  }
+
 
   function init() {
     onScrollAnimations();
-    //scrollToTop();
+    slider();
     typed();
   }
 
   init();
 
-  $('.bxblog, .bxtwitter').bxSlider({
-    mode: 'fade'
-  });
+
 
 })(jQuery);
 
