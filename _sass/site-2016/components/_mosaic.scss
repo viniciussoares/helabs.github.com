@@ -50,6 +50,14 @@
       transition: .2s;
     }
 
+    &--video:hover {
+      background: url('/site-2016/images/projects-video-background.gif') no-repeat top center;
+
+      img {
+        opacity: 0;
+      }
+    }
+
   }
 
   &__box:hover > figure > img {
@@ -73,6 +81,19 @@
       &::after {
         border-bottom: 1px solid $light;
       }
+    }
+  }
+
+  .icon-play {
+    @include size(100%);
+    background: url('/site-2016/images/icon-play.png') no-repeat center center;
+    display: block;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+
+    &:hover {
+      opacity: 1;
     }
   }
 
