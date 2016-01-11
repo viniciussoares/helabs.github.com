@@ -24,19 +24,29 @@
   @include span-columns(10 of 12);
   float: right;
   text-align: right;
+  margin: 0;
 
   &__item {
     display: inline-block;
     font-size: rem(16);
+    margin-left: 2px;
+    text-align: center;
+    width: 100px;
 
     a {
       color: $white-smoke;
-      padding: rem(10) rem(25);
+      //padding: rem(10) rem(25);
     }
 
-    &--bordered {
-      border: 1px solid $light;
-      border-radius: rem(10);
+    &--btn {
+      border: 2px solid $light;
+      color: $light;
+      border-radius: rem(8);
+      padding: 10px 22px;
+
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 }

@@ -71,18 +71,20 @@
     float: left;
 
     .btn-projects {
+      @include transition( all 0.3s );
       @include vertical-align();
       color: $white-smoke;
       display: block;
       font-family: $serifa-font-family;
-      font-size: rem(26);
+      font-size: rem(24);
       padding: 0 10px;
       text-align: center;
+      text-decoration: underline;
+    }
 
-      &::after {
-        content: url("/site-2016/images/arrow-white.svg");
-        display: block;
-        margin-top: -10px;
+    &:hover {
+      .btn-projects {
+        //font-family: $heading-font-family;
       }
     }
   }
@@ -151,17 +153,10 @@
 
   .full-case {
     color: $light;
-    float: left;
+    float: right;
     font-family: $base-font-family;
     font-size: rem(18);
-
-    &::after {
-      content: url("/site-2016/images/arrow-white-small.svg");
-      display: block;
-      margin-top: -10px;
-      width: 90px;
-    }
-
+    text-decoration: underline;
   }
 
   &__quote {
@@ -173,15 +168,15 @@
   }
 
   &__footer {
-    float: right;
+    float: left;
     width: rem(280);
   }
 
   &__profile {
-    float: left;
+    float: right;
     font-size: rem(16);
-    padding-right: rem(10);
-    text-align: right;
+    padding-left: rem(10);
+    text-align: left;
     width: rem(240);
 
     .name {
@@ -197,7 +192,7 @@
 
   &__pic {
     @include size(40px);
-    float: right;
+    float: left;
 
     img {
       @include filter(grayscale(0));

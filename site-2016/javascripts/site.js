@@ -25,6 +25,9 @@
     });
   }
 
+  // HOVER VIDEO ANIMATION
+
+
   // SCROLL TO TOP
   function scrollToTop() {
     $('.scroll-top').on( 'click', function(){
@@ -71,6 +74,7 @@
     onScrollAnimations();
     slider();
     typed();
+   // hoverVideoAnimation();
   }
 
   init();

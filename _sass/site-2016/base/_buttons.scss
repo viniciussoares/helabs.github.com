@@ -1,0 +1,48 @@
+// *************************************
+//
+//   Buttons
+//
+// *************************************
+
+.btn {
+  @include transition( all 0.3s );
+  @include user-select(none);
+  background: transparent;
+  border-radius: rem(8);
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(26);
+  font-weight: 700;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+
+
+  // types of buttons
+  &--red {
+    border: 2px solid $light-red;
+    color: $light-red;
+
+    &:hover {
+      background: $light-red;
+      border-color: $light-red;
+      color: $light;
+    }
+  }
+
+  &--white {
+    border: 2px solid $light;
+    color: $light;
+
+    &:hover {
+      background: $darkish-red;
+      border-color: $darkish-red;
+      color: $light;
+    }
+  }
+
+}
